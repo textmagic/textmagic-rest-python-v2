@@ -13,7 +13,7 @@ Python 2.7 and 3.4+
 ## Installation
 
 ```shell
-pip install git+https://github.com/textmagic/textmagic-rest-python-v2.git@v2.0.670
+pip install git+https://github.com/textmagic/textmagic-rest-python-v2.git@v2.0.674
 ```
 
 ## Usage Example
@@ -67,4 +67,5 @@ except ApiException as e:
 [comment]: <> (FOOTER)
 ## License
 The library is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+
 [comment]: <> (/FOOTER)
