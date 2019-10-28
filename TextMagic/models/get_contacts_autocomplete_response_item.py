@@ -36,6 +36,7 @@ class GetContactsAutocompleteResponseItem(object):
         'value': 'str',
         'label': 'str',
         'shared_by': 'str',
+        'is_shared': 'bool',
         'avatar': 'str',
         'favorited': 'bool',
         'user_id': 'int',
@@ -50,6 +51,7 @@ class GetContactsAutocompleteResponseItem(object):
         'value': 'value',
         'label': 'label',
         'shared_by': 'sharedBy',
+        'is_shared': 'isShared',
         'avatar': 'avatar',
         'favorited': 'favorited',
         'user_id': 'userId',
@@ -58,7 +60,7 @@ class GetContactsAutocompleteResponseItem(object):
         'rposition': 'rposition'
     }
 
-    def __init__(self, entity_id=None, entity_type=None, value=None, label=None, shared_by=None, avatar=None, favorited=None, user_id=None, country_name=None, qposition=None, rposition=None):  # noqa: E501
+    def __init__(self, entity_id=None, entity_type=None, value=None, label=None, shared_by=None, is_shared=None, avatar=None, favorited=None, user_id=None, country_name=None, qposition=None, rposition=None):  # noqa: E501
         """GetContactsAutocompleteResponseItem - a model defined in Swagger"""  # noqa: E501
 
         self._entity_id = None
@@ -66,6 +68,7 @@ class GetContactsAutocompleteResponseItem(object):
         self._value = None
         self._label = None
         self._shared_by = None
+        self._is_shared = None
         self._avatar = None
         self._favorited = None
         self._user_id = None
@@ -79,6 +82,7 @@ class GetContactsAutocompleteResponseItem(object):
         self.value = value
         self.label = label
         self.shared_by = shared_by
+        self.is_shared = is_shared
         self.avatar = avatar
         self.favorited = favorited
         self.user_id = user_id
@@ -206,6 +210,29 @@ class GetContactsAutocompleteResponseItem(object):
         """
 
         self._shared_by = shared_by
+
+    @property
+    def is_shared(self):
+        """Gets the is_shared of this GetContactsAutocompleteResponseItem.  # noqa: E501
+
+        If contact or list was shared by another sub-account then `true` will be set.  # noqa: E501
+
+        :return: The is_shared of this GetContactsAutocompleteResponseItem.  # noqa: E501
+        :rtype: bool
+        """
+        return self._is_shared
+
+    @is_shared.setter
+    def is_shared(self, is_shared):
+        """Sets the is_shared of this GetContactsAutocompleteResponseItem.
+
+        If contact or list was shared by another sub-account then `true` will be set.  # noqa: E501
+
+        :param is_shared: The is_shared of this GetContactsAutocompleteResponseItem.  # noqa: E501
+        :type: bool
+        """
+
+        self._is_shared = is_shared
 
     @property
     def avatar(self):
