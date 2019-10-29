@@ -56,7 +56,7 @@ class UpdateCustomFieldValueInputObject(object):
     def contact_id(self):
         """Gets the contact_id of this UpdateCustomFieldValueInputObject.  # noqa: E501
 
-        Contact ID. See [Contact](http://docs.textmagictesting.com/#tag/Contacts)   # noqa: E501
+        Contact ID. See [Contact](http://docs.textmagictesting.com/#tag/Contacts).   # noqa: E501
 
         :return: The contact_id of this UpdateCustomFieldValueInputObject.  # noqa: E501
         :rtype: int
@@ -67,7 +67,7 @@ class UpdateCustomFieldValueInputObject(object):
     def contact_id(self, contact_id):
         """Sets the contact_id of this UpdateCustomFieldValueInputObject.
 
-        Contact ID. See [Contact](http://docs.textmagictesting.com/#tag/Contacts)   # noqa: E501
+        Contact ID. See [Contact](http://docs.textmagictesting.com/#tag/Contacts).   # noqa: E501
 
         :param contact_id: The contact_id of this UpdateCustomFieldValueInputObject.  # noqa: E501
         :type: int
@@ -79,7 +79,7 @@ class UpdateCustomFieldValueInputObject(object):
     def value(self):
         """Gets the value of this UpdateCustomFieldValueInputObject.  # noqa: E501
 
-        Custom field value. Note that this value is not parsed in any way. It is stored and used in tags exactly as you send it.  # noqa: E501
+        Custom field value. Note that this value is not parsed in any way; it is stored and used in tags exactly as you send it.  # noqa: E501
 
         :return: The value of this UpdateCustomFieldValueInputObject.  # noqa: E501
         :rtype: str
@@ -90,7 +90,7 @@ class UpdateCustomFieldValueInputObject(object):
     def value(self, value):
         """Sets the value of this UpdateCustomFieldValueInputObject.
 
-        Custom field value. Note that this value is not parsed in any way. It is stored and used in tags exactly as you send it.  # noqa: E501
+        Custom field value. Note that this value is not parsed in any way; it is stored and used in tags exactly as you send it.  # noqa: E501
 
         :param value: The value of this UpdateCustomFieldValueInputObject.  # noqa: E501
         :type: str

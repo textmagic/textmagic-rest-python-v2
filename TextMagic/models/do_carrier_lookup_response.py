@@ -75,7 +75,7 @@ class DoCarrierLookupResponse(object):
     def cost(self):
         """Gets the cost of this DoCarrierLookupResponse.  # noqa: E501
 
-        Cost to check that one number is constant – 0.04 in your account currency.  # noqa: E501
+        The cost to check that one number is constant – 0.04 in your account currency.  # noqa: E501
 
         :return: The cost of this DoCarrierLookupResponse.  # noqa: E501
         :rtype: float
@@ -86,7 +86,7 @@ class DoCarrierLookupResponse(object):
     def cost(self, cost):
         """Sets the cost of this DoCarrierLookupResponse.
 
-        Cost to check that one number is constant – 0.04 in your account currency.  # noqa: E501
+        The cost to check that one number is constant – 0.04 in your account currency.  # noqa: E501
 
         :param cost: The cost of this DoCarrierLookupResponse.  # noqa: E501
         :type: float
@@ -219,7 +219,7 @@ class DoCarrierLookupResponse(object):
     def valid(self):
         """Gets the valid of this DoCarrierLookupResponse.  # noqa: E501
 
-        The field shows if entered phone number is valid or not.  # noqa: E501
+        This field shows whether the entered phone number is valid or not.  # noqa: E501
 
         :return: The valid of this DoCarrierLookupResponse.  # noqa: E501
         :rtype: bool
@@ -230,7 +230,7 @@ class DoCarrierLookupResponse(object):
     def valid(self, valid):
         """Sets the valid of this DoCarrierLookupResponse.
 
-        The field shows if entered phone number is valid or not.  # noqa: E501
+        This field shows whether the entered phone number is valid or not.  # noqa: E501
 
         :param valid: The valid of this DoCarrierLookupResponse.  # noqa: E501
         :type: bool

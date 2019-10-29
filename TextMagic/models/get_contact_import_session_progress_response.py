@@ -54,7 +54,7 @@ class GetContactImportSessionProgressResponse(object):
     def status(self):
         """Gets the status of this GetContactImportSessionProgressResponse.  # noqa: E501
 
-        Session status: * **1** if session has been initialized but not yet started * **3** if session is being processed * **4** if session has errors * **5** if session completed successfully   # noqa: E501
+        Session status: * **1** - if session has been initialized but not yet started; * **3** - if session is being processed; * **4** - if session has errors; * **5** - if session completed successfully.   # noqa: E501
 
         :return: The status of this GetContactImportSessionProgressResponse.  # noqa: E501
         :rtype: int
@@ -65,7 +65,7 @@ class GetContactImportSessionProgressResponse(object):
     def status(self, status):
         """Sets the status of this GetContactImportSessionProgressResponse.
 
-        Session status: * **1** if session has been initialized but not yet started * **3** if session is being processed * **4** if session has errors * **5** if session completed successfully   # noqa: E501
+        Session status: * **1** - if session has been initialized but not yet started; * **3** - if session is being processed; * **4** - if session has errors; * **5** - if session completed successfully.   # noqa: E501
 
         :param status: The status of this GetContactImportSessionProgressResponse.  # noqa: E501
         :type: int
@@ -77,7 +77,7 @@ class GetContactImportSessionProgressResponse(object):
     def processed(self):
         """Gets the processed of this GetContactImportSessionProgressResponse.  # noqa: E501
 
-        How many contacts have been imported.  # noqa: E501
+        How many contacts have been imported?  # noqa: E501
 
         :return: The processed of this GetContactImportSessionProgressResponse.  # noqa: E501
         :rtype: int
@@ -88,7 +88,7 @@ class GetContactImportSessionProgressResponse(object):
     def processed(self, processed):
         """Sets the processed of this GetContactImportSessionProgressResponse.
 
-        How many contacts have been imported.  # noqa: E501
+        How many contacts have been imported?  # noqa: E501
 
         :param processed: The processed of this GetContactImportSessionProgressResponse.  # noqa: E501
         :type: int

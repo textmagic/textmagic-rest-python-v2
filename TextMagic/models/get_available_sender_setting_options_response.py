@@ -62,7 +62,7 @@ class GetAvailableSenderSettingOptionsResponse(object):
     def dedicated(self):
         """Gets the dedicated of this GetAvailableSenderSettingOptionsResponse.  # noqa: E501
 
-        Array of dedicated numbers strings.  # noqa: E501
+        Array of dedicated number strings.  # noqa: E501
 
         :return: The dedicated of this GetAvailableSenderSettingOptionsResponse.  # noqa: E501
         :rtype: list[str]
@@ -73,7 +73,7 @@ class GetAvailableSenderSettingOptionsResponse(object):
     def dedicated(self, dedicated):
         """Sets the dedicated of this GetAvailableSenderSettingOptionsResponse.
 
-        Array of dedicated numbers strings.  # noqa: E501
+        Array of dedicated number strings.  # noqa: E501
 
         :param dedicated: The dedicated of this GetAvailableSenderSettingOptionsResponse.  # noqa: E501
         :type: list[str]
@@ -108,7 +108,7 @@ class GetAvailableSenderSettingOptionsResponse(object):
     def shared(self):
         """Gets the shared of this GetAvailableSenderSettingOptionsResponse.  # noqa: E501
 
-        Array of shared numbers strings.  # noqa: E501
+        Array of shared number strings.  # noqa: E501
 
         :return: The shared of this GetAvailableSenderSettingOptionsResponse.  # noqa: E501
         :rtype: list[str]
@@ -119,7 +119,7 @@ class GetAvailableSenderSettingOptionsResponse(object):
     def shared(self, shared):
         """Sets the shared of this GetAvailableSenderSettingOptionsResponse.
 
-        Array of shared numbers strings.  # noqa: E501
+        Array of shared number strings.  # noqa: E501
 
         :param shared: The shared of this GetAvailableSenderSettingOptionsResponse.  # noqa: E501
         :type: list[str]

@@ -107,7 +107,7 @@ class MuteChatsBulkInputObject(object):
     def _for(self):
         """Gets the _for of this MuteChatsBulkInputObject.  # noqa: E501
 
-        Mute for N hours  # noqa: E501
+        Mute for N hours.  # noqa: E501
 
         :return: The _for of this MuteChatsBulkInputObject.  # noqa: E501
         :rtype: int
@@ -118,7 +118,7 @@ class MuteChatsBulkInputObject(object):
     def _for(self, _for):
         """Sets the _for of this MuteChatsBulkInputObject.
 
-        Mute for N hours  # noqa: E501
+        Mute for N hours.  # noqa: E501
 
         :param _for: The _for of this MuteChatsBulkInputObject.  # noqa: E501
         :type: int

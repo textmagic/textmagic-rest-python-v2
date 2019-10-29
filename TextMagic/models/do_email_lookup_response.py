@@ -274,7 +274,7 @@ class DoEmailLookupResponse(object):
     def is_disposable_address(self):
         """Gets the is_disposable_address of this DoEmailLookupResponse.  # noqa: E501
 
-        This is be `true` if the domain is in the list of disposable email addresses, otherwise returns as `false`.  # noqa: E501
+        This is `true` if the domain is in the list of disposable email addresses; otherwise, it returns as `false`.  # noqa: E501
 
         :return: The is_disposable_address of this DoEmailLookupResponse.  # noqa: E501
         :rtype: bool
@@ -285,7 +285,7 @@ class DoEmailLookupResponse(object):
     def is_disposable_address(self, is_disposable_address):
         """Sets the is_disposable_address of this DoEmailLookupResponse.
 
-        This is be `true` if the domain is in the list of disposable email addresses, otherwise returns as `false`.  # noqa: E501
+        This is `true` if the domain is in the list of disposable email addresses; otherwise, it returns as `false`.  # noqa: E501
 
         :param is_disposable_address: The is_disposable_address of this DoEmailLookupResponse.  # noqa: E501
         :type: bool
@@ -297,7 +297,7 @@ class DoEmailLookupResponse(object):
     def suggestion(self):
         """Gets the suggestion of this DoEmailLookupResponse.  # noqa: E501
 
-        Null if nothing is suggested, however, if there is a potential typo in the email address, the closest suggestion is provided.  # noqa: E501
+        Null if nothing is suggested; however, if there is a potential typo in the email address, the closest suggestion is provided.  # noqa: E501
 
         :return: The suggestion of this DoEmailLookupResponse.  # noqa: E501
         :rtype: str
@@ -308,7 +308,7 @@ class DoEmailLookupResponse(object):
     def suggestion(self, suggestion):
         """Sets the suggestion of this DoEmailLookupResponse.
 
-        Null if nothing is suggested, however, if there is a potential typo in the email address, the closest suggestion is provided.  # noqa: E501
+        Null if nothing is suggested; however, if there is a potential typo in the email address, the closest suggestion is provided.  # noqa: E501
 
         :param suggestion: The suggestion of this DoEmailLookupResponse.  # noqa: E501
         :type: str
@@ -320,7 +320,7 @@ class DoEmailLookupResponse(object):
     def email_role(self):
         """Gets the email_role of this DoEmailLookupResponse.  # noqa: E501
 
-        Checks the mailbox part of the email whether it matches a specific role type (‘admin’, ‘sales’, ‘webmaster’)  # noqa: E501
+        Checks the mailbox part of the email to see whether it matches a specific role type (‘admin’, ‘sales’, ‘webmaster’)  # noqa: E501
 
         :return: The email_role of this DoEmailLookupResponse.  # noqa: E501
         :rtype: str
@@ -331,7 +331,7 @@ class DoEmailLookupResponse(object):
     def email_role(self, email_role):
         """Sets the email_role of this DoEmailLookupResponse.
 
-        Checks the mailbox part of the email whether it matches a specific role type (‘admin’, ‘sales’, ‘webmaster’)  # noqa: E501
+        Checks the mailbox part of the email to see whether it matches a specific role type (‘admin’, ‘sales’, ‘webmaster’)  # noqa: E501
 
         :param email_role: The email_role of this DoEmailLookupResponse.  # noqa: E501
         :type: str
@@ -435,7 +435,7 @@ class DoEmailLookupResponse(object):
     def is_in_white_list(self):
         """Gets the is_in_white_list of this DoEmailLookupResponse.  # noqa: E501
 
-        `true` if the email address exists in TextMagic whitelist.   # noqa: E501
+        `true` if the email address exists in the TextMagic whitelist.   # noqa: E501
 
         :return: The is_in_white_list of this DoEmailLookupResponse.  # noqa: E501
         :rtype: bool
@@ -446,7 +446,7 @@ class DoEmailLookupResponse(object):
     def is_in_white_list(self, is_in_white_list):
         """Sets the is_in_white_list of this DoEmailLookupResponse.
 
-        `true` if the email address exists in TextMagic whitelist.   # noqa: E501
+        `true` if the email address exists in the TextMagic whitelist.   # noqa: E501
 
         :param is_in_white_list: The is_in_white_list of this DoEmailLookupResponse.  # noqa: E501
         :type: bool
@@ -458,7 +458,7 @@ class DoEmailLookupResponse(object):
     def is_in_black_list(self):
         """Gets the is_in_black_list of this DoEmailLookupResponse.  # noqa: E501
 
-        `true` if the email address exists in TextMagic blacklist.   # noqa: E501
+        `true` if the email address exists in the TextMagic blacklist.   # noqa: E501
 
         :return: The is_in_black_list of this DoEmailLookupResponse.  # noqa: E501
         :rtype: bool
@@ -469,7 +469,7 @@ class DoEmailLookupResponse(object):
     def is_in_black_list(self, is_in_black_list):
         """Sets the is_in_black_list of this DoEmailLookupResponse.
 
-        `true` if the email address exists in TextMagic blacklist.   # noqa: E501
+        `true` if the email address exists in the TextMagic blacklist.   # noqa: E501
 
         :param is_in_black_list: The is_in_black_list of this DoEmailLookupResponse.  # noqa: E501
         :type: bool

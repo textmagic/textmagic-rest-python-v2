@@ -214,7 +214,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_delete_dedicated_number(self):
         """Test case for delete_dedicated_number
 
-        Cancel dedicated number subscription  # noqa: E501
+        Cancel a dedicated number subscription  # noqa: E501
         """
         pass
 
@@ -494,7 +494,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_contact_notes(self):
         """Test case for get_contact_notes
 
-        Fetch notes assigned to the given contact.  # noqa: E501
+        Fetch notes assigned to a given contact  # noqa: E501
         """
         pass
 

@@ -54,7 +54,7 @@ class RequestSenderIdInputObject(object):
     def sender_id(self):
         """Gets the sender_id of this RequestSenderIdInputObject.  # noqa: E501
 
-        Sender ID that you are applying for. *   11 characters maximum *   Only Latin based characters and digits are allowed *   Should contain at least one letter   # noqa: E501
+        The Sender ID that you are applying for. *   11 characters maximum; *   Only Latin based characters and digits are allowed; *   Should contain at least 1 letter.   # noqa: E501
 
         :return: The sender_id of this RequestSenderIdInputObject.  # noqa: E501
         :rtype: str
@@ -65,7 +65,7 @@ class RequestSenderIdInputObject(object):
     def sender_id(self, sender_id):
         """Sets the sender_id of this RequestSenderIdInputObject.
 
-        Sender ID that you are applying for. *   11 characters maximum *   Only Latin based characters and digits are allowed *   Should contain at least one letter   # noqa: E501
+        The Sender ID that you are applying for. *   11 characters maximum; *   Only Latin based characters and digits are allowed; *   Should contain at least 1 letter.   # noqa: E501
 
         :param sender_id: The sender_id of this RequestSenderIdInputObject.  # noqa: E501
         :type: str
@@ -77,7 +77,7 @@ class RequestSenderIdInputObject(object):
     def explanation(self):
         """Gets the explanation of this RequestSenderIdInputObject.  # noqa: E501
 
-        Explanation why do you need this Sender ID.  # noqa: E501
+        Explanation of why you need this Sender ID.  # noqa: E501
 
         :return: The explanation of this RequestSenderIdInputObject.  # noqa: E501
         :rtype: str
@@ -88,7 +88,7 @@ class RequestSenderIdInputObject(object):
     def explanation(self, explanation):
         """Sets the explanation of this RequestSenderIdInputObject.
 
-        Explanation why do you need this Sender ID.  # noqa: E501
+        Explanation of why you need this Sender ID.  # noqa: E501
 
         :param explanation: The explanation of this RequestSenderIdInputObject.  # noqa: E501
         :type: str

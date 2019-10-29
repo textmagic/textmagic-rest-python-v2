@@ -216,7 +216,7 @@ class UsersInbound(object):
     def status(self):
         """Gets the status of this UsersInbound.  # noqa: E501
 
-        Number status: *   **U** for Unused. No messages have been sent from (or received to) this number. *   **A** for Active.   # noqa: E501
+        Number status: *   **U** for Unused. No messages have been sent from (or received to) this number; *   **A** for Active.   # noqa: E501
 
         :return: The status of this UsersInbound.  # noqa: E501
         :rtype: str
@@ -227,7 +227,7 @@ class UsersInbound(object):
     def status(self, status):
         """Sets the status of this UsersInbound.
 
-        Number status: *   **U** for Unused. No messages have been sent from (or received to) this number. *   **A** for Active.   # noqa: E501
+        Number status: *   **U** for Unused. No messages have been sent from (or received to) this number; *   **A** for Active.   # noqa: E501
 
         :param status: The status of this UsersInbound.  # noqa: E501
         :type: str

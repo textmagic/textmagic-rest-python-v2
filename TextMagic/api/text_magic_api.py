@@ -2568,7 +2568,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def delete_dedicated_number(self, id, **kwargs):  # noqa: E501
-        """Cancel dedicated number subscription  # noqa: E501
+        """Cancel a dedicated number subscription  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -2590,7 +2590,7 @@ class TextMagicApi(object):
             return data
 
     def delete_dedicated_number_with_http_info(self, id, **kwargs):  # noqa: E501
-        """Cancel dedicated number subscription  # noqa: E501
+        """Cancel a dedicated number subscription  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -4102,7 +4102,7 @@ class TextMagicApi(object):
     def do_carrier_lookup(self, phone, **kwargs):  # noqa: E501
         """Carrier Lookup  # noqa: E501
 
-        This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  > Numbers can be checked one by one. You cannot check multiple numbers in one request.     # noqa: E501
+        This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  > Numbers must be checked one by one. You cannot check multiple numbers in one request.     # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.do_carrier_lookup(phone, async_req=True)
@@ -4110,7 +4110,7 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param str phone: Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) or in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers).  (required)
-        :param str country: This option must be specified only if the phone number in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**. 
+        :param str country: This option must be specified only if the phone number is in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**. 
         :return: DoCarrierLookupResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -4125,7 +4125,7 @@ class TextMagicApi(object):
     def do_carrier_lookup_with_http_info(self, phone, **kwargs):  # noqa: E501
         """Carrier Lookup  # noqa: E501
 
-        This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  > Numbers can be checked one by one. You cannot check multiple numbers in one request.     # noqa: E501
+        This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  > Numbers must be checked one by one. You cannot check multiple numbers in one request.     # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.do_carrier_lookup_with_http_info(phone, async_req=True)
@@ -4133,7 +4133,7 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param str phone: Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) or in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers).  (required)
-        :param str country: This option must be specified only if the phone number in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**. 
+        :param str country: This option must be specified only if the phone number is in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**. 
         :return: DoCarrierLookupResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -4205,7 +4205,7 @@ class TextMagicApi(object):
     def do_email_lookup(self, email, **kwargs):  # noqa: E501
         """Email Lookup  # noqa: E501
 
-        To get more details about an email address or to check if it is a valid email, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  > Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  # noqa: E501
+        To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  > Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.do_email_lookup(email, async_req=True)
@@ -4227,7 +4227,7 @@ class TextMagicApi(object):
     def do_email_lookup_with_http_info(self, email, **kwargs):  # noqa: E501
         """Email Lookup  # noqa: E501
 
-        To get more details about an email address or to check if it is a valid email, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  > Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  # noqa: E501
+        To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  > Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.do_email_lookup_with_http_info(email, async_req=True)
@@ -5044,8 +5044,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str country: Two-letter dedicated number country ISO code. (required)
-        :param int prefix: Desired number prefix. Should include country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country.
+        :param str country: The 2-letter dedicated number country ISO code. (required)
+        :param int prefix: Desired number prefix. Should include the country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country.
         :param int tollfree: Should we show only tollfree numbers (tollfree available only for US).
         :return: GetAvailableDedicatedNumbersResponse
                  If the method is called asynchronously,
@@ -5068,8 +5068,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str country: Two-letter dedicated number country ISO code. (required)
-        :param int prefix: Desired number prefix. Should include country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country.
+        :param str country: The 2-letter dedicated number country ISO code. (required)
+        :param int prefix: Desired number prefix. Should include the country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country.
         :param int tollfree: Should we show only tollfree numbers (tollfree available only for US).
         :return: GetAvailableDedicatedNumbersResponse
                  If the method is called asynchronously,
@@ -5144,7 +5144,7 @@ class TextMagicApi(object):
     def get_available_sender_setting_options(self, **kwargs):  # noqa: E501
         """Get available sender settings  # noqa: E501
 
-        Get all available sender setting options which could be used in \"from\" parameter of POST messages method.  # noqa: E501
+        Get all available sender setting options which can be used in the \"from\" parameter of the POST messages method.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_available_sender_setting_options(async_req=True)
@@ -5166,7 +5166,7 @@ class TextMagicApi(object):
     def get_available_sender_setting_options_with_http_info(self, **kwargs):  # noqa: E501
         """Get available sender settings  # noqa: E501
 
-        Get all available sender setting options which could be used in \"from\" parameter of POST messages method.  # noqa: E501
+        Get all available sender setting options which can be used in the \"from\" parameter of the POST messages method.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_available_sender_setting_options_with_http_info(async_req=True)
@@ -6548,7 +6548,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_contact_notes(self, id, **kwargs):  # noqa: E501
-        """Fetch notes assigned to the given contact.  # noqa: E501
+        """Fetch notes assigned to a given contact  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -6572,7 +6572,7 @@ class TextMagicApi(object):
             return data
 
     def get_contact_notes_with_http_info(self, id, **kwargs):  # noqa: E501
-        """Fetch notes assigned to the given contact.  # noqa: E501
+        """Fetch notes assigned to a given contact  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -9628,7 +9628,7 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str country: Return sender settings enabled for sending to specified country. Two upper case characters
+        :param str country: Return sender settings enabled for sending to a specified country. Should be 2 upper-case characters.
         :return: GetSenderSettingsResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -9650,7 +9650,7 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str country: Return sender settings enabled for sending to specified country. Two upper case characters
+        :param str country: Return sender settings enabled for sending to a specified country. Should be 2 upper-case characters.
         :return: GetSenderSettingsResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -10620,7 +10620,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param int survey_id: Fetch only that numbers which are ready for the survey
+        :param int survey_id: Fetch only those numbers that are ready for the survey.
         :return: GetUserDedicatedNumbersPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -10644,7 +10644,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param int survey_id: Fetch only that numbers which are ready for the survey
+        :param int survey_id: Fetch only those numbers that are ready for the survey.
         :return: GetUserDedicatedNumbersPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -10722,7 +10722,7 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param file file: File containing contacts in csv or xls(x) formats (required)
-        :param str column: Import file column mapping. String must contain substrings of mapping in format `columnNumber:field` glued by `;`. For example: `0:firstName;1:lastName;3:phone;4:email` where value before `:` is a number of column in file, value after `:` is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: `firstName`, `lastName`, `phone`, `email`. Existing of `phone` mapping is required.  (required)
+        :param str column: Import file column mapping. The string must contain sub-strings of mapping in format `columnNumber:field` glued by `;`. For example: `0:firstName;1:lastName;3:phone;4:email` where the value before `:` is a number of the column in the file, and the value after `:` is a field of the newly created contact or the ID of a custom field. Numbers of columns begin from zero. Allowed built-in contact fields are: `firstName`, `lastName`, `phone`, `email`. Existing of `phone` mapping is required.  (required)
         :param int list_id: List ID contacts will be imported to. Ignored if `listName` is specified. 
         :param str list_name: List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if `listId` is specified. 
         :return: ResourceLinkResponse
@@ -10747,7 +10747,7 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param file file: File containing contacts in csv or xls(x) formats (required)
-        :param str column: Import file column mapping. String must contain substrings of mapping in format `columnNumber:field` glued by `;`. For example: `0:firstName;1:lastName;3:phone;4:email` where value before `:` is a number of column in file, value after `:` is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: `firstName`, `lastName`, `phone`, `email`. Existing of `phone` mapping is required.  (required)
+        :param str column: Import file column mapping. The string must contain sub-strings of mapping in format `columnNumber:field` glued by `;`. For example: `0:firstName;1:lastName;3:phone;4:email` where the value before `:` is a number of the column in the file, and the value after `:` is a field of the newly created contact or the ID of a custom field. Numbers of columns begin from zero. Allowed built-in contact fields are: `firstName`, `lastName`, `phone`, `email`. Existing of `phone` mapping is required.  (required)
         :param int list_id: List ID contacts will be imported to. Ignored if `listName` is specified. 
         :param str list_name: List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if `listId` is specified. 
         :return: ResourceLinkResponse
@@ -11213,7 +11213,7 @@ class TextMagicApi(object):
     def mute_chats_bulk(self, mute_chats_bulk_input_object, **kwargs):  # noqa: E501
         """Mute chats (bulk)  # noqa: E501
 
-        Mute several chats by chat IDs or mute all chats  # noqa: E501
+        Mute several chats by chat ids or mute all chats.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.mute_chats_bulk(mute_chats_bulk_input_object, async_req=True)
@@ -11235,7 +11235,7 @@ class TextMagicApi(object):
     def mute_chats_bulk_with_http_info(self, mute_chats_bulk_input_object, **kwargs):  # noqa: E501
         """Mute chats (bulk)  # noqa: E501
 
-        Mute several chats by chat IDs or mute all chats  # noqa: E501
+        Mute several chats by chat ids or mute all chats.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.mute_chats_bulk_with_http_info(mute_chats_bulk_input_object, async_req=True)
@@ -11593,7 +11593,7 @@ class TextMagicApi(object):
     def request_sender_id(self, request_sender_id_input_object, **kwargs):  # noqa: E501
         """Apply for a new Sender ID  # noqa: E501
 
-        > Sender IDs are shared between all of your sub-accounts.  # noqa: E501
+        > Sender IDs are shared among all of your sub-accounts.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.request_sender_id(request_sender_id_input_object, async_req=True)
@@ -11615,7 +11615,7 @@ class TextMagicApi(object):
     def request_sender_id_with_http_info(self, request_sender_id_input_object, **kwargs):  # noqa: E501
         """Apply for a new Sender ID  # noqa: E501
 
-        > Sender IDs are shared between all of your sub-accounts.  # noqa: E501
+        > Sender IDs are shared among all of your sub-accounts.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.request_sender_id_with_http_info(request_sender_id_input_object, async_req=True)
@@ -13232,7 +13232,7 @@ class TextMagicApi(object):
     def unmute_chats_bulk(self, unmute_chats_bulk_input_object, **kwargs):  # noqa: E501
         """Unmute chats (bulk)  # noqa: E501
 
-        Unmute several chats by chat IDs or unmute all chats  # noqa: E501
+        Unmute several chats by chat ids or unmute all chats.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.unmute_chats_bulk(unmute_chats_bulk_input_object, async_req=True)
@@ -13254,7 +13254,7 @@ class TextMagicApi(object):
     def unmute_chats_bulk_with_http_info(self, unmute_chats_bulk_input_object, **kwargs):  # noqa: E501
         """Unmute chats (bulk)  # noqa: E501
 
-        Unmute several chats by chat IDs or unmute all chats  # noqa: E501
+        Unmute several chats by chat ids or unmute all chats.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.unmute_chats_bulk_with_http_info(unmute_chats_bulk_input_object, async_req=True)
@@ -14752,7 +14752,7 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param file image: Contact avatar. Should be PNG or JPG file not more than 10 MB (required)
+        :param file image: Contact avatar. Should be a PNG or JPG file not more than 10 MB. (required)
         :param int id: (required)
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
@@ -14775,7 +14775,7 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param file image: Contact avatar. Should be PNG or JPG file not more than 10 MB (required)
+        :param file image: Contact avatar. Should be a PNG or JPG file not more than 10 MB. (required)
         :param int id: (required)
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
