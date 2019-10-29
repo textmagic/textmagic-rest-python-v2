@@ -606,7 +606,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_lists_of_contact(self):
         """Test case for get_lists_of_contact
 
-        Get contact's lists  # noqa: E501
+        Get a contact's lists  # noqa: E501
         """
         pass
 

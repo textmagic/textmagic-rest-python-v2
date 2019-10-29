@@ -88,7 +88,7 @@ class CreateListInputObject(object):
     def shared(self):
         """Gets the shared of this CreateListInputObject.  # noqa: E501
 
-        Should new list be **shared** among all the sub-accounts?  # noqa: E501
+        Should the new list be **shared** among all the sub-accounts?  # noqa: E501
 
         :return: The shared of this CreateListInputObject.  # noqa: E501
         :rtype: bool
@@ -99,7 +99,7 @@ class CreateListInputObject(object):
     def shared(self, shared):
         """Sets the shared of this CreateListInputObject.
 
-        Should new list be **shared** among all the sub-accounts?  # noqa: E501
+        Should the new list be **shared** among all the sub-accounts?  # noqa: E501
 
         :param shared: The shared of this CreateListInputObject.  # noqa: E501
         :type: bool
@@ -111,7 +111,7 @@ class CreateListInputObject(object):
     def favorited(self):
         """Gets the favorited of this CreateListInputObject.  # noqa: E501
 
-        Is list favorited. Default is false.  # noqa: E501
+        Is the list favorited? Default is false.  # noqa: E501
 
         :return: The favorited of this CreateListInputObject.  # noqa: E501
         :rtype: bool
@@ -122,7 +122,7 @@ class CreateListInputObject(object):
     def favorited(self, favorited):
         """Sets the favorited of this CreateListInputObject.
 
-        Is list favorited. Default is false.  # noqa: E501
+        Is the list favorited? Default is false.  # noqa: E501
 
         :param favorited: The favorited of this CreateListInputObject.  # noqa: E501
         :type: bool
@@ -134,7 +134,7 @@ class CreateListInputObject(object):
     def is_default(self):
         """Gets the is_default of this CreateListInputObject.  # noqa: E501
 
-        Is list default for new contacts (web only).  # noqa: E501
+        Is the list default for new contacts (web only)?  # noqa: E501
 
         :return: The is_default of this CreateListInputObject.  # noqa: E501
         :rtype: bool
@@ -145,7 +145,7 @@ class CreateListInputObject(object):
     def is_default(self, is_default):
         """Sets the is_default of this CreateListInputObject.
 
-        Is list default for new contacts (web only).  # noqa: E501
+        Is the list default for new contacts (web only)?  # noqa: E501
 
         :param is_default: The is_default of this CreateListInputObject.  # noqa: E501
         :type: bool

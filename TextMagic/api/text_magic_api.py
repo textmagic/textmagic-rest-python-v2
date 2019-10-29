@@ -8172,9 +8172,9 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_lists_of_contact(self, id, **kwargs):  # noqa: E501
-        """Get contact's lists  # noqa: E501
+        """Get a contact's lists  # noqa: E501
 
-        Get all the lists in which the contact is included  # noqa: E501
+        Get all the lists in which a contact is included.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_lists_of_contact(id, async_req=True)
@@ -8196,9 +8196,9 @@ class TextMagicApi(object):
             return data
 
     def get_lists_of_contact_with_http_info(self, id, **kwargs):  # noqa: E501
-        """Get contact's lists  # noqa: E501
+        """Get a contact's lists  # noqa: E501
 
-        Get all the lists in which the contact is included  # noqa: E501
+        Get all the lists in which a contact is included.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_lists_of_contact_with_http_info(id, async_req=True)
@@ -12274,11 +12274,11 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param str ids: Find lists by ID(s)
-        :param str query: Find lists by specified search query
-        :param int only_mine: Return only current user lists
-        :param int only_default: Return only default lists
-        :param str order_by: Order results by some field. Default is id
+        :param str ids: Find lists by IDs.
+        :param str query: Find lists by specified search query.
+        :param int only_mine: Return only current user lists.
+        :param int only_default: Return only default lists.
+        :param str order_by: Order results by some field. Default is id.
         :param str direction: Order direction. Default is desc.
         :return: SearchListsPaginatedResponse
                  If the method is called asynchronously,
@@ -12303,11 +12303,11 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param str ids: Find lists by ID(s)
-        :param str query: Find lists by specified search query
-        :param int only_mine: Return only current user lists
-        :param int only_default: Return only default lists
-        :param str order_by: Order results by some field. Default is id
+        :param str ids: Find lists by IDs.
+        :param str query: Find lists by specified search query.
+        :param int only_mine: Return only current user lists.
+        :param int only_default: Return only default lists.
+        :param str order_by: Order results by some field. Default is id.
         :param str direction: Order direction. Default is desc.
         :return: SearchListsPaginatedResponse
                  If the method is called asynchronously,
