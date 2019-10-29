@@ -129,7 +129,7 @@ class SendMessageInputObject(object):
     def text(self):
         """Gets the text of this SendMessageInputObject.  # noqa: E501
 
-        Message text. Required if **template_id** is not set.  # noqa: E501
+        Message text. Required if the **template_id** is not set.  # noqa: E501
 
         :return: The text of this SendMessageInputObject.  # noqa: E501
         :rtype: str
@@ -140,7 +140,7 @@ class SendMessageInputObject(object):
     def text(self, text):
         """Sets the text of this SendMessageInputObject.
 
-        Message text. Required if **template_id** is not set.  # noqa: E501
+        Message text. Required if the **template_id** is not set.  # noqa: E501
 
         :param text: The text of this SendMessageInputObject.  # noqa: E501
         :type: str
@@ -152,7 +152,7 @@ class SendMessageInputObject(object):
     def template_id(self):
         """Gets the template_id of this SendMessageInputObject.  # noqa: E501
 
-        Template used instead of message text. Required if **text** is not set.  # noqa: E501
+        Template used instead of message text. Required if the **text** is not set.  # noqa: E501
 
         :return: The template_id of this SendMessageInputObject.  # noqa: E501
         :rtype: int
@@ -163,7 +163,7 @@ class SendMessageInputObject(object):
     def template_id(self, template_id):
         """Sets the template_id of this SendMessageInputObject.
 
-        Template used instead of message text. Required if **text** is not set.  # noqa: E501
+        Template used instead of message text. Required if the **text** is not set.  # noqa: E501
 
         :param template_id: The template_id of this SendMessageInputObject.  # noqa: E501
         :type: int
@@ -451,7 +451,7 @@ class SendMessageInputObject(object):
     def tts(self):
         """Gets the tts of this SendMessageInputObject.  # noqa: E501
 
-        Send a Text to Speech message.  # noqa: E501
+        Send a Text-to-Speech message.  # noqa: E501
 
         :return: The tts of this SendMessageInputObject.  # noqa: E501
         :rtype: bool
@@ -462,7 +462,7 @@ class SendMessageInputObject(object):
     def tts(self, tts):
         """Sets the tts of this SendMessageInputObject.
 
-        Send a Text to Speech message.  # noqa: E501
+        Send a Text-to-Speech message.  # noqa: E501
 
         :param tts: The tts of this SendMessageInputObject.  # noqa: E501
         :type: bool

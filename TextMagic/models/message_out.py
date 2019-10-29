@@ -572,7 +572,7 @@ class MessageOut(object):
     def from_number(self):
         """Gets the from_number of this MessageOut.  # noqa: E501
 
-        Phone number used to send the SMS.  # noqa: E501
+        The Phone number used to send the SMS.  # noqa: E501
 
         :return: The from_number of this MessageOut.  # noqa: E501
         :rtype: str
@@ -583,7 +583,7 @@ class MessageOut(object):
     def from_number(self, from_number):
         """Sets the from_number of this MessageOut.
 
-        Phone number used to send the SMS.  # noqa: E501
+        The Phone number used to send the SMS.  # noqa: E501
 
         :param from_number: The from_number of this MessageOut.  # noqa: E501
         :type: str

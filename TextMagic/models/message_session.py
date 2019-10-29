@@ -147,7 +147,7 @@ class MessageSession(object):
     def source(self):
         """Gets the source of this MessageSession.  # noqa: E501
 
-        *   **O** for TextMagic Online *   **A** for API *   **M** for TextMagic Messenger *   **E** for [Email to SMS](http://docs.textmagictesting.com/#tag/Send-Email-to-SMS) *   **X** for [Distribution lists](http://docs.textmagictesting.com/#tag/Distribution-Lists)   # noqa: E501
+        *   **O** – for TextMagic Online *   **A** – for API *   **M** – for TextMagic Messenger *   **E** – for [Email to SMS](http://docs.textmagictesting.com/#tag/Send-Email-to-SMS) *   **X** – for [Distribution Lists](http://docs.textmagictesting.com/#tag/Distribution-Lists)   # noqa: E501
 
         :return: The source of this MessageSession.  # noqa: E501
         :rtype: str
@@ -158,7 +158,7 @@ class MessageSession(object):
     def source(self, source):
         """Sets the source of this MessageSession.
 
-        *   **O** for TextMagic Online *   **A** for API *   **M** for TextMagic Messenger *   **E** for [Email to SMS](http://docs.textmagictesting.com/#tag/Send-Email-to-SMS) *   **X** for [Distribution lists](http://docs.textmagictesting.com/#tag/Distribution-Lists)   # noqa: E501
+        *   **O** – for TextMagic Online *   **A** – for API *   **M** – for TextMagic Messenger *   **E** – for [Email to SMS](http://docs.textmagictesting.com/#tag/Send-Email-to-SMS) *   **X** – for [Distribution Lists](http://docs.textmagictesting.com/#tag/Distribution-Lists)   # noqa: E501
 
         :param source: The source of this MessageSession.  # noqa: E501
         :type: str
@@ -239,7 +239,7 @@ class MessageSession(object):
     def destination(self):
         """Gets the destination of this MessageSession.  # noqa: E501
 
-        Destination type of a Message Session: * **t** - text SMS * **s** - text to speech * **v** - voice broadcast   # noqa: E501
+        Destination type of a Message Session: * **t** - text SMS * **s** - text-to-speech * **v** - voice broadcast   # noqa: E501
 
         :return: The destination of this MessageSession.  # noqa: E501
         :rtype: str
@@ -250,7 +250,7 @@ class MessageSession(object):
     def destination(self, destination):
         """Sets the destination of this MessageSession.
 
-        Destination type of a Message Session: * **t** - text SMS * **s** - text to speech * **v** - voice broadcast   # noqa: E501
+        Destination type of a Message Session: * **t** - text SMS * **s** - text-to-speech * **v** - voice broadcast   # noqa: E501
 
         :param destination: The destination of this MessageSession.  # noqa: E501
         :type: str

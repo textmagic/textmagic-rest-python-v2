@@ -85,7 +85,7 @@ class UploadMessageAttachmentResponse(object):
     def href(self):
         """Gets the href of this UploadMessageAttachmentResponse.  # noqa: E501
 
-        This is a relative link to your file. To construct a full link, just add “[https://my.textmagic.com/”](https://my.textmagic.com/%E2%80%9D) to the beginning (like this: [https://my.textmagic.com/click/Zwcj9](https://my.textmagic.com/click/Zwcj9)). For most modern devices, you can omit “https://” part and write just [my.textmagic.com/click/Zwcj9](https://my.textmagic.com/click/Zwcj9), it will save you 8 characters.   # noqa: E501
+        This is a relative link to your file. To construct a full link, just add “[https://my.textmagic.com/”](https://my.textmagic.com/%E2%80%9D) to the beginning (like this: [https://my.textmagic.com/click/Zwcj9](https://my.textmagic.com/click/Zwcj9)). For most modern devices, you can omit the “https://” part and write just [my.textmagic.com/click/Zwcj9](https://my.textmagic.com/click/Zwcj9), which will save you 8 characters.   # noqa: E501
 
         :return: The href of this UploadMessageAttachmentResponse.  # noqa: E501
         :rtype: str
@@ -96,7 +96,7 @@ class UploadMessageAttachmentResponse(object):
     def href(self, href):
         """Sets the href of this UploadMessageAttachmentResponse.
 
-        This is a relative link to your file. To construct a full link, just add “[https://my.textmagic.com/”](https://my.textmagic.com/%E2%80%9D) to the beginning (like this: [https://my.textmagic.com/click/Zwcj9](https://my.textmagic.com/click/Zwcj9)). For most modern devices, you can omit “https://” part and write just [my.textmagic.com/click/Zwcj9](https://my.textmagic.com/click/Zwcj9), it will save you 8 characters.   # noqa: E501
+        This is a relative link to your file. To construct a full link, just add “[https://my.textmagic.com/”](https://my.textmagic.com/%E2%80%9D) to the beginning (like this: [https://my.textmagic.com/click/Zwcj9](https://my.textmagic.com/click/Zwcj9)). For most modern devices, you can omit the “https://” part and write just [my.textmagic.com/click/Zwcj9](https://my.textmagic.com/click/Zwcj9), which will save you 8 characters.   # noqa: E501
 
         :param href: The href of this UploadMessageAttachmentResponse.  # noqa: E501
         :type: str
@@ -108,7 +108,7 @@ class UploadMessageAttachmentResponse(object):
     def name(self):
         """Gets the name of this UploadMessageAttachmentResponse.  # noqa: E501
 
-        File name of uploaded file.   # noqa: E501
+        File name of the uploaded file.   # noqa: E501
 
         :return: The name of this UploadMessageAttachmentResponse.  # noqa: E501
         :rtype: str
@@ -119,7 +119,7 @@ class UploadMessageAttachmentResponse(object):
     def name(self, name):
         """Sets the name of this UploadMessageAttachmentResponse.
 
-        File name of uploaded file.   # noqa: E501
+        File name of the uploaded file.   # noqa: E501
 
         :param name: The name of this UploadMessageAttachmentResponse.  # noqa: E501
         :type: str

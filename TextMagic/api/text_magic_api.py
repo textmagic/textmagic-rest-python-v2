@@ -3532,7 +3532,7 @@ class TextMagicApi(object):
     def delete_outbound_messages_bulk(self, delete_outbound_messages_bulk_input_object, **kwargs):  # noqa: E501
         """Delete messages (bulk)  # noqa: E501
 
-        Delete outbound messages by given ID(s) or delete all outbound messages.  # noqa: E501
+        Delete outbound messages by the given ID(s) or delete all outbound messages.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_outbound_messages_bulk(delete_outbound_messages_bulk_input_object, async_req=True)
@@ -3554,7 +3554,7 @@ class TextMagicApi(object):
     def delete_outbound_messages_bulk_with_http_info(self, delete_outbound_messages_bulk_input_object, **kwargs):  # noqa: E501
         """Delete messages (bulk)  # noqa: E501
 
-        Delete outbound messages by given ID(s) or delete all outbound messages.  # noqa: E501
+        Delete outbound messages by the given ID(s) or delete all outbound messages.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_outbound_messages_bulk_with_http_info(delete_outbound_messages_bulk_input_object, async_req=True)
@@ -4528,7 +4528,7 @@ class TextMagicApi(object):
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
         :param str order_by: Order results by some field. Default is id
-        :param str direction: Order direction. Default is desc
+        :param str direction: Order direction. Default is desc.
         :return: GetAllInboundMessagesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -4553,7 +4553,7 @@ class TextMagicApi(object):
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
         :param str order_by: Order results by some field. Default is id
-        :param str direction: Order direction. Default is desc
+        :param str direction: Order direction. Default is desc.
         :return: GetAllInboundMessagesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -4838,7 +4838,7 @@ class TextMagicApi(object):
         :param int limit: The number of results per page.
         :param str status: Fetch schedules with the specific status: a - actual, c - completed, x - all
         :param str order_by: Order results by some field. Default is id
-        :param str direction: Order direction. Default is desc
+        :param str direction: Order direction. Default is desc.
         :return: GetAllScheduledMessagesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -4864,7 +4864,7 @@ class TextMagicApi(object):
         :param int limit: The number of results per page.
         :param str status: Fetch schedules with the specific status: a - actual, c - completed, x - all
         :param str order_by: Order results by some field. Default is id
-        :param str direction: Order direction. Default is desc
+        :param str direction: Order direction. Default is desc.
         :return: GetAllScheduledMessagesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -5430,9 +5430,9 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param str query: Find blocked contacts by specified search query
-        :param str order_by: Order results by some field. Default is id
-        :param str direction: Order direction. Default is desc
+        :param str query: Find blocked contacts by specified search query.
+        :param str order_by: Order results by some field. Default is id.
+        :param str direction: Order direction. Default is desc.
         :return: GetBlockedContactsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -5456,9 +5456,9 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param str query: Find blocked contacts by specified search query
-        :param str order_by: Order results by some field. Default is id
-        :param str direction: Order direction. Default is desc
+        :param str query: Find blocked contacts by specified search query.
+        :param str order_by: Order results by some field. Default is id.
+        :param str direction: Order direction. Default is desc.
         :return: GetBlockedContactsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -5941,7 +5941,7 @@ class TextMagicApi(object):
         :param str query: Find messages by specified search query
         :param int start: Return messages since specified timestamp only
         :param int end: Return messages up to specified timestamp only
-        :param str direction: Order direction. Default is desc
+        :param str direction: Order direction. Default is desc.
         :param int voice: Fetch results with voice calls
         :return: GetChatMessagesPaginatedResponse
                  If the method is called asynchronously,
@@ -5970,7 +5970,7 @@ class TextMagicApi(object):
         :param str query: Find messages by specified search query
         :param int start: Return messages since specified timestamp only
         :param int end: Return messages up to specified timestamp only
-        :param str direction: Order direction. Default is desc
+        :param str direction: Order direction. Default is desc.
         :param int voice: Fetch results with voice calls
         :return: GetChatMessagesPaginatedResponse
                  If the method is called asynchronously,
@@ -6667,8 +6667,8 @@ class TextMagicApi(object):
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
         :param int shared: Should shared contacts to be included
-        :param str order_by: Order results by some field. Default is id
-        :param str direction: Order direction. Default is desc
+        :param str order_by: Order results by some field. Default is id.
+        :param str direction: Order direction. Default is desc.
         :return: GetContactsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -6693,8 +6693,8 @@ class TextMagicApi(object):
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
         :param int shared: Should shared contacts to be included
-        :param str order_by: Order results by some field. Default is id
-        :param str direction: Order direction. Default is desc
+        :param str order_by: Order results by some field. Default is id.
+        :param str direction: Order direction. Default is desc.
         :return: GetContactsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -6775,7 +6775,7 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str query: Find recipients by specified search query (required)
+        :param str query: Find recipients by specified search query. (required)
         :param int limit: The number of results per page.
         :param int lists: Should lists be returned or not
         :return: GetContactsAutocompleteResponse
@@ -6799,7 +6799,7 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str query: Find recipients by specified search query (required)
+        :param str query: Find recipients by specified search query. (required)
         :param int limit: The number of results per page.
         :param int lists: Should lists be returned or not
         :return: GetContactsAutocompleteResponse
@@ -6886,7 +6886,7 @@ class TextMagicApi(object):
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
         :param str order_by: Order results by some field. Default is id
-        :param str direction: Order direction. Default is desc
+        :param str direction: Order direction. Default is desc.
         :return: GetContactsByListIdPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -6912,7 +6912,7 @@ class TextMagicApi(object):
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
         :param str order_by: Order results by some field. Default is id
-        :param str direction: Order direction. Default is desc
+        :param str direction: Order direction. Default is desc.
         :return: GetContactsByListIdPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -8068,8 +8068,8 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: The current fetched page.
         :param int limit: The number of results per page.
-        :param str order_by: Order results by some field. Default is id
-        :param str direction: Order direction. Default is desc
+        :param str order_by: Order results by some field. Default is id.
+        :param str direction: Order direction. Default is desc.
         :param int favorite_only: Return only favorite lists
         :param int only_mine: Return only current user lists
         :return: GetListsPaginatedResponse
@@ -8095,8 +8095,8 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: The current fetched page.
         :param int limit: The number of results per page.
-        :param str order_by: Order results by some field. Default is id
-        :param str direction: Order direction. Default is desc
+        :param str order_by: Order results by some field. Default is id.
+        :param str direction: Order direction. Default is desc.
         :param int favorite_only: Return only favorite lists
         :param int only_mine: Return only current user lists
         :return: GetListsPaginatedResponse
@@ -8281,7 +8281,7 @@ class TextMagicApi(object):
     def get_message_preview(self, **kwargs):  # noqa: E501
         """Preview message  # noqa: E501
 
-        Get messages preview (with tags merged) up to 100 messages per session.  # noqa: E501
+        Get a messages preview (with tags merged) of up to 100 messages per session.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_message_preview(async_req=True)
@@ -8302,7 +8302,7 @@ class TextMagicApi(object):
         :param str _from: One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs).
         :param str rule: An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details.
         :param int create_chat: Should the sending method try to create new Chat(if not exist) with specified recipients?
-        :param int tts: Send Text to Speech message.
+        :param int tts: Send Text-to-Speech message.
         :param int local: Treat phone numbers passed in the \\'phones\\' field as local.
         :param str local_country: The 2-letter ISO country code for local phone numbers, used when \\'local\\' is set to true. Default is the account country.
         :return: GetMessagePreviewResponse
@@ -8319,7 +8319,7 @@ class TextMagicApi(object):
     def get_message_preview_with_http_info(self, **kwargs):  # noqa: E501
         """Preview message  # noqa: E501
 
-        Get messages preview (with tags merged) up to 100 messages per session.  # noqa: E501
+        Get a messages preview (with tags merged) of up to 100 messages per session.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_message_preview_with_http_info(async_req=True)
@@ -8340,7 +8340,7 @@ class TextMagicApi(object):
         :param str _from: One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs).
         :param str rule: An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details.
         :param int create_chat: Should the sending method try to create new Chat(if not exist) with specified recipients?
-        :param int tts: Send Text to Speech message.
+        :param int tts: Send Text-to-Speech message.
         :param int local: Treat phone numbers passed in the \\'phones\\' field as local.
         :param str local_country: The 2-letter ISO country code for local phone numbers, used when \\'local\\' is set to true. Default is the account country.
         :return: GetMessagePreviewResponse
@@ -8462,7 +8462,7 @@ class TextMagicApi(object):
         :param str _from: One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs).
         :param str rule: An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details.
         :param int create_chat: Should the sending method try to create new Chat (if not exist) with specified recipients?
-        :param int tts: Send a Text to Speech message.
+        :param int tts: Send a Text-to-Speech message.
         :param int local: Treat phone numbers passed in the \\'phones\\' field as local.
         :param str local_country: The 2-letter ISO country code for local phone numbers, used when \\'local\\' is set to true. Default is the account country.
         :return: GetMessagePriceResponse
@@ -8501,7 +8501,7 @@ class TextMagicApi(object):
         :param str _from: One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs).
         :param str rule: An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details.
         :param int create_chat: Should the sending method try to create new Chat (if not exist) with specified recipients?
-        :param int tts: Send a Text to Speech message.
+        :param int tts: Send a Text-to-Speech message.
         :param int local: Treat phone numbers passed in the \\'phones\\' field as local.
         :param str local_country: The 2-letter ISO country code for local phone numbers, used when \\'local\\' is set to true. Default is the account country.
         :return: GetMessagePriceResponse
@@ -9213,7 +9213,7 @@ class TextMagicApi(object):
     def get_outbound_messages_history(self, **kwargs):  # noqa: E501
         """Get history  # noqa: E501
 
-        Get outbound messages history.  # noqa: E501
+        Get the outbound messages history.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_outbound_messages_history(async_req=True)
@@ -9224,7 +9224,7 @@ class TextMagicApi(object):
         :param int last_id: Filter results by ID, selecting all values lesser than the specified ID.
         :param str query: Find message by specified search query
         :param str order_by: Order results by some field. Default is id
-        :param str direction: Order direction. Default is desc
+        :param str direction: Order direction. Default is desc.
         :return: GetOutboundMessagesHistoryPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -9239,7 +9239,7 @@ class TextMagicApi(object):
     def get_outbound_messages_history_with_http_info(self, **kwargs):  # noqa: E501
         """Get history  # noqa: E501
 
-        Get outbound messages history.  # noqa: E501
+        Get the outbound messages history.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_outbound_messages_history_with_http_info(async_req=True)
@@ -9250,7 +9250,7 @@ class TextMagicApi(object):
         :param int last_id: Filter results by ID, selecting all values lesser than the specified ID.
         :param str query: Find message by specified search query
         :param str order_by: Order results by some field. Default is id
-        :param str direction: Order direction. Default is desc
+        :param str direction: Order direction. Default is desc.
         :return: GetOutboundMessagesHistoryPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -12023,8 +12023,8 @@ class TextMagicApi(object):
         :param str query: Find contacts by specified search query
         :param int local: Treat phone number passed in 'query' field as local. Default is 0
         :param str country: 2-letter ISO country code for local phone numbers, used when 'local' is set to true. Default is account country
-        :param str order_by: Order results by some field. Default is id
-        :param str direction: Order direction. Default is desc
+        :param str order_by: Order results by some field. Default is id.
+        :param str direction: Order direction. Default is desc.
         :return: SearchContactsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -12055,8 +12055,8 @@ class TextMagicApi(object):
         :param str query: Find contacts by specified search query
         :param int local: Treat phone number passed in 'query' field as local. Default is 0
         :param str country: 2-letter ISO country code for local phone numbers, used when 'local' is set to true. Default is account country
-        :param str order_by: Order results by some field. Default is id
-        :param str direction: Order direction. Default is desc
+        :param str order_by: Order results by some field. Default is id.
+        :param str direction: Order direction. Default is desc.
         :return: SearchContactsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -12153,11 +12153,11 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param str ids: Find message by ID(s)
-        :param str query: Find recipients by specified search query
+        :param str ids: Find message by ID(s).
+        :param str query: Find recipients by specified search query.
         :param str order_by: Order results by some field. Default is id
-        :param str direction: Order direction. Default is desc
-        :param int expand: Expand by adding firstName, lastName and contactId
+        :param str direction: Order direction. Default is desc.
+        :param int expand: Expand by adding firstName, lastName and contactId.
         :return: SearchInboundMessagesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -12181,11 +12181,11 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param str ids: Find message by ID(s)
-        :param str query: Find recipients by specified search query
+        :param str ids: Find message by ID(s).
+        :param str query: Find recipients by specified search query.
         :param str order_by: Order results by some field. Default is id
-        :param str direction: Order direction. Default is desc
-        :param int expand: Expand by adding firstName, lastName and contactId
+        :param str direction: Order direction. Default is desc.
+        :param int expand: Expand by adding firstName, lastName and contactId.
         :return: SearchInboundMessagesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -12279,7 +12279,7 @@ class TextMagicApi(object):
         :param int only_mine: Return only current user lists
         :param int only_default: Return only default lists
         :param str order_by: Order results by some field. Default is id
-        :param str direction: Order direction. Default is desc
+        :param str direction: Order direction. Default is desc.
         :return: SearchListsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -12308,7 +12308,7 @@ class TextMagicApi(object):
         :param int only_mine: Return only current user lists
         :param int only_default: Return only default lists
         :param str order_by: Order results by some field. Default is id
-        :param str direction: Order direction. Default is desc
+        :param str direction: Order direction. Default is desc.
         :return: SearchListsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -12397,12 +12397,12 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param int last_id: Filter results by ID, selecting all values lesser than the specified ID. Note that \\'page\\' parameter is ignored when \\'lastId\\' is specified
-        :param str ids: Find message by ID(s)
-        :param int session_id: Find messages by session ID
-        :param str statuses: Find messages by status
-        :param int include_deleted: Search also in deleted messages
-        :param str query: Find messages by specified search query
+        :param int last_id: Filter results by ID, selecting all values lesser than the specified ID. Note that the \\'page\\' parameter is ignored when \\'lastId\\' is specified
+        :param str ids: Find message by ID(s).
+        :param int session_id: Find messages by session ID.
+        :param str statuses: Find messages by status.
+        :param int include_deleted: Search also in deleted messages.
+        :param str query: Find messages by specified search query.
         :return: SearchOutboundMessagesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -12426,12 +12426,12 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param int last_id: Filter results by ID, selecting all values lesser than the specified ID. Note that \\'page\\' parameter is ignored when \\'lastId\\' is specified
-        :param str ids: Find message by ID(s)
-        :param int session_id: Find messages by session ID
-        :param str statuses: Find messages by status
-        :param int include_deleted: Search also in deleted messages
-        :param str query: Find messages by specified search query
+        :param int last_id: Filter results by ID, selecting all values lesser than the specified ID. Note that the \\'page\\' parameter is ignored when \\'lastId\\' is specified
+        :param str ids: Find message by ID(s).
+        :param int session_id: Find messages by session ID.
+        :param str statuses: Find messages by status.
+        :param int include_deleted: Search also in deleted messages.
+        :param str query: Find messages by specified search query.
         :return: SearchOutboundMessagesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -12526,7 +12526,7 @@ class TextMagicApi(object):
         :param str ids: Find schedules by ID(s)
         :param str status: Fetch schedules with the specific status: a - actual, c - completed, x - all
         :param str order_by: Order results by some field. Default is id
-        :param str direction: Order direction. Default is desc
+        :param str direction: Order direction. Default is desc.
         :return: SearchScheduledMessagesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -12554,7 +12554,7 @@ class TextMagicApi(object):
         :param str ids: Find schedules by ID(s)
         :param str status: Fetch schedules with the specific status: a - actual, c - completed, x - all
         :param str order_by: Order results by some field. Default is id
-        :param str direction: Order direction. Default is desc
+        :param str direction: Order direction. Default is desc.
         :return: SearchScheduledMessagesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.

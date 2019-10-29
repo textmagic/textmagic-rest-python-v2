@@ -97,7 +97,7 @@ class BulkSession(object):
     def status(self):
         """Gets the status of this BulkSession.  # noqa: E501
 
-        * **n** - bulk session is just created * **w** - work in progress * **f** - failed * **c** - completed with success * **s** - suspended   # noqa: E501
+        * **n** – bulk session is just created * **w** - work in progress * **f** - failed * **c** - completed with success * **s** - suspended   # noqa: E501
 
         :return: The status of this BulkSession.  # noqa: E501
         :rtype: str
@@ -108,7 +108,7 @@ class BulkSession(object):
     def status(self, status):
         """Sets the status of this BulkSession.
 
-        * **n** - bulk session is just created * **w** - work in progress * **f** - failed * **c** - completed with success * **s** - suspended   # noqa: E501
+        * **n** – bulk session is just created * **w** - work in progress * **f** - failed * **c** - completed with success * **s** - suspended   # noqa: E501
 
         :param status: The status of this BulkSession.  # noqa: E501
         :type: str
@@ -126,7 +126,7 @@ class BulkSession(object):
     def items_processed(self):
         """Gets the items_processed of this BulkSession.  # noqa: E501
 
-        Amount of messages which is already processed.  # noqa: E501
+        Amount of messages already processed.  # noqa: E501
 
         :return: The items_processed of this BulkSession.  # noqa: E501
         :rtype: int
@@ -137,7 +137,7 @@ class BulkSession(object):
     def items_processed(self, items_processed):
         """Sets the items_processed of this BulkSession.
 
-        Amount of messages which is already processed.  # noqa: E501
+        Amount of messages already processed.  # noqa: E501
 
         :param items_processed: The items_processed of this BulkSession.  # noqa: E501
         :type: int
