@@ -61,7 +61,7 @@ class DeleteScheduledMessagesBulkInputObject(object):
     def ids(self):
         """Gets the ids of this DeleteScheduledMessagesBulkInputObject.  # noqa: E501
 
-        Entity ID(s), separated by comma  # noqa: E501
+        Entity ID(s), separated by comma.  # noqa: E501
 
         :return: The ids of this DeleteScheduledMessagesBulkInputObject.  # noqa: E501
         :rtype: str
@@ -72,7 +72,7 @@ class DeleteScheduledMessagesBulkInputObject(object):
     def ids(self, ids):
         """Sets the ids of this DeleteScheduledMessagesBulkInputObject.
 
-        Entity ID(s), separated by comma  # noqa: E501
+        Entity ID(s), separated by comma.  # noqa: E501
 
         :param ids: The ids of this DeleteScheduledMessagesBulkInputObject.  # noqa: E501
         :type: str

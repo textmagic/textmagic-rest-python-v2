@@ -104,7 +104,7 @@ class GetCallbackSettingsResponse(object):
     def format(self):
         """Gets the format of this GetCallbackSettingsResponse.  # noqa: E501
 
-        Desired callback data format. m - multipart/form-data, u - application/x-www-form-urlencoded, j - application/json  # noqa: E501
+        Desired callback data format. m - multipart/form-data, u - application/x-www-form-urlencoded, j - application/json.  # noqa: E501
 
         :return: The format of this GetCallbackSettingsResponse.  # noqa: E501
         :rtype: str
@@ -115,7 +115,7 @@ class GetCallbackSettingsResponse(object):
     def format(self, format):
         """Sets the format of this GetCallbackSettingsResponse.
 
-        Desired callback data format. m - multipart/form-data, u - application/x-www-form-urlencoded, j - application/json  # noqa: E501
+        Desired callback data format. m - multipart/form-data, u - application/x-www-form-urlencoded, j - application/json.  # noqa: E501
 
         :param format: The format of this GetCallbackSettingsResponse.  # noqa: E501
         :type: str

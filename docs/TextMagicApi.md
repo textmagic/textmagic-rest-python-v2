@@ -2529,7 +2529,7 @@ configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-status = '\"a\"' # str | Fetch only (a)ctive, (c)losed or (d)eleted chats (optional)
+status = '\"a\"' # str | Fetch only (a)ctive, (c)losed or (d)eleted chats. (optional)
 page = 1 # int | Fetch specified results page. (optional) (default to 1)
 limit = 10 # int | The number of results per page. (optional) (default to 10)
 order_by = 'id' # str | Order results by some field. Default is id. (optional) (default to id)
@@ -2548,7 +2548,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **status** | **str**| Fetch only (a)ctive, (c)losed or (d)eleted chats | [optional] 
+ **status** | **str**| Fetch only (a)ctive, (c)losed or (d)eleted chats. | [optional] 
  **page** | **int**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int**| The number of results per page. | [optional] [default to 10]
  **order_by** | **str**| Order results by some field. Default is id. | [optional] [default to id]
@@ -2708,7 +2708,7 @@ configuration.password = 'YOUR_PASSWORD'
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 page = 1 # int | Fetch specified results page. (optional) (default to 1)
 limit = 10 # int | The number of results per page. (optional) (default to 10)
-last_id = 56 # int | Filter results by ID, selecting all values lesser than the specified ID. Note that the \\'page\\' parameter is ignored when \\'lastId\\' is specified (optional)
+last_id = 56 # int | Filter results by ID, selecting all values lesser than the specified ID. Note that the \\'page\\' parameter is ignored when \\'lastId\\' is specified. (optional)
 
 try:
     # Get all messages
@@ -2724,7 +2724,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int**| The number of results per page. | [optional] [default to 10]
- **last_id** | **int**| Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified | [optional] 
+ **last_id** | **int**| Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified. | [optional] 
 
 ### Return type
 
@@ -2766,7 +2766,7 @@ api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 page = 1 # int | Fetch specified results page. (optional) (default to 1)
 limit = 10 # int | The number of results per page. (optional) (default to 10)
 status = 'x' # str | Fetch schedules with a specific status: a - actual, c - completed, x - all. (optional) (default to x)
-order_by = 'id' # str | Order results by some field. Default is id (optional) (default to id)
+order_by = 'id' # str | Order results by some field. Default is id. (optional) (default to id)
 direction = 'desc' # str | Order direction. Default is desc. (optional) (default to desc)
 
 try:
@@ -2784,7 +2784,7 @@ Name | Type | Description  | Notes
  **page** | **int**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int**| The number of results per page. | [optional] [default to 10]
  **status** | **str**| Fetch schedules with a specific status: a - actual, c - completed, x - all. | [optional] [default to x]
- **order_by** | **str**| Order results by some field. Default is id | [optional] [default to id]
+ **order_by** | **str**| Order results by some field. Default is id. | [optional] [default to id]
  **direction** | **str**| Order direction. Default is desc. | [optional] [default to desc]
 
 ### Return type
@@ -3304,8 +3304,8 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 phone = '\"447860021130\"' # str | 
-upsert = 0 # int | Create a new chat if not found (optional) (default to 0)
-reopen = 0 # int | Reopen chat if found or do not change status (optional) (default to 0)
+upsert = 0 # int | Create a new chat if not found. (optional) (default to 0)
+reopen = 0 # int | Reopen chat if found or do not change status. (optional) (default to 0)
 
 try:
     # Find chats by phone
@@ -3320,8 +3320,8 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **phone** | **str**|  | 
- **upsert** | **int**| Create a new chat if not found | [optional] [default to 0]
- **reopen** | **int**| Reopen chat if found or do not change status | [optional] [default to 0]
+ **upsert** | **int**| Create a new chat if not found. | [optional] [default to 0]
+ **reopen** | **int**| Reopen chat if found or do not change status. | [optional] [default to 0]
 
 ### Return type
 
@@ -3363,7 +3363,7 @@ api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 id = 1 # int | 
 page = 1 # int | Fetch specified results page. (optional) (default to 1)
 limit = 10 # int | The number of results per page. (optional) (default to 10)
-query = 'query_example' # str | Find messages by specified search query (optional)
+query = 'query_example' # str | Find messages by specified search query. (optional)
 start = 56 # int | Return messages since specified timestamp only. (optional)
 end = 56 # int | Return messages up to specified timestamp only. (optional)
 direction = 'desc' # str | Order direction. Default is desc. (optional) (default to desc)
@@ -3384,7 +3384,7 @@ Name | Type | Description  | Notes
  **id** | **int**|  | 
  **page** | **int**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int**| The number of results per page. | [optional] [default to 10]
- **query** | **str**| Find messages by specified search query | [optional] 
+ **query** | **str**| Find messages by specified search query. | [optional] 
  **start** | **int**| Return messages since specified timestamp only. | [optional] 
  **end** | **int**| Return messages up to specified timestamp only. | [optional] 
  **direction** | **str**| Order direction. Default is desc. | [optional] [default to desc]
@@ -5129,8 +5129,8 @@ configuration.password = 'YOUR_PASSWORD'
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 limit = 10 # int | The number of results per page. (optional) (default to 10)
 last_id = 56 # int | Filter results by ID, selecting all values lesser than the specified ID. (optional)
-query = 'query_example' # str | Find message by specified search query (optional)
-order_by = 'id' # str | Order results by some field. Default is id (optional) (default to id)
+query = 'query_example' # str | Find message by specified search query. (optional)
+order_by = 'id' # str | Order results by some field. Default is id. (optional) (default to id)
 direction = 'desc' # str | Order direction. Default is desc. (optional) (default to desc)
 
 try:
@@ -5147,8 +5147,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **limit** | **int**| The number of results per page. | [optional] [default to 10]
  **last_id** | **int**| Filter results by ID, selecting all values lesser than the specified ID. | [optional] 
- **query** | **str**| Find message by specified search query | [optional] 
- **order_by** | **str**| Order results by some field. Default is id | [optional] [default to id]
+ **query** | **str**| Find message by specified search query. | [optional] 
+ **order_by** | **str**| Order results by some field. Default is id. | [optional] [default to id]
  **direction** | **str**| Order direction. Default is desc. | [optional] [default to desc]
 
 ### Return type
@@ -6589,7 +6589,7 @@ configuration.password = 'YOUR_PASSWORD'
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 page = 1 # int | Fetch specified results page. (optional) (default to 1)
 limit = 10 # int | The number of results per page. (optional) (default to 10)
-query = 'query_example' # str | Find chats by specified search query (optional)
+query = 'query_example' # str | Find chats by specified search query. (optional)
 order_by = 'id' # str | Order results by some field. Default is id. (optional) (default to id)
 
 try:
@@ -6606,7 +6606,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int**| The number of results per page. | [optional] [default to 10]
- **query** | **str**| Find chats by specified search query | [optional] 
+ **query** | **str**| Find chats by specified search query. | [optional] 
  **order_by** | **str**| Order results by some field. Default is id. | [optional] [default to id]
 
 ### Return type
@@ -6853,7 +6853,7 @@ configuration.password = 'YOUR_PASSWORD'
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 page = 1 # int | Fetch specified results page. (optional) (default to 1)
 limit = 10 # int | The number of results per page. (optional) (default to 10)
-last_id = 56 # int | Filter results by ID, selecting all values lesser than the specified ID. Note that the \\'page\\' parameter is ignored when \\'lastId\\' is specified (optional)
+last_id = 56 # int | Filter results by ID, selecting all values lesser than the specified ID. Note that the \\'page\\' parameter is ignored when \\'lastId\\' is specified. (optional)
 ids = 'ids_example' # str | Find message by ID(s). (optional)
 session_id = 56 # int | Find messages by session ID. (optional)
 statuses = '\"q\"' # str | Find messages by status. (optional)
@@ -6874,7 +6874,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int**| The number of results per page. | [optional] [default to 10]
- **last_id** | **int**| Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified | [optional] 
+ **last_id** | **int**| Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified. | [optional] 
  **ids** | **str**| Find message by ID(s). | [optional] 
  **session_id** | **int**| Find messages by session ID. | [optional] 
  **statuses** | **str**| Find messages by status. | [optional] 
@@ -6920,8 +6920,8 @@ configuration.password = 'YOUR_PASSWORD'
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 page = 1 # int | Fetch specified results page. (optional) (default to 1)
 limit = 10 # int | The number of results per page. (optional) (default to 10)
-query = 'query_example' # str | Find messages by specified search query (optional)
-ids = 'ids_example' # str | Find schedules by ID(s) (optional)
+query = 'query_example' # str | Find messages by specified search query. (optional)
+ids = 'ids_example' # str | Find schedules by ID(s). (optional)
 status = 'x' # str | Fetch schedules with a specific status: a - actual, c - completed, x - all. (optional) (default to x)
 order_by = 'id' # str | Order results by some field. Default is id. (optional) (default to id)
 direction = 'desc' # str | Order direction. Default is desc. (optional) (default to desc)
@@ -6940,8 +6940,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int**| The number of results per page. | [optional] [default to 10]
- **query** | **str**| Find messages by specified search query | [optional] 
- **ids** | **str**| Find schedules by ID(s) | [optional] 
+ **query** | **str**| Find messages by specified search query. | [optional] 
+ **ids** | **str**| Find schedules by ID(s). | [optional] 
  **status** | **str**| Fetch schedules with a specific status: a - actual, c - completed, x - all. | [optional] [default to x]
  **order_by** | **str**| Order results by some field. Default is id. | [optional] [default to id]
  **direction** | **str**| Order direction. Default is desc. | [optional] [default to desc]
@@ -8217,7 +8217,7 @@ configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-file = '/path/to/file.txt' # file | Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx & .vcf file formats
+file = '/path/to/file.txt' # file | Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx & .vcf file formats.
 
 try:
     # Upload message attachment
@@ -8231,7 +8231,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **file** | **file**| Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx &amp; .vcf file formats | 
+ **file** | **file**| Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx &amp; .vcf file formats. | 
 
 ### Return type
 

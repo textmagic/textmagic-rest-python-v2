@@ -4410,7 +4410,7 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str status: Fetch only (a)ctive, (c)losed or (d)eleted chats
+        :param str status: Fetch only (a)ctive, (c)losed or (d)eleted chats.
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
         :param str order_by: Order results by some field. Default is id.
@@ -4437,7 +4437,7 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str status: Fetch only (a)ctive, (c)losed or (d)eleted chats
+        :param str status: Fetch only (a)ctive, (c)losed or (d)eleted chats.
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
         :param str order_by: Order results by some field. Default is id.
@@ -4733,7 +4733,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param int last_id: Filter results by ID, selecting all values lesser than the specified ID. Note that the \\'page\\' parameter is ignored when \\'lastId\\' is specified
+        :param int last_id: Filter results by ID, selecting all values lesser than the specified ID. Note that the \\'page\\' parameter is ignored when \\'lastId\\' is specified.
         :return: GetAllOutboundMessagesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -4757,7 +4757,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param int last_id: Filter results by ID, selecting all values lesser than the specified ID. Note that the \\'page\\' parameter is ignored when \\'lastId\\' is specified
+        :param int last_id: Filter results by ID, selecting all values lesser than the specified ID. Note that the \\'page\\' parameter is ignored when \\'lastId\\' is specified.
         :return: GetAllOutboundMessagesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -4837,7 +4837,7 @@ class TextMagicApi(object):
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
         :param str status: Fetch schedules with a specific status: a - actual, c - completed, x - all.
-        :param str order_by: Order results by some field. Default is id
+        :param str order_by: Order results by some field. Default is id.
         :param str direction: Order direction. Default is desc.
         :return: GetAllScheduledMessagesPaginatedResponse
                  If the method is called asynchronously,
@@ -4863,7 +4863,7 @@ class TextMagicApi(object):
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
         :param str status: Fetch schedules with a specific status: a - actual, c - completed, x - all.
-        :param str order_by: Order results by some field. Default is id
+        :param str order_by: Order results by some field. Default is id.
         :param str direction: Order direction. Default is desc.
         :return: GetAllScheduledMessagesPaginatedResponse
                  If the method is called asynchronously,
@@ -5829,8 +5829,8 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param str phone: (required)
-        :param int upsert: Create a new chat if not found
-        :param int reopen: Reopen chat if found or do not change status
+        :param int upsert: Create a new chat if not found.
+        :param int reopen: Reopen chat if found or do not change status.
         :return: Chat
                  If the method is called asynchronously,
                  returns the request thread.
@@ -5853,8 +5853,8 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param str phone: (required)
-        :param int upsert: Create a new chat if not found
-        :param int reopen: Reopen chat if found or do not change status
+        :param int upsert: Create a new chat if not found.
+        :param int reopen: Reopen chat if found or do not change status.
         :return: Chat
                  If the method is called asynchronously,
                  returns the request thread.
@@ -5938,7 +5938,7 @@ class TextMagicApi(object):
         :param int id: (required)
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param str query: Find messages by specified search query
+        :param str query: Find messages by specified search query.
         :param int start: Return messages since specified timestamp only.
         :param int end: Return messages up to specified timestamp only.
         :param str direction: Order direction. Default is desc.
@@ -5967,7 +5967,7 @@ class TextMagicApi(object):
         :param int id: (required)
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param str query: Find messages by specified search query
+        :param str query: Find messages by specified search query.
         :param int start: Return messages since specified timestamp only.
         :param int end: Return messages up to specified timestamp only.
         :param str direction: Order direction. Default is desc.
@@ -9222,8 +9222,8 @@ class TextMagicApi(object):
         :param async_req bool
         :param int limit: The number of results per page.
         :param int last_id: Filter results by ID, selecting all values lesser than the specified ID.
-        :param str query: Find message by specified search query
-        :param str order_by: Order results by some field. Default is id
+        :param str query: Find message by specified search query.
+        :param str order_by: Order results by some field. Default is id.
         :param str direction: Order direction. Default is desc.
         :return: GetOutboundMessagesHistoryPaginatedResponse
                  If the method is called asynchronously,
@@ -9248,8 +9248,8 @@ class TextMagicApi(object):
         :param async_req bool
         :param int limit: The number of results per page.
         :param int last_id: Filter results by ID, selecting all values lesser than the specified ID.
-        :param str query: Find message by specified search query
-        :param str order_by: Order results by some field. Default is id
+        :param str query: Find message by specified search query.
+        :param str order_by: Order results by some field. Default is id.
         :param str direction: Order direction. Default is desc.
         :return: GetOutboundMessagesHistoryPaginatedResponse
                  If the method is called asynchronously,
@@ -11909,7 +11909,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param str query: Find chats by specified search query
+        :param str query: Find chats by specified search query.
         :param str order_by: Order results by some field. Default is id.
         :return: SearchChatsByReceipentPaginatedResponse
                  If the method is called asynchronously,
@@ -11934,7 +11934,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param str query: Find chats by specified search query
+        :param str query: Find chats by specified search query.
         :param str order_by: Order results by some field. Default is id.
         :return: SearchChatsByReceipentPaginatedResponse
                  If the method is called asynchronously,
@@ -12397,7 +12397,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param int last_id: Filter results by ID, selecting all values lesser than the specified ID. Note that the \\'page\\' parameter is ignored when \\'lastId\\' is specified
+        :param int last_id: Filter results by ID, selecting all values lesser than the specified ID. Note that the \\'page\\' parameter is ignored when \\'lastId\\' is specified.
         :param str ids: Find message by ID(s).
         :param int session_id: Find messages by session ID.
         :param str statuses: Find messages by status.
@@ -12426,7 +12426,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param int last_id: Filter results by ID, selecting all values lesser than the specified ID. Note that the \\'page\\' parameter is ignored when \\'lastId\\' is specified
+        :param int last_id: Filter results by ID, selecting all values lesser than the specified ID. Note that the \\'page\\' parameter is ignored when \\'lastId\\' is specified.
         :param str ids: Find message by ID(s).
         :param int session_id: Find messages by session ID.
         :param str statuses: Find messages by status.
@@ -12522,8 +12522,8 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param str query: Find messages by specified search query
-        :param str ids: Find schedules by ID(s)
+        :param str query: Find messages by specified search query.
+        :param str ids: Find schedules by ID(s).
         :param str status: Fetch schedules with a specific status: a - actual, c - completed, x - all.
         :param str order_by: Order results by some field. Default is id.
         :param str direction: Order direction. Default is desc.
@@ -12550,8 +12550,8 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param str query: Find messages by specified search query
-        :param str ids: Find schedules by ID(s)
+        :param str query: Find messages by specified search query.
+        :param str ids: Find schedules by ID(s).
         :param str status: Fetch schedules with a specific status: a - actual, c - completed, x - all.
         :param str order_by: Order results by some field. Default is id.
         :param str direction: Order direction. Default is desc.
@@ -14966,7 +14966,7 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param file file: Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx & .vcf file formats (required)
+        :param file file: Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx & .vcf file formats. (required)
         :return: UploadMessageAttachmentResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -14988,7 +14988,7 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param file file: Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx & .vcf file formats (required)
+        :param file file: Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx & .vcf file formats. (required)
         :return: UploadMessageAttachmentResponse
                  If the method is called asynchronously,
                  returns the request thread.

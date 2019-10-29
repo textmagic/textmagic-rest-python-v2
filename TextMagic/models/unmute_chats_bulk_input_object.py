@@ -56,7 +56,7 @@ class UnmuteChatsBulkInputObject(object):
     def ids(self):
         """Gets the ids of this UnmuteChatsBulkInputObject.  # noqa: E501
 
-        Entity ID(s), separated by comma  # noqa: E501
+        Entity ID(s), separated by comma.  # noqa: E501
 
         :return: The ids of this UnmuteChatsBulkInputObject.  # noqa: E501
         :rtype: str
@@ -67,7 +67,7 @@ class UnmuteChatsBulkInputObject(object):
     def ids(self, ids):
         """Sets the ids of this UnmuteChatsBulkInputObject.
 
-        Entity ID(s), separated by comma  # noqa: E501
+        Entity ID(s), separated by comma.  # noqa: E501
 
         :param ids: The ids of this UnmuteChatsBulkInputObject.  # noqa: E501
         :type: str

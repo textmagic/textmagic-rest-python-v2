@@ -56,7 +56,7 @@ class DeleteContactsByIdsInputObject(object):
     def ids(self):
         """Gets the ids of this DeleteContactsByIdsInputObject.  # noqa: E501
 
-        Entity ID(s), separated by comma  # noqa: E501
+        Entity ID(s), separated by comma.  # noqa: E501
 
         :return: The ids of this DeleteContactsByIdsInputObject.  # noqa: E501
         :rtype: str
@@ -67,7 +67,7 @@ class DeleteContactsByIdsInputObject(object):
     def ids(self, ids):
         """Sets the ids of this DeleteContactsByIdsInputObject.
 
-        Entity ID(s), separated by comma  # noqa: E501
+        Entity ID(s), separated by comma.  # noqa: E501
 
         :param ids: The ids of this DeleteContactsByIdsInputObject.  # noqa: E501
         :type: str
@@ -79,7 +79,7 @@ class DeleteContactsByIdsInputObject(object):
     def all(self):
         """Gets the all of this DeleteContactsByIdsInputObject.  # noqa: E501
 
-        Entity ID(s), separated by comma  # noqa: E501
+        Entity ID(s), separated by comma.  # noqa: E501
 
         :return: The all of this DeleteContactsByIdsInputObject.  # noqa: E501
         :rtype: bool
@@ -90,7 +90,7 @@ class DeleteContactsByIdsInputObject(object):
     def all(self, all):
         """Sets the all of this DeleteContactsByIdsInputObject.
 
-        Entity ID(s), separated by comma  # noqa: E501
+        Entity ID(s), separated by comma.  # noqa: E501
 
         :param all: The all of this DeleteContactsByIdsInputObject.  # noqa: E501
         :type: bool

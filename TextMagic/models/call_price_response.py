@@ -62,7 +62,7 @@ class CallPriceResponse(object):
     def outbound(self):
         """Gets the outbound of this CallPriceResponse.  # noqa: E501
 
-        Price for outbound message  # noqa: E501
+        Price for outbound message.  # noqa: E501
 
         :return: The outbound of this CallPriceResponse.  # noqa: E501
         :rtype: float
@@ -73,7 +73,7 @@ class CallPriceResponse(object):
     def outbound(self, outbound):
         """Sets the outbound of this CallPriceResponse.
 
-        Price for outbound message  # noqa: E501
+        Price for outbound message.  # noqa: E501
 
         :param outbound: The outbound of this CallPriceResponse.  # noqa: E501
         :type: float
@@ -85,7 +85,7 @@ class CallPriceResponse(object):
     def inbound(self):
         """Gets the inbound of this CallPriceResponse.  # noqa: E501
 
-        Price for inbound message  # noqa: E501
+        Price for inbound message.  # noqa: E501
 
         :return: The inbound of this CallPriceResponse.  # noqa: E501
         :rtype: float
@@ -96,7 +96,7 @@ class CallPriceResponse(object):
     def inbound(self, inbound):
         """Sets the inbound of this CallPriceResponse.
 
-        Price for inbound message  # noqa: E501
+        Price for inbound message.  # noqa: E501
 
         :param inbound: The inbound of this CallPriceResponse.  # noqa: E501
         :type: float
@@ -108,7 +108,7 @@ class CallPriceResponse(object):
     def forward(self):
         """Gets the forward of this CallPriceResponse.  # noqa: E501
 
-        Price for forward  # noqa: E501
+        Price for forward.  # noqa: E501
 
         :return: The forward of this CallPriceResponse.  # noqa: E501
         :rtype: float
@@ -119,7 +119,7 @@ class CallPriceResponse(object):
     def forward(self, forward):
         """Sets the forward of this CallPriceResponse.
 
-        Price for forward  # noqa: E501
+        Price for forward.  # noqa: E501
 
         :param forward: The forward of this CallPriceResponse.  # noqa: E501
         :type: float
@@ -131,7 +131,7 @@ class CallPriceResponse(object):
     def country(self):
         """Gets the country of this CallPriceResponse.  # noqa: E501
 
-        The 2-letter ISO country code for local phone numbers, used when local is  set to true. Default is account country  # noqa: E501
+        The 2-letter ISO country code for local phone numbers, used when local is  set to true. Default is account country.  # noqa: E501
 
         :return: The country of this CallPriceResponse.  # noqa: E501
         :rtype: str
@@ -142,7 +142,7 @@ class CallPriceResponse(object):
     def country(self, country):
         """Sets the country of this CallPriceResponse.
 
-        The 2-letter ISO country code for local phone numbers, used when local is  set to true. Default is account country  # noqa: E501
+        The 2-letter ISO country code for local phone numbers, used when local is  set to true. Default is account country.  # noqa: E501
 
         :param country: The country of this CallPriceResponse.  # noqa: E501
         :type: str

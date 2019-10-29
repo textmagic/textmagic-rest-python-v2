@@ -56,7 +56,7 @@ class DeleteListsBulkInputObject(object):
     def ids(self):
         """Gets the ids of this DeleteListsBulkInputObject.  # noqa: E501
 
-        Entity ID(s), separated by comma  # noqa: E501
+        Entity ID(s), separated by comma.  # noqa: E501
 
         :return: The ids of this DeleteListsBulkInputObject.  # noqa: E501
         :rtype: str
@@ -67,7 +67,7 @@ class DeleteListsBulkInputObject(object):
     def ids(self, ids):
         """Sets the ids of this DeleteListsBulkInputObject.
 
-        Entity ID(s), separated by comma  # noqa: E501
+        Entity ID(s), separated by comma.  # noqa: E501
 
         :param ids: The ids of this DeleteListsBulkInputObject.  # noqa: E501
         :type: str

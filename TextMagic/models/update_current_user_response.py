@@ -217,7 +217,7 @@ class UpdateCurrentUserResponse(object):
     def timezone(self):
         """Gets the timezone of this UpdateCurrentUserResponse.  # noqa: E501
 
-        Internal timezone ID. See [Get timezones](http://docs.textmagictesting.com/#operation/getTimezones)  # noqa: E501
+        Internal timezone ID. See [Get timezones](http://docs.textmagictesting.com/#operation/getTimezones).  # noqa: E501
 
         :return: The timezone of this UpdateCurrentUserResponse.  # noqa: E501
         :rtype: int
@@ -228,7 +228,7 @@ class UpdateCurrentUserResponse(object):
     def timezone(self, timezone):
         """Sets the timezone of this UpdateCurrentUserResponse.
 
-        Internal timezone ID. See [Get timezones](http://docs.textmagictesting.com/#operation/getTimezones)  # noqa: E501
+        Internal timezone ID. See [Get timezones](http://docs.textmagictesting.com/#operation/getTimezones).  # noqa: E501
 
         :param timezone: The timezone of this UpdateCurrentUserResponse.  # noqa: E501
         :type: int

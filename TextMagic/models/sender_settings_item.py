@@ -77,7 +77,7 @@ class SenderSettingsItem(object):
     def phone(self):
         """Gets the phone of this SenderSettingsItem.  # noqa: E501
 
-        Phone enabled for sending to a specified country  # noqa: E501
+        Phone enabled for sending to a specified country.  # noqa: E501
 
         :return: The phone of this SenderSettingsItem.  # noqa: E501
         :rtype: str
@@ -88,7 +88,7 @@ class SenderSettingsItem(object):
     def phone(self, phone):
         """Sets the phone of this SenderSettingsItem.
 
-        Phone enabled for sending to a specified country  # noqa: E501
+        Phone enabled for sending to a specified country.  # noqa: E501
 
         :param phone: The phone of this SenderSettingsItem.  # noqa: E501
         :type: str

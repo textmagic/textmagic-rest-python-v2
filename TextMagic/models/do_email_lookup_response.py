@@ -170,7 +170,7 @@ class DoEmailLookupResponse(object):
     def deliverability(self):
         """Gets the deliverability of this DoEmailLookupResponse.  # noqa: E501
 
-        The delivery status of the email address is`deliverable`, `undeliverable`  or `unknown`.  # noqa: E501
+        The delivery status of the email address is`deliverable`, `undeliverable`. or `unknown`.  # noqa: E501
 
         :return: The deliverability of this DoEmailLookupResponse.  # noqa: E501
         :rtype: str
@@ -181,7 +181,7 @@ class DoEmailLookupResponse(object):
     def deliverability(self, deliverability):
         """Sets the deliverability of this DoEmailLookupResponse.
 
-        The delivery status of the email address is`deliverable`, `undeliverable`  or `unknown`.  # noqa: E501
+        The delivery status of the email address is`deliverable`, `undeliverable`. or `unknown`.  # noqa: E501
 
         :param deliverability: The deliverability of this DoEmailLookupResponse.  # noqa: E501
         :type: str
@@ -320,7 +320,7 @@ class DoEmailLookupResponse(object):
     def email_role(self):
         """Gets the email_role of this DoEmailLookupResponse.  # noqa: E501
 
-        Checks the mailbox part of the email to see whether it matches a specific role type (‘admin’, ‘sales’, ‘webmaster’)  # noqa: E501
+        Checks the mailbox part of the email to see whether it matches a specific role type (‘admin’, ‘sales’, ‘webmaster’).  # noqa: E501
 
         :return: The email_role of this DoEmailLookupResponse.  # noqa: E501
         :rtype: str
@@ -331,7 +331,7 @@ class DoEmailLookupResponse(object):
     def email_role(self, email_role):
         """Sets the email_role of this DoEmailLookupResponse.
 
-        Checks the mailbox part of the email to see whether it matches a specific role type (‘admin’, ‘sales’, ‘webmaster’)  # noqa: E501
+        Checks the mailbox part of the email to see whether it matches a specific role type (‘admin’, ‘sales’, ‘webmaster’).  # noqa: E501
 
         :param email_role: The email_role of this DoEmailLookupResponse.  # noqa: E501
         :type: str
