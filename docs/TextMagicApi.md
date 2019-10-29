@@ -5715,7 +5715,7 @@ Name | Type | Description  | Notes
 
 Get unread messages number
 
-Get total amount of unread messages in the current user chats.
+Get the total amount of unread messages in the current user chats.
 
 ### Example
 ```python
@@ -6475,7 +6475,7 @@ configuration.password = 'YOUR_PASSWORD'
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 page = 1 # int | Fetch specified results page. (optional) (default to 1)
 limit = 10 # int | The number of results per page. (optional) (default to 10)
-query = 'query_example' # str | Find chats by specified search query (optional)
+query = 'query_example' # str | Find chats by specified search query. (optional)
 
 try:
     # Find chats by message text
@@ -6491,7 +6491,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int**| The number of results per page. | [optional] [default to 10]
- **query** | **str**| Find chats by specified search query | [optional] 
+ **query** | **str**| Find chats by specified search query. | [optional] 
 
 ### Return type
 
@@ -6532,7 +6532,7 @@ configuration.password = 'YOUR_PASSWORD'
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 page = 1 # int | Fetch specified results page. (optional) (default to 1)
 limit = 10 # int | The number of results per page. (optional) (default to 10)
-ids = 'ids_example' # str | Find chats by ID(s) (optional)
+ids = 'ids_example' # str | Find chats by ID(s). (optional)
 
 try:
     # Find chats (bulk)
@@ -6548,7 +6548,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int**| The number of results per page. | [optional] [default to 10]
- **ids** | **str**| Find chats by ID(s) | [optional] 
+ **ids** | **str**| Find chats by ID(s). | [optional] 
 
 ### Return type
 
@@ -7133,7 +7133,7 @@ Name | Type | Description  | Notes
 
 Change chat status
 
-Set status of the chat given by ID.
+Set the status of the chat given by ID.
 
 ### Example
 ```python

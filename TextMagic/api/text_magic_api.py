@@ -10322,7 +10322,7 @@ class TextMagicApi(object):
     def get_unread_messages_total(self, **kwargs):  # noqa: E501
         """Get unread messages number  # noqa: E501
 
-        Get total amount of unread messages in the current user chats.  # noqa: E501
+        Get the total amount of unread messages in the current user chats.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_unread_messages_total(async_req=True)
@@ -10343,7 +10343,7 @@ class TextMagicApi(object):
     def get_unread_messages_total_with_http_info(self, **kwargs):  # noqa: E501
         """Get unread messages number  # noqa: E501
 
-        Get total amount of unread messages in the current user chats.  # noqa: E501
+        Get the total amount of unread messages in the current user chats.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_unread_messages_total_with_http_info(async_req=True)
@@ -11701,7 +11701,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param str query: Find chats by specified search query
+        :param str query: Find chats by specified search query.
         :return: SearchChatsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -11725,7 +11725,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param str query: Find chats by specified search query
+        :param str query: Find chats by specified search query.
         :return: SearchChatsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -11804,7 +11804,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param str ids: Find chats by ID(s)
+        :param str ids: Find chats by ID(s).
         :return: SearchChatsByIdsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -11828,7 +11828,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param str ids: Find chats by ID(s)
+        :param str ids: Find chats by ID(s).
         :return: SearchChatsByIdsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -12943,7 +12943,7 @@ class TextMagicApi(object):
     def set_chat_status(self, set_chat_status_input_object, **kwargs):  # noqa: E501
         """Change chat status  # noqa: E501
 
-        Set status of the chat given by ID.  # noqa: E501
+        Set the status of the chat given by ID.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.set_chat_status(set_chat_status_input_object, async_req=True)
@@ -12965,7 +12965,7 @@ class TextMagicApi(object):
     def set_chat_status_with_http_info(self, set_chat_status_input_object, **kwargs):  # noqa: E501
         """Change chat status  # noqa: E501
 
-        Set status of the chat given by ID.  # noqa: E501
+        Set the status of the chat given by ID.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.set_chat_status_with_http_info(set_chat_status_input_object, async_req=True)

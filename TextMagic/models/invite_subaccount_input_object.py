@@ -77,7 +77,7 @@ class InviteSubaccountInputObject(object):
     def role(self):
         """Gets the role of this InviteSubaccountInputObject.  # noqa: E501
 
-        Type of account: *   **A** for Administrator sub-account *   **U** for Regular User   # noqa: E501
+        Type of account: *   **A** for Administrator sub-account; *   **U** for Regular User.   # noqa: E501
 
         :return: The role of this InviteSubaccountInputObject.  # noqa: E501
         :rtype: str
@@ -88,7 +88,7 @@ class InviteSubaccountInputObject(object):
     def role(self, role):
         """Sets the role of this InviteSubaccountInputObject.
 
-        Type of account: *   **A** for Administrator sub-account *   **U** for Regular User   # noqa: E501
+        Type of account: *   **A** for Administrator sub-account; *   **U** for Regular User.   # noqa: E501
 
         :param role: The role of this InviteSubaccountInputObject.  # noqa: E501
         :type: str

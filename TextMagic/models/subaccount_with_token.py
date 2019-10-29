@@ -229,7 +229,7 @@ class SubaccountWithToken(object):
     def status(self):
         """Gets the status of this SubaccountWithToken.  # noqa: E501
 
-        Current account status: * **A** for Active * **T** for Trial.   # noqa: E501
+        Current account status: * **A** for Active; * **T** for Trial.   # noqa: E501
 
         :return: The status of this SubaccountWithToken.  # noqa: E501
         :rtype: str
@@ -240,7 +240,7 @@ class SubaccountWithToken(object):
     def status(self, status):
         """Sets the status of this SubaccountWithToken.
 
-        Current account status: * **A** for Active * **T** for Trial.   # noqa: E501
+        Current account status: * **A** for Active; * **T** for Trial.   # noqa: E501
 
         :param status: The status of this SubaccountWithToken.  # noqa: E501
         :type: str
@@ -390,7 +390,7 @@ class SubaccountWithToken(object):
     def subaccount_type(self):
         """Gets the subaccount_type of this SubaccountWithToken.  # noqa: E501
 
-        Type of account: *   **A** for Administrator sub-account *   **U** for Regular User   # noqa: E501
+        Type of account: *   **A** for Administrator sub-account; *   **U** for Regular User.   # noqa: E501
 
         :return: The subaccount_type of this SubaccountWithToken.  # noqa: E501
         :rtype: str
@@ -401,7 +401,7 @@ class SubaccountWithToken(object):
     def subaccount_type(self, subaccount_type):
         """Sets the subaccount_type of this SubaccountWithToken.
 
-        Type of account: *   **A** for Administrator sub-account *   **U** for Regular User   # noqa: E501
+        Type of account: *   **A** for Administrator sub-account; *   **U** for Regular User.   # noqa: E501
 
         :param subaccount_type: The subaccount_type of this SubaccountWithToken.  # noqa: E501
         :type: str

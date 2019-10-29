@@ -263,7 +263,7 @@ class Chat(object):
     def status(self):
         """Gets the status of this Chat.  # noqa: E501
 
-        Chat status:   * **a** - Active   * **c** - Closed   * **d** - Deleted   # noqa: E501
+        Chat status:   * **a** - Active;   * **c** - Closed;   * **d** - Deleted.   # noqa: E501
 
         :return: The status of this Chat.  # noqa: E501
         :rtype: str
@@ -274,7 +274,7 @@ class Chat(object):
     def status(self, status):
         """Sets the status of this Chat.
 
-        Chat status:   * **a** - Active   * **c** - Closed   * **d** - Deleted   # noqa: E501
+        Chat status:   * **a** - Active;   * **c** - Closed;   * **d** - Deleted.   # noqa: E501
 
         :param status: The status of this Chat.  # noqa: E501
         :type: str
