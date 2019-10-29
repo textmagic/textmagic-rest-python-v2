@@ -54,7 +54,7 @@ class CheckPhoneVerificationCodeInputObject(object):
     def code(self):
         """Gets the code of this CheckPhoneVerificationCodeInputObject.  # noqa: E501
 
-        Verification code that was received by the user and entered into the form field.  # noqa: E501
+        Verification code received by the user and entered into the form field.  # noqa: E501
 
         :return: The code of this CheckPhoneVerificationCodeInputObject.  # noqa: E501
         :rtype: int
@@ -65,7 +65,7 @@ class CheckPhoneVerificationCodeInputObject(object):
     def code(self, code):
         """Sets the code of this CheckPhoneVerificationCodeInputObject.
 
-        Verification code that was received by the user and entered into the form field.  # noqa: E501
+        Verification code received by the user and entered into the form field.  # noqa: E501
 
         :param code: The code of this CheckPhoneVerificationCodeInputObject.  # noqa: E501
         :type: int

@@ -77,7 +77,7 @@ class SendPhoneVerificationCodeResponse(object):
     def price(self):
         """Gets the price of this SendPhoneVerificationCodeResponse.  # noqa: E501
 
-        Amount of credit which will be deducted from your account balance when this verification is successfully completed.  # noqa: E501
+        An amount of credit which will be deducted from your account balance when this verification is successfully completed.  # noqa: E501
 
         :return: The price of this SendPhoneVerificationCodeResponse.  # noqa: E501
         :rtype: float
@@ -88,7 +88,7 @@ class SendPhoneVerificationCodeResponse(object):
     def price(self, price):
         """Sets the price of this SendPhoneVerificationCodeResponse.
 
-        Amount of credit which will be deducted from your account balance when this verification is successfully completed.  # noqa: E501
+        An amount of credit which will be deducted from your account balance when this verification is successfully completed.  # noqa: E501
 
         :param price: The price of this SendPhoneVerificationCodeResponse.  # noqa: E501
         :type: float

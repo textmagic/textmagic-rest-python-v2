@@ -554,8 +554,8 @@ class TestTextMagicApi(unittest.TestCase):
         """
         pass
 
-    def test_get_favourites(self):
-        """Test case for get_favourites
+    def test_get_favorites(self):
+        """Test case for get_favorites
 
         Get favorite contacts and lists  # noqa: E501
         """

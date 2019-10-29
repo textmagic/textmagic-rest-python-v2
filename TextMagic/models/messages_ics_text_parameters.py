@@ -70,7 +70,7 @@ class MessagesIcsTextParameters(object):
     def cost(self):
         """Gets the cost of this MessagesIcsTextParameters.  # noqa: E501
 
-        Cost to check one number is constant – 0.04 in your account currency.  # noqa: E501
+        Cost to check that one number is constant – 0.04 in your account currency.  # noqa: E501
 
         :return: The cost of this MessagesIcsTextParameters.  # noqa: E501
         :rtype: float
@@ -81,7 +81,7 @@ class MessagesIcsTextParameters(object):
     def cost(self, cost):
         """Sets the cost of this MessagesIcsTextParameters.
 
-        Cost to check one number is constant – 0.04 in your account currency.  # noqa: E501
+        Cost to check that one number is constant – 0.04 in your account currency.  # noqa: E501
 
         :param cost: The cost of this MessagesIcsTextParameters.  # noqa: E501
         :type: float
@@ -139,7 +139,7 @@ class MessagesIcsTextParameters(object):
     def encoding(self):
         """Gets the encoding of this MessagesIcsTextParameters.  # noqa: E501
 
-        Message charset. Could be: * **ISO-8859-1** for plaintext SMS * **UTF-16BE** for Unicode SMS   # noqa: E501
+        Message charset. Could be: * **ISO-8859-1** – for plaintext SMS; * **UTF-16BE** – for Unicode SMS.   # noqa: E501
 
         :return: The encoding of this MessagesIcsTextParameters.  # noqa: E501
         :rtype: str
@@ -150,7 +150,7 @@ class MessagesIcsTextParameters(object):
     def encoding(self, encoding):
         """Sets the encoding of this MessagesIcsTextParameters.
 
-        Message charset. Could be: * **ISO-8859-1** for plaintext SMS * **UTF-16BE** for Unicode SMS   # noqa: E501
+        Message charset. Could be: * **ISO-8859-1** – for plaintext SMS; * **UTF-16BE** – for Unicode SMS.   # noqa: E501
 
         :param encoding: The encoding of this MessagesIcsTextParameters.  # noqa: E501
         :type: str
@@ -189,7 +189,7 @@ class MessagesIcsTextParameters(object):
     def charset_label(self):
         """Gets the charset_label of this MessagesIcsTextParameters.  # noqa: E501
 
-        Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS *   **UTF-16BE** for Unicode SMS *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages   # noqa: E501
+        Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS; *   **UTF-16BE** for Unicode SMS; *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages.   # noqa: E501
 
         :return: The charset_label of this MessagesIcsTextParameters.  # noqa: E501
         :rtype: str
@@ -200,7 +200,7 @@ class MessagesIcsTextParameters(object):
     def charset_label(self, charset_label):
         """Sets the charset_label of this MessagesIcsTextParameters.
 
-        Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS *   **UTF-16BE** for Unicode SMS *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages   # noqa: E501
+        Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS; *   **UTF-16BE** for Unicode SMS; *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages.   # noqa: E501
 
         :param charset_label: The charset_label of this MessagesIcsTextParameters.  # noqa: E501
         :type: str

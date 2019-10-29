@@ -419,7 +419,7 @@ class SubaccountWithToken(object):
     def email_accepted(self):
         """Gets the email_accepted of this SubaccountWithToken.  # noqa: E501
 
-        Is account has confirmed Email.  # noqa: E501
+        Does the account have a confirmed Email?.  # noqa: E501
 
         :return: The email_accepted of this SubaccountWithToken.  # noqa: E501
         :rtype: bool
@@ -430,7 +430,7 @@ class SubaccountWithToken(object):
     def email_accepted(self, email_accepted):
         """Sets the email_accepted of this SubaccountWithToken.
 
-        Is account has confirmed Email.  # noqa: E501
+        Does the account have a confirmed Email?.  # noqa: E501
 
         :param email_accepted: The email_accepted of this SubaccountWithToken.  # noqa: E501
         :type: bool
@@ -442,7 +442,7 @@ class SubaccountWithToken(object):
     def phone_accepted(self):
         """Gets the phone_accepted of this SubaccountWithToken.  # noqa: E501
 
-        Is account has confirmed Phone number.  # noqa: E501
+        Does the account have a confirmed Phone Number?.  # noqa: E501
 
         :return: The phone_accepted of this SubaccountWithToken.  # noqa: E501
         :rtype: bool
@@ -453,7 +453,7 @@ class SubaccountWithToken(object):
     def phone_accepted(self, phone_accepted):
         """Sets the phone_accepted of this SubaccountWithToken.
 
-        Is account has confirmed Phone number.  # noqa: E501
+        Does the account have a confirmed Phone Number?.  # noqa: E501
 
         :param phone_accepted: The phone_accepted of this SubaccountWithToken.  # noqa: E501
         :type: bool

@@ -16,12 +16,12 @@ from __future__ import absolute_import
 import unittest
 
 import TextMagic
-from TextMagic.models.get_favourites_paginated_response import GetFavouritesPaginatedResponse  # noqa: E501
+from TextMagic.models.get_favorites_paginated_response import GetFavoritesPaginatedResponse  # noqa: E501
 from TextMagic.rest import ApiException
 
 
-class TestGetFavouritesPaginatedResponse(unittest.TestCase):
-    """GetFavouritesPaginatedResponse unit test stubs"""
+class TestGetFavoritesPaginatedResponse(unittest.TestCase):
+    """GetFavoritesPaginatedResponse unit test stubs"""
 
     def setUp(self):
         pass
@@ -29,10 +29,10 @@ class TestGetFavouritesPaginatedResponse(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testGetFavouritesPaginatedResponse(self):
-        """Test GetFavouritesPaginatedResponse"""
+    def testGetFavoritesPaginatedResponse(self):
+        """Test GetFavoritesPaginatedResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.get_favourites_paginated_response.GetFavouritesPaginatedResponse()  # noqa: E501
+        # model = TextMagic.models.get_favorites_paginated_response.GetFavoritesPaginatedResponse()  # noqa: E501
         pass
 
 

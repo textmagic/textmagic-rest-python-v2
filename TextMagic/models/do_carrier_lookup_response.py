@@ -75,7 +75,7 @@ class DoCarrierLookupResponse(object):
     def cost(self):
         """Gets the cost of this DoCarrierLookupResponse.  # noqa: E501
 
-        Cost to check one number is constant – 0.04 in your account currency.  # noqa: E501
+        Cost to check that one number is constant – 0.04 in your account currency.  # noqa: E501
 
         :return: The cost of this DoCarrierLookupResponse.  # noqa: E501
         :rtype: float
@@ -86,7 +86,7 @@ class DoCarrierLookupResponse(object):
     def cost(self, cost):
         """Sets the cost of this DoCarrierLookupResponse.
 
-        Cost to check one number is constant – 0.04 in your account currency.  # noqa: E501
+        Cost to check that one number is constant – 0.04 in your account currency.  # noqa: E501
 
         :param cost: The cost of this DoCarrierLookupResponse.  # noqa: E501
         :type: float

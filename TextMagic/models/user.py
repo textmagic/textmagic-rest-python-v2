@@ -138,7 +138,7 @@ class User(object):
     def display_time_format(self):
         """Gets the display_time_format of this User.  # noqa: E501
 
-        User's preferred format of time display: * *12h* – AM/PM format; * *24h* – 24 hour clock format.   # noqa: E501
+        User's preferred format of time display: * *12h* - AM/PM format; * *24h* - 24-hour clock format.   # noqa: E501
 
         :return: The display_time_format of this User.  # noqa: E501
         :rtype: str
@@ -149,7 +149,7 @@ class User(object):
     def display_time_format(self, display_time_format):
         """Sets the display_time_format of this User.
 
-        User's preferred format of time display: * *12h* – AM/PM format; * *24h* – 24 hour clock format.   # noqa: E501
+        User's preferred format of time display: * *12h* - AM/PM format; * *24h* - 24-hour clock format.   # noqa: E501
 
         :param display_time_format: The display_time_format of this User.  # noqa: E501
         :type: str
@@ -311,7 +311,7 @@ class User(object):
     def phone(self):
         """Gets the phone of this User.  # noqa: E501
 
-        User`s phone number.  # noqa: E501
+        User's phone number.  # noqa: E501
 
         :return: The phone of this User.  # noqa: E501
         :rtype: str
@@ -322,7 +322,7 @@ class User(object):
     def phone(self, phone):
         """Sets the phone of this User.
 
-        User`s phone number.  # noqa: E501
+        User's phone number.  # noqa: E501
 
         :param phone: The phone of this User.  # noqa: E501
         :type: str
@@ -420,7 +420,7 @@ class User(object):
     def subaccount_type(self):
         """Gets the subaccount_type of this User.  # noqa: E501
 
-        Type of account: * **P** for Parent User; * **A** for Administrator Sub-Account; * **U** for Regular User   # noqa: E501
+        Type of account: * **P** for Parent User; * **A** for Administrator Sub-Account; * **U** for Regular User.   # noqa: E501
 
         :return: The subaccount_type of this User.  # noqa: E501
         :rtype: str
@@ -431,7 +431,7 @@ class User(object):
     def subaccount_type(self, subaccount_type):
         """Sets the subaccount_type of this User.
 
-        Type of account: * **P** for Parent User; * **A** for Administrator Sub-Account; * **U** for Regular User   # noqa: E501
+        Type of account: * **P** for Parent User; * **A** for Administrator Sub-Account; * **U** for Regular User.   # noqa: E501
 
         :param subaccount_type: The subaccount_type of this User.  # noqa: E501
         :type: str

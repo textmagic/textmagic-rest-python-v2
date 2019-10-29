@@ -77,7 +77,7 @@ class SetChatStatusInputObject(object):
     def status(self):
         """Gets the status of this SetChatStatusInputObject.  # noqa: E501
 
-        Chat status:   * **a** - Active   * **c** - Closed   * **d** - Deleted   # noqa: E501
+        Chat status:   * **a** - Active;   * **c** - Closed;   * **d** - Deleted.   # noqa: E501
 
         :return: The status of this SetChatStatusInputObject.  # noqa: E501
         :rtype: str
@@ -88,7 +88,7 @@ class SetChatStatusInputObject(object):
     def status(self, status):
         """Sets the status of this SetChatStatusInputObject.
 
-        Chat status:   * **a** - Active   * **c** - Closed   * **d** - Deleted   # noqa: E501
+        Chat status:   * **a** - Active;   * **c** - Closed;   * **d** - Deleted.   # noqa: E501
 
         :param status: The status of this SetChatStatusInputObject.  # noqa: E501
         :type: str

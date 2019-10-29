@@ -73,7 +73,7 @@ class SendPhoneVerificationCodeInputObject(object):
     def phone(self):
         """Gets the phone of this SendPhoneVerificationCodeInputObject.  # noqa: E501
 
-        Use the phone number in international E.164 format. If you need to pass phone numbers in the local format, please use them with the **country** parameter to specify the origin country of the phone number.   # noqa: E501
+        Use the phone number in international E.164 format. If you need to pass a phone number in the local format, please use it with the **country** parameter to specify the origin country of the phone number.   # noqa: E501
 
         :return: The phone of this SendPhoneVerificationCodeInputObject.  # noqa: E501
         :rtype: str
@@ -84,7 +84,7 @@ class SendPhoneVerificationCodeInputObject(object):
     def phone(self, phone):
         """Sets the phone of this SendPhoneVerificationCodeInputObject.
 
-        Use the phone number in international E.164 format. If you need to pass phone numbers in the local format, please use them with the **country** parameter to specify the origin country of the phone number.   # noqa: E501
+        Use the phone number in international E.164 format. If you need to pass a phone number in the local format, please use it with the **country** parameter to specify the origin country of the phone number.   # noqa: E501
 
         :param phone: The phone of this SendPhoneVerificationCodeInputObject.  # noqa: E501
         :type: str
@@ -96,7 +96,7 @@ class SendPhoneVerificationCodeInputObject(object):
     def brand(self):
         """Gets the brand of this SendPhoneVerificationCodeInputObject.  # noqa: E501
 
-        Alphanumeric string with up to 18 characters you can use to personalize the verification text message body, to help users identify your company or application name. For example: “Your TextMagic PIN is …”   # noqa: E501
+        An alphanumeric string with up to 18 characters you can use to personalize the verification text message body, to help users identify your company or application name. For example: “Your TextMagic PIN is …”   # noqa: E501
 
         :return: The brand of this SendPhoneVerificationCodeInputObject.  # noqa: E501
         :rtype: str
@@ -107,7 +107,7 @@ class SendPhoneVerificationCodeInputObject(object):
     def brand(self, brand):
         """Sets the brand of this SendPhoneVerificationCodeInputObject.
 
-        Alphanumeric string with up to 18 characters you can use to personalize the verification text message body, to help users identify your company or application name. For example: “Your TextMagic PIN is …”   # noqa: E501
+        An alphanumeric string with up to 18 characters you can use to personalize the verification text message body, to help users identify your company or application name. For example: “Your TextMagic PIN is …”   # noqa: E501
 
         :param brand: The brand of this SendPhoneVerificationCodeInputObject.  # noqa: E501
         :type: str
@@ -142,7 +142,7 @@ class SendPhoneVerificationCodeInputObject(object):
     def language(self):
         """Gets the language of this SendPhoneVerificationCodeInputObject.  # noqa: E501
 
-        By default, the SMS or text-to-speech (TTS) voice message is generated in the locale that matches the number. For example, the text message or TTS message for a 33\\* number is sent in French. Use this parameter to explicitly control the language, accent, and gender used for the verification request.Can be one of the following: `de-de`, `en-au`, `en-gb`, `en-us`, `en-in`, `es-es`, `es-mx`, `es-us`, `fr-ca`, `fr-fr`, `is-is`, `it-it`, `ja-jp`, `ko-kr`, `nl-nl`, `pl-pl`, `pt-pt`, `pt-br`, `ro-ro`, `ru-ru`, `sv-se`, `tr-tr`, `zh-cn` or `zh-tw`.   # noqa: E501
+        By default, the SMS or text-to-speech (TTS) voice message is generated in the locale that matches the number. For example, the text message or TTS message for a 33\\* number is sent in French. Use this parameter to explicitly control the language, accent, and gender used for the verification request. Choosing one of the following: `de-de`, `en-au`, `en-gb`, `en-us`, `en-in`, `es-es`, `es-mx`, `es-us`, `fr-ca`, `fr-fr`, `is-is`, `it-it`, `ja-jp`, `ko-kr`, `nl-nl`, `pl-pl`, `pt-pt`, `pt-br`, `ro-ro`, `ru-ru`, `sv-se`, `tr-tr`, `zh-cn` or `zh-tw`.   # noqa: E501
 
         :return: The language of this SendPhoneVerificationCodeInputObject.  # noqa: E501
         :rtype: str
@@ -153,7 +153,7 @@ class SendPhoneVerificationCodeInputObject(object):
     def language(self, language):
         """Sets the language of this SendPhoneVerificationCodeInputObject.
 
-        By default, the SMS or text-to-speech (TTS) voice message is generated in the locale that matches the number. For example, the text message or TTS message for a 33\\* number is sent in French. Use this parameter to explicitly control the language, accent, and gender used for the verification request.Can be one of the following: `de-de`, `en-au`, `en-gb`, `en-us`, `en-in`, `es-es`, `es-mx`, `es-us`, `fr-ca`, `fr-fr`, `is-is`, `it-it`, `ja-jp`, `ko-kr`, `nl-nl`, `pl-pl`, `pt-pt`, `pt-br`, `ro-ro`, `ru-ru`, `sv-se`, `tr-tr`, `zh-cn` or `zh-tw`.   # noqa: E501
+        By default, the SMS or text-to-speech (TTS) voice message is generated in the locale that matches the number. For example, the text message or TTS message for a 33\\* number is sent in French. Use this parameter to explicitly control the language, accent, and gender used for the verification request. Choosing one of the following: `de-de`, `en-au`, `en-gb`, `en-us`, `en-in`, `es-es`, `es-mx`, `es-us`, `fr-ca`, `fr-fr`, `is-is`, `it-it`, `ja-jp`, `ko-kr`, `nl-nl`, `pl-pl`, `pt-pt`, `pt-br`, `ro-ro`, `ru-ru`, `sv-se`, `tr-tr`, `zh-cn` or `zh-tw`.   # noqa: E501
 
         :param language: The language of this SendPhoneVerificationCodeInputObject.  # noqa: E501
         :type: str
@@ -165,7 +165,7 @@ class SendPhoneVerificationCodeInputObject(object):
     def sender_id(self):
         """Gets the sender_id of this SendPhoneVerificationCodeInputObject.  # noqa: E501
 
-        One of the available [sender settings](https://my.textmagic.com/online/reply-options/) on your TextMagic account. If specified sender setting type is not allowed for some destinations, a fallback default sender will be used to ensure the message delivery. More info about known restrictions can be found [here](https://support.textmagic.com/article/how-to-understand-sender-setting-restrictions/).   # noqa: E501
+        One of the available [sender settings](https://my.textmagic.com/online/reply-options/) on your TextMagic account. If the specified sender setting type is not allowed for some destinations, a fallback default sender will be used to ensure message delivery. More info about known restrictions can be found [here](https://support.textmagic.com/article/how-to-understand-sender-setting-restrictions/).   # noqa: E501
 
         :return: The sender_id of this SendPhoneVerificationCodeInputObject.  # noqa: E501
         :rtype: str
@@ -176,7 +176,7 @@ class SendPhoneVerificationCodeInputObject(object):
     def sender_id(self, sender_id):
         """Sets the sender_id of this SendPhoneVerificationCodeInputObject.
 
-        One of the available [sender settings](https://my.textmagic.com/online/reply-options/) on your TextMagic account. If specified sender setting type is not allowed for some destinations, a fallback default sender will be used to ensure the message delivery. More info about known restrictions can be found [here](https://support.textmagic.com/article/how-to-understand-sender-setting-restrictions/).   # noqa: E501
+        One of the available [sender settings](https://my.textmagic.com/online/reply-options/) on your TextMagic account. If the specified sender setting type is not allowed for some destinations, a fallback default sender will be used to ensure message delivery. More info about known restrictions can be found [here](https://support.textmagic.com/article/how-to-understand-sender-setting-restrictions/).   # noqa: E501
 
         :param sender_id: The sender_id of this SendPhoneVerificationCodeInputObject.  # noqa: E501
         :type: str
@@ -188,7 +188,7 @@ class SendPhoneVerificationCodeInputObject(object):
     def country(self):
         """Gets the country of this SendPhoneVerificationCodeInputObject.  # noqa: E501
 
-        2-letter ISO country code for local phone number.  # noqa: E501
+        The 2-letter ISO country code for the local phone number.  # noqa: E501
 
         :return: The country of this SendPhoneVerificationCodeInputObject.  # noqa: E501
         :rtype: str
@@ -199,7 +199,7 @@ class SendPhoneVerificationCodeInputObject(object):
     def country(self, country):
         """Sets the country of this SendPhoneVerificationCodeInputObject.
 
-        2-letter ISO country code for local phone number.  # noqa: E501
+        The 2-letter ISO country code for the local phone number.  # noqa: E501
 
         :param country: The country of this SendPhoneVerificationCodeInputObject.  # noqa: E501
         :type: str

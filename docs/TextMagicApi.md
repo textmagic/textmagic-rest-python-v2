@@ -79,7 +79,7 @@ Method | HTTP request | Description
 [**get_custom_field**](TextMagicApi.md#get_custom_field) | **GET** /api/v2/customfields/{id} | Get the details of a specific custom field
 [**get_custom_fields**](TextMagicApi.md#get_custom_fields) | **GET** /api/v2/customfields | Get all custom fields
 [**get_dedicated_number**](TextMagicApi.md#get_dedicated_number) | **GET** /api/v2/numbers/{id} | Get the details of a specific dedicated number
-[**get_favourites**](TextMagicApi.md#get_favourites) | **GET** /api/v2/contacts/favorite | Get favorite contacts and lists
+[**get_favorites**](TextMagicApi.md#get_favorites) | **GET** /api/v2/contacts/favorite | Get favorite contacts and lists
 [**get_inbound_message**](TextMagicApi.md#get_inbound_message) | **GET** /api/v2/replies/{id} | Get a single inbound message
 [**get_inbound_messages_notification_settings**](TextMagicApi.md#get_inbound_messages_notification_settings) | **GET** /api/v2/user/notification/inbound | Get inbound messages notification settings
 [**get_invoices**](TextMagicApi.md#get_invoices) | **GET** /api/v2/invoices | Get all invoices
@@ -336,7 +336,7 @@ configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-verify_id = '\"123e4567-e89b-12d3-a456-426655440000\"' # str | the verifyId that you received in Step 1.
+verify_id = '\"123e4567-e89b-12d3-a456-426655440000\"' # str | The verifyId that you received in Step 1.
 
 try:
     # Cancel verification process
@@ -349,7 +349,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **verify_id** | **str**| the verifyId that you received in Step 1. | 
+ **verify_id** | **str**| The verifyId that you received in Step 1. | 
 
 ### Return type
 
@@ -1567,7 +1567,7 @@ void (empty response body)
 
 Delete a single inbound message
 
-> Note, deleted inbound message will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
+> Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
 
 ### Example
 ```python
@@ -1619,7 +1619,7 @@ void (empty response body)
 
 Delete inbound messages (bulk)
 
-> Note, deleted inbound message will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
+> Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
 
 ### Example
 ```python
@@ -2532,9 +2532,9 @@ api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 status = '\"a\"' # str | Fetch only (a)ctive, (c)losed or (d)eleted chats (optional)
 page = 1 # int | Fetch specified results page. (optional) (default to 1)
 limit = 10 # int | The number of results per page. (optional) (default to 10)
-order_by = 'id' # str | Order results by some field. Default is id (optional) (default to id)
-voice = 0 # int | Fetch results with voice calls (optional) (default to 0)
-flat = 0 # int | Should additional contact info be included (optional) (default to 0)
+order_by = 'id' # str | Order results by some field. Default is id. (optional) (default to id)
+voice = 0 # int | Fetch results with voice calls. (optional) (default to 0)
+flat = 0 # int | Should additional contact info be included? (optional) (default to 0)
 
 try:
     # Get all chats
@@ -2551,9 +2551,9 @@ Name | Type | Description  | Notes
  **status** | **str**| Fetch only (a)ctive, (c)losed or (d)eleted chats | [optional] 
  **page** | **int**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int**| The number of results per page. | [optional] [default to 10]
- **order_by** | **str**| Order results by some field. Default is id | [optional] [default to id]
- **voice** | **int**| Fetch results with voice calls | [optional] [default to 0]
- **flat** | **int**| Should additional contact info be included | [optional] [default to 0]
+ **order_by** | **str**| Order results by some field. Default is id. | [optional] [default to id]
+ **voice** | **int**| Fetch results with voice calls. | [optional] [default to 0]
+ **flat** | **int**| Should additional contact info be included? | [optional] [default to 0]
 
 ### Return type
 
@@ -2594,7 +2594,7 @@ configuration.password = 'YOUR_PASSWORD'
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 page = 1 # int | Fetch specified results page. (optional) (default to 1)
 limit = 10 # int | The number of results per page. (optional) (default to 10)
-order_by = 'id' # str | Order results by some field. Default is id (optional) (default to id)
+order_by = 'id' # str | Order results by some field. Default is id. (optional) (default to id)
 direction = 'desc' # str | Order direction. Default is desc. (optional) (default to desc)
 
 try:
@@ -2611,7 +2611,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int**| The number of results per page. | [optional] [default to 10]
- **order_by** | **str**| Order results by some field. Default is id | [optional] [default to id]
+ **order_by** | **str**| Order results by some field. Default is id. | [optional] [default to id]
  **direction** | **str**| Order direction. Default is desc. | [optional] [default to desc]
 
 ### Return type
@@ -2765,7 +2765,7 @@ configuration.password = 'YOUR_PASSWORD'
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 page = 1 # int | Fetch specified results page. (optional) (default to 1)
 limit = 10 # int | The number of results per page. (optional) (default to 10)
-status = 'x' # str | Fetch schedules with the specific status: a - actual, c - completed, x - all (optional) (default to x)
+status = 'x' # str | Fetch schedules with a specific status: a - actual, c - completed, x - all. (optional) (default to x)
 order_by = 'id' # str | Order results by some field. Default is id (optional) (default to id)
 direction = 'desc' # str | Order direction. Default is desc. (optional) (default to desc)
 
@@ -2783,7 +2783,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int**| The number of results per page. | [optional] [default to 10]
- **status** | **str**| Fetch schedules with the specific status: a - actual, c - completed, x - all | [optional] [default to x]
+ **status** | **str**| Fetch schedules with a specific status: a - actual, c - completed, x - all. | [optional] [default to x]
  **order_by** | **str**| Order results by some field. Default is id | [optional] [default to id]
  **direction** | **str**| Order direction. Default is desc. | [optional] [default to desc]
 
@@ -3364,10 +3364,10 @@ id = 1 # int |
 page = 1 # int | Fetch specified results page. (optional) (default to 1)
 limit = 10 # int | The number of results per page. (optional) (default to 10)
 query = 'query_example' # str | Find messages by specified search query (optional)
-start = 56 # int | Return messages since specified timestamp only (optional)
-end = 56 # int | Return messages up to specified timestamp only (optional)
+start = 56 # int | Return messages since specified timestamp only. (optional)
+end = 56 # int | Return messages up to specified timestamp only. (optional)
 direction = 'desc' # str | Order direction. Default is desc. (optional) (default to desc)
-voice = 0 # int | Fetch results with voice calls (optional) (default to 0)
+voice = 0 # int | Fetch results with voice calls. (optional) (default to 0)
 
 try:
     # Get chat messages
@@ -3385,10 +3385,10 @@ Name | Type | Description  | Notes
  **page** | **int**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int**| The number of results per page. | [optional] [default to 10]
  **query** | **str**| Find messages by specified search query | [optional] 
- **start** | **int**| Return messages since specified timestamp only | [optional] 
- **end** | **int**| Return messages up to specified timestamp only | [optional] 
+ **start** | **int**| Return messages since specified timestamp only. | [optional] 
+ **end** | **int**| Return messages up to specified timestamp only. | [optional] 
  **direction** | **str**| Order direction. Default is desc. | [optional] [default to desc]
- **voice** | **int**| Fetch results with voice calls | [optional] [default to 0]
+ **voice** | **int**| Fetch results with voice calls. | [optional] [default to 0]
 
 ### Return type
 
@@ -4165,8 +4165,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_favourites**
-> GetFavouritesPaginatedResponse get_favourites(page=page, limit=limit, query=query)
+# **get_favorites**
+> GetFavoritesPaginatedResponse get_favorites(page=page, limit=limit, query=query)
 
 Get favorite contacts and lists
 
@@ -4193,10 +4193,10 @@ query = '\"A\"' # str | Find contacts or lists by specified search query (option
 
 try:
     # Get favorite contacts and lists
-    api_response = api_instance.get_favourites(page=page, limit=limit, query=query)
+    api_response = api_instance.get_favorites(page=page, limit=limit, query=query)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling TextMagicApi->get_favourites: %s\n" % e)
+    print("Exception when calling TextMagicApi->get_favorites: %s\n" % e)
 ```
 
 ### Parameters
@@ -4209,7 +4209,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetFavouritesPaginatedResponse**](GetFavouritesPaginatedResponse.md)
+[**GetFavoritesPaginatedResponse**](GetFavoritesPaginatedResponse.md)
 
 ### Authorization
 
@@ -6590,7 +6590,7 @@ api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 page = 1 # int | Fetch specified results page. (optional) (default to 1)
 limit = 10 # int | The number of results per page. (optional) (default to 10)
 query = 'query_example' # str | Find chats by specified search query (optional)
-order_by = 'id' # str | Order results by some field. Default is id (optional) (default to id)
+order_by = 'id' # str | Order results by some field. Default is id. (optional) (default to id)
 
 try:
     # Find chats by recipient
@@ -6607,7 +6607,7 @@ Name | Type | Description  | Notes
  **page** | **int**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int**| The number of results per page. | [optional] [default to 10]
  **query** | **str**| Find chats by specified search query | [optional] 
- **order_by** | **str**| Order results by some field. Default is id | [optional] [default to id]
+ **order_by** | **str**| Order results by some field. Default is id. | [optional] [default to id]
 
 ### Return type
 
@@ -6652,7 +6652,7 @@ shared = 0 # int | Should shared contacts to be included (optional) (default to 
 ids = 'ids_example' # str | Find contact by ID(s) (optional)
 list_id = 56 # int | Find contact by List ID (optional)
 include_blocked = 56 # int | Should blocked contacts to be included (optional)
-query = 'query_example' # str | Find contacts by specified search query (optional)
+query = 'query_example' # str | Find contacts by specified search query. (optional)
 local = 0 # int | Treat phone number passed in 'query' field as local. Default is 0 (optional) (default to 0)
 country = 'country_example' # str | 2-letter ISO country code for local phone numbers, used when 'local' is set to true. Default is account country (optional)
 order_by = 'id' # str | Order results by some field. Default is id. (optional) (default to id)
@@ -6676,7 +6676,7 @@ Name | Type | Description  | Notes
  **ids** | **str**| Find contact by ID(s) | [optional] 
  **list_id** | **int**| Find contact by List ID | [optional] 
  **include_blocked** | **int**| Should blocked contacts to be included | [optional] 
- **query** | **str**| Find contacts by specified search query | [optional] 
+ **query** | **str**| Find contacts by specified search query. | [optional] 
  **local** | **int**| Treat phone number passed in &#39;query&#39; field as local. Default is 0 | [optional] [default to 0]
  **country** | **str**| 2-letter ISO country code for local phone numbers, used when &#39;local&#39; is set to true. Default is account country | [optional] 
  **order_by** | **str**| Order results by some field. Default is id. | [optional] [default to id]
@@ -6723,7 +6723,7 @@ page = 1 # int | Fetch specified results page. (optional) (default to 1)
 limit = 10 # int | The number of results per page. (optional) (default to 10)
 ids = 'ids_example' # str | Find message by ID(s). (optional)
 query = 'query_example' # str | Find recipients by specified search query. (optional)
-order_by = 'id' # str | Order results by some field. Default is id (optional) (default to id)
+order_by = 'id' # str | Order results by some field. Default is id. (optional) (default to id)
 direction = 'desc' # str | Order direction. Default is desc. (optional) (default to desc)
 expand = 0 # int | Expand by adding firstName, lastName and contactId. (optional) (default to 0)
 
@@ -6743,7 +6743,7 @@ Name | Type | Description  | Notes
  **limit** | **int**| The number of results per page. | [optional] [default to 10]
  **ids** | **str**| Find message by ID(s). | [optional] 
  **query** | **str**| Find recipients by specified search query. | [optional] 
- **order_by** | **str**| Order results by some field. Default is id | [optional] [default to id]
+ **order_by** | **str**| Order results by some field. Default is id. | [optional] [default to id]
  **direction** | **str**| Order direction. Default is desc. | [optional] [default to desc]
  **expand** | **int**| Expand by adding firstName, lastName and contactId. | [optional] [default to 0]
 
@@ -6922,8 +6922,8 @@ page = 1 # int | Fetch specified results page. (optional) (default to 1)
 limit = 10 # int | The number of results per page. (optional) (default to 10)
 query = 'query_example' # str | Find messages by specified search query (optional)
 ids = 'ids_example' # str | Find schedules by ID(s) (optional)
-status = 'x' # str | Fetch schedules with the specific status: a - actual, c - completed, x - all (optional) (default to x)
-order_by = 'id' # str | Order results by some field. Default is id (optional) (default to id)
+status = 'x' # str | Fetch schedules with a specific status: a - actual, c - completed, x - all. (optional) (default to x)
+order_by = 'id' # str | Order results by some field. Default is id. (optional) (default to id)
 direction = 'desc' # str | Order direction. Default is desc. (optional) (default to desc)
 
 try:
@@ -6942,8 +6942,8 @@ Name | Type | Description  | Notes
  **limit** | **int**| The number of results per page. | [optional] [default to 10]
  **query** | **str**| Find messages by specified search query | [optional] 
  **ids** | **str**| Find schedules by ID(s) | [optional] 
- **status** | **str**| Fetch schedules with the specific status: a - actual, c - completed, x - all | [optional] [default to x]
- **order_by** | **str**| Order results by some field. Default is id | [optional] [default to id]
+ **status** | **str**| Fetch schedules with a specific status: a - actual, c - completed, x - all. | [optional] [default to x]
+ **order_by** | **str**| Order results by some field. Default is id. | [optional] [default to id]
  **direction** | **str**| Order direction. Default is desc. | [optional] [default to desc]
 
 ### Return type
@@ -7080,7 +7080,7 @@ Name | Type | Description  | Notes
 
 Step 1: Send a verification code 
 
-Sends verification code to specified phone number.
+Sends a verification code to a specified phone number.
 
 ### Example
 ```python

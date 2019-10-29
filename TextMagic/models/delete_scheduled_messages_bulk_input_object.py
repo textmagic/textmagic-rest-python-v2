@@ -84,7 +84,7 @@ class DeleteScheduledMessagesBulkInputObject(object):
     def all(self):
         """Gets the all of this DeleteScheduledMessagesBulkInputObject.  # noqa: E501
 
-        Default is 0 (false). If set to 1 all the entities will be removed.  # noqa: E501
+        Default is 0 (false). If set to 1, all the entities will be removed.  # noqa: E501
 
         :return: The all of this DeleteScheduledMessagesBulkInputObject.  # noqa: E501
         :rtype: int
@@ -95,7 +95,7 @@ class DeleteScheduledMessagesBulkInputObject(object):
     def all(self, all):
         """Sets the all of this DeleteScheduledMessagesBulkInputObject.
 
-        Default is 0 (false). If set to 1 all the entities will be removed.  # noqa: E501
+        Default is 0 (false). If set to 1, all the entities will be removed.  # noqa: E501
 
         :param all: The all of this DeleteScheduledMessagesBulkInputObject.  # noqa: E501
         :type: int
@@ -107,7 +107,7 @@ class DeleteScheduledMessagesBulkInputObject(object):
     def status(self):
         """Gets the status of this DeleteScheduledMessagesBulkInputObject.  # noqa: E501
 
-        Default is empty string (false). If set then all entities with specified status will be affected.  # noqa: E501
+        Default is an empty string (false). If set, all entities with specified status will be affected.  # noqa: E501
 
         :return: The status of this DeleteScheduledMessagesBulkInputObject.  # noqa: E501
         :rtype: str
@@ -118,7 +118,7 @@ class DeleteScheduledMessagesBulkInputObject(object):
     def status(self, status):
         """Sets the status of this DeleteScheduledMessagesBulkInputObject.
 
-        Default is empty string (false). If set then all entities with specified status will be affected.  # noqa: E501
+        Default is an empty string (false). If set, all entities with specified status will be affected.  # noqa: E501
 
         :param status: The status of this DeleteScheduledMessagesBulkInputObject.  # noqa: E501
         :type: str

@@ -93,7 +93,7 @@ class FavoriteContact(object):
     def entity_type(self):
         """Gets the entity_type of this FavoriteContact.  # noqa: E501
 
-        Entity type which should be marked as **favourite**.  # noqa: E501
+        Entity type which should be marked as **favorite**.  # noqa: E501
 
         :return: The entity_type of this FavoriteContact.  # noqa: E501
         :rtype: str
@@ -104,7 +104,7 @@ class FavoriteContact(object):
     def entity_type(self, entity_type):
         """Sets the entity_type of this FavoriteContact.
 
-        Entity type which should be marked as **favourite**.  # noqa: E501
+        Entity type which should be marked as **favorite**.  # noqa: E501
 
         :param entity_type: The entity_type of this FavoriteContact.  # noqa: E501
         :type: str

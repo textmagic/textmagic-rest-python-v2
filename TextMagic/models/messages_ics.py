@@ -137,7 +137,7 @@ class MessagesIcs(object):
     def next_send(self):
         """Gets the next_send of this MessagesIcs.  # noqa: E501
 
-        Next send date in [ISO 8601](https://en.wikipedia.org/?title=ISO_8601) format.   # noqa: E501
+        The next send date in [ISO 8601](https://en.wikipedia.org/?title=ISO_8601) format.   # noqa: E501
 
         :return: The next_send of this MessagesIcs.  # noqa: E501
         :rtype: datetime
@@ -148,7 +148,7 @@ class MessagesIcs(object):
     def next_send(self, next_send):
         """Sets the next_send of this MessagesIcs.
 
-        Next send date in [ISO 8601](https://en.wikipedia.org/?title=ISO_8601) format.   # noqa: E501
+        The next send date in [ISO 8601](https://en.wikipedia.org/?title=ISO_8601) format.   # noqa: E501
 
         :param next_send: The next_send of this MessagesIcs.  # noqa: E501
         :type: datetime
@@ -204,7 +204,7 @@ class MessagesIcs(object):
     def last_sent(self):
         """Gets the last_sent of this MessagesIcs.  # noqa: E501
 
-        Date and time when last message has been sent.  # noqa: E501
+        The date and time when the last message was sent.  # noqa: E501
 
         :return: The last_sent of this MessagesIcs.  # noqa: E501
         :rtype: datetime
@@ -215,7 +215,7 @@ class MessagesIcs(object):
     def last_sent(self, last_sent):
         """Sets the last_sent of this MessagesIcs.
 
-        Date and time when last message has been sent.  # noqa: E501
+        The date and time when the last message was sent.  # noqa: E501
 
         :param last_sent: The last_sent of this MessagesIcs.  # noqa: E501
         :type: datetime
@@ -227,7 +227,7 @@ class MessagesIcs(object):
     def contact_name(self):
         """Gets the contact_name of this MessagesIcs.  # noqa: E501
 
-        Aggregated contact information. If the message scheduled to be sent to a single contact, a full name will be returned here. Otherwise, a total amount contacts will be returned.  # noqa: E501
+        Aggregated contact information. If the message was scheduled to be sent to a single contact, a full name will be returned here. Otherwise, a total amount of contacts will be returned.  # noqa: E501
 
         :return: The contact_name of this MessagesIcs.  # noqa: E501
         :rtype: str
@@ -238,7 +238,7 @@ class MessagesIcs(object):
     def contact_name(self, contact_name):
         """Sets the contact_name of this MessagesIcs.
 
-        Aggregated contact information. If the message scheduled to be sent to a single contact, a full name will be returned here. Otherwise, a total amount contacts will be returned.  # noqa: E501
+        Aggregated contact information. If the message was scheduled to be sent to a single contact, a full name will be returned here. Otherwise, a total amount of contacts will be returned.  # noqa: E501
 
         :param contact_name: The contact_name of this MessagesIcs.  # noqa: E501
         :type: str
@@ -434,7 +434,7 @@ class MessagesIcs(object):
     def completed(self):
         """Gets the completed of this MessagesIcs.  # noqa: E501
 
-        Indicates that schedling has been completed.  # noqa: E501
+        Indicates that scheduling has been completed.  # noqa: E501
 
         :return: The completed of this MessagesIcs.  # noqa: E501
         :rtype: bool
@@ -445,7 +445,7 @@ class MessagesIcs(object):
     def completed(self, completed):
         """Sets the completed of this MessagesIcs.
 
-        Indicates that schedling has been completed.  # noqa: E501
+        Indicates that scheduling has been completed.  # noqa: E501
 
         :param completed: The completed of this MessagesIcs.  # noqa: E501
         :type: bool

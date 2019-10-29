@@ -159,7 +159,7 @@ class Conversation(object):
     def message_time(self):
         """Gets the message_time of this Conversation.  # noqa: E501
 
-        Time when message arrived at TextMagic.  # noqa: E501
+        Time when  the message arrived at TextMagic.  # noqa: E501
 
         :return: The message_time of this Conversation.  # noqa: E501
         :rtype: datetime
@@ -170,7 +170,7 @@ class Conversation(object):
     def message_time(self, message_time):
         """Sets the message_time of this Conversation.
 
-        Time when message arrived at TextMagic.  # noqa: E501
+        Time when  the message arrived at TextMagic.  # noqa: E501
 
         :param message_time: The message_time of this Conversation.  # noqa: E501
         :type: datetime
@@ -205,7 +205,7 @@ class Conversation(object):
     def receiver(self):
         """Gets the receiver of this Conversation.  # noqa: E501
 
-        Receiver phone number.  # noqa: E501
+        Receiver's phone number.  # noqa: E501
 
         :return: The receiver of this Conversation.  # noqa: E501
         :rtype: str
@@ -216,7 +216,7 @@ class Conversation(object):
     def receiver(self, receiver):
         """Sets the receiver of this Conversation.
 
-        Receiver phone number.  # noqa: E501
+        Receiver's phone number.  # noqa: E501
 
         :param receiver: The receiver of this Conversation.  # noqa: E501
         :type: str

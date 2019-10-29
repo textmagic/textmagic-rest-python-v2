@@ -348,7 +348,7 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str verify_id: the verifyId that you received in Step 1. (required)
+        :param str verify_id: The verifyId that you received in Step 1. (required)
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -370,7 +370,7 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str verify_id: the verifyId that you received in Step 1. (required)
+        :param str verify_id: The verifyId that you received in Step 1. (required)
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -2665,7 +2665,7 @@ class TextMagicApi(object):
     def delete_inbound_message(self, id, **kwargs):  # noqa: E501
         """Delete a single inbound message  # noqa: E501
 
-        > Note, deleted inbound message will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful!   # noqa: E501
+        > Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful!   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_inbound_message(id, async_req=True)
@@ -2687,7 +2687,7 @@ class TextMagicApi(object):
     def delete_inbound_message_with_http_info(self, id, **kwargs):  # noqa: E501
         """Delete a single inbound message  # noqa: E501
 
-        > Note, deleted inbound message will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful!   # noqa: E501
+        > Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful!   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_inbound_message_with_http_info(id, async_req=True)
@@ -2760,7 +2760,7 @@ class TextMagicApi(object):
     def delete_inbound_messages_bulk(self, delete_inbound_messages_bulk_input_object, **kwargs):  # noqa: E501
         """Delete inbound messages (bulk)  # noqa: E501
 
-        > Note, deleted inbound message will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful!   # noqa: E501
+        > Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful!   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_inbound_messages_bulk(delete_inbound_messages_bulk_input_object, async_req=True)
@@ -2782,7 +2782,7 @@ class TextMagicApi(object):
     def delete_inbound_messages_bulk_with_http_info(self, delete_inbound_messages_bulk_input_object, **kwargs):  # noqa: E501
         """Delete inbound messages (bulk)  # noqa: E501
 
-        > Note, deleted inbound message will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful!   # noqa: E501
+        > Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful!   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_inbound_messages_bulk_with_http_info(delete_inbound_messages_bulk_input_object, async_req=True)
@@ -4413,9 +4413,9 @@ class TextMagicApi(object):
         :param str status: Fetch only (a)ctive, (c)losed or (d)eleted chats
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param str order_by: Order results by some field. Default is id
-        :param int voice: Fetch results with voice calls
-        :param int flat: Should additional contact info be included
+        :param str order_by: Order results by some field. Default is id.
+        :param int voice: Fetch results with voice calls.
+        :param int flat: Should additional contact info be included?
         :return: GetAllChatsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -4440,9 +4440,9 @@ class TextMagicApi(object):
         :param str status: Fetch only (a)ctive, (c)losed or (d)eleted chats
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param str order_by: Order results by some field. Default is id
-        :param int voice: Fetch results with voice calls
-        :param int flat: Should additional contact info be included
+        :param str order_by: Order results by some field. Default is id.
+        :param int voice: Fetch results with voice calls.
+        :param int flat: Should additional contact info be included?
         :return: GetAllChatsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -4527,7 +4527,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param str order_by: Order results by some field. Default is id
+        :param str order_by: Order results by some field. Default is id.
         :param str direction: Order direction. Default is desc.
         :return: GetAllInboundMessagesPaginatedResponse
                  If the method is called asynchronously,
@@ -4552,7 +4552,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param str order_by: Order results by some field. Default is id
+        :param str order_by: Order results by some field. Default is id.
         :param str direction: Order direction. Default is desc.
         :return: GetAllInboundMessagesPaginatedResponse
                  If the method is called asynchronously,
@@ -4836,7 +4836,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param str status: Fetch schedules with the specific status: a - actual, c - completed, x - all
+        :param str status: Fetch schedules with a specific status: a - actual, c - completed, x - all.
         :param str order_by: Order results by some field. Default is id
         :param str direction: Order direction. Default is desc.
         :return: GetAllScheduledMessagesPaginatedResponse
@@ -4862,7 +4862,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param str status: Fetch schedules with the specific status: a - actual, c - completed, x - all
+        :param str status: Fetch schedules with a specific status: a - actual, c - completed, x - all.
         :param str order_by: Order results by some field. Default is id
         :param str direction: Order direction. Default is desc.
         :return: GetAllScheduledMessagesPaginatedResponse
@@ -5939,10 +5939,10 @@ class TextMagicApi(object):
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
         :param str query: Find messages by specified search query
-        :param int start: Return messages since specified timestamp only
-        :param int end: Return messages up to specified timestamp only
+        :param int start: Return messages since specified timestamp only.
+        :param int end: Return messages up to specified timestamp only.
         :param str direction: Order direction. Default is desc.
-        :param int voice: Fetch results with voice calls
+        :param int voice: Fetch results with voice calls.
         :return: GetChatMessagesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -5968,10 +5968,10 @@ class TextMagicApi(object):
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
         :param str query: Find messages by specified search query
-        :param int start: Return messages since specified timestamp only
-        :param int end: Return messages up to specified timestamp only
+        :param int start: Return messages since specified timestamp only.
+        :param int end: Return messages up to specified timestamp only.
         :param str direction: Order direction. Default is desc.
-        :param int voice: Fetch results with voice calls
+        :param int voice: Fetch results with voice calls.
         :return: GetChatMessagesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -7466,44 +7466,44 @@ class TextMagicApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def get_favourites(self, **kwargs):  # noqa: E501
+    def get_favorites(self, **kwargs):  # noqa: E501
         """Get favorite contacts and lists  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_favourites(async_req=True)
+        >>> thread = api.get_favorites(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
         :param str query: Find contacts or lists by specified search query
-        :return: GetFavouritesPaginatedResponse
+        :return: GetFavoritesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.get_favourites_with_http_info(**kwargs)  # noqa: E501
+            return self.get_favorites_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.get_favourites_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.get_favorites_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def get_favourites_with_http_info(self, **kwargs):  # noqa: E501
+    def get_favorites_with_http_info(self, **kwargs):  # noqa: E501
         """Get favorite contacts and lists  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_favourites_with_http_info(async_req=True)
+        >>> thread = api.get_favorites_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
         :param str query: Find contacts or lists by specified search query
-        :return: GetFavouritesPaginatedResponse
+        :return: GetFavoritesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -7519,7 +7519,7 @@ class TextMagicApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method get_favourites" % key
+                    " to method get_favorites" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -7561,7 +7561,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='GetFavouritesPaginatedResponse',  # noqa: E501
+            response_type='GetFavoritesPaginatedResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -11910,7 +11910,7 @@ class TextMagicApi(object):
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
         :param str query: Find chats by specified search query
-        :param str order_by: Order results by some field. Default is id
+        :param str order_by: Order results by some field. Default is id.
         :return: SearchChatsByReceipentPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -11935,7 +11935,7 @@ class TextMagicApi(object):
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
         :param str query: Find chats by specified search query
-        :param str order_by: Order results by some field. Default is id
+        :param str order_by: Order results by some field. Default is id.
         :return: SearchChatsByReceipentPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -12020,7 +12020,7 @@ class TextMagicApi(object):
         :param str ids: Find contact by ID(s)
         :param int list_id: Find contact by List ID
         :param int include_blocked: Should blocked contacts to be included
-        :param str query: Find contacts by specified search query
+        :param str query: Find contacts by specified search query.
         :param int local: Treat phone number passed in 'query' field as local. Default is 0
         :param str country: 2-letter ISO country code for local phone numbers, used when 'local' is set to true. Default is account country
         :param str order_by: Order results by some field. Default is id.
@@ -12052,7 +12052,7 @@ class TextMagicApi(object):
         :param str ids: Find contact by ID(s)
         :param int list_id: Find contact by List ID
         :param int include_blocked: Should blocked contacts to be included
-        :param str query: Find contacts by specified search query
+        :param str query: Find contacts by specified search query.
         :param int local: Treat phone number passed in 'query' field as local. Default is 0
         :param str country: 2-letter ISO country code for local phone numbers, used when 'local' is set to true. Default is account country
         :param str order_by: Order results by some field. Default is id.
@@ -12155,7 +12155,7 @@ class TextMagicApi(object):
         :param int limit: The number of results per page.
         :param str ids: Find message by ID(s).
         :param str query: Find recipients by specified search query.
-        :param str order_by: Order results by some field. Default is id
+        :param str order_by: Order results by some field. Default is id.
         :param str direction: Order direction. Default is desc.
         :param int expand: Expand by adding firstName, lastName and contactId.
         :return: SearchInboundMessagesPaginatedResponse
@@ -12183,7 +12183,7 @@ class TextMagicApi(object):
         :param int limit: The number of results per page.
         :param str ids: Find message by ID(s).
         :param str query: Find recipients by specified search query.
-        :param str order_by: Order results by some field. Default is id
+        :param str order_by: Order results by some field. Default is id.
         :param str direction: Order direction. Default is desc.
         :param int expand: Expand by adding firstName, lastName and contactId.
         :return: SearchInboundMessagesPaginatedResponse
@@ -12524,8 +12524,8 @@ class TextMagicApi(object):
         :param int limit: The number of results per page.
         :param str query: Find messages by specified search query
         :param str ids: Find schedules by ID(s)
-        :param str status: Fetch schedules with the specific status: a - actual, c - completed, x - all
-        :param str order_by: Order results by some field. Default is id
+        :param str status: Fetch schedules with a specific status: a - actual, c - completed, x - all.
+        :param str order_by: Order results by some field. Default is id.
         :param str direction: Order direction. Default is desc.
         :return: SearchScheduledMessagesPaginatedResponse
                  If the method is called asynchronously,
@@ -12552,8 +12552,8 @@ class TextMagicApi(object):
         :param int limit: The number of results per page.
         :param str query: Find messages by specified search query
         :param str ids: Find schedules by ID(s)
-        :param str status: Fetch schedules with the specific status: a - actual, c - completed, x - all
-        :param str order_by: Order results by some field. Default is id
+        :param str status: Fetch schedules with a specific status: a - actual, c - completed, x - all.
+        :param str order_by: Order results by some field. Default is id.
         :param str direction: Order direction. Default is desc.
         :return: SearchScheduledMessagesPaginatedResponse
                  If the method is called asynchronously,
@@ -12844,7 +12844,7 @@ class TextMagicApi(object):
     def send_phone_verification_code_tfa(self, send_phone_verification_code_input_object, **kwargs):  # noqa: E501
         """Step 1: Send a verification code   # noqa: E501
 
-        Sends verification code to specified phone number.  # noqa: E501
+        Sends a verification code to a specified phone number.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.send_phone_verification_code_tfa(send_phone_verification_code_input_object, async_req=True)
@@ -12866,7 +12866,7 @@ class TextMagicApi(object):
     def send_phone_verification_code_tfa_with_http_info(self, send_phone_verification_code_input_object, **kwargs):  # noqa: E501
         """Step 1: Send a verification code   # noqa: E501
 
-        Sends verification code to specified phone number.  # noqa: E501
+        Sends a verification code to a specified phone number.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.send_phone_verification_code_tfa_with_http_info(send_phone_verification_code_input_object, async_req=True)

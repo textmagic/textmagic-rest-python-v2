@@ -129,7 +129,7 @@ class Contact(object):
     def favorited(self):
         """Gets the favorited of this Contact.  # noqa: E501
 
-        Is the Contact favourite? [Custom fields list](http://docs.textmagictesting.com/#operation/getFavourites).  # noqa: E501
+        Is the Contact favorite? [Custom fields list](http://docs.textmagictesting.com/#operation/getFavorites).  # noqa: E501
 
         :return: The favorited of this Contact.  # noqa: E501
         :rtype: bool
@@ -140,7 +140,7 @@ class Contact(object):
     def favorited(self, favorited):
         """Sets the favorited of this Contact.
 
-        Is the Contact favourite? [Custom fields list](http://docs.textmagictesting.com/#operation/getFavourites).  # noqa: E501
+        Is the Contact favorite? [Custom fields list](http://docs.textmagictesting.com/#operation/getFavorites).  # noqa: E501
 
         :param favorited: The favorited of this Contact.  # noqa: E501
         :type: bool
@@ -313,7 +313,7 @@ class Contact(object):
     def custom_fields(self):
         """Gets the custom_fields of this Contact.  # noqa: E501
 
-        See [Custom Fields](http://docs.textmagictesting.com/#tag/Custom-Fields) section.  # noqa: E501
+        See the [Custom Fields](http://docs.textmagictesting.com/#tag/Custom-Fields) section.  # noqa: E501
 
         :return: The custom_fields of this Contact.  # noqa: E501
         :rtype: list[ContactCustomField]
@@ -324,7 +324,7 @@ class Contact(object):
     def custom_fields(self, custom_fields):
         """Sets the custom_fields of this Contact.
 
-        See [Custom Fields](http://docs.textmagictesting.com/#tag/Custom-Fields) section.  # noqa: E501
+        See the [Custom Fields](http://docs.textmagictesting.com/#tag/Custom-Fields) section.  # noqa: E501
 
         :param custom_fields: The custom_fields of this Contact.  # noqa: E501
         :type: list[ContactCustomField]
@@ -378,7 +378,7 @@ class Contact(object):
     def phone_type(self):
         """Gets the phone_type of this Contact.  # noqa: E501
 
-        Phone number type: * **0** if it is fixed-line; * **1** if it is mobile; * **2** if it is mobile or fixed-line (in case we cannot distingush between fixed-line or mobile); * **3** if it is toll-free; * **4** if it is a premium rate phone; * **5** if it is a shared cost phone; * **6** if it is a VoIP; * **7** if it is a [Personal Number](); * **8** if it is a pager; * **9** if it is an Universal Access Number; * **10** if the phone type is unknown; * **-1** if the phone type is not yet processed or cannot be determined.   # noqa: E501
+        Phone number type: * **0** if it is fixed-line; * **1** if it is mobile; * **2** if it is mobile or fixed-line (in case we cannot distingush between fixed-line or mobile); * **3** if it is toll-free; * **4** if it is a premium rate phone; * **5** if it is a shared cost phone; * **6** if it is a VoIP; * **7** if it is a [Personal Number](); * **8** if it is a pager; * **9** if it is a Universal Access Number; * **10** if the phone type is unknown; * **-1** if the phone type is not yet processed or cannot be determined.   # noqa: E501
 
         :return: The phone_type of this Contact.  # noqa: E501
         :rtype: str
@@ -389,7 +389,7 @@ class Contact(object):
     def phone_type(self, phone_type):
         """Sets the phone_type of this Contact.
 
-        Phone number type: * **0** if it is fixed-line; * **1** if it is mobile; * **2** if it is mobile or fixed-line (in case we cannot distingush between fixed-line or mobile); * **3** if it is toll-free; * **4** if it is a premium rate phone; * **5** if it is a shared cost phone; * **6** if it is a VoIP; * **7** if it is a [Personal Number](); * **8** if it is a pager; * **9** if it is an Universal Access Number; * **10** if the phone type is unknown; * **-1** if the phone type is not yet processed or cannot be determined.   # noqa: E501
+        Phone number type: * **0** if it is fixed-line; * **1** if it is mobile; * **2** if it is mobile or fixed-line (in case we cannot distingush between fixed-line or mobile); * **3** if it is toll-free; * **4** if it is a premium rate phone; * **5** if it is a shared cost phone; * **6** if it is a VoIP; * **7** if it is a [Personal Number](); * **8** if it is a pager; * **9** if it is a Universal Access Number; * **10** if the phone type is unknown; * **-1** if the phone type is not yet processed or cannot be determined.   # noqa: E501
 
         :param phone_type: The phone_type of this Contact.  # noqa: E501
         :type: str

@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **entity_id** | **int** | List or Contact ID. | 
-**entity_type** | **str** | Entity type which should be marked as **favourite**. | 
+**entity_type** | **str** | Entity type which should be marked as **favorite**. | 
 **primary_label** | **str** | Contact first name/last name if entityType is **contact**, List name if entity type is **list**. | 
 **secondary_label** | **str** | Phone number if entityType is **contact**, List contacts number if entity type is **list**. | 
 **tertiary_label** | **str** | Contact country if entityType is **contact** else null. | 

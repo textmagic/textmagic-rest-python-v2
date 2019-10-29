@@ -289,7 +289,7 @@ class List(object):
     def is_default(self):
         """Gets the is_default of this List.  # noqa: E501
 
-        Indicates that List is used as a default. All new contacts added via web app will be added in this List by default.  # noqa: E501
+        Indicates that List is used as a default. All new contacts added via the Web-app will be added in this List by default.  # noqa: E501
 
         :return: The is_default of this List.  # noqa: E501
         :rtype: bool
@@ -300,7 +300,7 @@ class List(object):
     def is_default(self, is_default):
         """Sets the is_default of this List.
 
-        Indicates that List is used as a default. All new contacts added via web app will be added in this List by default.  # noqa: E501
+        Indicates that List is used as a default. All new contacts added via the Web-app will be added in this List by default.  # noqa: E501
 
         :param is_default: The is_default of this List.  # noqa: E501
         :type: bool
