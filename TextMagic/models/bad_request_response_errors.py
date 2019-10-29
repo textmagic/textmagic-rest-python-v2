@@ -56,7 +56,7 @@ class BadRequestResponseErrors(object):
     def common(self):
         """Gets the common of this BadRequestResponseErrors.  # noqa: E501
 
-        Array of messages with errors related to the entire request. For example, you did not specify either the **text** or **templateId** when [sending the message](http://docs.textmagictesting.com/#tag/Outbound-Messages).   # noqa: E501
+        Array of messages with errors related to the entire request. For example, you did not specify either the **text** or the **templateId** when [sending the message](http://docs.textmagictesting.com/#tag/Outbound-Messages).   # noqa: E501
 
         :return: The common of this BadRequestResponseErrors.  # noqa: E501
         :rtype: list[str]
@@ -67,7 +67,7 @@ class BadRequestResponseErrors(object):
     def common(self, common):
         """Sets the common of this BadRequestResponseErrors.
 
-        Array of messages with errors related to the entire request. For example, you did not specify either the **text** or **templateId** when [sending the message](http://docs.textmagictesting.com/#tag/Outbound-Messages).   # noqa: E501
+        Array of messages with errors related to the entire request. For example, you did not specify either the **text** or the **templateId** when [sending the message](http://docs.textmagictesting.com/#tag/Outbound-Messages).   # noqa: E501
 
         :param common: The common of this BadRequestResponseErrors.  # noqa: E501
         :type: list[str]
@@ -79,7 +79,7 @@ class BadRequestResponseErrors(object):
     def fields(self):
         """Gets the fields of this BadRequestResponseErrors.  # noqa: E501
 
-        Associative array. The keys are the POST/PUT parameters names and the values are arrays with error messages for these parameters.   # noqa: E501
+        Associative array. The keys are the POST/PUT parameter names and the values are arrays with error messages for these parameters.   # noqa: E501
 
         :return: The fields of this BadRequestResponseErrors.  # noqa: E501
         :rtype: object
@@ -90,7 +90,7 @@ class BadRequestResponseErrors(object):
     def fields(self, fields):
         """Sets the fields of this BadRequestResponseErrors.
 
-        Associative array. The keys are the POST/PUT parameters names and the values are arrays with error messages for these parameters.   # noqa: E501
+        Associative array. The keys are the POST/PUT parameter names and the values are arrays with error messages for these parameters.   # noqa: E501
 
         :param fields: The fields of this BadRequestResponseErrors.  # noqa: E501
         :type: object

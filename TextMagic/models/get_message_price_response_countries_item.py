@@ -74,7 +74,7 @@ class GetMessagePriceResponseCountriesItem(object):
     def country(self):
         """Gets the country of this GetMessagePriceResponseCountriesItem.  # noqa: E501
 
-        Two-letter ISO country code  # noqa: E501
+        The 2-letter ISO country code.  # noqa: E501
 
         :return: The country of this GetMessagePriceResponseCountriesItem.  # noqa: E501
         :rtype: str
@@ -85,7 +85,7 @@ class GetMessagePriceResponseCountriesItem(object):
     def country(self, country):
         """Sets the country of this GetMessagePriceResponseCountriesItem.
 
-        Two-letter ISO country code  # noqa: E501
+        The 2-letter ISO country code.  # noqa: E501
 
         :param country: The country of this GetMessagePriceResponseCountriesItem.  # noqa: E501
         :type: str
@@ -97,7 +97,7 @@ class GetMessagePriceResponseCountriesItem(object):
     def country_name(self):
         """Gets the country_name of this GetMessagePriceResponseCountriesItem.  # noqa: E501
 
-        Country name  # noqa: E501
+        Country name.  # noqa: E501
 
         :return: The country_name of this GetMessagePriceResponseCountriesItem.  # noqa: E501
         :rtype: str
@@ -108,7 +108,7 @@ class GetMessagePriceResponseCountriesItem(object):
     def country_name(self, country_name):
         """Sets the country_name of this GetMessagePriceResponseCountriesItem.
 
-        Country name  # noqa: E501
+        Country name.  # noqa: E501
 
         :param country_name: The country_name of this GetMessagePriceResponseCountriesItem.  # noqa: E501
         :type: str
@@ -120,7 +120,7 @@ class GetMessagePriceResponseCountriesItem(object):
     def allow_dedicated(self):
         """Gets the allow_dedicated of this GetMessagePriceResponseCountriesItem.  # noqa: E501
 
-        Is allow to use dedicated number  # noqa: E501
+        Is allowed to use a dedicated number?  # noqa: E501
 
         :return: The allow_dedicated of this GetMessagePriceResponseCountriesItem.  # noqa: E501
         :rtype: bool
@@ -131,7 +131,7 @@ class GetMessagePriceResponseCountriesItem(object):
     def allow_dedicated(self, allow_dedicated):
         """Sets the allow_dedicated of this GetMessagePriceResponseCountriesItem.
 
-        Is allow to use dedicated number  # noqa: E501
+        Is allowed to use a dedicated number?  # noqa: E501
 
         :param allow_dedicated: The allow_dedicated of this GetMessagePriceResponseCountriesItem.  # noqa: E501
         :type: bool
@@ -143,7 +143,7 @@ class GetMessagePriceResponseCountriesItem(object):
     def count(self):
         """Gets the count of this GetMessagePriceResponseCountriesItem.  # noqa: E501
 
-        Parts count to send  # noqa: E501
+        Parts count to send.  # noqa: E501
 
         :return: The count of this GetMessagePriceResponseCountriesItem.  # noqa: E501
         :rtype: float
@@ -154,7 +154,7 @@ class GetMessagePriceResponseCountriesItem(object):
     def count(self, count):
         """Sets the count of this GetMessagePriceResponseCountriesItem.
 
-        Parts count to send  # noqa: E501
+        Parts count to send.  # noqa: E501
 
         :param count: The count of this GetMessagePriceResponseCountriesItem.  # noqa: E501
         :type: float
@@ -166,7 +166,7 @@ class GetMessagePriceResponseCountriesItem(object):
     def max(self):
         """Gets the max of this GetMessagePriceResponseCountriesItem.  # noqa: E501
 
-        Maximum parts to send  # noqa: E501
+        Maximum parts to send.  # noqa: E501
 
         :return: The max of this GetMessagePriceResponseCountriesItem.  # noqa: E501
         :rtype: float
@@ -177,7 +177,7 @@ class GetMessagePriceResponseCountriesItem(object):
     def max(self, max):
         """Sets the max of this GetMessagePriceResponseCountriesItem.
 
-        Maximum parts to send  # noqa: E501
+        Maximum parts to send.  # noqa: E501
 
         :param max: The max of this GetMessagePriceResponseCountriesItem.  # noqa: E501
         :type: float
@@ -189,7 +189,7 @@ class GetMessagePriceResponseCountriesItem(object):
     def sum(self):
         """Gets the sum of this GetMessagePriceResponseCountriesItem.  # noqa: E501
 
-        Total price to send  # noqa: E501
+        Total price to send.  # noqa: E501
 
         :return: The sum of this GetMessagePriceResponseCountriesItem.  # noqa: E501
         :rtype: str
@@ -200,7 +200,7 @@ class GetMessagePriceResponseCountriesItem(object):
     def sum(self, sum):
         """Sets the sum of this GetMessagePriceResponseCountriesItem.
 
-        Total price to send  # noqa: E501
+        Total price to send.  # noqa: E501
 
         :param sum: The sum of this GetMessagePriceResponseCountriesItem.  # noqa: E501
         :type: str
@@ -212,7 +212,7 @@ class GetMessagePriceResponseCountriesItem(object):
     def landline(self):
         """Gets the landline of this GetMessagePriceResponseCountriesItem.  # noqa: E501
 
-        Is this landline number?  # noqa: E501
+        Is this a landline number?  # noqa: E501
 
         :return: The landline of this GetMessagePriceResponseCountriesItem.  # noqa: E501
         :rtype: float
@@ -223,7 +223,7 @@ class GetMessagePriceResponseCountriesItem(object):
     def landline(self, landline):
         """Sets the landline of this GetMessagePriceResponseCountriesItem.
 
-        Is this landline number?  # noqa: E501
+        Is this a landline number?  # noqa: E501
 
         :param landline: The landline of this GetMessagePriceResponseCountriesItem.  # noqa: E501
         :type: float

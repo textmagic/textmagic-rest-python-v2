@@ -4733,7 +4733,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param int last_id: Filter results by ID, selecting all values lesser than the specified ID. Note that \\'page\\' parameter is ignored when \\'lastId\\' is specified
+        :param int last_id: Filter results by ID, selecting all values lesser than the specified ID. Note that the \\'page\\' parameter is ignored when \\'lastId\\' is specified
         :return: GetAllOutboundMessagesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -4757,7 +4757,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param int last_id: Filter results by ID, selecting all values lesser than the specified ID. Note that \\'page\\' parameter is ignored when \\'lastId\\' is specified
+        :param int last_id: Filter results by ID, selecting all values lesser than the specified ID. Note that the \\'page\\' parameter is ignored when \\'lastId\\' is specified
         :return: GetAllOutboundMessagesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -5151,7 +5151,7 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str country: Two-letter ISO country ID. If not specified, it returns all the available sender settings.
+        :param str country: The 2-letter ISO country ID. If not specified, it returns all the available sender settings.
         :return: GetAvailableSenderSettingOptionsResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -5173,7 +5173,7 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str country: Two-letter ISO country ID. If not specified, it returns all the available sender settings.
+        :param str country: The 2-letter ISO country ID. If not specified, it returns all the available sender settings.
         :return: GetAvailableSenderSettingOptionsResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -8290,21 +8290,21 @@ class TextMagicApi(object):
         :param async_req bool
         :param str text: Message text. Required if **template_id** is not set.
         :param int template_id: Template used instead of message text. Required if **text** is not set.
-        :param int sending_time: DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time in unix timestamp format. Default is now.
-        :param str sending_date_time: Sending time in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to sendingTimezone.
-        :param str sending_timezone: ID or ISO-name of timezone used for sending when sendingDateTime parameter is set. E.g. if you specify sendingDateTime = \\\"2016-05-27 13:02:33\\\" and sendingTimezone = \\\"America/Buenos_Aires\\\", your message will be sent at May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is account timezone.
-        :param str contacts: Comma separated array of contact resources id message will be sent to.
-        :param str lists: Comma separated array of list resources id message will be sent to.
-        :param str phones: Comma separated array of E.164 phone numbers message will be sent to.
+        :param int sending_time: DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time is in unix timestamp format. Default is now.
+        :param str sending_date_time: Sending time is in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to the sendingTimezone.
+        :param str sending_timezone: The ID or ISO-name of the timezone used for sending when the sendingDateTime parameter is set, e.g. if you specify sendingDateTime = \\\"2016-05-27 13:02:33\\\" and sendingTimezone = \\\"America/Buenos_Aires\\\", your message will be sent on May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is the account timezone.
+        :param str contacts: Comma-separated array of contact resources id message will be sent to.
+        :param str lists: Comma-separated array of list resources id message will be sent to.
+        :param str phones: Comma-separated array of E.164 phone numbers message will be sent to.
         :param int cut_extra: Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead.
-        :param int parts_count: Maximum message parts count (TextMagic allows sending 1 to 6 message parts).
+        :param int parts_count: Maximum message parts count (TextMagic allows sending of 1 to 6 message parts).
         :param int reference_id: Custom message reference id which can be used in your application infrastructure.
-        :param str _from: One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs).
-        :param str rule: iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details.
-        :param int create_chat: Should sending method try to create new Chat(if not exist) with specified recipients.
+        :param str _from: One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs).
+        :param str rule: An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details.
+        :param int create_chat: Should the sending method try to create new Chat(if not exist) with specified recipients?
         :param int tts: Send Text to Speech message.
-        :param int local: Treat phone numbers passed in \\'phones\\' field as local.
-        :param str local_country: 2-letter ISO country code for local phone numbers, used when \\'local\\' is set to true. Default is account country.
+        :param int local: Treat phone numbers passed in the \\'phones\\' field as local.
+        :param str local_country: The 2-letter ISO country code for local phone numbers, used when \\'local\\' is set to true. Default is the account country.
         :return: GetMessagePreviewResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -8328,21 +8328,21 @@ class TextMagicApi(object):
         :param async_req bool
         :param str text: Message text. Required if **template_id** is not set.
         :param int template_id: Template used instead of message text. Required if **text** is not set.
-        :param int sending_time: DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time in unix timestamp format. Default is now.
-        :param str sending_date_time: Sending time in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to sendingTimezone.
-        :param str sending_timezone: ID or ISO-name of timezone used for sending when sendingDateTime parameter is set. E.g. if you specify sendingDateTime = \\\"2016-05-27 13:02:33\\\" and sendingTimezone = \\\"America/Buenos_Aires\\\", your message will be sent at May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is account timezone.
-        :param str contacts: Comma separated array of contact resources id message will be sent to.
-        :param str lists: Comma separated array of list resources id message will be sent to.
-        :param str phones: Comma separated array of E.164 phone numbers message will be sent to.
+        :param int sending_time: DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time is in unix timestamp format. Default is now.
+        :param str sending_date_time: Sending time is in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to the sendingTimezone.
+        :param str sending_timezone: The ID or ISO-name of the timezone used for sending when the sendingDateTime parameter is set, e.g. if you specify sendingDateTime = \\\"2016-05-27 13:02:33\\\" and sendingTimezone = \\\"America/Buenos_Aires\\\", your message will be sent on May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is the account timezone.
+        :param str contacts: Comma-separated array of contact resources id message will be sent to.
+        :param str lists: Comma-separated array of list resources id message will be sent to.
+        :param str phones: Comma-separated array of E.164 phone numbers message will be sent to.
         :param int cut_extra: Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead.
-        :param int parts_count: Maximum message parts count (TextMagic allows sending 1 to 6 message parts).
+        :param int parts_count: Maximum message parts count (TextMagic allows sending of 1 to 6 message parts).
         :param int reference_id: Custom message reference id which can be used in your application infrastructure.
-        :param str _from: One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs).
-        :param str rule: iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details.
-        :param int create_chat: Should sending method try to create new Chat(if not exist) with specified recipients.
+        :param str _from: One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs).
+        :param str rule: An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details.
+        :param int create_chat: Should the sending method try to create new Chat(if not exist) with specified recipients?
         :param int tts: Send Text to Speech message.
-        :param int local: Treat phone numbers passed in \\'phones\\' field as local.
-        :param str local_country: 2-letter ISO country code for local phone numbers, used when \\'local\\' is set to true. Default is account country.
+        :param int local: Treat phone numbers passed in the \\'phones\\' field as local.
+        :param str local_country: The 2-letter ISO country code for local phone numbers, used when \\'local\\' is set to true. Default is the account country.
         :return: GetMessagePreviewResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -8447,24 +8447,24 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int include_blocked: Should we show pricing for the blocked contacts.
-        :param str text: Message text. Required if **template_id** is not set.
-        :param int template_id: Template used instead of message text. Required if **text** is not set.
-        :param int sending_time: DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time in unix timestamp format. Default is now.
-        :param str sending_date_time: Sending time in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to sendingTimezone.
-        :param str sending_timezone: ID or ISO-name of timezone used for sending when sendingDateTime parameter is set. E.g. if you specify sendingDateTime = \\\"2016-05-27 13:02:33\\\" and sendingTimezone = \\\"America/Buenos_Aires\\\", your message will be sent at May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is account timezone.
-        :param str contacts: Comma separated array of contact resources id message will be sent to.
-        :param str lists: Comma separated array of list resources id message will be sent to.
-        :param str phones: Comma separated array of E.164 phone numbers message will be sent to.
+        :param int include_blocked: Should we show the pricing for blocked contacts?
+        :param str text: Message text. Required if the **template_id** is not set.
+        :param int template_id: Template used instead of message text. Required if the **text** is not set.
+        :param int sending_time: DEPRECATED, consider using the sendingDateTime and sendingTimezone parameters instead: optional (required with rrule set). Message sending time is in unix timestamp format. Default is now.
+        :param str sending_date_time: Sending time is in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to the sendingTimezone.
+        :param str sending_timezone: The ID or ISO-name of the timezone used for sending when sendingDateTime parameter is set, e.g. if you specify sendingDateTime = \\\"2016-05-27 13:02:33\\\" and sendingTimezone = \\\"America/Buenos_Aires\\\", your message will be sent on May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is the account timezone.
+        :param str contacts: Comma-separated array of contact resources id message will be sent to.
+        :param str lists: Comma-separated array of list resources id message will be sent to.
+        :param str phones: Comma-separated array of E.164 phone numbers message will be sent to.
         :param int cut_extra: Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead.
         :param int parts_count: Maximum message parts count (TextMagic allows sending 1 to 6 message parts).
         :param int reference_id: Custom message reference id which can be used in your application infrastructure.
-        :param str _from: One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs).
-        :param str rule: iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details.
-        :param int create_chat: Should sending method try to create new Chat(if not exist) with specified recipients.
-        :param int tts: Send Text to Speech message.
-        :param int local: Treat phone numbers passed in \\'phones\\' field as local.
-        :param str local_country: 2-letter ISO country code for local phone numbers, used when \\'local\\' is set to true. Default is account country.
+        :param str _from: One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs).
+        :param str rule: An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details.
+        :param int create_chat: Should the sending method try to create new Chat (if not exist) with specified recipients?
+        :param int tts: Send a Text to Speech message.
+        :param int local: Treat phone numbers passed in the \\'phones\\' field as local.
+        :param str local_country: The 2-letter ISO country code for local phone numbers, used when \\'local\\' is set to true. Default is the account country.
         :return: GetMessagePriceResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -8486,24 +8486,24 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int include_blocked: Should we show pricing for the blocked contacts.
-        :param str text: Message text. Required if **template_id** is not set.
-        :param int template_id: Template used instead of message text. Required if **text** is not set.
-        :param int sending_time: DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time in unix timestamp format. Default is now.
-        :param str sending_date_time: Sending time in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to sendingTimezone.
-        :param str sending_timezone: ID or ISO-name of timezone used for sending when sendingDateTime parameter is set. E.g. if you specify sendingDateTime = \\\"2016-05-27 13:02:33\\\" and sendingTimezone = \\\"America/Buenos_Aires\\\", your message will be sent at May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is account timezone.
-        :param str contacts: Comma separated array of contact resources id message will be sent to.
-        :param str lists: Comma separated array of list resources id message will be sent to.
-        :param str phones: Comma separated array of E.164 phone numbers message will be sent to.
+        :param int include_blocked: Should we show the pricing for blocked contacts?
+        :param str text: Message text. Required if the **template_id** is not set.
+        :param int template_id: Template used instead of message text. Required if the **text** is not set.
+        :param int sending_time: DEPRECATED, consider using the sendingDateTime and sendingTimezone parameters instead: optional (required with rrule set). Message sending time is in unix timestamp format. Default is now.
+        :param str sending_date_time: Sending time is in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to the sendingTimezone.
+        :param str sending_timezone: The ID or ISO-name of the timezone used for sending when sendingDateTime parameter is set, e.g. if you specify sendingDateTime = \\\"2016-05-27 13:02:33\\\" and sendingTimezone = \\\"America/Buenos_Aires\\\", your message will be sent on May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is the account timezone.
+        :param str contacts: Comma-separated array of contact resources id message will be sent to.
+        :param str lists: Comma-separated array of list resources id message will be sent to.
+        :param str phones: Comma-separated array of E.164 phone numbers message will be sent to.
         :param int cut_extra: Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead.
         :param int parts_count: Maximum message parts count (TextMagic allows sending 1 to 6 message parts).
         :param int reference_id: Custom message reference id which can be used in your application infrastructure.
-        :param str _from: One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs).
-        :param str rule: iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details.
-        :param int create_chat: Should sending method try to create new Chat(if not exist) with specified recipients.
-        :param int tts: Send Text to Speech message.
-        :param int local: Treat phone numbers passed in \\'phones\\' field as local.
-        :param str local_country: 2-letter ISO country code for local phone numbers, used when \\'local\\' is set to true. Default is account country.
+        :param str _from: One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs).
+        :param str rule: An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details.
+        :param int create_chat: Should the sending method try to create new Chat (if not exist) with specified recipients?
+        :param int tts: Send a Text to Speech message.
+        :param int local: Treat phone numbers passed in the \\'phones\\' field as local.
+        :param str local_country: The 2-letter ISO country code for local phone numbers, used when \\'local\\' is set to true. Default is the account country.
         :return: GetMessagePriceResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -12745,7 +12745,7 @@ class TextMagicApi(object):
     def send_message(self, send_message_input_object, **kwargs):  # noqa: E501
         """Send message  # noqa: E501
 
-        The main entrypoint to send messages. See examples above for the reference.  # noqa: E501
+        This is the main entrypoint to send messages. See the examples above for the reference.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.send_message(send_message_input_object, async_req=True)
@@ -12767,7 +12767,7 @@ class TextMagicApi(object):
     def send_message_with_http_info(self, send_message_input_object, **kwargs):  # noqa: E501
         """Send message  # noqa: E501
 
-        The main entrypoint to send messages. See examples above for the reference.  # noqa: E501
+        This is the main entrypoint to send messages. See the examples above for the reference.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.send_message_with_http_info(send_message_input_object, async_req=True)

@@ -54,7 +54,7 @@ class SenderSettingsItem(object):
     def country(self):
         """Gets the country of this SenderSettingsItem.  # noqa: E501
 
-        Two-letter ISO country code of the recipient phone number.   # noqa: E501
+        The 2-letter ISO country code of the recipient phone number.   # noqa: E501
 
         :return: The country of this SenderSettingsItem.  # noqa: E501
         :rtype: str
@@ -65,7 +65,7 @@ class SenderSettingsItem(object):
     def country(self, country):
         """Sets the country of this SenderSettingsItem.
 
-        Two-letter ISO country code of the recipient phone number.   # noqa: E501
+        The 2-letter ISO country code of the recipient phone number.   # noqa: E501
 
         :param country: The country of this SenderSettingsItem.  # noqa: E501
         :type: str

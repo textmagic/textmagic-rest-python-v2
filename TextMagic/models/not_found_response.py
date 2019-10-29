@@ -79,7 +79,7 @@ class NotFoundResponse(object):
     def message(self):
         """Gets the message of this NotFoundResponse.  # noqa: E501
 
-        Brief error message. You could display this message to your user or save it in a log.  # noqa: E501
+        A Brief error message. You could display this message to your user or save it in a log.  # noqa: E501
 
         :return: The message of this NotFoundResponse.  # noqa: E501
         :rtype: str
@@ -90,7 +90,7 @@ class NotFoundResponse(object):
     def message(self, message):
         """Sets the message of this NotFoundResponse.
 
-        Brief error message. You could display this message to your user or save it in a log.  # noqa: E501
+        A Brief error message. You could display this message to your user or save it in a log.  # noqa: E501
 
         :param message: The message of this NotFoundResponse.  # noqa: E501
         :type: str

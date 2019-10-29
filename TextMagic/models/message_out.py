@@ -342,7 +342,7 @@ class MessageOut(object):
     def deleted(self):
         """Gets the deleted of this MessageOut.  # noqa: E501
 
-        Indicates that message has been deleted.  # noqa: E501
+        Indicates that the message has been deleted.  # noqa: E501
 
         :return: The deleted of this MessageOut.  # noqa: E501
         :rtype: bool
@@ -353,7 +353,7 @@ class MessageOut(object):
     def deleted(self, deleted):
         """Sets the deleted of this MessageOut.
 
-        Indicates that message has been deleted.  # noqa: E501
+        Indicates that the message has been deleted.  # noqa: E501
 
         :param deleted: The deleted of this MessageOut.  # noqa: E501
         :type: bool
@@ -365,7 +365,7 @@ class MessageOut(object):
     def charset(self):
         """Gets the charset of this MessageOut.  # noqa: E501
 
-        Message charset. Could be: *   **ISO-8859-1** for plaintext SMS *   **UTF-16BE** for Unicode SMS   # noqa: E501
+        Message charset. Could be: *   **ISO-8859-1** for plaintext SMS; *   **UTF-16BE** for Unicode SMS.   # noqa: E501
 
         :return: The charset of this MessageOut.  # noqa: E501
         :rtype: str
@@ -376,7 +376,7 @@ class MessageOut(object):
     def charset(self, charset):
         """Sets the charset of this MessageOut.
 
-        Message charset. Could be: *   **ISO-8859-1** for plaintext SMS *   **UTF-16BE** for Unicode SMS   # noqa: E501
+        Message charset. Could be: *   **ISO-8859-1** for plaintext SMS; *   **UTF-16BE** for Unicode SMS.   # noqa: E501
 
         :param charset: The charset of this MessageOut.  # noqa: E501
         :type: str
@@ -388,7 +388,7 @@ class MessageOut(object):
     def charset_label(self):
         """Gets the charset_label of this MessageOut.  # noqa: E501
 
-        Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS *   **UTF-16BE** for Unicode SMS *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages   # noqa: E501
+        Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS; *   **UTF-16BE** for Unicode SMS; *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages.   # noqa: E501
 
         :return: The charset_label of this MessageOut.  # noqa: E501
         :rtype: str
@@ -399,7 +399,7 @@ class MessageOut(object):
     def charset_label(self, charset_label):
         """Sets the charset_label of this MessageOut.
 
-        Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS *   **UTF-16BE** for Unicode SMS *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages   # noqa: E501
+        Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS; *   **UTF-16BE** for Unicode SMS; *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages.   # noqa: E501
 
         :param charset_label: The charset_label of this MessageOut.  # noqa: E501
         :type: str
@@ -411,7 +411,7 @@ class MessageOut(object):
     def first_name(self):
         """Gets the first_name of this MessageOut.  # noqa: E501
 
-        Contact first name. Could be substituted from your [Contacts](http://docs.textmagictesting.com/#tag/Contacts) (even if you submitted phone number instead of contact ID).   # noqa: E501
+        Contact first name. Could be substituted from your [Contacts](http://docs.textmagictesting.com/#tag/Contacts) (even if you submitted the phone number instead of the contact ID).   # noqa: E501
 
         :return: The first_name of this MessageOut.  # noqa: E501
         :rtype: str
@@ -422,7 +422,7 @@ class MessageOut(object):
     def first_name(self, first_name):
         """Sets the first_name of this MessageOut.
 
-        Contact first name. Could be substituted from your [Contacts](http://docs.textmagictesting.com/#tag/Contacts) (even if you submitted phone number instead of contact ID).   # noqa: E501
+        Contact first name. Could be substituted from your [Contacts](http://docs.textmagictesting.com/#tag/Contacts) (even if you submitted the phone number instead of the contact ID).   # noqa: E501
 
         :param first_name: The first_name of this MessageOut.  # noqa: E501
         :type: str
@@ -457,7 +457,7 @@ class MessageOut(object):
     def country(self):
         """Gets the country of this MessageOut.  # noqa: E501
 
-        Two-letter ISO country code of the recipient phone number.   # noqa: E501
+        The 2-letter ISO country code of the recipient's phone number.   # noqa: E501
 
         :return: The country of this MessageOut.  # noqa: E501
         :rtype: str
@@ -468,7 +468,7 @@ class MessageOut(object):
     def country(self, country):
         """Sets the country of this MessageOut.
 
-        Two-letter ISO country code of the recipient phone number.   # noqa: E501
+        The 2-letter ISO country code of the recipient's phone number.   # noqa: E501
 
         :param country: The country of this MessageOut.  # noqa: E501
         :type: str
@@ -549,7 +549,7 @@ class MessageOut(object):
     def from_email(self):
         """Gets the from_email of this MessageOut.  # noqa: E501
 
-        User email which this message came from. For Email2SMS and Distribution Lists messages it will be an original email address, in other cases it is an account email address.  # noqa: E501
+        The user email which this message came from. For Email2SMS and Distribution Lists the message will come from an original email address; in other cases, it will come from an account email address.  # noqa: E501
 
         :return: The from_email of this MessageOut.  # noqa: E501
         :rtype: str
@@ -560,7 +560,7 @@ class MessageOut(object):
     def from_email(self, from_email):
         """Sets the from_email of this MessageOut.
 
-        User email which this message came from. For Email2SMS and Distribution Lists messages it will be an original email address, in other cases it is an account email address.  # noqa: E501
+        The user email which this message came from. For Email2SMS and Distribution Lists the message will come from an original email address; in other cases, it will come from an account email address.  # noqa: E501
 
         :param from_email: The from_email of this MessageOut.  # noqa: E501
         :type: str
@@ -572,7 +572,7 @@ class MessageOut(object):
     def from_number(self):
         """Gets the from_number of this MessageOut.  # noqa: E501
 
-        Phone number which is used to send SMS.  # noqa: E501
+        Phone number used to send the SMS.  # noqa: E501
 
         :return: The from_number of this MessageOut.  # noqa: E501
         :rtype: str
@@ -583,7 +583,7 @@ class MessageOut(object):
     def from_number(self, from_number):
         """Sets the from_number of this MessageOut.
 
-        Phone number which is used to send SMS.  # noqa: E501
+        Phone number used to send the SMS.  # noqa: E501
 
         :param from_number: The from_number of this MessageOut.  # noqa: E501
         :type: str

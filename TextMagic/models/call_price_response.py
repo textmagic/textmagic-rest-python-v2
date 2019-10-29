@@ -131,7 +131,7 @@ class CallPriceResponse(object):
     def country(self):
         """Gets the country of this CallPriceResponse.  # noqa: E501
 
-        2-letter ISO country code for local phone numbers, used when local is  set to true. Default is account country  # noqa: E501
+        The 2-letter ISO country code for local phone numbers, used when local is  set to true. Default is account country  # noqa: E501
 
         :return: The country of this CallPriceResponse.  # noqa: E501
         :rtype: str
@@ -142,7 +142,7 @@ class CallPriceResponse(object):
     def country(self, country):
         """Sets the country of this CallPriceResponse.
 
-        2-letter ISO country code for local phone numbers, used when local is  set to true. Default is account country  # noqa: E501
+        The 2-letter ISO country code for local phone numbers, used when local is  set to true. Default is account country  # noqa: E501
 
         :param country: The country of this CallPriceResponse.  # noqa: E501
         :type: str

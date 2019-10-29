@@ -104,7 +104,7 @@ class MessagePriceItem(object):
     def country(self):
         """Gets the country of this MessagePriceItem.  # noqa: E501
 
-        Two-letter ISO country code of the recipient phone number.  # noqa: E501
+        The 2-letter ISO country code of the recipient phone number.  # noqa: E501
 
         :return: The country of this MessagePriceItem.  # noqa: E501
         :rtype: str
@@ -115,7 +115,7 @@ class MessagePriceItem(object):
     def country(self, country):
         """Sets the country of this MessagePriceItem.
 
-        Two-letter ISO country code of the recipient phone number.  # noqa: E501
+        The 2-letter ISO country code of the recipient phone number.  # noqa: E501
 
         :param country: The country of this MessagePriceItem.  # noqa: E501
         :type: str

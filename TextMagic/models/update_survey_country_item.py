@@ -54,7 +54,7 @@ class UpdateSurveyCountryItem(object):
     def country(self):
         """Gets the country of this UpdateSurveyCountryItem.  # noqa: E501
 
-        Two-letter ISO country code  # noqa: E501
+        The 2-letter ISO country code  # noqa: E501
 
         :return: The country of this UpdateSurveyCountryItem.  # noqa: E501
         :rtype: str
@@ -65,7 +65,7 @@ class UpdateSurveyCountryItem(object):
     def country(self, country):
         """Sets the country of this UpdateSurveyCountryItem.
 
-        Two-letter ISO country code  # noqa: E501
+        The 2-letter ISO country code  # noqa: E501
 
         :param country: The country of this UpdateSurveyCountryItem.  # noqa: E501
         :type: str

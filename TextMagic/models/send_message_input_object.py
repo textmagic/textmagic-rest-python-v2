@@ -428,7 +428,7 @@ class SendMessageInputObject(object):
     def create_chat(self):
         """Gets the create_chat of this SendMessageInputObject.  # noqa: E501
 
-        Should sending method try to create new Chat(if not exist) with specified recipients.  # noqa: E501
+        Should sending method try to create new Chat (if not exist) with specified recipients?  # noqa: E501
 
         :return: The create_chat of this SendMessageInputObject.  # noqa: E501
         :rtype: bool
@@ -439,7 +439,7 @@ class SendMessageInputObject(object):
     def create_chat(self, create_chat):
         """Sets the create_chat of this SendMessageInputObject.
 
-        Should sending method try to create new Chat(if not exist) with specified recipients.  # noqa: E501
+        Should sending method try to create new Chat (if not exist) with specified recipients?  # noqa: E501
 
         :param create_chat: The create_chat of this SendMessageInputObject.  # noqa: E501
         :type: bool
@@ -451,7 +451,7 @@ class SendMessageInputObject(object):
     def tts(self):
         """Gets the tts of this SendMessageInputObject.  # noqa: E501
 
-        Send Text to Speech message.  # noqa: E501
+        Send a Text to Speech message.  # noqa: E501
 
         :return: The tts of this SendMessageInputObject.  # noqa: E501
         :rtype: bool
@@ -462,7 +462,7 @@ class SendMessageInputObject(object):
     def tts(self, tts):
         """Sets the tts of this SendMessageInputObject.
 
-        Send Text to Speech message.  # noqa: E501
+        Send a Text to Speech message.  # noqa: E501
 
         :param tts: The tts of this SendMessageInputObject.  # noqa: E501
         :type: bool
@@ -474,7 +474,7 @@ class SendMessageInputObject(object):
     def local(self):
         """Gets the local of this SendMessageInputObject.  # noqa: E501
 
-        Treat phone numbers passed in \\'phones\\' field as local.  # noqa: E501
+        Treat phone numbers passed in the \\'phones\\' field as local.  # noqa: E501
 
         :return: The local of this SendMessageInputObject.  # noqa: E501
         :rtype: bool
@@ -485,7 +485,7 @@ class SendMessageInputObject(object):
     def local(self, local):
         """Sets the local of this SendMessageInputObject.
 
-        Treat phone numbers passed in \\'phones\\' field as local.  # noqa: E501
+        Treat phone numbers passed in the \\'phones\\' field as local.  # noqa: E501
 
         :param local: The local of this SendMessageInputObject.  # noqa: E501
         :type: bool
@@ -497,7 +497,7 @@ class SendMessageInputObject(object):
     def local_country(self):
         """Gets the local_country of this SendMessageInputObject.  # noqa: E501
 
-        2-letter ISO country code for local phone numbers, used when \\'local\\' is set to true. Default is account country.  # noqa: E501
+        The 2-letter ISO country code for local phone numbers, used when \\'local\\' is set to true. Default is the account country.  # noqa: E501
 
         :return: The local_country of this SendMessageInputObject.  # noqa: E501
         :rtype: str
@@ -508,7 +508,7 @@ class SendMessageInputObject(object):
     def local_country(self, local_country):
         """Sets the local_country of this SendMessageInputObject.
 
-        2-letter ISO country code for local phone numbers, used when \\'local\\' is set to true. Default is account country.  # noqa: E501
+        The 2-letter ISO country code for local phone numbers, used when \\'local\\' is set to true. Default is the account country.  # noqa: E501
 
         :param local_country: The local_country of this SendMessageInputObject.  # noqa: E501
         :type: str

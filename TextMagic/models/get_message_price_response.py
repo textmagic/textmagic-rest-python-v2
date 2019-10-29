@@ -58,7 +58,7 @@ class GetMessagePriceResponse(object):
     def total(self):
         """Gets the total of this GetMessagePriceResponse.  # noqa: E501
 
-        Total price of the mesasge.  # noqa: E501
+        Total price of the message.  # noqa: E501
 
         :return: The total of this GetMessagePriceResponse.  # noqa: E501
         :rtype: float
@@ -69,7 +69,7 @@ class GetMessagePriceResponse(object):
     def total(self, total):
         """Sets the total of this GetMessagePriceResponse.
 
-        Total price of the mesasge.  # noqa: E501
+        Total price of the message.  # noqa: E501
 
         :param total: The total of this GetMessagePriceResponse.  # noqa: E501
         :type: float

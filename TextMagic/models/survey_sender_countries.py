@@ -125,6 +125,7 @@ class SurveySenderCountries(object):
     def allow_dedicated(self):
         """Gets the allow_dedicated of this SurveySenderCountries.  # noqa: E501
 
+        Is allowed to use a dedicated number?  # noqa: E501
 
         :return: The allow_dedicated of this SurveySenderCountries.  # noqa: E501
         :rtype: bool
@@ -135,6 +136,7 @@ class SurveySenderCountries(object):
     def allow_dedicated(self, allow_dedicated):
         """Sets the allow_dedicated of this SurveySenderCountries.
 
+        Is allowed to use a dedicated number?  # noqa: E501
 
         :param allow_dedicated: The allow_dedicated of this SurveySenderCountries.  # noqa: E501
         :type: bool
