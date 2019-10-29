@@ -3751,7 +3751,7 @@ configuration.password = 'YOUR_PASSWORD'
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 page = 1 # int | Fetch specified results page. (optional) (default to 1)
 limit = 10 # int | The number of results per page. (optional) (default to 10)
-shared = 0 # int | Should shared contacts to be included (optional) (default to 0)
+shared = 0 # int | Should shared contacts be included? (optional) (default to 0)
 order_by = 'id' # str | Order results by some field. Default is id. (optional) (default to id)
 direction = 'desc' # str | Order direction. Default is desc. (optional) (default to desc)
 
@@ -3769,7 +3769,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int**| The number of results per page. | [optional] [default to 10]
- **shared** | **int**| Should shared contacts to be included | [optional] [default to 0]
+ **shared** | **int**| Should shared contacts be included? | [optional] [default to 0]
  **order_by** | **str**| Order results by some field. Default is id. | [optional] [default to id]
  **direction** | **str**| Order direction. Default is desc. | [optional] [default to desc]
 
@@ -3793,7 +3793,7 @@ Name | Type | Description  | Notes
 
 Get contacts autocomplete suggestions
 
-Get contacts autocomplete suggestions by given search term
+Get contacts autocomplete suggestions by given search terms.
 
 ### Example
 ```python
@@ -3812,7 +3812,7 @@ configuration.password = 'YOUR_PASSWORD'
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 query = '\"A\"' # str | Find recipients by specified search query.
 limit = 10 # int | The number of results per page. (optional) (default to 10)
-lists = 0 # int | Should lists be returned or not (optional) (default to 0)
+lists = 0 # int | Should lists be returned or not? (optional) (default to 0)
 
 try:
     # Get contacts autocomplete suggestions
@@ -3828,7 +3828,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **query** | **str**| Find recipients by specified search query. | 
  **limit** | **int**| The number of results per page. | [optional] [default to 10]
- **lists** | **int**| Should lists be returned or not | [optional] [default to 0]
+ **lists** | **int**| Should lists be returned or not? | [optional] [default to 0]
 
 ### Return type
 
@@ -6648,13 +6648,13 @@ configuration.password = 'YOUR_PASSWORD'
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 page = 1 # int | Fetch specified results page. (optional) (default to 1)
 limit = 10 # int | The number of results per page. (optional) (default to 10)
-shared = 0 # int | Should shared contacts to be included (optional) (default to 0)
-ids = 'ids_example' # str | Find contact by ID(s) (optional)
-list_id = 56 # int | Find contact by List ID (optional)
-include_blocked = 56 # int | Should blocked contacts to be included (optional)
+shared = 0 # int | Should shared contacts be included? (optional) (default to 0)
+ids = 'ids_example' # str | Find contacts by IDs. (optional)
+list_id = 56 # int | Find contacts by List ID. (optional)
+include_blocked = 56 # int | Should blocked contacts be included? (optional)
 query = 'query_example' # str | Find contacts by specified search query. (optional)
-local = 0 # int | Treat phone number passed in 'query' field as local. Default is 0 (optional) (default to 0)
-country = 'country_example' # str | 2-letter ISO country code for local phone numbers, used when 'local' is set to true. Default is account country (optional)
+local = 0 # int | Treat phone number passed in the \"query\" field as local. Default is 0. (optional) (default to 0)
+country = 'country_example' # str | The 2-letter ISO country code for local phone numbers, used when \"local\" is set to true. Default is the account country. (optional)
 order_by = 'id' # str | Order results by some field. Default is id. (optional) (default to id)
 direction = 'desc' # str | Order direction. Default is desc. (optional) (default to desc)
 
@@ -6672,13 +6672,13 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int**| The number of results per page. | [optional] [default to 10]
- **shared** | **int**| Should shared contacts to be included | [optional] [default to 0]
- **ids** | **str**| Find contact by ID(s) | [optional] 
- **list_id** | **int**| Find contact by List ID | [optional] 
- **include_blocked** | **int**| Should blocked contacts to be included | [optional] 
+ **shared** | **int**| Should shared contacts be included? | [optional] [default to 0]
+ **ids** | **str**| Find contacts by IDs. | [optional] 
+ **list_id** | **int**| Find contacts by List ID. | [optional] 
+ **include_blocked** | **int**| Should blocked contacts be included? | [optional] 
  **query** | **str**| Find contacts by specified search query. | [optional] 
- **local** | **int**| Treat phone number passed in &#39;query&#39; field as local. Default is 0 | [optional] [default to 0]
- **country** | **str**| 2-letter ISO country code for local phone numbers, used when &#39;local&#39; is set to true. Default is account country | [optional] 
+ **local** | **int**| Treat phone number passed in the \&quot;query\&quot; field as local. Default is 0. | [optional] [default to 0]
+ **country** | **str**| The 2-letter ISO country code for local phone numbers, used when \&quot;local\&quot; is set to true. Default is the account country. | [optional] 
  **order_by** | **str**| Order results by some field. Default is id. | [optional] [default to id]
  **direction** | **str**| Order direction. Default is desc. | [optional] [default to desc]
 

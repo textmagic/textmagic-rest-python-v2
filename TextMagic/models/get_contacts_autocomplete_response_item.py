@@ -94,7 +94,7 @@ class GetContactsAutocompleteResponseItem(object):
     def entity_id(self):
         """Gets the entity_id of this GetContactsAutocompleteResponseItem.  # noqa: E501
 
-        Id of entity. 0 if object is a Reply  # noqa: E501
+        Id of entity. 0 if object is a reply.  # noqa: E501
 
         :return: The entity_id of this GetContactsAutocompleteResponseItem.  # noqa: E501
         :rtype: int
@@ -105,7 +105,7 @@ class GetContactsAutocompleteResponseItem(object):
     def entity_id(self, entity_id):
         """Sets the entity_id of this GetContactsAutocompleteResponseItem.
 
-        Id of entity. 0 if object is a Reply  # noqa: E501
+        Id of entity. 0 if object is a reply.  # noqa: E501
 
         :param entity_id: The entity_id of this GetContactsAutocompleteResponseItem.  # noqa: E501
         :type: int
@@ -117,7 +117,7 @@ class GetContactsAutocompleteResponseItem(object):
     def entity_type(self):
         """Gets the entity_type of this GetContactsAutocompleteResponseItem.  # noqa: E501
 
-        Entry type: * **contact** if it is related to a contact * **list** if it is related to a contact list * **reply** if it is related to an incoming message   # noqa: E501
+        Entry type: * **contact** if it is related to a contact; * **list** if it is related to a contact list; * **reply** if it is related to an incoming message.   # noqa: E501
 
         :return: The entity_type of this GetContactsAutocompleteResponseItem.  # noqa: E501
         :rtype: str
@@ -128,7 +128,7 @@ class GetContactsAutocompleteResponseItem(object):
     def entity_type(self, entity_type):
         """Sets the entity_type of this GetContactsAutocompleteResponseItem.
 
-        Entry type: * **contact** if it is related to a contact * **list** if it is related to a contact list * **reply** if it is related to an incoming message   # noqa: E501
+        Entry type: * **contact** if it is related to a contact; * **list** if it is related to a contact list; * **reply** if it is related to an incoming message.   # noqa: E501
 
         :param entity_type: The entity_type of this GetContactsAutocompleteResponseItem.  # noqa: E501
         :type: str
@@ -146,7 +146,7 @@ class GetContactsAutocompleteResponseItem(object):
     def value(self):
         """Gets the value of this GetContactsAutocompleteResponseItem.  # noqa: E501
 
-        Id of contact/list if entityType is contact/list OR phone number if entityType is reply.  # noqa: E501
+        ID of the contact/list if entityType is contact/list OR phone number if entityType is reply.  # noqa: E501
 
         :return: The value of this GetContactsAutocompleteResponseItem.  # noqa: E501
         :rtype: str
@@ -157,7 +157,7 @@ class GetContactsAutocompleteResponseItem(object):
     def value(self, value):
         """Sets the value of this GetContactsAutocompleteResponseItem.
 
-        Id of contact/list if entityType is contact/list OR phone number if entityType is reply.  # noqa: E501
+        ID of the contact/list if entityType is contact/list OR phone number if entityType is reply.  # noqa: E501
 
         :param value: The value of this GetContactsAutocompleteResponseItem.  # noqa: E501
         :type: str
@@ -192,7 +192,7 @@ class GetContactsAutocompleteResponseItem(object):
     def shared_by(self):
         """Gets the shared_by of this GetContactsAutocompleteResponseItem.  # noqa: E501
 
-        If contact or list was shared by another sub-account then name if this user will be shown.  # noqa: E501
+        If contact or list was shared by another sub-account, the name of this user will be shown.  # noqa: E501
 
         :return: The shared_by of this GetContactsAutocompleteResponseItem.  # noqa: E501
         :rtype: str
@@ -203,7 +203,7 @@ class GetContactsAutocompleteResponseItem(object):
     def shared_by(self, shared_by):
         """Sets the shared_by of this GetContactsAutocompleteResponseItem.
 
-        If contact or list was shared by another sub-account then name if this user will be shown.  # noqa: E501
+        If contact or list was shared by another sub-account, the name of this user will be shown.  # noqa: E501
 
         :param shared_by: The shared_by of this GetContactsAutocompleteResponseItem.  # noqa: E501
         :type: str
@@ -284,7 +284,7 @@ class GetContactsAutocompleteResponseItem(object):
     def user_id(self):
         """Gets the user_id of this GetContactsAutocompleteResponseItem.  # noqa: E501
 
-        Owner id of the contact/list (if it was shared).  # noqa: E501
+        Owner ID of the contact/list (if it was shared).  # noqa: E501
 
         :return: The user_id of this GetContactsAutocompleteResponseItem.  # noqa: E501
         :rtype: int
@@ -295,7 +295,7 @@ class GetContactsAutocompleteResponseItem(object):
     def user_id(self, user_id):
         """Sets the user_id of this GetContactsAutocompleteResponseItem.
 
-        Owner id of the contact/list (if it was shared).  # noqa: E501
+        Owner ID of the contact/list (if it was shared).  # noqa: E501
 
         :param user_id: The user_id of this GetContactsAutocompleteResponseItem.  # noqa: E501
         :type: int

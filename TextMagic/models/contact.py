@@ -152,7 +152,7 @@ class Contact(object):
     def blocked(self):
         """Gets the blocked of this Contact.  # noqa: E501
 
-        Is the Contact blocked? [Custom fields list](http://docs.textmagictesting.com/#operation/getBlockedContacts).  # noqa: E501
+        Is the Contact blocked? [Blocked contacts](http://docs.textmagictesting.com/#operation/getBlockedContacts).  # noqa: E501
 
         :return: The blocked of this Contact.  # noqa: E501
         :rtype: bool
@@ -163,7 +163,7 @@ class Contact(object):
     def blocked(self, blocked):
         """Sets the blocked of this Contact.
 
-        Is the Contact blocked? [Custom fields list](http://docs.textmagictesting.com/#operation/getBlockedContacts).  # noqa: E501
+        Is the Contact blocked? [Blocked contacts](http://docs.textmagictesting.com/#operation/getBlockedContacts).  # noqa: E501
 
         :param blocked: The blocked of this Contact.  # noqa: E501
         :type: bool

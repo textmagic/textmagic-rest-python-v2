@@ -6666,7 +6666,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param int shared: Should shared contacts to be included
+        :param int shared: Should shared contacts be included?
         :param str order_by: Order results by some field. Default is id.
         :param str direction: Order direction. Default is desc.
         :return: GetContactsPaginatedResponse
@@ -6692,7 +6692,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param int shared: Should shared contacts to be included
+        :param int shared: Should shared contacts be included?
         :param str order_by: Order results by some field. Default is id.
         :param str direction: Order direction. Default is desc.
         :return: GetContactsPaginatedResponse
@@ -6768,7 +6768,7 @@ class TextMagicApi(object):
     def get_contacts_autocomplete(self, query, **kwargs):  # noqa: E501
         """Get contacts autocomplete suggestions  # noqa: E501
 
-        Get contacts autocomplete suggestions by given search term  # noqa: E501
+        Get contacts autocomplete suggestions by given search terms.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contacts_autocomplete(query, async_req=True)
@@ -6777,7 +6777,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param str query: Find recipients by specified search query. (required)
         :param int limit: The number of results per page.
-        :param int lists: Should lists be returned or not
+        :param int lists: Should lists be returned or not?
         :return: GetContactsAutocompleteResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -6792,7 +6792,7 @@ class TextMagicApi(object):
     def get_contacts_autocomplete_with_http_info(self, query, **kwargs):  # noqa: E501
         """Get contacts autocomplete suggestions  # noqa: E501
 
-        Get contacts autocomplete suggestions by given search term  # noqa: E501
+        Get contacts autocomplete suggestions by given search terms.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contacts_autocomplete_with_http_info(query, async_req=True)
@@ -6801,7 +6801,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param str query: Find recipients by specified search query. (required)
         :param int limit: The number of results per page.
-        :param int lists: Should lists be returned or not
+        :param int lists: Should lists be returned or not?
         :return: GetContactsAutocompleteResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -12016,13 +12016,13 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param int shared: Should shared contacts to be included
-        :param str ids: Find contact by ID(s)
-        :param int list_id: Find contact by List ID
-        :param int include_blocked: Should blocked contacts to be included
+        :param int shared: Should shared contacts be included?
+        :param str ids: Find contacts by IDs.
+        :param int list_id: Find contacts by List ID.
+        :param int include_blocked: Should blocked contacts be included?
         :param str query: Find contacts by specified search query.
-        :param int local: Treat phone number passed in 'query' field as local. Default is 0
-        :param str country: 2-letter ISO country code for local phone numbers, used when 'local' is set to true. Default is account country
+        :param int local: Treat phone number passed in the \"query\" field as local. Default is 0.
+        :param str country: The 2-letter ISO country code for local phone numbers, used when \"local\" is set to true. Default is the account country.
         :param str order_by: Order results by some field. Default is id.
         :param str direction: Order direction. Default is desc.
         :return: SearchContactsPaginatedResponse
@@ -12048,13 +12048,13 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param int shared: Should shared contacts to be included
-        :param str ids: Find contact by ID(s)
-        :param int list_id: Find contact by List ID
-        :param int include_blocked: Should blocked contacts to be included
+        :param int shared: Should shared contacts be included?
+        :param str ids: Find contacts by IDs.
+        :param int list_id: Find contacts by List ID.
+        :param int include_blocked: Should blocked contacts be included?
         :param str query: Find contacts by specified search query.
-        :param int local: Treat phone number passed in 'query' field as local. Default is 0
-        :param str country: 2-letter ISO country code for local phone numbers, used when 'local' is set to true. Default is account country
+        :param int local: Treat phone number passed in the \"query\" field as local. Default is 0.
+        :param str country: The 2-letter ISO country code for local phone numbers, used when \"local\" is set to true. Default is the account country.
         :param str order_by: Order results by some field. Default is id.
         :param str direction: Order direction. Default is desc.
         :return: SearchContactsPaginatedResponse
