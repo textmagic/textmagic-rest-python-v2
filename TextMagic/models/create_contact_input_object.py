@@ -242,7 +242,7 @@ class CreateContactInputObject(object):
     def favorited(self):
         """Gets the favorited of this CreateContactInputObject.  # noqa: E501
 
-        Is contact marked as favorite.  # noqa: E501
+        Is the contact marked as favorite?  # noqa: E501
 
         :return: The favorited of this CreateContactInputObject.  # noqa: E501
         :rtype: bool
@@ -253,7 +253,7 @@ class CreateContactInputObject(object):
     def favorited(self, favorited):
         """Sets the favorited of this CreateContactInputObject.
 
-        Is contact marked as favorite.  # noqa: E501
+        Is the contact marked as favorite?  # noqa: E501
 
         :param favorited: The favorited of this CreateContactInputObject.  # noqa: E501
         :type: bool
@@ -265,7 +265,7 @@ class CreateContactInputObject(object):
     def blocked(self):
         """Gets the blocked of this CreateContactInputObject.  # noqa: E501
 
-        Is contact blocked for outgoing and incoming messaging.  # noqa: E501
+        Is the contact blocked for outgoing and incoming messaging?  # noqa: E501
 
         :return: The blocked of this CreateContactInputObject.  # noqa: E501
         :rtype: bool
@@ -276,7 +276,7 @@ class CreateContactInputObject(object):
     def blocked(self, blocked):
         """Sets the blocked of this CreateContactInputObject.
 
-        Is contact blocked for outgoing and incoming messaging.  # noqa: E501
+        Is the contact blocked for outgoing and incoming messaging?  # noqa: E501
 
         :param blocked: The blocked of this CreateContactInputObject.  # noqa: E501
         :type: bool
@@ -288,7 +288,7 @@ class CreateContactInputObject(object):
     def type(self):
         """Gets the type of this CreateContactInputObject.  # noqa: E501
 
-        Force type of phone. Possible values: 0 - landline, 1 - mobile. Default is -1 (auto detection).  # noqa: E501
+        Force type of phone. Possible values: 0 is landline; 1 is mobile; default is -1 (auto-detection).  # noqa: E501
 
         :return: The type of this CreateContactInputObject.  # noqa: E501
         :rtype: int
@@ -299,7 +299,7 @@ class CreateContactInputObject(object):
     def type(self, type):
         """Sets the type of this CreateContactInputObject.
 
-        Force type of phone. Possible values: 0 - landline, 1 - mobile. Default is -1 (auto detection).  # noqa: E501
+        Force type of phone. Possible values: 0 is landline; 1 is mobile; default is -1 (auto-detection).  # noqa: E501
 
         :param type: The type of this CreateContactInputObject.  # noqa: E501
         :type: int
@@ -332,7 +332,7 @@ class CreateContactInputObject(object):
     def local(self):
         """Gets the local of this CreateContactInputObject.  # noqa: E501
 
-        Treat phone number passed in request body as local  # noqa: E501
+        Treat phone numbers passed in the request body as local.  # noqa: E501
 
         :return: The local of this CreateContactInputObject.  # noqa: E501
         :rtype: int
@@ -343,7 +343,7 @@ class CreateContactInputObject(object):
     def local(self, local):
         """Sets the local of this CreateContactInputObject.
 
-        Treat phone number passed in request body as local  # noqa: E501
+        Treat phone numbers passed in the request body as local.  # noqa: E501
 
         :param local: The local of this CreateContactInputObject.  # noqa: E501
         :type: int
@@ -355,7 +355,7 @@ class CreateContactInputObject(object):
     def country(self):
         """Gets the country of this CreateContactInputObject.  # noqa: E501
 
-        2-letter ISO country code for local phone numbers, used when local is  set to true. Default is account country  # noqa: E501
+        The 2-letter ISO country code for local phone numbers, used when local is  set to true. Default is the account country.  # noqa: E501
 
         :return: The country of this CreateContactInputObject.  # noqa: E501
         :rtype: str
@@ -366,7 +366,7 @@ class CreateContactInputObject(object):
     def country(self, country):
         """Sets the country of this CreateContactInputObject.
 
-        2-letter ISO country code for local phone numbers, used when local is  set to true. Default is account country  # noqa: E501
+        The 2-letter ISO country code for local phone numbers, used when local is  set to true. Default is the account country.  # noqa: E501
 
         :param country: The country of this CreateContactInputObject.  # noqa: E501
         :type: str

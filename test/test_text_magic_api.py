@@ -39,7 +39,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_block_contact(self):
         """Test case for block_contact
 
-        Block contact by phone number  # noqa: E501
+        Block a contact by phone number  # noqa: E501
         """
         pass
 
@@ -473,7 +473,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_contact_if_blocked(self):
         """Test case for get_contact_if_blocked
 
-        Check is that phone number blocked  # noqa: E501
+        Check if a phone number is blocked  # noqa: E501
         """
         pass
 
@@ -928,7 +928,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_unblock_contact(self):
         """Test case for unblock_contact
 
-        Unblock contact by phone number.  # noqa: E501
+        Unblock a contact by phone number  # noqa: E501
         """
         pass
 

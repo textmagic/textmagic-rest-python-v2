@@ -129,7 +129,7 @@ class Contact(object):
     def favorited(self):
         """Gets the favorited of this Contact.  # noqa: E501
 
-        Is the Contact favorite? [Custom fields list](http://docs.textmagictesting.com/#operation/getFavorites).  # noqa: E501
+        Is the Contact favorite? [Favorite list](http://docs.textmagictesting.com/#operation/getFavorites).  # noqa: E501
 
         :return: The favorited of this Contact.  # noqa: E501
         :rtype: bool
@@ -140,7 +140,7 @@ class Contact(object):
     def favorited(self, favorited):
         """Sets the favorited of this Contact.
 
-        Is the Contact favorite? [Custom fields list](http://docs.textmagictesting.com/#operation/getFavorites).  # noqa: E501
+        Is the Contact favorite? [Favorite list](http://docs.textmagictesting.com/#operation/getFavorites).  # noqa: E501
 
         :param favorited: The favorited of this Contact.  # noqa: E501
         :type: bool

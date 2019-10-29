@@ -112,7 +112,7 @@ class UnsubscribedContact(object):
     def unsubscribe_time(self):
         """Gets the unsubscribe_time of this UnsubscribedContact.  # noqa: E501
 
-        Time when contact has been opted-out.  # noqa: E501
+        Time when contact was opted-out.  # noqa: E501
 
         :return: The unsubscribe_time of this UnsubscribedContact.  # noqa: E501
         :rtype: datetime
@@ -123,7 +123,7 @@ class UnsubscribedContact(object):
     def unsubscribe_time(self, unsubscribe_time):
         """Sets the unsubscribe_time of this UnsubscribedContact.
 
-        Time when contact has been opted-out.  # noqa: E501
+        Time when contact was opted-out.  # noqa: E501
 
         :param unsubscribe_time: The unsubscribe_time of this UnsubscribedContact.  # noqa: E501
         :type: datetime

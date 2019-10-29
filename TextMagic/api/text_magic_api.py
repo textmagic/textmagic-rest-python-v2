@@ -141,9 +141,9 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def block_contact(self, block_contact_input_object, **kwargs):  # noqa: E501
-        """Block contact by phone number  # noqa: E501
+        """Block a contact by phone number  # noqa: E501
 
-        Block contact from inbound and outbound communication by phone number.  # noqa: E501
+        Block a contact from inbound and outbound communication by phone number.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.block_contact(block_contact_input_object, async_req=True)
@@ -163,9 +163,9 @@ class TextMagicApi(object):
             return data
 
     def block_contact_with_http_info(self, block_contact_input_object, **kwargs):  # noqa: E501
-        """Block contact by phone number  # noqa: E501
+        """Block a contact by phone number  # noqa: E501
 
-        Block contact from inbound and outbound communication by phone number.  # noqa: E501
+        Block a contact from inbound and outbound communication by phone number.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.block_contact_with_http_info(block_contact_input_object, async_req=True)
@@ -1885,7 +1885,7 @@ class TextMagicApi(object):
     def delete_contact(self, id, **kwargs):  # noqa: E501
         """Delete a contact  # noqa: E501
 
-        > This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, instead use the Contact assignment command in the Lists section rather than deleting the contact.   # noqa: E501
+        > This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_contact(id, async_req=True)
@@ -1907,7 +1907,7 @@ class TextMagicApi(object):
     def delete_contact_with_http_info(self, id, **kwargs):  # noqa: E501
         """Delete a contact  # noqa: E501
 
-        > This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, instead use the Contact assignment command in the Lists section rather than deleting the contact.   # noqa: E501
+        > This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_contact_with_http_info(id, async_req=True)
@@ -6062,7 +6062,7 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int id: The contact id (required)
+        :param int id: Contact ID. (required)
         :return: Contact
                  If the method is called asynchronously,
                  returns the request thread.
@@ -6084,7 +6084,7 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int id: The contact id (required)
+        :param int id: Contact ID. (required)
         :return: Contact
                  If the method is called asynchronously,
                  returns the request thread.
@@ -6251,7 +6251,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_contact_if_blocked(self, phone, **kwargs):  # noqa: E501
-        """Check is that phone number blocked  # noqa: E501
+        """Check if a phone number is blocked  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -6260,7 +6260,7 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str phone: Phone number to check (required)
+        :param str phone: Phone number to check. (required)
         :return: Contact
                  If the method is called asynchronously,
                  returns the request thread.
@@ -6273,7 +6273,7 @@ class TextMagicApi(object):
             return data
 
     def get_contact_if_blocked_with_http_info(self, phone, **kwargs):  # noqa: E501
-        """Check is that phone number blocked  # noqa: E501
+        """Check if a phone number is blocked  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -6282,7 +6282,7 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str phone: Phone number to check (required)
+        :param str phone: Phone number to check. (required)
         :return: Contact
                  If the method is called asynchronously,
                  returns the request thread.
@@ -10512,7 +10512,7 @@ class TextMagicApi(object):
     def get_unsubscribers(self, **kwargs):  # noqa: E501
         """Get all unsubscribed contacts  # noqa: E501
 
-        When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed, use:   # noqa: E501
+        When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use:   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_unsubscribers(async_req=True)
@@ -10535,7 +10535,7 @@ class TextMagicApi(object):
     def get_unsubscribers_with_http_info(self, **kwargs):  # noqa: E501
         """Get all unsubscribed contacts  # noqa: E501
 
-        When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed, use:   # noqa: E501
+        When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use:   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_unsubscribers_with_http_info(async_req=True)
@@ -10721,9 +10721,9 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param file file: File containing contacts in csv or xls(x) formats (required)
+        :param file file: File containing contacts in csv or xls(x) formats. (required)
         :param str column: Import file column mapping. The string must contain sub-strings of mapping in format `columnNumber:field` glued by `;`. For example: `0:firstName;1:lastName;3:phone;4:email` where the value before `:` is a number of the column in the file, and the value after `:` is a field of the newly created contact or the ID of a custom field. Numbers of columns begin from zero. Allowed built-in contact fields are: `firstName`, `lastName`, `phone`, `email`. Existing of `phone` mapping is required.  (required)
-        :param int list_id: List ID contacts will be imported to. Ignored if `listName` is specified. 
+        :param int list_id: List that ID contacts will be imported to. Ignored if `listName` is specified. 
         :param str list_name: List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if `listId` is specified. 
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
@@ -10746,9 +10746,9 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param file file: File containing contacts in csv or xls(x) formats (required)
+        :param file file: File containing contacts in csv or xls(x) formats. (required)
         :param str column: Import file column mapping. The string must contain sub-strings of mapping in format `columnNumber:field` glued by `;`. For example: `0:firstName;1:lastName;3:phone;4:email` where the value before `:` is a number of the column in the file, and the value after `:` is a field of the newly created contact or the ID of a custom field. Numbers of columns begin from zero. Allowed built-in contact fields are: `firstName`, `lastName`, `phone`, `email`. Existing of `phone` mapping is required.  (required)
-        :param int list_id: List ID contacts will be imported to. Ignored if `listName` is specified. 
+        :param int list_id: List that ID contacts will be imported to. Ignored if `listName` is specified. 
         :param str list_name: List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if `listId` is specified. 
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
@@ -13040,9 +13040,9 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def unblock_contact(self, unblock_contact_input_object, **kwargs):  # noqa: E501
-        """Unblock contact by phone number.  # noqa: E501
+        """Unblock a contact by phone number  # noqa: E501
 
-          # noqa: E501
+        Unblock a contact by phone number  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.unblock_contact(unblock_contact_input_object, async_req=True)
@@ -13062,9 +13062,9 @@ class TextMagicApi(object):
             return data
 
     def unblock_contact_with_http_info(self, unblock_contact_input_object, **kwargs):  # noqa: E501
-        """Unblock contact by phone number.  # noqa: E501
+        """Unblock a contact by phone number  # noqa: E501
 
-          # noqa: E501
+        Unblock a contact by phone number  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.unblock_contact_with_http_info(unblock_contact_input_object, async_req=True)
@@ -13137,7 +13137,7 @@ class TextMagicApi(object):
     def unblock_contacts_bulk(self, unblock_contacts_bulk_input_object, **kwargs):  # noqa: E501
         """Unblock contacts (bulk)  # noqa: E501
 
-        Unblock several contacts by blocked contact ids or unblock all contacts  # noqa: E501
+        Unblock several contacts by blocked contact IDs or unblock all contacts.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.unblock_contacts_bulk(unblock_contacts_bulk_input_object, async_req=True)
@@ -13159,7 +13159,7 @@ class TextMagicApi(object):
     def unblock_contacts_bulk_with_http_info(self, unblock_contacts_bulk_input_object, **kwargs):  # noqa: E501
         """Unblock contacts (bulk)  # noqa: E501
 
-        Unblock several contacts by blocked contact ids or unblock all contacts  # noqa: E501
+        Unblock several contacts by blocked contact IDs or unblock all contacts.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.unblock_contacts_bulk_with_http_info(unblock_contacts_bulk_input_object, async_req=True)

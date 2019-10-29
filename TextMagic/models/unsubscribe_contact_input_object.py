@@ -79,7 +79,7 @@ class UnsubscribeContactInputObject(object):
     def block_incoming(self):
         """Gets the block_incoming of this UnsubscribeContactInputObject.  # noqa: E501
 
-        If set to 1 incoming messages from this number will be blocked.  # noqa: E501
+        If set to 1, incoming messages from this number will be blocked.  # noqa: E501
 
         :return: The block_incoming of this UnsubscribeContactInputObject.  # noqa: E501
         :rtype: int
@@ -90,7 +90,7 @@ class UnsubscribeContactInputObject(object):
     def block_incoming(self, block_incoming):
         """Sets the block_incoming of this UnsubscribeContactInputObject.
 
-        If set to 1 incoming messages from this number will be blocked.  # noqa: E501
+        If set to 1, incoming messages from this number will be blocked.  # noqa: E501
 
         :param block_incoming: The block_incoming of this UnsubscribeContactInputObject.  # noqa: E501
         :type: int

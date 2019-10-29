@@ -104,7 +104,7 @@ class UpdateContactInputObject(object):
     def first_name(self):
         """Gets the first_name of this UpdateContactInputObject.  # noqa: E501
 
-        Contact first name  # noqa: E501
+        Contact first name.  # noqa: E501
 
         :return: The first_name of this UpdateContactInputObject.  # noqa: E501
         :rtype: str
@@ -115,7 +115,7 @@ class UpdateContactInputObject(object):
     def first_name(self, first_name):
         """Sets the first_name of this UpdateContactInputObject.
 
-        Contact first name  # noqa: E501
+        Contact first name.  # noqa: E501
 
         :param first_name: The first_name of this UpdateContactInputObject.  # noqa: E501
         :type: str
@@ -127,7 +127,7 @@ class UpdateContactInputObject(object):
     def last_name(self):
         """Gets the last_name of this UpdateContactInputObject.  # noqa: E501
 
-        Contact last name  # noqa: E501
+        Contact last name.  # noqa: E501
 
         :return: The last_name of this UpdateContactInputObject.  # noqa: E501
         :rtype: str
@@ -138,7 +138,7 @@ class UpdateContactInputObject(object):
     def last_name(self, last_name):
         """Sets the last_name of this UpdateContactInputObject.
 
-        Contact last name  # noqa: E501
+        Contact last name.  # noqa: E501
 
         :param last_name: The last_name of this UpdateContactInputObject.  # noqa: E501
         :type: str
@@ -196,7 +196,7 @@ class UpdateContactInputObject(object):
     def company_name(self):
         """Gets the company_name of this UpdateContactInputObject.  # noqa: E501
 
-        Contact company name  # noqa: E501
+        Contact company name.  # noqa: E501
 
         :return: The company_name of this UpdateContactInputObject.  # noqa: E501
         :rtype: str
@@ -207,7 +207,7 @@ class UpdateContactInputObject(object):
     def company_name(self, company_name):
         """Sets the company_name of this UpdateContactInputObject.
 
-        Contact company name  # noqa: E501
+        Contact company name.  # noqa: E501
 
         :param company_name: The company_name of this UpdateContactInputObject.  # noqa: E501
         :type: str
@@ -242,7 +242,7 @@ class UpdateContactInputObject(object):
     def favorited(self):
         """Gets the favorited of this UpdateContactInputObject.  # noqa: E501
 
-        Is contact marked as favorite.  # noqa: E501
+        Is the contact marked as favorite?  # noqa: E501
 
         :return: The favorited of this UpdateContactInputObject.  # noqa: E501
         :rtype: bool
@@ -253,7 +253,7 @@ class UpdateContactInputObject(object):
     def favorited(self, favorited):
         """Sets the favorited of this UpdateContactInputObject.
 
-        Is contact marked as favorite.  # noqa: E501
+        Is the contact marked as favorite?  # noqa: E501
 
         :param favorited: The favorited of this UpdateContactInputObject.  # noqa: E501
         :type: bool
@@ -265,7 +265,7 @@ class UpdateContactInputObject(object):
     def blocked(self):
         """Gets the blocked of this UpdateContactInputObject.  # noqa: E501
 
-        Is contact blocked for outgoing and incoming messaging.  # noqa: E501
+        Is the contact blocked for outgoing and incoming messaging?  # noqa: E501
 
         :return: The blocked of this UpdateContactInputObject.  # noqa: E501
         :rtype: bool
@@ -276,7 +276,7 @@ class UpdateContactInputObject(object):
     def blocked(self, blocked):
         """Sets the blocked of this UpdateContactInputObject.
 
-        Is contact blocked for outgoing and incoming messaging.  # noqa: E501
+        Is the contact blocked for outgoing and incoming messaging?  # noqa: E501
 
         :param blocked: The blocked of this UpdateContactInputObject.  # noqa: E501
         :type: bool
@@ -288,7 +288,7 @@ class UpdateContactInputObject(object):
     def type(self):
         """Gets the type of this UpdateContactInputObject.  # noqa: E501
 
-        Force type of phone. Possible values: 0 - landline, 1 - mobile. Default is -1 (auto detection).  # noqa: E501
+        Force type of phone. Possible values: 0 is landline; 1 is mobile; default is -1 (auto-detection).  # noqa: E501
 
         :return: The type of this UpdateContactInputObject.  # noqa: E501
         :rtype: int
@@ -299,7 +299,7 @@ class UpdateContactInputObject(object):
     def type(self, type):
         """Sets the type of this UpdateContactInputObject.
 
-        Force type of phone. Possible values: 0 - landline, 1 - mobile. Default is -1 (auto detection).  # noqa: E501
+        Force type of phone. Possible values: 0 is landline; 1 is mobile; default is -1 (auto-detection).  # noqa: E501
 
         :param type: The type of this UpdateContactInputObject.  # noqa: E501
         :type: int
@@ -332,7 +332,7 @@ class UpdateContactInputObject(object):
     def local(self):
         """Gets the local of this UpdateContactInputObject.  # noqa: E501
 
-        Treat phone number passed in request body as **local**.  # noqa: E501
+        Treat phone numbers passed in the request body as **local**.  # noqa: E501
 
         :return: The local of this UpdateContactInputObject.  # noqa: E501
         :rtype: int
@@ -343,7 +343,7 @@ class UpdateContactInputObject(object):
     def local(self, local):
         """Sets the local of this UpdateContactInputObject.
 
-        Treat phone number passed in request body as **local**.  # noqa: E501
+        Treat phone numbers passed in the request body as **local**.  # noqa: E501
 
         :param local: The local of this UpdateContactInputObject.  # noqa: E501
         :type: int
@@ -355,7 +355,7 @@ class UpdateContactInputObject(object):
     def country(self):
         """Gets the country of this UpdateContactInputObject.  # noqa: E501
 
-        2-letter ISO country code for local phone numbers, used when **local** is set to true.  # noqa: E501
+        The 2-letter ISO country code for local phone numbers, used when **local** is set to true.  # noqa: E501
 
         :return: The country of this UpdateContactInputObject.  # noqa: E501
         :rtype: str
@@ -366,7 +366,7 @@ class UpdateContactInputObject(object):
     def country(self, country):
         """Sets the country of this UpdateContactInputObject.
 
-        2-letter ISO country code for local phone numbers, used when **local** is set to true.  # noqa: E501
+        The 2-letter ISO country code for local phone numbers, used when **local** is set to true.  # noqa: E501
 
         :param country: The country of this UpdateContactInputObject.  # noqa: E501
         :type: str

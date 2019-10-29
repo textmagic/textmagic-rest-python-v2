@@ -5,7 +5,7 @@ All URIs are relative to *http://rest.textmagic.com*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**assign_contacts_to_list**](TextMagicApi.md#assign_contacts_to_list) | **PUT** /api/v2/lists/{id}/contacts | Assign contacts to a list
-[**block_contact**](TextMagicApi.md#block_contact) | **POST** /api/v2/contacts/block | Block contact by phone number
+[**block_contact**](TextMagicApi.md#block_contact) | **POST** /api/v2/contacts/block | Block a contact by phone number
 [**buy_dedicated_number**](TextMagicApi.md#buy_dedicated_number) | **POST** /api/v2/numbers | Buy a dedicated number
 [**cancel_verification**](TextMagicApi.md#cancel_verification) | **DELETE** /api/v2/verify/{verifyId} | Cancel verification process
 [**check_phone_verification_code_tfa**](TextMagicApi.md#check_phone_verification_code_tfa) | **PUT** /api/v2/verify | Step 2: Check the verification code 
@@ -67,7 +67,7 @@ Method | HTTP request | Description
 [**get_chat_messages**](TextMagicApi.md#get_chat_messages) | **GET** /api/v2/chats/{id}/message | Get chat messages
 [**get_contact**](TextMagicApi.md#get_contact) | **GET** /api/v2/contacts/{id} | Get the details of a specific contact
 [**get_contact_by_phone**](TextMagicApi.md#get_contact_by_phone) | **GET** /api/v2/contacts/phone/{phone} | Get the details of a specific contact by phone number
-[**get_contact_if_blocked**](TextMagicApi.md#get_contact_if_blocked) | **GET** /api/v2/contacts/block/phone | Check is that phone number blocked
+[**get_contact_if_blocked**](TextMagicApi.md#get_contact_if_blocked) | **GET** /api/v2/contacts/block/phone | Check if a phone number is blocked
 [**get_contact_import_session_progress**](TextMagicApi.md#get_contact_import_session_progress) | **GET** /api/v2/contacts/import/progress/{id} | Check import progress
 [**get_contact_note**](TextMagicApi.md#get_contact_note) | **GET** /api/v2/notes/{id} | Get a contact note
 [**get_contact_notes**](TextMagicApi.md#get_contact_notes) | **GET** /api/v2/contacts/{id}/notes | Fetch notes assigned to a given contact
@@ -132,7 +132,7 @@ Method | HTTP request | Description
 [**send_message**](TextMagicApi.md#send_message) | **POST** /api/v2/messages | Send message
 [**send_phone_verification_code_tfa**](TextMagicApi.md#send_phone_verification_code_tfa) | **POST** /api/v2/verify | Step 1: Send a verification code 
 [**set_chat_status**](TextMagicApi.md#set_chat_status) | **POST** /api/v2/chats/status | Change chat status
-[**unblock_contact**](TextMagicApi.md#unblock_contact) | **POST** /api/v2/contacts/unblock | Unblock contact by phone number.
+[**unblock_contact**](TextMagicApi.md#unblock_contact) | **POST** /api/v2/contacts/unblock | Unblock a contact by phone number
 [**unblock_contacts_bulk**](TextMagicApi.md#unblock_contacts_bulk) | **POST** /api/v2/contacts/unblock/bulk | Unblock contacts (bulk)
 [**unmute_chats_bulk**](TextMagicApi.md#unmute_chats_bulk) | **POST** /api/v2/chats/unmute/bulk | Unmute chats (bulk)
 [**unsubscribe_contact**](TextMagicApi.md#unsubscribe_contact) | **POST** /api/v2/unsubscribers | Manually unsubscribe a contact
@@ -212,9 +212,9 @@ Name | Type | Description  | Notes
 # **block_contact**
 > ResourceLinkResponse block_contact(block_contact_input_object)
 
-Block contact by phone number
+Block a contact by phone number
 
-Block contact from inbound and outbound communication by phone number.
+Block a contact from inbound and outbound communication by phone number.
 
 ### Example
 ```python
@@ -234,7 +234,7 @@ api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 block_contact_input_object = TextMagic.BlockContactInputObject() # BlockContactInputObject | 
 
 try:
-    # Block contact by phone number
+    # Block a contact by phone number
     api_response = api_instance.block_contact(block_contact_input_object)
     pprint(api_response)
 except ApiException as e:
@@ -1147,7 +1147,7 @@ void (empty response body)
 
 Delete a contact
 
-> This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, instead use the Contact assignment command in the Lists section rather than deleting the contact. 
+> This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact. 
 
 ### Example
 ```python
@@ -3427,7 +3427,7 @@ configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-id = 1 # int | The contact id
+id = 1 # int | Contact ID.
 
 try:
     # Get the details of a specific contact
@@ -3441,7 +3441,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| The contact id | 
+ **id** | **int**| Contact ID. | 
 
 ### Return type
 
@@ -3514,7 +3514,7 @@ Name | Type | Description  | Notes
 # **get_contact_if_blocked**
 > Contact get_contact_if_blocked(phone)
 
-Check is that phone number blocked
+Check if a phone number is blocked
 
 
 
@@ -3533,10 +3533,10 @@ configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-phone = '\"447860021130\"' # str | Phone number to check
+phone = '\"447860021130\"' # str | Phone number to check.
 
 try:
-    # Check is that phone number blocked
+    # Check if a phone number is blocked
     api_response = api_instance.get_contact_if_blocked(phone)
     pprint(api_response)
 except ApiException as e:
@@ -3547,7 +3547,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **phone** | **str**| Phone number to check | 
+ **phone** | **str**| Phone number to check. | 
 
 ### Return type
 
@@ -5817,7 +5817,7 @@ Name | Type | Description  | Notes
 
 Get all unsubscribed contacts
 
-When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed, use: 
+When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use: 
 
 ### Example
 ```python
@@ -5946,9 +5946,9 @@ configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-file = '/path/to/file.txt' # file | File containing contacts in csv or xls(x) formats
+file = '/path/to/file.txt' # file | File containing contacts in csv or xls(x) formats.
 column = '\"0:firstName;1:lastName;3:phone;4:email\"' # str | Import file column mapping. The string must contain sub-strings of mapping in format `columnNumber:field` glued by `;`. For example: `0:firstName;1:lastName;3:phone;4:email` where the value before `:` is a number of the column in the file, and the value after `:` is a field of the newly created contact or the ID of a custom field. Numbers of columns begin from zero. Allowed built-in contact fields are: `firstName`, `lastName`, `phone`, `email`. Existing of `phone` mapping is required. 
-list_id = 443 # int | List ID contacts will be imported to. Ignored if `listName` is specified.  (optional)
+list_id = 443 # int | List that ID contacts will be imported to. Ignored if `listName` is specified.  (optional)
 list_name = '\"A new list\"' # str | List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if `listId` is specified.  (optional)
 
 try:
@@ -5963,9 +5963,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **file** | **file**| File containing contacts in csv or xls(x) formats | 
+ **file** | **file**| File containing contacts in csv or xls(x) formats. | 
  **column** | **str**| Import file column mapping. The string must contain sub-strings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where the value before &#x60;:&#x60; is a number of the column in the file, and the value after &#x60;:&#x60; is a field of the newly created contact or the ID of a custom field. Numbers of columns begin from zero. Allowed built-in contact fields are: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required.  | 
- **list_id** | **int**| List ID contacts will be imported to. Ignored if &#x60;listName&#x60; is specified.  | [optional] 
+ **list_id** | **int**| List that ID contacts will be imported to. Ignored if &#x60;listName&#x60; is specified.  | [optional] 
  **list_name** | **str**| List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if &#x60;listId&#x60; is specified.  | [optional] 
 
 ### Return type
@@ -7184,9 +7184,9 @@ Name | Type | Description  | Notes
 # **unblock_contact**
 > unblock_contact(unblock_contact_input_object)
 
-Unblock contact by phone number.
+Unblock a contact by phone number
 
-
+Unblock a contact by phone number
 
 ### Example
 ```python
@@ -7206,7 +7206,7 @@ api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 unblock_contact_input_object = TextMagic.UnblockContactInputObject() # UnblockContactInputObject | 
 
 try:
-    # Unblock contact by phone number.
+    # Unblock a contact by phone number
     api_instance.unblock_contact(unblock_contact_input_object)
 except ApiException as e:
     print("Exception when calling TextMagicApi->unblock_contact: %s\n" % e)
@@ -7238,7 +7238,7 @@ void (empty response body)
 
 Unblock contacts (bulk)
 
-Unblock several contacts by blocked contact ids or unblock all contacts
+Unblock several contacts by blocked contact IDs or unblock all contacts.
 
 ### Example
 ```python

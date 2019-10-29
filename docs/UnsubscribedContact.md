@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** | Unsubscribed contact ID. | 
 **phone** | **str** | Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164). | 
-**unsubscribe_time** | **datetime** | Time when contact has been opted-out. | 
+**unsubscribe_time** | **datetime** | Time when contact was opted-out. | 
 **first_name** | **str** | Unsubscribed contact first name. | 
 **last_name** | **str** | Unsubscribed contact last name. | 
 
