@@ -242,14 +242,14 @@ class TestTextMagicApi(unittest.TestCase):
     def test_delete_list_avatar(self):
         """Test case for delete_list_avatar
 
-        Delete an avatar for the list  # noqa: E501
+        Delete an avatar for a list  # noqa: E501
         """
         pass
 
     def test_delete_list_contacts_bulk(self):
         """Test case for delete_list_contacts_bulk
 
-        Delete contacts from list (bulk)  # noqa: E501
+        Delete contacts from a list (bulk)  # noqa: E501
         """
         pass
 
@@ -592,7 +592,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_list_contacts_ids(self):
         """Test case for get_list_contacts_ids
 
-        Get all contacts IDs in a list  # noqa: E501
+        Get all contact IDs in a list  # noqa: E501
         """
         pass
 
@@ -1054,7 +1054,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_upload_list_avatar(self):
         """Test case for upload_list_avatar
 
-        Add an avatar for the list  # noqa: E501
+        Add an avatar for a list  # noqa: E501
         """
         pass
 

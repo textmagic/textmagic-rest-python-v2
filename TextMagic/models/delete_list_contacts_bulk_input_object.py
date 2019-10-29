@@ -79,7 +79,7 @@ class DeleteListContactsBulkInputObject(object):
     def all(self):
         """Gets the all of this DeleteListContactsBulkInputObject.  # noqa: E501
 
-        Default is 0 (false). If set to 1, all the entities will be removed.  # noqa: E501
+        Default is 0 (false). If set to 1, all entities will be removed.  # noqa: E501
 
         :return: The all of this DeleteListContactsBulkInputObject.  # noqa: E501
         :rtype: int
@@ -90,7 +90,7 @@ class DeleteListContactsBulkInputObject(object):
     def all(self, all):
         """Sets the all of this DeleteListContactsBulkInputObject.
 
-        Default is 0 (false). If set to 1, all the entities will be removed.  # noqa: E501
+        Default is 0 (false). If set to 1, all entities will be removed.  # noqa: E501
 
         :param all: The all of this DeleteListContactsBulkInputObject.  # noqa: E501
         :type: int

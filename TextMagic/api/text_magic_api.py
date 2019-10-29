@@ -2855,7 +2855,7 @@ class TextMagicApi(object):
     def delete_list(self, id, **kwargs):  # noqa: E501
         """Delete a list  # noqa: E501
 
-        This command has no parameters. If successful, this command will return the standard delete response (204 No Content), otherwise a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well unless they were saved in other list.  # noqa: E501
+        This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_list(id, async_req=True)
@@ -2877,7 +2877,7 @@ class TextMagicApi(object):
     def delete_list_with_http_info(self, id, **kwargs):  # noqa: E501
         """Delete a list  # noqa: E501
 
-        This command has no parameters. If successful, this command will return the standard delete response (204 No Content), otherwise a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well unless they were saved in other list.  # noqa: E501
+        This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_list_with_http_info(id, async_req=True)
@@ -2948,9 +2948,9 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def delete_list_avatar(self, id, **kwargs):  # noqa: E501
-        """Delete an avatar for the list  # noqa: E501
+        """Delete an avatar for a list  # noqa: E501
 
-          # noqa: E501
+        Delete an avatar for a list  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_list_avatar(id, async_req=True)
@@ -2970,9 +2970,9 @@ class TextMagicApi(object):
             return data
 
     def delete_list_avatar_with_http_info(self, id, **kwargs):  # noqa: E501
-        """Delete an avatar for the list  # noqa: E501
+        """Delete an avatar for a list  # noqa: E501
 
-          # noqa: E501
+        Delete an avatar for a list  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_list_avatar_with_http_info(id, async_req=True)
@@ -3047,9 +3047,9 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def delete_list_contacts_bulk(self, delete_list_contacts_bulk_input_object, id, **kwargs):  # noqa: E501
-        """Delete contacts from list (bulk)  # noqa: E501
+        """Delete contacts from a list (bulk)  # noqa: E501
 
-          # noqa: E501
+        Delete contacts from a list (bulk)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_list_contacts_bulk(delete_list_contacts_bulk_input_object, id, async_req=True)
@@ -3070,9 +3070,9 @@ class TextMagicApi(object):
             return data
 
     def delete_list_contacts_bulk_with_http_info(self, delete_list_contacts_bulk_input_object, id, **kwargs):  # noqa: E501
-        """Delete contacts from list (bulk)  # noqa: E501
+        """Delete contacts from a list (bulk)  # noqa: E501
 
-          # noqa: E501
+        Delete contacts from a list (bulk)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_list_contacts_bulk_with_http_info(delete_list_contacts_bulk_input_object, id, async_req=True)
@@ -6875,17 +6875,17 @@ class TextMagicApi(object):
     def get_contacts_by_list_id(self, id, **kwargs):  # noqa: E501
         """Get all contacts in a list  # noqa: E501
 
-        A useful synonym for \"contacts/search\" command with provided \"listId\" parameter.  # noqa: E501
+        A useful synonym for the \"contacts/search\" command with the provided \"listId\" parameter.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contacts_by_list_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param int id: Given group Id. (required)
+        :param int id: Given group ID. (required)
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param str order_by: Order results by some field. Default is id
+        :param str order_by: Order results by some field. Default is id.
         :param str direction: Order direction. Default is desc.
         :return: GetContactsByListIdPaginatedResponse
                  If the method is called asynchronously,
@@ -6901,17 +6901,17 @@ class TextMagicApi(object):
     def get_contacts_by_list_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get all contacts in a list  # noqa: E501
 
-        A useful synonym for \"contacts/search\" command with provided \"listId\" parameter.  # noqa: E501
+        A useful synonym for the \"contacts/search\" command with the provided \"listId\" parameter.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contacts_by_list_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param int id: Given group Id. (required)
+        :param int id: Given group ID. (required)
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param str order_by: Order results by some field. Default is id
+        :param str order_by: Order results by some field. Default is id.
         :param str direction: Order direction. Default is desc.
         :return: GetContactsByListIdPaginatedResponse
                  If the method is called asynchronously,
@@ -7958,7 +7958,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_list_contacts_ids(self, id, **kwargs):  # noqa: E501
-        """Get all contacts IDs in a list  # noqa: E501
+        """Get all contact IDs in a list  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -7980,7 +7980,7 @@ class TextMagicApi(object):
             return data
 
     def get_list_contacts_ids_with_http_info(self, id, **kwargs):  # noqa: E501
-        """Get all contacts IDs in a list  # noqa: E501
+        """Get all contact IDs in a list  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -14850,16 +14850,16 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def upload_list_avatar(self, image, id, **kwargs):  # noqa: E501
-        """Add an avatar for the list  # noqa: E501
+        """Add an avatar for a list  # noqa: E501
 
-          # noqa: E501
+        Add an avatar for a list  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.upload_list_avatar(image, id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param file image: List avatar. Should be PNG or JPG file not more than 10 MB (required)
+        :param file image: List avatar. Should be a PNG or JPG file not more than 10 MB. (required)
         :param int id: (required)
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
@@ -14873,16 +14873,16 @@ class TextMagicApi(object):
             return data
 
     def upload_list_avatar_with_http_info(self, image, id, **kwargs):  # noqa: E501
-        """Add an avatar for the list  # noqa: E501
+        """Add an avatar for a list  # noqa: E501
 
-          # noqa: E501
+        Add an avatar for a list  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.upload_list_avatar_with_http_info(image, id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param file image: List avatar. Should be PNG or JPG file not more than 10 MB (required)
+        :param file image: List avatar. Should be a PNG or JPG file not more than 10 MB. (required)
         :param int id: (required)
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
