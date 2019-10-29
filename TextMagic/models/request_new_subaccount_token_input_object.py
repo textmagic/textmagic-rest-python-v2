@@ -59,7 +59,7 @@ class RequestNewSubaccountTokenInputObject(object):
     def user_id(self):
         """Gets the user_id of this RequestNewSubaccountTokenInputObject.  # noqa: E501
 
-        Subaccount ID  # noqa: E501
+        Sub-account ID.  # noqa: E501
 
         :return: The user_id of this RequestNewSubaccountTokenInputObject.  # noqa: E501
         :rtype: int
@@ -70,7 +70,7 @@ class RequestNewSubaccountTokenInputObject(object):
     def user_id(self, user_id):
         """Sets the user_id of this RequestNewSubaccountTokenInputObject.
 
-        Subaccount ID  # noqa: E501
+        Sub-account ID.  # noqa: E501
 
         :param user_id: The user_id of this RequestNewSubaccountTokenInputObject.  # noqa: E501
         :type: int
@@ -82,7 +82,7 @@ class RequestNewSubaccountTokenInputObject(object):
     def password(self):
         """Gets the password of this RequestNewSubaccountTokenInputObject.  # noqa: E501
 
-        Your account password  # noqa: E501
+        Your account password.  # noqa: E501
 
         :return: The password of this RequestNewSubaccountTokenInputObject.  # noqa: E501
         :rtype: str
@@ -93,7 +93,7 @@ class RequestNewSubaccountTokenInputObject(object):
     def password(self, password):
         """Sets the password of this RequestNewSubaccountTokenInputObject.
 
-        Your account password  # noqa: E501
+        Your account password.  # noqa: E501
 
         :param password: The password of this RequestNewSubaccountTokenInputObject.  # noqa: E501
         :type: str
@@ -105,7 +105,7 @@ class RequestNewSubaccountTokenInputObject(object):
     def app_name(self):
         """Gets the app_name of this RequestNewSubaccountTokenInputObject.  # noqa: E501
 
-        Application name  # noqa: E501
+        Application name.  # noqa: E501
 
         :return: The app_name of this RequestNewSubaccountTokenInputObject.  # noqa: E501
         :rtype: str
@@ -116,7 +116,7 @@ class RequestNewSubaccountTokenInputObject(object):
     def app_name(self, app_name):
         """Sets the app_name of this RequestNewSubaccountTokenInputObject.
 
-        Application name  # noqa: E501
+        Application name.  # noqa: E501
 
         :param app_name: The app_name of this RequestNewSubaccountTokenInputObject.  # noqa: E501
         :type: str

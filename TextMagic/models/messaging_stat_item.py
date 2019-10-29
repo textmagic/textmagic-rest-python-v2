@@ -113,7 +113,7 @@ class MessagingStatItem(object):
     def _date(self):
         """Gets the _date of this MessagingStatItem.  # noqa: E501
 
-        Time interval start, empty if the **by** parameter was set to **off**.   # noqa: E501
+        Time interval start: empty if the **by** parameter was set to **off**.   # noqa: E501
 
         :return: The _date of this MessagingStatItem.  # noqa: E501
         :rtype: datetime
@@ -124,7 +124,7 @@ class MessagingStatItem(object):
     def _date(self, _date):
         """Sets the _date of this MessagingStatItem.
 
-        Time interval start, empty if the **by** parameter was set to **off**.   # noqa: E501
+        Time interval start: empty if the **by** parameter was set to **off**.   # noqa: E501
 
         :param _date: The _date of this MessagingStatItem.  # noqa: E501
         :type: datetime
@@ -228,7 +228,7 @@ class MessagingStatItem(object):
     def messages_sent_accepted(self):
         """Gets the messages_sent_accepted of this MessagingStatItem.  # noqa: E501
 
-        Messages accepted for delivery (in queue), but not yet delivered.  # noqa: E501
+        Messages accepted for delivery (in queue) but not yet delivered.  # noqa: E501
 
         :return: The messages_sent_accepted of this MessagingStatItem.  # noqa: E501
         :rtype: int
@@ -239,7 +239,7 @@ class MessagingStatItem(object):
     def messages_sent_accepted(self, messages_sent_accepted):
         """Sets the messages_sent_accepted of this MessagingStatItem.
 
-        Messages accepted for delivery (in queue), but not yet delivered.  # noqa: E501
+        Messages accepted for delivery (in queue) but not yet delivered.  # noqa: E501
 
         :param messages_sent_accepted: The messages_sent_accepted of this MessagingStatItem.  # noqa: E501
         :type: int
@@ -274,7 +274,7 @@ class MessagingStatItem(object):
     def messages_sent_failed(self):
         """Gets the messages_sent_failed of this MessagingStatItem.  # noqa: E501
 
-        Messages that have failed for whatever reason, e.g. the destination phone was switched off for 48 hours or the recipient phone account is out of service.  # noqa: E501
+        Messages that have failed for whatever reason, e.g. the destination phone was switched off for 48 hours or the recipient's phone account is out of service.  # noqa: E501
 
         :return: The messages_sent_failed of this MessagingStatItem.  # noqa: E501
         :rtype: int
@@ -285,7 +285,7 @@ class MessagingStatItem(object):
     def messages_sent_failed(self, messages_sent_failed):
         """Sets the messages_sent_failed of this MessagingStatItem.
 
-        Messages that have failed for whatever reason, e.g. the destination phone was switched off for 48 hours or the recipient phone account is out of service.  # noqa: E501
+        Messages that have failed for whatever reason, e.g. the destination phone was switched off for 48 hours or the recipient's phone account is out of service.  # noqa: E501
 
         :param messages_sent_failed: The messages_sent_failed of this MessagingStatItem.  # noqa: E501
         :type: int

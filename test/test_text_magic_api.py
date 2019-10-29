@@ -718,14 +718,14 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_subaccounts(self):
         """Test case for get_subaccounts
 
-        Get sub-accounts list  # noqa: E501
+        Get a sub-accounts list  # noqa: E501
         """
         pass
 
     def test_get_subaccounts_with_tokens(self):
         """Test case for get_subaccounts_with_tokens
 
-        Get all sub-accounts with their REST API tokens associated with app name  # noqa: E501
+        Get all sub-accounts with their REST API tokens associated with a specified app name  # noqa: E501
         """
         pass
 

@@ -90,7 +90,7 @@ class SenderId(object):
     def display_time_format(self):
         """Gets the display_time_format of this SenderId.  # noqa: E501
 
-        Format for representation of time  # noqa: E501
+        Format for representation of time.  # noqa: E501
 
         :return: The display_time_format of this SenderId.  # noqa: E501
         :rtype: str
@@ -101,7 +101,7 @@ class SenderId(object):
     def display_time_format(self, display_time_format):
         """Sets the display_time_format of this SenderId.
 
-        Format for representation of time  # noqa: E501
+        Format for representation of time.  # noqa: E501
 
         :param display_time_format: The display_time_format of this SenderId.  # noqa: E501
         :type: str
@@ -157,7 +157,7 @@ class SenderId(object):
     def status(self):
         """Gets the status of this SenderId.  # noqa: E501
 
-        *   **P** for Pending. This Sender ID is being reviewed by our support team. *   **R** for Rejected. Our support team rejected your application for this Sender ID. *   **A** for Active.   # noqa: E501
+        *   **P** for Pending - this Sender ID is being reviewed by our support team; *   **R** for Rejected - our support team rejected your application for this Sender ID; *   **A** for Active.   # noqa: E501
 
         :return: The status of this SenderId.  # noqa: E501
         :rtype: str
@@ -168,7 +168,7 @@ class SenderId(object):
     def status(self, status):
         """Sets the status of this SenderId.
 
-        *   **P** for Pending. This Sender ID is being reviewed by our support team. *   **R** for Rejected. Our support team rejected your application for this Sender ID. *   **A** for Active.   # noqa: E501
+        *   **P** for Pending - this Sender ID is being reviewed by our support team; *   **R** for Rejected - our support team rejected your application for this Sender ID; *   **A** for Active.   # noqa: E501
 
         :param status: The status of this SenderId.  # noqa: E501
         :type: str

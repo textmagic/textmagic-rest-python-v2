@@ -103,7 +103,7 @@ class UsersInbound(object):
     def display_time_format(self):
         """Gets the display_time_format of this UsersInbound.  # noqa: E501
 
-        Format for representation of time  # noqa: E501
+        Format for representation of time.  # noqa: E501
 
         :return: The display_time_format of this UsersInbound.  # noqa: E501
         :rtype: str
@@ -114,7 +114,7 @@ class UsersInbound(object):
     def display_time_format(self, display_time_format):
         """Sets the display_time_format of this UsersInbound.
 
-        Format for representation of time  # noqa: E501
+        Format for representation of time.  # noqa: E501
 
         :param display_time_format: The display_time_format of this UsersInbound.  # noqa: E501
         :type: str

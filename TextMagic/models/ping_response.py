@@ -77,7 +77,7 @@ class PingResponse(object):
     def utc_date_time(self):
         """Gets the utc_date_time of this PingResponse.  # noqa: E501
 
-        Current date time  # noqa: E501
+        Current date and time.  # noqa: E501
 
         :return: The utc_date_time of this PingResponse.  # noqa: E501
         :rtype: str
@@ -88,7 +88,7 @@ class PingResponse(object):
     def utc_date_time(self, utc_date_time):
         """Sets the utc_date_time of this PingResponse.
 
-        Current date time  # noqa: E501
+        Current date and time.  # noqa: E501
 
         :param utc_date_time: The utc_date_time of this PingResponse.  # noqa: E501
         :type: str

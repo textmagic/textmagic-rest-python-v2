@@ -7478,7 +7478,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param str query: Find contacts or lists by specified search query
+        :param str query: Find contacts or lists by specified search query.
         :return: GetFavoritesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -7502,7 +7502,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param str query: Find contacts or lists by specified search query
+        :param str query: Find contacts or lists by specified search query.
         :return: GetFavoritesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -9018,7 +9018,7 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str by: *   **off** to get total values per specified time interval *   **day** to show values grouped by day *   **month** to show values grouped by month *   **year** to show values grouped by year 
+        :param str by: *   **off** - to get total values per specified time interval; *   **day** - to show values grouped by day; *   **month** - to show values grouped by month; *   **year** - to show values grouped by year. 
         :param int start: Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior. 
         :param int end: Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today. 
         :return: GetMessagingStatResponse
@@ -9042,7 +9042,7 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str by: *   **off** to get total values per specified time interval *   **day** to show values grouped by day *   **month** to show values grouped by month *   **year** to show values grouped by year 
+        :param str by: *   **off** - to get total values per specified time interval; *   **day** - to show values grouped by day; *   **month** - to show values grouped by month; *   **year** - to show values grouped by year. 
         :param int start: Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior. 
         :param int end: Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today. 
         :return: GetMessagingStatResponse
@@ -9920,7 +9920,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_subaccounts(self, **kwargs):  # noqa: E501
-        """Get sub-accounts list  # noqa: E501
+        """Get a sub-accounts list  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -9943,7 +9943,7 @@ class TextMagicApi(object):
             return data
 
     def get_subaccounts_with_http_info(self, **kwargs):  # noqa: E501
-        """Get sub-accounts list  # noqa: E501
+        """Get a sub-accounts list  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -10019,7 +10019,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_subaccounts_with_tokens(self, get_subaccounts_with_tokens_input_object, **kwargs):  # noqa: E501
-        """Get all sub-accounts with their REST API tokens associated with app name  # noqa: E501
+        """Get all sub-accounts with their REST API tokens associated with a specified app name  # noqa: E501
 
         Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -10043,7 +10043,7 @@ class TextMagicApi(object):
             return data
 
     def get_subaccounts_with_tokens_with_http_info(self, get_subaccounts_with_tokens_input_object, **kwargs):  # noqa: E501
-        """Get all sub-accounts with their REST API tokens associated with app name  # noqa: E501
+        """Get all sub-accounts with their REST API tokens associated with a specified app name  # noqa: E501
 
         Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -10234,7 +10234,7 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int full: Return full info about timezones in array (0 or 1). Default is 0
+        :param int full: Return full info about timezones in array (0 or 1). Default is 0.
         :return: GetTimezonesResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -10256,7 +10256,7 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int full: Return full info about timezones in array (0 or 1). Default is 0
+        :param int full: Return full info about timezones in array (0 or 1). Default is 0.
         :return: GetTimezonesResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -11308,7 +11308,7 @@ class TextMagicApi(object):
     def ping(self, **kwargs):  # noqa: E501
         """Ping  # noqa: E501
 
-        Make a simple ping request  # noqa: E501
+        Make a simple ping request.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.ping(async_req=True)
@@ -11329,7 +11329,7 @@ class TextMagicApi(object):
     def ping_with_http_info(self, **kwargs):  # noqa: E501
         """Ping  # noqa: E501
 
-        Make a simple ping request  # noqa: E501
+        Make a simple ping request.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.ping_with_http_info(async_req=True)
@@ -14653,7 +14653,7 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param file image: User avatar. Should be PNG or JPG file not more than 10 MB (required)
+        :param file image: User avatar. Should be a PNG or JPG file not more than 10 MB. (required)
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -14675,7 +14675,7 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param file image: User avatar. Should be PNG or JPG file not more than 10 MB (required)
+        :param file image: User avatar. Should be a PNG or JPG file not more than 10 MB. (required)
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.

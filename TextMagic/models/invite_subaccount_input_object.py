@@ -54,7 +54,7 @@ class InviteSubaccountInputObject(object):
     def email(self):
         """Gets the email of this InviteSubaccountInputObject.  # noqa: E501
 
-        Invitation email will be sent to this email address.  # noqa: E501
+        The invitation email will be sent to this email address.  # noqa: E501
 
         :return: The email of this InviteSubaccountInputObject.  # noqa: E501
         :rtype: str
@@ -65,7 +65,7 @@ class InviteSubaccountInputObject(object):
     def email(self, email):
         """Sets the email of this InviteSubaccountInputObject.
 
-        Invitation email will be sent to this email address.  # noqa: E501
+        The invitation email will be sent to this email address.  # noqa: E501
 
         :param email: The email of this InviteSubaccountInputObject.  # noqa: E501
         :type: str

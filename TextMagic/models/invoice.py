@@ -89,7 +89,7 @@ class Invoice(object):
     def bundle(self):
         """Gets the bundle of this Invoice.  # noqa: E501
 
-        Top up amount.  # noqa: E501
+        Top-up amount.  # noqa: E501
 
         :return: The bundle of this Invoice.  # noqa: E501
         :rtype: int
@@ -100,7 +100,7 @@ class Invoice(object):
     def bundle(self, bundle):
         """Sets the bundle of this Invoice.
 
-        Top up amount.  # noqa: E501
+        Top-up amount.  # noqa: E501
 
         :param bundle: The bundle of this Invoice.  # noqa: E501
         :type: int
@@ -112,7 +112,7 @@ class Invoice(object):
     def currency(self):
         """Gets the currency of this Invoice.  # noqa: E501
 
-        Top up currency.  # noqa: E501
+        Top-up currency.  # noqa: E501
 
         :return: The currency of this Invoice.  # noqa: E501
         :rtype: str
@@ -123,7 +123,7 @@ class Invoice(object):
     def currency(self, currency):
         """Sets the currency of this Invoice.
 
-        Top up currency.  # noqa: E501
+        Top-up currency.  # noqa: E501
 
         :param currency: The currency of this Invoice.  # noqa: E501
         :type: str

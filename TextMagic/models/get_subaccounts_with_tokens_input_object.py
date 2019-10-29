@@ -54,7 +54,7 @@ class GetSubaccountsWithTokensInputObject(object):
     def app_name(self):
         """Gets the app_name of this GetSubaccountsWithTokensInputObject.  # noqa: E501
 
-        Application name  # noqa: E501
+        Application name.  # noqa: E501
 
         :return: The app_name of this GetSubaccountsWithTokensInputObject.  # noqa: E501
         :rtype: str
@@ -65,7 +65,7 @@ class GetSubaccountsWithTokensInputObject(object):
     def app_name(self, app_name):
         """Sets the app_name of this GetSubaccountsWithTokensInputObject.
 
-        Application name  # noqa: E501
+        Application name.  # noqa: E501
 
         :param app_name: The app_name of this GetSubaccountsWithTokensInputObject.  # noqa: E501
         :type: str
@@ -77,7 +77,7 @@ class GetSubaccountsWithTokensInputObject(object):
     def password(self):
         """Gets the password of this GetSubaccountsWithTokensInputObject.  # noqa: E501
 
-        Your account password  # noqa: E501
+        Your account password.  # noqa: E501
 
         :return: The password of this GetSubaccountsWithTokensInputObject.  # noqa: E501
         :rtype: str
@@ -88,7 +88,7 @@ class GetSubaccountsWithTokensInputObject(object):
     def password(self, password):
         """Sets the password of this GetSubaccountsWithTokensInputObject.
 
-        Your account password  # noqa: E501
+        Your account password.  # noqa: E501
 
         :param password: The password of this GetSubaccountsWithTokensInputObject.  # noqa: E501
         :type: str
