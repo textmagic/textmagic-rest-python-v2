@@ -138,7 +138,7 @@ class User(object):
     def display_time_format(self):
         """Gets the display_time_format of this User.  # noqa: E501
 
-        User's prefered format of time display * *12h* - AM/PM format * *24h* - 24 hour clock format   # noqa: E501
+        User's preferred format of time display: * *12h* – AM/PM format; * *24h* – 24 hour clock format.   # noqa: E501
 
         :return: The display_time_format of this User.  # noqa: E501
         :rtype: str
@@ -149,7 +149,7 @@ class User(object):
     def display_time_format(self, display_time_format):
         """Sets the display_time_format of this User.
 
-        User's prefered format of time display * *12h* - AM/PM format * *24h* - 24 hour clock format   # noqa: E501
+        User's preferred format of time display: * *12h* – AM/PM format; * *24h* – 24 hour clock format.   # noqa: E501
 
         :param display_time_format: The display_time_format of this User.  # noqa: E501
         :type: str
@@ -259,7 +259,7 @@ class User(object):
     def status(self):
         """Gets the status of this User.  # noqa: E501
 
-        Current account status: * **A** for Active * **T** for Trial.   # noqa: E501
+        Current account status: * **A** for Active; * **T** for Trial.   # noqa: E501
 
         :return: The status of this User.  # noqa: E501
         :rtype: str
@@ -270,7 +270,7 @@ class User(object):
     def status(self, status):
         """Sets the status of this User.
 
-        Current account status: * **A** for Active * **T** for Trial.   # noqa: E501
+        Current account status: * **A** for Active; * **T** for Trial.   # noqa: E501
 
         :param status: The status of this User.  # noqa: E501
         :type: str
@@ -311,7 +311,7 @@ class User(object):
     def phone(self):
         """Gets the phone of this User.  # noqa: E501
 
-        User phone number  # noqa: E501
+        User`s phone number.  # noqa: E501
 
         :return: The phone of this User.  # noqa: E501
         :rtype: str
@@ -322,7 +322,7 @@ class User(object):
     def phone(self, phone):
         """Sets the phone of this User.
 
-        User phone number  # noqa: E501
+        User`s phone number.  # noqa: E501
 
         :param phone: The phone of this User.  # noqa: E501
         :type: str
@@ -420,7 +420,7 @@ class User(object):
     def subaccount_type(self):
         """Gets the subaccount_type of this User.  # noqa: E501
 
-        Type of account: * **P** for Parent User * **A** for Administrator Sub-Account * **U** for Regular User   # noqa: E501
+        Type of account: * **P** for Parent User; * **A** for Administrator Sub-Account; * **U** for Regular User   # noqa: E501
 
         :return: The subaccount_type of this User.  # noqa: E501
         :rtype: str
@@ -431,7 +431,7 @@ class User(object):
     def subaccount_type(self, subaccount_type):
         """Sets the subaccount_type of this User.
 
-        Type of account: * **P** for Parent User * **A** for Administrator Sub-Account * **U** for Regular User   # noqa: E501
+        Type of account: * **P** for Parent User; * **A** for Administrator Sub-Account; * **U** for Regular User   # noqa: E501
 
         :param subaccount_type: The subaccount_type of this User.  # noqa: E501
         :type: str
@@ -449,7 +449,7 @@ class User(object):
     def email_accepted(self):
         """Gets the email_accepted of this User.  # noqa: E501
 
-        Is account has confirmed Email.  # noqa: E501
+        Does the account have a confirmed email?  # noqa: E501
 
         :return: The email_accepted of this User.  # noqa: E501
         :rtype: bool
@@ -460,7 +460,7 @@ class User(object):
     def email_accepted(self, email_accepted):
         """Sets the email_accepted of this User.
 
-        Is account has confirmed Email.  # noqa: E501
+        Does the account have a confirmed email?  # noqa: E501
 
         :param email_accepted: The email_accepted of this User.  # noqa: E501
         :type: bool
@@ -472,7 +472,7 @@ class User(object):
     def phone_accepted(self):
         """Gets the phone_accepted of this User.  # noqa: E501
 
-        Is account has confirmed Phone number.  # noqa: E501
+        Does the account have a confirmed phone number?  # noqa: E501
 
         :return: The phone_accepted of this User.  # noqa: E501
         :rtype: bool
@@ -483,7 +483,7 @@ class User(object):
     def phone_accepted(self, phone_accepted):
         """Sets the phone_accepted of this User.
 
-        Is account has confirmed Phone number.  # noqa: E501
+        Does the account have a confirmed phone number?  # noqa: E501
 
         :param phone_accepted: The phone_accepted of this User.  # noqa: E501
         :type: bool

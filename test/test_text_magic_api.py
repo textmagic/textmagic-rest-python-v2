@@ -627,21 +627,21 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_message_session(self):
         """Test case for get_message_session
 
-        Get a session details  # noqa: E501
+        Get a session`s details  # noqa: E501
         """
         pass
 
     def test_get_message_session_stat(self):
         """Test case for get_message_session_stat
 
-        Get a session statistics  # noqa: E501
+        Get a session`s statistics  # noqa: E501
         """
         pass
 
     def test_get_messages_by_session_id(self):
         """Test case for get_messages_by_session_id
 
-        Get a session messages  # noqa: E501
+        Get a session`s messages  # noqa: E501
         """
         pass
 
@@ -732,7 +732,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_template(self):
         """Test case for get_template
 
-        Get a template details  # noqa: E501
+        Get a template`s details  # noqa: E501
         """
         pass
 

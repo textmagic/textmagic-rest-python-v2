@@ -112,7 +112,7 @@ class Timezone(object):
     def dst(self):
         """Gets the dst of this Timezone.  # noqa: E501
 
-        Is Daylight saving time used in this timezone?  # noqa: E501
+        Is daylight saving time used in this timezone?  # noqa: E501
 
         :return: The dst of this Timezone.  # noqa: E501
         :rtype: int
@@ -123,7 +123,7 @@ class Timezone(object):
     def dst(self, dst):
         """Sets the dst of this Timezone.
 
-        Is Daylight saving time used in this timezone?  # noqa: E501
+        Is daylight saving time used in this timezone?  # noqa: E501
 
         :param dst: The dst of this Timezone.  # noqa: E501
         :type: int
@@ -135,7 +135,7 @@ class Timezone(object):
     def offset(self):
         """Gets the offset of this Timezone.  # noqa: E501
 
-        Offset from UTC time in seconds. In this example it is 21600/60/60=6 hours.  # noqa: E501
+        Offset from UTC time in seconds. In this example, it is 21600/60/60=6 hours.  # noqa: E501
 
         :return: The offset of this Timezone.  # noqa: E501
         :rtype: int
@@ -146,7 +146,7 @@ class Timezone(object):
     def offset(self, offset):
         """Sets the offset of this Timezone.
 
-        Offset from UTC time in seconds. In this example it is 21600/60/60=6 hours.  # noqa: E501
+        Offset from UTC time in seconds. In this example, it is 21600/60/60=6 hours.  # noqa: E501
 
         :param offset: The offset of this Timezone.  # noqa: E501
         :type: int

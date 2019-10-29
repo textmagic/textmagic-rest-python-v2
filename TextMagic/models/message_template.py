@@ -108,7 +108,7 @@ class MessageTemplate(object):
     def content(self):
         """Gets the content of this MessageTemplate.  # noqa: E501
 
-        Template text. May contain the tags. See [Custom fields list](http://docs.textmagictesting.com/#section/Custom-fields-list-(Merge-tags)).  # noqa: E501
+        Template text. May contain tags inside braces. See the [Custom fields list](http://docs.textmagictesting.com/#section/Custom-fields-list-(Merge-tags)).  # noqa: E501
 
         :return: The content of this MessageTemplate.  # noqa: E501
         :rtype: str
@@ -119,7 +119,7 @@ class MessageTemplate(object):
     def content(self, content):
         """Sets the content of this MessageTemplate.
 
-        Template text. May contain the tags. See [Custom fields list](http://docs.textmagictesting.com/#section/Custom-fields-list-(Merge-tags)).  # noqa: E501
+        Template text. May contain tags inside braces. See the [Custom fields list](http://docs.textmagictesting.com/#section/Custom-fields-list-(Merge-tags)).  # noqa: E501
 
         :param content: The content of this MessageTemplate.  # noqa: E501
         :type: str
@@ -131,7 +131,7 @@ class MessageTemplate(object):
     def last_modified(self):
         """Gets the last_modified of this MessageTemplate.  # noqa: E501
 
-        Time when template was last modified.  # noqa: E501
+        Time when the template was last modified.  # noqa: E501
 
         :return: The last_modified of this MessageTemplate.  # noqa: E501
         :rtype: datetime
@@ -142,7 +142,7 @@ class MessageTemplate(object):
     def last_modified(self, last_modified):
         """Sets the last_modified of this MessageTemplate.
 
-        Time when template was last modified.  # noqa: E501
+        Time when the template was last modified.  # noqa: E501
 
         :param last_modified: The last_modified of this MessageTemplate.  # noqa: E501
         :type: datetime

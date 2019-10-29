@@ -66,7 +66,7 @@ class DeleteChatMessagesBulkInputObject(object):
     def inbound_ids(self):
         """Gets the inbound_ids of this DeleteChatMessagesBulkInputObject.  # noqa: E501
 
-        Inbound messages ID(s) to delete. Require when \"all\" equal to 0 (false).  # noqa: E501
+        Inbound message IDs to delete. Require when \"all\" is equal to 0 (false).  # noqa: E501
 
         :return: The inbound_ids of this DeleteChatMessagesBulkInputObject.  # noqa: E501
         :rtype: str
@@ -77,7 +77,7 @@ class DeleteChatMessagesBulkInputObject(object):
     def inbound_ids(self, inbound_ids):
         """Sets the inbound_ids of this DeleteChatMessagesBulkInputObject.
 
-        Inbound messages ID(s) to delete. Require when \"all\" equal to 0 (false).  # noqa: E501
+        Inbound message IDs to delete. Require when \"all\" is equal to 0 (false).  # noqa: E501
 
         :param inbound_ids: The inbound_ids of this DeleteChatMessagesBulkInputObject.  # noqa: E501
         :type: str
@@ -89,7 +89,7 @@ class DeleteChatMessagesBulkInputObject(object):
     def sent_ids(self):
         """Gets the sent_ids of this DeleteChatMessagesBulkInputObject.  # noqa: E501
 
-        Sent messages ID(s) to delete. Require when \"all\" equal to 0 (false).  # noqa: E501
+        Sent message IDs to delete. Require when \"all\" is equal to 0 (false).  # noqa: E501
 
         :return: The sent_ids of this DeleteChatMessagesBulkInputObject.  # noqa: E501
         :rtype: str
@@ -100,7 +100,7 @@ class DeleteChatMessagesBulkInputObject(object):
     def sent_ids(self, sent_ids):
         """Sets the sent_ids of this DeleteChatMessagesBulkInputObject.
 
-        Sent messages ID(s) to delete. Require when \"all\" equal to 0 (false).  # noqa: E501
+        Sent message IDs to delete. Require when \"all\" is equal to 0 (false).  # noqa: E501
 
         :param sent_ids: The sent_ids of this DeleteChatMessagesBulkInputObject.  # noqa: E501
         :type: str
@@ -112,7 +112,7 @@ class DeleteChatMessagesBulkInputObject(object):
     def calls_ids(self):
         """Gets the calls_ids of this DeleteChatMessagesBulkInputObject.  # noqa: E501
 
-        Calls ID(s) to delete. Require when \"all\" equal to 0 (false).  # noqa: E501
+        Calls IDs to delete. Require when \"all\" is equal to 0 (false).  # noqa: E501
 
         :return: The calls_ids of this DeleteChatMessagesBulkInputObject.  # noqa: E501
         :rtype: str
@@ -123,7 +123,7 @@ class DeleteChatMessagesBulkInputObject(object):
     def calls_ids(self, calls_ids):
         """Sets the calls_ids of this DeleteChatMessagesBulkInputObject.
 
-        Calls ID(s) to delete. Require when \"all\" equal to 0 (false).  # noqa: E501
+        Calls IDs to delete. Require when \"all\" is equal to 0 (false).  # noqa: E501
 
         :param calls_ids: The calls_ids of this DeleteChatMessagesBulkInputObject.  # noqa: E501
         :type: str
@@ -135,7 +135,7 @@ class DeleteChatMessagesBulkInputObject(object):
     def all(self):
         """Gets the all of this DeleteChatMessagesBulkInputObject.  # noqa: E501
 
-        Default is 0 (false). If set to 1 all the entities will be removed.  # noqa: E501
+        Default is 0 (false). If set to 1, all entities will be removed.  # noqa: E501
 
         :return: The all of this DeleteChatMessagesBulkInputObject.  # noqa: E501
         :rtype: bool
@@ -146,7 +146,7 @@ class DeleteChatMessagesBulkInputObject(object):
     def all(self, all):
         """Sets the all of this DeleteChatMessagesBulkInputObject.
 
-        Default is 0 (false). If set to 1 all the entities will be removed.  # noqa: E501
+        Default is 0 (false). If set to 1, all entities will be removed.  # noqa: E501
 
         :param all: The all of this DeleteChatMessagesBulkInputObject.  # noqa: E501
         :type: bool

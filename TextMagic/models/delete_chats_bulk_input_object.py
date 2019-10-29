@@ -107,7 +107,7 @@ class DeleteChatsBulkInputObject(object):
     def status(self):
         """Gets the status of this DeleteChatsBulkInputObject.  # noqa: E501
 
-        Default is empty string. If set then all entities with specified status will be affected.  # noqa: E501
+        Default is empty string. If set, all entities with specified status will be affected.  # noqa: E501
 
         :return: The status of this DeleteChatsBulkInputObject.  # noqa: E501
         :rtype: str
@@ -118,7 +118,7 @@ class DeleteChatsBulkInputObject(object):
     def status(self, status):
         """Sets the status of this DeleteChatsBulkInputObject.
 
-        Default is empty string. If set then all entities with specified status will be affected.  # noqa: E501
+        Default is empty string. If set, all entities with specified status will be affected.  # noqa: E501
 
         :param status: The status of this DeleteChatsBulkInputObject.  # noqa: E501
         :type: str

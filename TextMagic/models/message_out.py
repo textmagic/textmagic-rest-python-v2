@@ -179,7 +179,7 @@ class MessageOut(object):
     def receiver(self):
         """Gets the receiver of this MessageOut.  # noqa: E501
 
-        Recipient phone number.  # noqa: E501
+        Recipient`s phone number.  # noqa: E501
 
         :return: The receiver of this MessageOut.  # noqa: E501
         :rtype: str
@@ -190,7 +190,7 @@ class MessageOut(object):
     def receiver(self, receiver):
         """Sets the receiver of this MessageOut.
 
-        Recipient phone number.  # noqa: E501
+        Recipient`s phone number.  # noqa: E501
 
         :param receiver: The receiver of this MessageOut.  # noqa: E501
         :type: str
@@ -275,7 +275,7 @@ class MessageOut(object):
     def session_id(self):
         """Gets the session_id of this MessageOut.  # noqa: E501
 
-        Message Session ID of a Message.  # noqa: E501
+        Message Session ID of a message.  # noqa: E501
 
         :return: The session_id of this MessageOut.  # noqa: E501
         :rtype: int
@@ -286,7 +286,7 @@ class MessageOut(object):
     def session_id(self, session_id):
         """Sets the session_id of this MessageOut.
 
-        Message Session ID of a Message.  # noqa: E501
+        Message Session ID of a message.  # noqa: E501
 
         :param session_id: The session_id of this MessageOut.  # noqa: E501
         :type: int
@@ -480,7 +480,7 @@ class MessageOut(object):
     def phone(self):
         """Gets the phone of this MessageOut.  # noqa: E501
 
-        Receipent phone number.  # noqa: E501
+        Receipent`s phone number.  # noqa: E501
 
         :return: The phone of this MessageOut.  # noqa: E501
         :rtype: str
@@ -491,7 +491,7 @@ class MessageOut(object):
     def phone(self, phone):
         """Sets the phone of this MessageOut.
 
-        Receipent phone number.  # noqa: E501
+        Receipent`s phone number.  # noqa: E501
 
         :param phone: The phone of this MessageOut.  # noqa: E501
         :type: str
@@ -549,7 +549,7 @@ class MessageOut(object):
     def from_email(self):
         """Gets the from_email of this MessageOut.  # noqa: E501
 
-        The user email which this message came from. For Email2SMS and Distribution Lists the message will come from an original email address; in other cases, it will come from an account email address.  # noqa: E501
+        The user email which this message came from. For Email2SMS and Distribution Lists the messages, it is an original email address - in other cases, it is an account email address.  # noqa: E501
 
         :return: The from_email of this MessageOut.  # noqa: E501
         :rtype: str
@@ -560,7 +560,7 @@ class MessageOut(object):
     def from_email(self, from_email):
         """Sets the from_email of this MessageOut.
 
-        The user email which this message came from. For Email2SMS and Distribution Lists the message will come from an original email address; in other cases, it will come from an account email address.  # noqa: E501
+        The user email which this message came from. For Email2SMS and Distribution Lists the messages, it is an original email address - in other cases, it is an account email address.  # noqa: E501
 
         :param from_email: The from_email of this MessageOut.  # noqa: E501
         :type: str

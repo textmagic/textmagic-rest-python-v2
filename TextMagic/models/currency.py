@@ -58,7 +58,7 @@ class Currency(object):
     def id(self):
         """Gets the id of this Currency.  # noqa: E501
 
-        Three-letter ISO currency ID.  # noqa: E501
+        The 3-letter ISO currency ID.  # noqa: E501
 
         :return: The id of this Currency.  # noqa: E501
         :rtype: str
@@ -69,7 +69,7 @@ class Currency(object):
     def id(self, id):
         """Sets the id of this Currency.
 
-        Three-letter ISO currency ID.  # noqa: E501
+        The 3-letter ISO currency ID.  # noqa: E501
 
         :param id: The id of this Currency.  # noqa: E501
         :type: str

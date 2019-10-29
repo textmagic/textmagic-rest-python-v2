@@ -89,9 +89,9 @@ Method | HTTP request | Description
 [**get_lists_of_contact**](TextMagicApi.md#get_lists_of_contact) | **GET** /api/v2/contacts/{id}/lists | Get contact&#39;s lists
 [**get_message_preview**](TextMagicApi.md#get_message_preview) | **GET** /api/v2/messages/preview | Preview message
 [**get_message_price**](TextMagicApi.md#get_message_price) | **GET** /api/v2/messages/price/normalized | Check message price
-[**get_message_session**](TextMagicApi.md#get_message_session) | **GET** /api/v2/sessions/{id} | Get a session details
-[**get_message_session_stat**](TextMagicApi.md#get_message_session_stat) | **GET** /api/v2/sessions/{id}/stat | Get a session statistics
-[**get_messages_by_session_id**](TextMagicApi.md#get_messages_by_session_id) | **GET** /api/v2/sessions/{id}/messages | Get a session messages
+[**get_message_session**](TextMagicApi.md#get_message_session) | **GET** /api/v2/sessions/{id} | Get a session&#x60;s details
+[**get_message_session_stat**](TextMagicApi.md#get_message_session_stat) | **GET** /api/v2/sessions/{id}/stat | Get a session&#x60;s statistics
+[**get_messages_by_session_id**](TextMagicApi.md#get_messages_by_session_id) | **GET** /api/v2/sessions/{id}/messages | Get a session&#x60;s messages
 [**get_messaging_counters**](TextMagicApi.md#get_messaging_counters) | **GET** /api/v2/stats/messaging/data | Get sent/received messages counters values
 [**get_messaging_stat**](TextMagicApi.md#get_messaging_stat) | **GET** /api/v2/stats/messaging | Get messaging statistics
 [**get_outbound_message**](TextMagicApi.md#get_outbound_message) | **GET** /api/v2/messages/{id} | Get a single message
@@ -104,7 +104,7 @@ Method | HTTP request | Description
 [**get_subaccount**](TextMagicApi.md#get_subaccount) | **GET** /api/v2/subaccounts/{id} | Get sub-account information
 [**get_subaccounts**](TextMagicApi.md#get_subaccounts) | **GET** /api/v2/subaccounts | Get sub-accounts list
 [**get_subaccounts_with_tokens**](TextMagicApi.md#get_subaccounts_with_tokens) | **POST** /api/v2/subaccounts/tokens/list | Get all sub-accounts with their REST API tokens associated with app name
-[**get_template**](TextMagicApi.md#get_template) | **GET** /api/v2/templates/{id} | Get a template details
+[**get_template**](TextMagicApi.md#get_template) | **GET** /api/v2/templates/{id} | Get a template&#x60;s details
 [**get_timezones**](TextMagicApi.md#get_timezones) | **GET** /api/v2/timezones | Get timezones
 [**get_unread_messages_total**](TextMagicApi.md#get_unread_messages_total) | **GET** /api/v2/chats/unread/count | Get unread messages number
 [**get_unsubscribed_contact**](TextMagicApi.md#get_unsubscribed_contact) | **GET** /api/v2/unsubscribers/{id} | Get the details of a specific unsubscribed contact
@@ -478,7 +478,7 @@ Name | Type | Description  | Notes
 
 Close chats (bulk)
 
-Close chats by chat ids or close all chats
+Close chats by chat IDs or close all chats
 
 ### Example
 ```python
@@ -1041,7 +1041,7 @@ void (empty response body)
 
 Delete chat messages by ID(s)
 
-Delete messages from chat by given messages ID(s).
+Delete messages from chat by given message IDs.
 
 ### Example
 ```python
@@ -1095,7 +1095,7 @@ void (empty response body)
 
 Delete chats (bulk)
 
-Delete chats by given ID(s) or delete all chats.
+Delete chats by given IDs or delete all chats.
 
 ### Example
 ```python
@@ -1933,7 +1933,7 @@ void (empty response body)
 
 Delete sessions (bulk)
 
-Delete messages sessions, together with all nested messages, by given ID(s) or delete all messages sessions.
+Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
 
 ### Example
 ```python
@@ -2297,7 +2297,7 @@ void (empty response body)
 
 Delete templates (bulk)
 
-Delete template by given ID(s) or delete all templates.
+Delete templates by given IDs or delete all templates.
 
 ### Example
 ```python
@@ -4511,8 +4511,8 @@ page = 1 # int | The current fetched page. (optional) (default to 1)
 limit = 10 # int | The number of results per page. (optional) (default to 10)
 order_by = 'id' # str | Order results by some field. Default is id. (optional) (default to id)
 direction = 'desc' # str | Order direction. Default is desc. (optional) (default to desc)
-favorite_only = 0 # int | Return only favorite lists (optional) (default to 0)
-only_mine = 0 # int | Return only current user lists (optional) (default to 0)
+favorite_only = 0 # int | Return only favorited lists. (optional) (default to 0)
+only_mine = 0 # int | Return only current user lists. (optional) (default to 0)
 
 try:
     # Get all lists
@@ -4530,8 +4530,8 @@ Name | Type | Description  | Notes
  **limit** | **int**| The number of results per page. | [optional] [default to 10]
  **order_by** | **str**| Order results by some field. Default is id. | [optional] [default to id]
  **direction** | **str**| Order direction. Default is desc. | [optional] [default to desc]
- **favorite_only** | **int**| Return only favorite lists | [optional] [default to 0]
- **only_mine** | **int**| Return only current user lists | [optional] [default to 0]
+ **favorite_only** | **int**| Return only favorited lists. | [optional] [default to 0]
+ **only_mine** | **int**| Return only current user lists. | [optional] [default to 0]
 
 ### Return type
 
@@ -4780,9 +4780,9 @@ Name | Type | Description  | Notes
 # **get_message_session**
 > MessageSession get_message_session(id)
 
-Get a session details
+Get a session`s details
 
-Get a specific session’s details
+Get a specific session’s details.
 
 ### Example
 ```python
@@ -4799,10 +4799,10 @@ configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-id = 1 # int | a session ID
+id = 1 # int | Session ID.
 
 try:
-    # Get a session details
+    # Get a session`s details
     api_response = api_instance.get_message_session(id)
     pprint(api_response)
 except ApiException as e:
@@ -4813,7 +4813,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| a session ID | 
+ **id** | **int**| Session ID. | 
 
 ### Return type
 
@@ -4833,7 +4833,7 @@ Name | Type | Description  | Notes
 # **get_message_session_stat**
 > GetMessageSessionStatResponse get_message_session_stat(id, include_deleted=include_deleted)
 
-Get a session statistics
+Get a session`s statistics
 
 
 
@@ -4853,10 +4853,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 id = 1 # int | 
-include_deleted = 0 # int | Search also in deleted messages (optional) (default to 0)
+include_deleted = 0 # int | Search also in deleted messages. (optional) (default to 0)
 
 try:
-    # Get a session statistics
+    # Get a session`s statistics
     api_response = api_instance.get_message_session_stat(id, include_deleted=include_deleted)
     pprint(api_response)
 except ApiException as e:
@@ -4868,7 +4868,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  | 
- **include_deleted** | **int**| Search also in deleted messages | [optional] [default to 0]
+ **include_deleted** | **int**| Search also in deleted messages. | [optional] [default to 0]
 
 ### Return type
 
@@ -4888,9 +4888,9 @@ Name | Type | Description  | Notes
 # **get_messages_by_session_id**
 > GetMessagesBySessionIdPaginatedResponse get_messages_by_session_id(id, page=page, limit=limit, statuses=statuses, include_deleted=include_deleted)
 
-Get a session messages
+Get a session`s messages
 
-A useful synonym for \"messages/search\" command with provided \"sessionId\" parameter.
+A useful synonym for the \"messages/search\" command with the provided \"sessionId\" parameter.
 
 ### Example
 ```python
@@ -4910,11 +4910,11 @@ api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 id = 1 # int | 
 page = 1 # int | Fetch specified results page. (optional) (default to 1)
 limit = 10 # int | The number of results per page. (optional) (default to 10)
-statuses = 'statuses_example' # str | Find messages by status (optional)
-include_deleted = 0 # int | Search also in deleted messages (optional) (default to 0)
+statuses = 'statuses_example' # str | Find messages by status. (optional)
+include_deleted = 0 # int | Search also in deleted messages. (optional) (default to 0)
 
 try:
-    # Get a session messages
+    # Get a session`s messages
     api_response = api_instance.get_messages_by_session_id(id, page=page, limit=limit, statuses=statuses, include_deleted=include_deleted)
     pprint(api_response)
 except ApiException as e:
@@ -4928,8 +4928,8 @@ Name | Type | Description  | Notes
  **id** | **int**|  | 
  **page** | **int**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int**| The number of results per page. | [optional] [default to 10]
- **statuses** | **str**| Find messages by status | [optional] 
- **include_deleted** | **int**| Search also in deleted messages | [optional] [default to 0]
+ **statuses** | **str**| Find messages by status. | [optional] 
+ **include_deleted** | **int**| Search also in deleted messages. | [optional] [default to 0]
 
 ### Return type
 
@@ -5607,7 +5607,7 @@ Name | Type | Description  | Notes
 # **get_template**
 > MessageTemplate get_template(id)
 
-Get a template details
+Get a template`s details
 
 Get a single template.
 
@@ -5629,7 +5629,7 @@ api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 id = 1 # int | 
 
 try:
-    # Get a template details
+    # Get a template`s details
     api_response = api_instance.get_template(id)
     pprint(api_response)
 except ApiException as e:
@@ -6040,7 +6040,7 @@ void (empty response body)
 
 Mark chats as read (bulk)
 
-Mark several chats as read by chat ids or mark all chats as read
+Mark several chats as read by chat IDs or mark all chats as read
 
 ### Example
 ```python
@@ -6092,7 +6092,7 @@ void (empty response body)
 
 Mark chats as unread (bulk)
 
-Mark several chats as UNread by chat ids or mark all chats as UNread
+Mark several chats as UNread by chat IDs or mark all chats as UNread
 
 ### Example
 ```python
@@ -6197,7 +6197,7 @@ Name | Type | Description  | Notes
 
 Mute chats (bulk)
 
-Mute several chats by chat ids or mute all chats
+Mute several chats by chat IDs or mute all chats
 
 ### Example
 ```python
@@ -6298,7 +6298,7 @@ This endpoint does not need any parameter.
 
 Reopen chats (bulk)
 
-Reopen chats by chat ids or reopen all chats
+Reopen chats by chat IDs or reopen all chats
 
 ### Example
 ```python
@@ -6985,9 +6985,9 @@ configuration.password = 'YOUR_PASSWORD'
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 page = 1 # int | Fetch specified results page. (optional) (default to 1)
 limit = 10 # int | The number of results per page. (optional) (default to 10)
-ids = 'ids_example' # str | Find template by ID(s) (optional)
-name = 'name_example' # str | Find template by name (optional)
-content = 'content_example' # str | Find template by content (optional)
+ids = 'ids_example' # str | Find template by ID(s). (optional)
+name = 'name_example' # str | Find template by name. (optional)
+content = 'content_example' # str | Find template by content. (optional)
 
 try:
     # Find templates by criteria
@@ -7003,9 +7003,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int**| The number of results per page. | [optional] [default to 10]
- **ids** | **str**| Find template by ID(s) | [optional] 
- **name** | **str**| Find template by name | [optional] 
- **content** | **str**| Find template by content | [optional] 
+ **ids** | **str**| Find template by ID(s). | [optional] 
+ **name** | **str**| Find template by name. | [optional] 
+ **content** | **str**| Find template by content. | [optional] 
 
 ### Return type
 
@@ -7290,7 +7290,7 @@ void (empty response body)
 
 Unmute chats (bulk)
 
-Unmute several chats by chat ids or unmute all chats
+Unmute several chats by chat IDs or unmute all chats
 
 ### Example
 ```python

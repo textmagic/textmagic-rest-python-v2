@@ -50,7 +50,7 @@ class ListImage(object):
     def href(self):
         """Gets the href of this ListImage.  # noqa: E501
 
-        URI of a list avatar.  # noqa: E501
+        The URI of a list avatar.  # noqa: E501
 
         :return: The href of this ListImage.  # noqa: E501
         :rtype: str
@@ -61,7 +61,7 @@ class ListImage(object):
     def href(self, href):
         """Sets the href of this ListImage.
 
-        URI of a list avatar.  # noqa: E501
+        The URI of a list avatar.  # noqa: E501
 
         :param href: The href of this ListImage.  # noqa: E501
         :type: str
