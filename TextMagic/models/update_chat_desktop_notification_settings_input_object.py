@@ -53,8 +53,10 @@ class UpdateChatDesktopNotificationSettingsInputObject(object):
         self._sound_id = None
         self.discriminator = None
 
-        self.play_sound = play_sound
-        self.show_notifications = show_notifications
+        if play_sound is not None:
+            self.play_sound = play_sound
+        if show_notifications is not None:
+            self.show_notifications = show_notifications
         if show_text is not None:
             self.show_text = show_text
         if sound_id is not None:

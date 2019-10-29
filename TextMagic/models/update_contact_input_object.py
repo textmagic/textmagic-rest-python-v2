@@ -81,12 +81,14 @@ class UpdateContactInputObject(object):
             self.first_name = first_name
         if last_name is not None:
             self.last_name = last_name
-        self.phone = phone
+        if phone is not None:
+            self.phone = phone
         if email is not None:
             self.email = email
         if company_name is not None:
             self.company_name = company_name
-        self.lists = lists
+        if lists is not None:
+            self.lists = lists
         if favorited is not None:
             self.favorited = favorited
         if blocked is not None:

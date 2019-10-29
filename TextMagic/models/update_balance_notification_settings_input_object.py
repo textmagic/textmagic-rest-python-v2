@@ -61,7 +61,8 @@ class UpdateBalanceNotificationSettingsInputObject(object):
 
         if low_balance_notification is not None:
             self.low_balance_notification = low_balance_notification
-        self.alert_balance = alert_balance
+        if alert_balance is not None:
+            self.alert_balance = alert_balance
         if alert_phone is not None:
             self.alert_phone = alert_phone
         if alert_email1 is not None:

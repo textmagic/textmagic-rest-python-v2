@@ -47,8 +47,10 @@ class GetSubaccountsWithTokensInputObject(object):
         self._password = None
         self.discriminator = None
 
-        self.app_name = app_name
-        self.password = password
+        if app_name is not None:
+            self.app_name = app_name
+        if password is not None:
+            self.password = password
 
     @property
     def app_name(self):

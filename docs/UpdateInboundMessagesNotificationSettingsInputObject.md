@@ -3,9 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**inbound_message_notification** | **bool** | Should user receive notification about new incoming messages. | 
-**include_sms_history** | **bool** | Include SMS history into notification Email. | 
-**send_in_html_format** | **bool** | Send Email notification in HTML format. | 
+**inbound_message_notification** | **bool** | Should user receive notification about new incoming messages. | [optional] 
+**include_sms_history** | **bool** | Include SMS history into notification Email. | [optional] 
+**send_in_html_format** | **bool** | Send Email notification in HTML format. | [optional] 
 **alert_email1** | **str** | New message notification email 2. | [optional] 
 **alert_email2** | **str** | New message notification email 2. | [optional] 
 **alert_email3** | **str** | New message notification email 3. | [optional] 

@@ -53,7 +53,8 @@ class UpdateListObject(object):
         self._is_default = None
         self.discriminator = None
 
-        self.name = name
+        if name is not None:
+            self.name = name
         if shared is not None:
             self.shared = shared
         if favorited is not None:

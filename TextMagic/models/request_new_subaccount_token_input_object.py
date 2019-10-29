@@ -50,8 +50,10 @@ class RequestNewSubaccountTokenInputObject(object):
         self._app_name = None
         self.discriminator = None
 
-        self.user_id = user_id
-        self.password = password
+        if user_id is not None:
+            self.user_id = user_id
+        if password is not None:
+            self.password = password
         if app_name is not None:
             self.app_name = app_name
 

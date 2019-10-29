@@ -47,8 +47,10 @@ class InviteSubaccountInputObject(object):
         self._role = None
         self.discriminator = None
 
-        self.email = email
-        self.role = role
+        if email is not None:
+            self.email = email
+        if role is not None:
+            self.role = role
 
     @property
     def email(self):

@@ -47,8 +47,10 @@ class SetChatStatusInputObject(object):
         self._status = None
         self.discriminator = None
 
-        self.id = id
-        self.status = status
+        if id is not None:
+            self.id = id
+        if status is not None:
+            self.status = status
 
     @property
     def id(self):

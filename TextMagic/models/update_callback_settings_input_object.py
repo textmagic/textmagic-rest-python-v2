@@ -50,9 +50,12 @@ class UpdateCallbackSettingsInputObject(object):
         self._format = None
         self.discriminator = None
 
-        self.out_url = out_url
-        self.in_url = in_url
-        self.format = format
+        if out_url is not None:
+            self.out_url = out_url
+        if in_url is not None:
+            self.in_url = in_url
+        if format is not None:
+            self.format = format
 
     @property
     def out_url(self):

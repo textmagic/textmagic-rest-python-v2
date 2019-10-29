@@ -44,7 +44,8 @@ class DeleteContacsFromListObject(object):
         self._contacts = None
         self.discriminator = None
 
-        self.contacts = contacts
+        if contacts is not None:
+            self.contacts = contacts
 
     @property
     def contacts(self):

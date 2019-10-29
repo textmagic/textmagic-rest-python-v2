@@ -44,7 +44,8 @@ class UpdateContactNoteInputObject(object):
         self._note = None
         self.discriminator = None
 
-        self.note = note
+        if note is not None:
+            self.note = note
 
     @property
     def note(self):

@@ -47,8 +47,10 @@ class CheckPhoneVerificationCodeInputObject(object):
         self._verify_id = None
         self.discriminator = None
 
-        self.code = code
-        self.verify_id = verify_id
+        if code is not None:
+            self.code = code
+        if verify_id is not None:
+            self.verify_id = verify_id
 
     @property
     def code(self):

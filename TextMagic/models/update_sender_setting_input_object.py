@@ -50,8 +50,10 @@ class UpdateSenderSettingInputObject(object):
         self._chat_id = None
         self.discriminator = None
 
-        self.value = value
-        self.country = country
+        if value is not None:
+            self.value = value
+        if country is not None:
+            self.country = country
         if chat_id is not None:
             self.chat_id = chat_id
 

@@ -92,7 +92,8 @@ class SendMessageInputObject(object):
         self._local_country = None
         self.discriminator = None
 
-        self.text = text
+        if text is not None:
+            self.text = text
         if template_id is not None:
             self.template_id = template_id
         if sending_time is not None:
@@ -105,7 +106,8 @@ class SendMessageInputObject(object):
             self.contacts = contacts
         if lists is not None:
             self.lists = lists
-        self.phones = phones
+        if phones is not None:
+            self.phones = phones
         if cut_extra is not None:
             self.cut_extra = cut_extra
         if parts_count is not None:

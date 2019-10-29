@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**play_sound** | **bool** | Enable notification sound? | 
-**show_notifications** | **bool** | Show desktop notifications about new messages. | 
+**play_sound** | **bool** | Enable notification sound? | [optional] 
+**show_notifications** | **bool** | Show desktop notifications about new messages. | [optional] 
 **show_text** | **bool** | Incoming message text will be displayed in desktop notifications. | [optional] 
 **sound_id** | **int** | Sound Id of a notification. | [optional] 
 

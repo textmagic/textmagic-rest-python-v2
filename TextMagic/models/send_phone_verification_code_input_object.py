@@ -59,9 +59,12 @@ class SendPhoneVerificationCodeInputObject(object):
         self._country = None
         self.discriminator = None
 
-        self.phone = phone
-        self.brand = brand
-        self.code_length = code_length
+        if phone is not None:
+            self.phone = phone
+        if brand is not None:
+            self.brand = brand
+        if code_length is not None:
+            self.code_length = code_length
         if language is not None:
             self.language = language
         if sender_id is not None:

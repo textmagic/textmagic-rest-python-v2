@@ -59,9 +59,12 @@ class UpdateInboundMessagesNotificationSettingsInputObject(object):
         self._alert_email3 = None
         self.discriminator = None
 
-        self.inbound_message_notification = inbound_message_notification
-        self.include_sms_history = include_sms_history
-        self.send_in_html_format = send_in_html_format
+        if inbound_message_notification is not None:
+            self.inbound_message_notification = inbound_message_notification
+        if include_sms_history is not None:
+            self.include_sms_history = include_sms_history
+        if send_in_html_format is not None:
+            self.send_in_html_format = send_in_html_format
         if alert_email1 is not None:
             self.alert_email1 = alert_email1
         if alert_email2 is not None:

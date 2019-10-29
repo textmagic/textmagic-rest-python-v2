@@ -47,8 +47,10 @@ class RequestSenderIdInputObject(object):
         self._explanation = None
         self.discriminator = None
 
-        self.sender_id = sender_id
-        self.explanation = explanation
+        if sender_id is not None:
+            self.sender_id = sender_id
+        if explanation is not None:
+            self.explanation = explanation
 
     @property
     def sender_id(self):

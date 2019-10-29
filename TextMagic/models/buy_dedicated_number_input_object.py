@@ -50,9 +50,12 @@ class BuyDedicatedNumberInputObject(object):
         self._user_id = None
         self.discriminator = None
 
-        self.phone = phone
-        self.country = country
-        self.user_id = user_id
+        if phone is not None:
+            self.phone = phone
+        if country is not None:
+            self.country = country
+        if user_id is not None:
+            self.user_id = user_id
 
     @property
     def phone(self):

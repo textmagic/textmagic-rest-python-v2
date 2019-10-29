@@ -50,8 +50,10 @@ class MuteChatInputObject(object):
         self.__for = None
         self.discriminator = None
 
-        self.id = id
-        self.mute = mute
+        if id is not None:
+            self.id = id
+        if mute is not None:
+            self.mute = mute
         if _for is not None:
             self._for = _for
 

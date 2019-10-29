@@ -47,8 +47,10 @@ class CreateTemplateInputObject(object):
         self._content = None
         self.discriminator = None
 
-        self.name = name
-        self.content = content
+        if name is not None:
+            self.name = name
+        if content is not None:
+            self.content = content
 
     @property
     def name(self):
