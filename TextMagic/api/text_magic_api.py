@@ -36,7 +36,7 @@ class TextMagicApi(object):
     def assign_contacts_to_list(self, assign_contacts_to_list_input_object, id, **kwargs):  # noqa: E501
         """Assign contacts to a list  # noqa: E501
 
-        > Unlike all other PUT requests, this command does not need old contact IDs to be submitted. For example, if you have a list with contacts 150, 151 and 152 and you want to add contact ID 153, you only need to submit 153 as a parameter of PUT /api/v2/lists/{id}/contacts.   # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/assignContactsToList\" target=\"_blank\">Try in sandbox</a><br>> Unlike all other PUT requests, this command does not need old contact IDs to be submitted. For example, if you have a list with contacts 150, 151 and 152 and you want to add contact ID 153, you only need to submit 153 as a parameter of PUT /api/v2/lists/{id}/contacts.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.assign_contacts_to_list(assign_contacts_to_list_input_object, id, async_req=True)
@@ -59,7 +59,7 @@ class TextMagicApi(object):
     def assign_contacts_to_list_with_http_info(self, assign_contacts_to_list_input_object, id, **kwargs):  # noqa: E501
         """Assign contacts to a list  # noqa: E501
 
-        > Unlike all other PUT requests, this command does not need old contact IDs to be submitted. For example, if you have a list with contacts 150, 151 and 152 and you want to add contact ID 153, you only need to submit 153 as a parameter of PUT /api/v2/lists/{id}/contacts.   # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/assignContactsToList\" target=\"_blank\">Try in sandbox</a><br>> Unlike all other PUT requests, this command does not need old contact IDs to be submitted. For example, if you have a list with contacts 150, 151 and 152 and you want to add contact ID 153, you only need to submit 153 as a parameter of PUT /api/v2/lists/{id}/contacts.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.assign_contacts_to_list_with_http_info(assign_contacts_to_list_input_object, id, async_req=True)
@@ -143,7 +143,7 @@ class TextMagicApi(object):
     def block_contact(self, block_contact_input_object, **kwargs):  # noqa: E501
         """Block a contact by phone number  # noqa: E501
 
-        Block a contact from inbound and outbound communication by phone number.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/blockContact\" target=\"_blank\">Try in sandbox</a><br>Block a contact from inbound and outbound communication by phone number.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.block_contact(block_contact_input_object, async_req=True)
@@ -165,7 +165,7 @@ class TextMagicApi(object):
     def block_contact_with_http_info(self, block_contact_input_object, **kwargs):  # noqa: E501
         """Block a contact by phone number  # noqa: E501
 
-        Block a contact from inbound and outbound communication by phone number.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/blockContact\" target=\"_blank\">Try in sandbox</a><br>Block a contact from inbound and outbound communication by phone number.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.block_contact_with_http_info(block_contact_input_object, async_req=True)
@@ -242,7 +242,7 @@ class TextMagicApi(object):
     def buy_dedicated_number(self, buy_dedicated_number_input_object, **kwargs):  # noqa: E501
         """Buy a dedicated number  # noqa: E501
 
-        To buy a dedicated number, you first need to find an available number matching your criteria using the `/api/v2/numbers/available` command described above.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/buyDedicatedNumber\" target=\"_blank\">Try in sandbox</a><br>To buy a dedicated number, you first need to find an available number matching your criteria using the `/api/v2/numbers/available` command described above.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.buy_dedicated_number(buy_dedicated_number_input_object, async_req=True)
@@ -264,7 +264,7 @@ class TextMagicApi(object):
     def buy_dedicated_number_with_http_info(self, buy_dedicated_number_input_object, **kwargs):  # noqa: E501
         """Buy a dedicated number  # noqa: E501
 
-        To buy a dedicated number, you first need to find an available number matching your criteria using the `/api/v2/numbers/available` command described above.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/buyDedicatedNumber\" target=\"_blank\">Try in sandbox</a><br>To buy a dedicated number, you first need to find an available number matching your criteria using the `/api/v2/numbers/available` command described above.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.buy_dedicated_number_with_http_info(buy_dedicated_number_input_object, async_req=True)
@@ -341,7 +341,7 @@ class TextMagicApi(object):
     def cancel_verification(self, verify_id, **kwargs):  # noqa: E501
         """Cancel verification process  # noqa: E501
 
-        You can cancel the verification not earlier than 30 seconds after the initial request.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Two-factor%20authentication/cancelVerification\" target=\"_blank\">Try in sandbox</a><br>You can cancel the verification not earlier than 30 seconds after the initial request.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.cancel_verification(verify_id, async_req=True)
@@ -363,7 +363,7 @@ class TextMagicApi(object):
     def cancel_verification_with_http_info(self, verify_id, **kwargs):  # noqa: E501
         """Cancel verification process  # noqa: E501
 
-        You can cancel the verification not earlier than 30 seconds after the initial request.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Two-factor%20authentication/cancelVerification\" target=\"_blank\">Try in sandbox</a><br>You can cancel the verification not earlier than 30 seconds after the initial request.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.cancel_verification_with_http_info(verify_id, async_req=True)
@@ -440,7 +440,7 @@ class TextMagicApi(object):
     def check_phone_verification_code_tfa(self, check_phone_verification_code_input_object, **kwargs):  # noqa: E501
         """Step 2: Check the verification code   # noqa: E501
 
-        Check received code from user with the code which was actually sent.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Two-factor%20authentication/checkPhoneVerificationCodeTFA\" target=\"_blank\">Try in sandbox</a><br>Check received code from user with the code which was actually sent.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.check_phone_verification_code_tfa(check_phone_verification_code_input_object, async_req=True)
@@ -462,7 +462,7 @@ class TextMagicApi(object):
     def check_phone_verification_code_tfa_with_http_info(self, check_phone_verification_code_input_object, **kwargs):  # noqa: E501
         """Step 2: Check the verification code   # noqa: E501
 
-        Check received code from user with the code which was actually sent.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Two-factor%20authentication/checkPhoneVerificationCodeTFA\" target=\"_blank\">Try in sandbox</a><br>Check received code from user with the code which was actually sent.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.check_phone_verification_code_tfa_with_http_info(check_phone_verification_code_input_object, async_req=True)
@@ -539,7 +539,7 @@ class TextMagicApi(object):
     def clear_and_assign_contacts_to_list(self, clear_and_assign_contacts_to_list_input_object, id, **kwargs):  # noqa: E501
         """Reset list members to the specified contacts  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/clearAndAssignContactsToList\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.clear_and_assign_contacts_to_list(clear_and_assign_contacts_to_list_input_object, id, async_req=True)
@@ -562,7 +562,7 @@ class TextMagicApi(object):
     def clear_and_assign_contacts_to_list_with_http_info(self, clear_and_assign_contacts_to_list_input_object, id, **kwargs):  # noqa: E501
         """Reset list members to the specified contacts  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/clearAndAssignContactsToList\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.clear_and_assign_contacts_to_list_with_http_info(clear_and_assign_contacts_to_list_input_object, id, async_req=True)
@@ -646,7 +646,7 @@ class TextMagicApi(object):
     def close_chats_bulk(self, close_chats_bulk_input_object, **kwargs):  # noqa: E501
         """Close chats (bulk)  # noqa: E501
 
-        Close chats by chat IDs or close all chats  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/closeChatsBulk\" target=\"_blank\">Try in sandbox</a><br>Close chats by chat IDs or close all chats  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.close_chats_bulk(close_chats_bulk_input_object, async_req=True)
@@ -668,7 +668,7 @@ class TextMagicApi(object):
     def close_chats_bulk_with_http_info(self, close_chats_bulk_input_object, **kwargs):  # noqa: E501
         """Close chats (bulk)  # noqa: E501
 
-        Close chats by chat IDs or close all chats  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/closeChatsBulk\" target=\"_blank\">Try in sandbox</a><br>Close chats by chat IDs or close all chats  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.close_chats_bulk_with_http_info(close_chats_bulk_input_object, async_req=True)
@@ -741,7 +741,7 @@ class TextMagicApi(object):
     def close_read_chats(self, **kwargs):  # noqa: E501
         """Close read chats  # noqa: E501
 
-        Close all chats that have no unread messages.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/closeReadChats\" target=\"_blank\">Try in sandbox</a><br>Close all chats that have no unread messages.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.close_read_chats(async_req=True)
@@ -762,7 +762,7 @@ class TextMagicApi(object):
     def close_read_chats_with_http_info(self, **kwargs):  # noqa: E501
         """Close read chats  # noqa: E501
 
-        Close all chats that have no unread messages.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/closeReadChats\" target=\"_blank\">Try in sandbox</a><br>Close all chats that have no unread messages.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.close_read_chats_with_http_info(async_req=True)
@@ -828,7 +828,7 @@ class TextMagicApi(object):
     def close_subaccount(self, id, **kwargs):  # noqa: E501
         """Close sub-account  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sub-Accounts/closeSubaccount\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.close_subaccount(id, async_req=True)
@@ -850,7 +850,7 @@ class TextMagicApi(object):
     def close_subaccount_with_http_info(self, id, **kwargs):  # noqa: E501
         """Close sub-account  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sub-Accounts/closeSubaccount\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.close_subaccount_with_http_info(id, async_req=True)
@@ -923,7 +923,7 @@ class TextMagicApi(object):
     def create_contact(self, create_contact_input_object, **kwargs):  # noqa: E501
         """Add a new contact  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/createContact\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.create_contact(create_contact_input_object, async_req=True)
@@ -945,7 +945,7 @@ class TextMagicApi(object):
     def create_contact_with_http_info(self, create_contact_input_object, **kwargs):  # noqa: E501
         """Add a new contact  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/createContact\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.create_contact_with_http_info(create_contact_input_object, async_req=True)
@@ -1022,7 +1022,7 @@ class TextMagicApi(object):
     def create_contact_note(self, create_contact_note_input_object, id, **kwargs):  # noqa: E501
         """Create a new contact note  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contact%20Notes/createContactNote\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.create_contact_note(create_contact_note_input_object, id, async_req=True)
@@ -1045,7 +1045,7 @@ class TextMagicApi(object):
     def create_contact_note_with_http_info(self, create_contact_note_input_object, id, **kwargs):  # noqa: E501
         """Create a new contact note  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contact%20Notes/createContactNote\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.create_contact_note_with_http_info(create_contact_note_input_object, id, async_req=True)
@@ -1129,7 +1129,7 @@ class TextMagicApi(object):
     def create_custom_field(self, create_custom_field_input_object, **kwargs):  # noqa: E501
         """Add a new custom field  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Custom%20Fields/createCustomField\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.create_custom_field(create_custom_field_input_object, async_req=True)
@@ -1151,7 +1151,7 @@ class TextMagicApi(object):
     def create_custom_field_with_http_info(self, create_custom_field_input_object, **kwargs):  # noqa: E501
         """Add a new custom field  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Custom%20Fields/createCustomField\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.create_custom_field_with_http_info(create_custom_field_input_object, async_req=True)
@@ -1228,7 +1228,7 @@ class TextMagicApi(object):
     def create_list(self, create_list_input_object, **kwargs):  # noqa: E501
         """Create a new list  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/createList\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.create_list(create_list_input_object, async_req=True)
@@ -1250,7 +1250,7 @@ class TextMagicApi(object):
     def create_list_with_http_info(self, create_list_input_object, **kwargs):  # noqa: E501
         """Create a new list  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/createList\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.create_list_with_http_info(create_list_input_object, async_req=True)
@@ -1327,7 +1327,7 @@ class TextMagicApi(object):
     def create_template(self, create_template_input_object, **kwargs):  # noqa: E501
         """Create a template  # noqa: E501
 
-        There are times when creating a new template makes sense (such as when targeting specific clients or improving your business strategies).  You can create new SMS templates for marketing purposes or SMS templates for business campaigns.   # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Templates/createTemplate\" target=\"_blank\">Try in sandbox</a><br>There are times when creating a new template makes sense (such as when targeting specific clients or improving your business strategies).  You can create new SMS templates for marketing purposes or SMS templates for business campaigns.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.create_template(create_template_input_object, async_req=True)
@@ -1349,7 +1349,7 @@ class TextMagicApi(object):
     def create_template_with_http_info(self, create_template_input_object, **kwargs):  # noqa: E501
         """Create a template  # noqa: E501
 
-        There are times when creating a new template makes sense (such as when targeting specific clients or improving your business strategies).  You can create new SMS templates for marketing purposes or SMS templates for business campaigns.   # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Templates/createTemplate\" target=\"_blank\">Try in sandbox</a><br>There are times when creating a new template makes sense (such as when targeting specific clients or improving your business strategies).  You can create new SMS templates for marketing purposes or SMS templates for business campaigns.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.create_template_with_http_info(create_template_input_object, async_req=True)
@@ -1426,7 +1426,7 @@ class TextMagicApi(object):
     def delete_all_contacts(self, **kwargs):  # noqa: E501
         """Delete contacts (bulk)  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/deleteAllContacts\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_all_contacts(async_req=True)
@@ -1447,7 +1447,7 @@ class TextMagicApi(object):
     def delete_all_contacts_with_http_info(self, **kwargs):  # noqa: E501
         """Delete contacts (bulk)  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/deleteAllContacts\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_all_contacts_with_http_info(async_req=True)
@@ -1513,7 +1513,7 @@ class TextMagicApi(object):
     def delete_all_outbound_messages(self, **kwargs):  # noqa: E501
         """Delete all messages  # noqa: E501
 
-        Delete all messages.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteAllOutboundMessages\" target=\"_blank\">Try in sandbox</a><br>Delete all messages.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_all_outbound_messages(async_req=True)
@@ -1534,7 +1534,7 @@ class TextMagicApi(object):
     def delete_all_outbound_messages_with_http_info(self, **kwargs):  # noqa: E501
         """Delete all messages  # noqa: E501
 
-        Delete all messages.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteAllOutboundMessages\" target=\"_blank\">Try in sandbox</a><br>Delete all messages.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_all_outbound_messages_with_http_info(async_req=True)
@@ -1600,7 +1600,7 @@ class TextMagicApi(object):
     def delete_avatar(self, **kwargs):  # noqa: E501
         """Delete an avatar  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Account/deleteAvatar\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_avatar(async_req=True)
@@ -1621,7 +1621,7 @@ class TextMagicApi(object):
     def delete_avatar_with_http_info(self, **kwargs):  # noqa: E501
         """Delete an avatar  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Account/deleteAvatar\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_avatar_with_http_info(async_req=True)
@@ -1687,7 +1687,7 @@ class TextMagicApi(object):
     def delete_chat_messages(self, delete_chat_messages_bulk_input_object, id, **kwargs):  # noqa: E501
         """Delete chat messages by ID(s)  # noqa: E501
 
-        Delete messages from chat by given message IDs.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/deleteChatMessages\" target=\"_blank\">Try in sandbox</a><br>Delete messages from chat by given message IDs.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_chat_messages(delete_chat_messages_bulk_input_object, id, async_req=True)
@@ -1710,7 +1710,7 @@ class TextMagicApi(object):
     def delete_chat_messages_with_http_info(self, delete_chat_messages_bulk_input_object, id, **kwargs):  # noqa: E501
         """Delete chat messages by ID(s)  # noqa: E501
 
-        Delete messages from chat by given message IDs.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/deleteChatMessages\" target=\"_blank\">Try in sandbox</a><br>Delete messages from chat by given message IDs.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_chat_messages_with_http_info(delete_chat_messages_bulk_input_object, id, async_req=True)
@@ -1790,7 +1790,7 @@ class TextMagicApi(object):
     def delete_chats_bulk(self, delete_chats_bulk_input_object, **kwargs):  # noqa: E501
         """Delete chats (bulk)  # noqa: E501
 
-        Delete chats by given IDs or delete all chats.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/deleteChatsBulk\" target=\"_blank\">Try in sandbox</a><br>Delete chats by given IDs or delete all chats.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_chats_bulk(delete_chats_bulk_input_object, async_req=True)
@@ -1812,7 +1812,7 @@ class TextMagicApi(object):
     def delete_chats_bulk_with_http_info(self, delete_chats_bulk_input_object, **kwargs):  # noqa: E501
         """Delete chats (bulk)  # noqa: E501
 
-        Delete chats by given IDs or delete all chats.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/deleteChatsBulk\" target=\"_blank\">Try in sandbox</a><br>Delete chats by given IDs or delete all chats.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_chats_bulk_with_http_info(delete_chats_bulk_input_object, async_req=True)
@@ -1885,7 +1885,7 @@ class TextMagicApi(object):
     def delete_contact(self, id, **kwargs):  # noqa: E501
         """Delete a contact  # noqa: E501
 
-        > This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact.   # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/deleteContact\" target=\"_blank\">Try in sandbox</a><br>> This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_contact(id, async_req=True)
@@ -1907,7 +1907,7 @@ class TextMagicApi(object):
     def delete_contact_with_http_info(self, id, **kwargs):  # noqa: E501
         """Delete a contact  # noqa: E501
 
-        > This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact.   # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/deleteContact\" target=\"_blank\">Try in sandbox</a><br>> This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_contact_with_http_info(id, async_req=True)
@@ -1980,7 +1980,7 @@ class TextMagicApi(object):
     def delete_contact_avatar(self, id, **kwargs):  # noqa: E501
         """Delete an avatar  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/deleteContactAvatar\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_contact_avatar(id, async_req=True)
@@ -2002,7 +2002,7 @@ class TextMagicApi(object):
     def delete_contact_avatar_with_http_info(self, id, **kwargs):  # noqa: E501
         """Delete an avatar  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/deleteContactAvatar\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_contact_avatar_with_http_info(id, async_req=True)
@@ -2079,7 +2079,7 @@ class TextMagicApi(object):
     def delete_contact_note(self, id, **kwargs):  # noqa: E501
         """Delete a contact note  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contact%20Notes/deleteContactNote\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_contact_note(id, async_req=True)
@@ -2101,7 +2101,7 @@ class TextMagicApi(object):
     def delete_contact_note_with_http_info(self, id, **kwargs):  # noqa: E501
         """Delete a contact note  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contact%20Notes/deleteContactNote\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_contact_note_with_http_info(id, async_req=True)
@@ -2174,7 +2174,7 @@ class TextMagicApi(object):
     def delete_contact_notes_bulk(self, id, delete_contact_notes_bulk_input_object, **kwargs):  # noqa: E501
         """Delete contact notes (bulk)  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contact%20Notes/deleteContactNotesBulk\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_contact_notes_bulk(id, delete_contact_notes_bulk_input_object, async_req=True)
@@ -2197,7 +2197,7 @@ class TextMagicApi(object):
     def delete_contact_notes_bulk_with_http_info(self, id, delete_contact_notes_bulk_input_object, **kwargs):  # noqa: E501
         """Delete contact notes (bulk)  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contact%20Notes/deleteContactNotesBulk\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_contact_notes_bulk_with_http_info(id, delete_contact_notes_bulk_input_object, async_req=True)
@@ -2277,7 +2277,7 @@ class TextMagicApi(object):
     def delete_contacts_by_ids(self, delete_contacts_by_ids_input_object, **kwargs):  # noqa: E501
         """Delete contacts by IDs (bulk)  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/deleteContactsByIds\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_contacts_by_ids(delete_contacts_by_ids_input_object, async_req=True)
@@ -2299,7 +2299,7 @@ class TextMagicApi(object):
     def delete_contacts_by_ids_with_http_info(self, delete_contacts_by_ids_input_object, **kwargs):  # noqa: E501
         """Delete contacts by IDs (bulk)  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/deleteContactsByIds\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_contacts_by_ids_with_http_info(delete_contacts_by_ids_input_object, async_req=True)
@@ -2372,7 +2372,7 @@ class TextMagicApi(object):
     def delete_contacts_from_list(self, delete_contacs_from_list_object, id, **kwargs):  # noqa: E501
         """Unassign contacts from a list  # noqa: E501
 
-        > When you remove contacts from a specific list, they will be deleted permanently, unless they are first saved in another list.   # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/deleteContactsFromList\" target=\"_blank\">Try in sandbox</a><br>> When you remove contacts from a specific list, they will be deleted permanently, unless they are first saved in another list.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_contacts_from_list(delete_contacs_from_list_object, id, async_req=True)
@@ -2395,7 +2395,7 @@ class TextMagicApi(object):
     def delete_contacts_from_list_with_http_info(self, delete_contacs_from_list_object, id, **kwargs):  # noqa: E501
         """Unassign contacts from a list  # noqa: E501
 
-        > When you remove contacts from a specific list, they will be deleted permanently, unless they are first saved in another list.   # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/deleteContactsFromList\" target=\"_blank\">Try in sandbox</a><br>> When you remove contacts from a specific list, they will be deleted permanently, unless they are first saved in another list.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_contacts_from_list_with_http_info(delete_contacs_from_list_object, id, async_req=True)
@@ -2475,7 +2475,7 @@ class TextMagicApi(object):
     def delete_custom_field(self, id, **kwargs):  # noqa: E501
         """Delete a custom field  # noqa: E501
 
-        > When a custom field is deleted, all the information that was added to contacts under this custom field will also be lost.   # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Custom%20Fields/deleteCustomField\" target=\"_blank\">Try in sandbox</a><br>> When a custom field is deleted, all the information that was added to contacts under this custom field will also be lost.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_custom_field(id, async_req=True)
@@ -2497,7 +2497,7 @@ class TextMagicApi(object):
     def delete_custom_field_with_http_info(self, id, **kwargs):  # noqa: E501
         """Delete a custom field  # noqa: E501
 
-        > When a custom field is deleted, all the information that was added to contacts under this custom field will also be lost.   # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Custom%20Fields/deleteCustomField\" target=\"_blank\">Try in sandbox</a><br>> When a custom field is deleted, all the information that was added to contacts under this custom field will also be lost.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_custom_field_with_http_info(id, async_req=True)
@@ -2570,7 +2570,7 @@ class TextMagicApi(object):
     def delete_dedicated_number(self, id, **kwargs):  # noqa: E501
         """Cancel a dedicated number subscription  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/deleteDedicatedNumber\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_dedicated_number(id, async_req=True)
@@ -2592,7 +2592,7 @@ class TextMagicApi(object):
     def delete_dedicated_number_with_http_info(self, id, **kwargs):  # noqa: E501
         """Cancel a dedicated number subscription  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/deleteDedicatedNumber\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_dedicated_number_with_http_info(id, async_req=True)
@@ -2665,7 +2665,7 @@ class TextMagicApi(object):
     def delete_inbound_message(self, id, **kwargs):  # noqa: E501
         """Delete a single inbound message  # noqa: E501
 
-        > Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful!   # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/deleteInboundMessage\" target=\"_blank\">Try in sandbox</a><br>> Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful!   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_inbound_message(id, async_req=True)
@@ -2687,7 +2687,7 @@ class TextMagicApi(object):
     def delete_inbound_message_with_http_info(self, id, **kwargs):  # noqa: E501
         """Delete a single inbound message  # noqa: E501
 
-        > Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful!   # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/deleteInboundMessage\" target=\"_blank\">Try in sandbox</a><br>> Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful!   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_inbound_message_with_http_info(id, async_req=True)
@@ -2760,7 +2760,7 @@ class TextMagicApi(object):
     def delete_inbound_messages_bulk(self, delete_inbound_messages_bulk_input_object, **kwargs):  # noqa: E501
         """Delete inbound messages (bulk)  # noqa: E501
 
-        > Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful!   # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/deleteInboundMessagesBulk\" target=\"_blank\">Try in sandbox</a><br>> Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful!   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_inbound_messages_bulk(delete_inbound_messages_bulk_input_object, async_req=True)
@@ -2782,7 +2782,7 @@ class TextMagicApi(object):
     def delete_inbound_messages_bulk_with_http_info(self, delete_inbound_messages_bulk_input_object, **kwargs):  # noqa: E501
         """Delete inbound messages (bulk)  # noqa: E501
 
-        > Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful!   # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/deleteInboundMessagesBulk\" target=\"_blank\">Try in sandbox</a><br>> Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful!   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_inbound_messages_bulk_with_http_info(delete_inbound_messages_bulk_input_object, async_req=True)
@@ -2855,7 +2855,7 @@ class TextMagicApi(object):
     def delete_list(self, id, **kwargs):  # noqa: E501
         """Delete a list  # noqa: E501
 
-        This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/deleteList\" target=\"_blank\">Try in sandbox</a><br>This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_list(id, async_req=True)
@@ -2877,7 +2877,7 @@ class TextMagicApi(object):
     def delete_list_with_http_info(self, id, **kwargs):  # noqa: E501
         """Delete a list  # noqa: E501
 
-        This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/deleteList\" target=\"_blank\">Try in sandbox</a><br>This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_list_with_http_info(id, async_req=True)
@@ -2950,7 +2950,7 @@ class TextMagicApi(object):
     def delete_list_avatar(self, id, **kwargs):  # noqa: E501
         """Delete an avatar for a list  # noqa: E501
 
-        Delete an avatar for a list  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/deleteListAvatar\" target=\"_blank\">Try in sandbox</a><br>Delete an avatar for a list  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_list_avatar(id, async_req=True)
@@ -2972,7 +2972,7 @@ class TextMagicApi(object):
     def delete_list_avatar_with_http_info(self, id, **kwargs):  # noqa: E501
         """Delete an avatar for a list  # noqa: E501
 
-        Delete an avatar for a list  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/deleteListAvatar\" target=\"_blank\">Try in sandbox</a><br>Delete an avatar for a list  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_list_avatar_with_http_info(id, async_req=True)
@@ -3049,7 +3049,7 @@ class TextMagicApi(object):
     def delete_list_contacts_bulk(self, delete_list_contacts_bulk_input_object, id, **kwargs):  # noqa: E501
         """Delete contacts from a list (bulk)  # noqa: E501
 
-        Delete contacts from a list (bulk)  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/deleteListContactsBulk\" target=\"_blank\">Try in sandbox</a><br>Delete contacts from a list (bulk)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_list_contacts_bulk(delete_list_contacts_bulk_input_object, id, async_req=True)
@@ -3072,7 +3072,7 @@ class TextMagicApi(object):
     def delete_list_contacts_bulk_with_http_info(self, delete_list_contacts_bulk_input_object, id, **kwargs):  # noqa: E501
         """Delete contacts from a list (bulk)  # noqa: E501
 
-        Delete contacts from a list (bulk)  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/deleteListContactsBulk\" target=\"_blank\">Try in sandbox</a><br>Delete contacts from a list (bulk)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_list_contacts_bulk_with_http_info(delete_list_contacts_bulk_input_object, id, async_req=True)
@@ -3152,7 +3152,7 @@ class TextMagicApi(object):
     def delete_lists_bulk(self, delete_lists_bulk_input_object, **kwargs):  # noqa: E501
         """Delete lists (bulk)  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/deleteListsBulk\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_lists_bulk(delete_lists_bulk_input_object, async_req=True)
@@ -3174,7 +3174,7 @@ class TextMagicApi(object):
     def delete_lists_bulk_with_http_info(self, delete_lists_bulk_input_object, **kwargs):  # noqa: E501
         """Delete lists (bulk)  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/deleteListsBulk\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_lists_bulk_with_http_info(delete_lists_bulk_input_object, async_req=True)
@@ -3247,7 +3247,7 @@ class TextMagicApi(object):
     def delete_message_session(self, id, **kwargs):  # noqa: E501
         """Delete a session  # noqa: E501
 
-        Delete a message session, together with all nested messages. > You will not be refunded for any deleted sent sessions.   # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sessions/deleteMessageSession\" target=\"_blank\">Try in sandbox</a><br>Delete a message session, together with all nested messages. > You will not be refunded for any deleted sent sessions.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_message_session(id, async_req=True)
@@ -3269,7 +3269,7 @@ class TextMagicApi(object):
     def delete_message_session_with_http_info(self, id, **kwargs):  # noqa: E501
         """Delete a session  # noqa: E501
 
-        Delete a message session, together with all nested messages. > You will not be refunded for any deleted sent sessions.   # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sessions/deleteMessageSession\" target=\"_blank\">Try in sandbox</a><br>Delete a message session, together with all nested messages. > You will not be refunded for any deleted sent sessions.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_message_session_with_http_info(id, async_req=True)
@@ -3342,7 +3342,7 @@ class TextMagicApi(object):
     def delete_message_sessions_bulk(self, delete_message_sessions_bulk_input_object, **kwargs):  # noqa: E501
         """Delete sessions (bulk)  # noqa: E501
 
-        Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sessions/deleteMessageSessionsBulk\" target=\"_blank\">Try in sandbox</a><br>Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_message_sessions_bulk(delete_message_sessions_bulk_input_object, async_req=True)
@@ -3364,7 +3364,7 @@ class TextMagicApi(object):
     def delete_message_sessions_bulk_with_http_info(self, delete_message_sessions_bulk_input_object, **kwargs):  # noqa: E501
         """Delete sessions (bulk)  # noqa: E501
 
-        Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sessions/deleteMessageSessionsBulk\" target=\"_blank\">Try in sandbox</a><br>Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_message_sessions_bulk_with_http_info(delete_message_sessions_bulk_input_object, async_req=True)
@@ -3437,7 +3437,7 @@ class TextMagicApi(object):
     def delete_outbound_message(self, id, **kwargs):  # noqa: E501
         """Delete message  # noqa: E501
 
-        Delete a single message.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteOutboundMessage\" target=\"_blank\">Try in sandbox</a><br>Delete a single message.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_outbound_message(id, async_req=True)
@@ -3459,7 +3459,7 @@ class TextMagicApi(object):
     def delete_outbound_message_with_http_info(self, id, **kwargs):  # noqa: E501
         """Delete message  # noqa: E501
 
-        Delete a single message.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteOutboundMessage\" target=\"_blank\">Try in sandbox</a><br>Delete a single message.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_outbound_message_with_http_info(id, async_req=True)
@@ -3532,7 +3532,7 @@ class TextMagicApi(object):
     def delete_outbound_messages_bulk(self, delete_outbound_messages_bulk_input_object, **kwargs):  # noqa: E501
         """Delete messages (bulk)  # noqa: E501
 
-        Delete outbound messages by the given ID(s) or delete all outbound messages.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteOutboundMessagesBulk\" target=\"_blank\">Try in sandbox</a><br>Delete outbound messages by the given ID(s) or delete all outbound messages.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_outbound_messages_bulk(delete_outbound_messages_bulk_input_object, async_req=True)
@@ -3554,7 +3554,7 @@ class TextMagicApi(object):
     def delete_outbound_messages_bulk_with_http_info(self, delete_outbound_messages_bulk_input_object, **kwargs):  # noqa: E501
         """Delete messages (bulk)  # noqa: E501
 
-        Delete outbound messages by the given ID(s) or delete all outbound messages.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteOutboundMessagesBulk\" target=\"_blank\">Try in sandbox</a><br>Delete outbound messages by the given ID(s) or delete all outbound messages.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_outbound_messages_bulk_with_http_info(delete_outbound_messages_bulk_input_object, async_req=True)
@@ -3627,7 +3627,7 @@ class TextMagicApi(object):
     def delete_scheduled_message(self, id, **kwargs):  # noqa: E501
         """Delete a single scheduled message  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/deleteScheduledMessage\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_scheduled_message(id, async_req=True)
@@ -3649,7 +3649,7 @@ class TextMagicApi(object):
     def delete_scheduled_message_with_http_info(self, id, **kwargs):  # noqa: E501
         """Delete a single scheduled message  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/deleteScheduledMessage\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_scheduled_message_with_http_info(id, async_req=True)
@@ -3722,7 +3722,7 @@ class TextMagicApi(object):
     def delete_scheduled_messages_bulk(self, delete_scheduled_messages_bulk_input_object, **kwargs):  # noqa: E501
         """Delete scheduled messages (bulk)  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/deleteScheduledMessagesBulk\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_scheduled_messages_bulk(delete_scheduled_messages_bulk_input_object, async_req=True)
@@ -3744,7 +3744,7 @@ class TextMagicApi(object):
     def delete_scheduled_messages_bulk_with_http_info(self, delete_scheduled_messages_bulk_input_object, **kwargs):  # noqa: E501
         """Delete scheduled messages (bulk)  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/deleteScheduledMessagesBulk\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_scheduled_messages_bulk_with_http_info(delete_scheduled_messages_bulk_input_object, async_req=True)
@@ -3817,7 +3817,7 @@ class TextMagicApi(object):
     def delete_sender_id(self, id, **kwargs):  # noqa: E501
         """Delete a Sender ID  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sender%20IDs/deleteSenderId\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_sender_id(id, async_req=True)
@@ -3839,7 +3839,7 @@ class TextMagicApi(object):
     def delete_sender_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Delete a Sender ID  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sender%20IDs/deleteSenderId\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_sender_id_with_http_info(id, async_req=True)
@@ -3912,7 +3912,7 @@ class TextMagicApi(object):
     def delete_template(self, id, **kwargs):  # noqa: E501
         """Delete a template  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Templates/deleteTemplate\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_template(id, async_req=True)
@@ -3934,7 +3934,7 @@ class TextMagicApi(object):
     def delete_template_with_http_info(self, id, **kwargs):  # noqa: E501
         """Delete a template  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Templates/deleteTemplate\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_template_with_http_info(id, async_req=True)
@@ -4007,7 +4007,7 @@ class TextMagicApi(object):
     def delete_templates_bulk(self, delete_templates_bulk_input_object, **kwargs):  # noqa: E501
         """Delete templates (bulk)  # noqa: E501
 
-        Delete templates by given IDs or delete all templates.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Templates/deleteTemplatesBulk\" target=\"_blank\">Try in sandbox</a><br>Delete templates by given IDs or delete all templates.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_templates_bulk(delete_templates_bulk_input_object, async_req=True)
@@ -4029,7 +4029,7 @@ class TextMagicApi(object):
     def delete_templates_bulk_with_http_info(self, delete_templates_bulk_input_object, **kwargs):  # noqa: E501
         """Delete templates (bulk)  # noqa: E501
 
-        Delete templates by given IDs or delete all templates.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Templates/deleteTemplatesBulk\" target=\"_blank\">Try in sandbox</a><br>Delete templates by given IDs or delete all templates.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_templates_bulk_with_http_info(delete_templates_bulk_input_object, async_req=True)
@@ -4102,7 +4102,7 @@ class TextMagicApi(object):
     def do_carrier_lookup(self, phone, **kwargs):  # noqa: E501
         """Carrier Lookup  # noqa: E501
 
-        This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  > Numbers must be checked one by one. You cannot check multiple numbers in one request.     # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lookup/doCarrierLookup\" target=\"_blank\">Try in sandbox</a><br>This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  > Numbers must be checked one by one. You cannot check multiple numbers in one request.     # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.do_carrier_lookup(phone, async_req=True)
@@ -4125,7 +4125,7 @@ class TextMagicApi(object):
     def do_carrier_lookup_with_http_info(self, phone, **kwargs):  # noqa: E501
         """Carrier Lookup  # noqa: E501
 
-        This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  > Numbers must be checked one by one. You cannot check multiple numbers in one request.     # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lookup/doCarrierLookup\" target=\"_blank\">Try in sandbox</a><br>This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  > Numbers must be checked one by one. You cannot check multiple numbers in one request.     # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.do_carrier_lookup_with_http_info(phone, async_req=True)
@@ -4205,7 +4205,7 @@ class TextMagicApi(object):
     def do_email_lookup(self, email, **kwargs):  # noqa: E501
         """Email Lookup  # noqa: E501
 
-        To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  > Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lookup/doEmailLookup\" target=\"_blank\">Try in sandbox</a><br>To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  > Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.do_email_lookup(email, async_req=True)
@@ -4227,7 +4227,7 @@ class TextMagicApi(object):
     def do_email_lookup_with_http_info(self, email, **kwargs):  # noqa: E501
         """Email Lookup  # noqa: E501
 
-        To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  > Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lookup/doEmailLookup\" target=\"_blank\">Try in sandbox</a><br>To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  > Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.do_email_lookup_with_http_info(email, async_req=True)
@@ -4304,7 +4304,7 @@ class TextMagicApi(object):
     def get_all_bulk_sessions(self, **kwargs):  # noqa: E501
         """Get all bulk sessions  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getAllBulkSessions\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_all_bulk_sessions(async_req=True)
@@ -4327,7 +4327,7 @@ class TextMagicApi(object):
     def get_all_bulk_sessions_with_http_info(self, **kwargs):  # noqa: E501
         """Get all bulk sessions  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getAllBulkSessions\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_all_bulk_sessions_with_http_info(async_req=True)
@@ -4403,7 +4403,7 @@ class TextMagicApi(object):
     def get_all_chats(self, **kwargs):  # noqa: E501
         """Get all chats  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/getAllChats\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_all_chats(async_req=True)
@@ -4430,7 +4430,7 @@ class TextMagicApi(object):
     def get_all_chats_with_http_info(self, **kwargs):  # noqa: E501
         """Get all chats  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/getAllChats\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_all_chats_with_http_info(async_req=True)
@@ -4518,7 +4518,7 @@ class TextMagicApi(object):
     def get_all_inbound_messages(self, **kwargs):  # noqa: E501
         """Get all inbound messages  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/getAllInboundMessages\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_all_inbound_messages(async_req=True)
@@ -4543,7 +4543,7 @@ class TextMagicApi(object):
     def get_all_inbound_messages_with_http_info(self, **kwargs):  # noqa: E501
         """Get all inbound messages  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/getAllInboundMessages\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_all_inbound_messages_with_http_info(async_req=True)
@@ -4625,7 +4625,7 @@ class TextMagicApi(object):
     def get_all_message_sessions(self, **kwargs):  # noqa: E501
         """Get all sessions  # noqa: E501
 
-        Get all message sending sessions. > This list contains all of your sessions, including those which were sent but not via API   # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sessions/getAllMessageSessions\" target=\"_blank\">Try in sandbox</a><br>Get all message sending sessions. > This list contains all of your sessions, including those which were sent but not via API   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_all_message_sessions(async_req=True)
@@ -4648,7 +4648,7 @@ class TextMagicApi(object):
     def get_all_message_sessions_with_http_info(self, **kwargs):  # noqa: E501
         """Get all sessions  # noqa: E501
 
-        Get all message sending sessions. > This list contains all of your sessions, including those which were sent but not via API   # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sessions/getAllMessageSessions\" target=\"_blank\">Try in sandbox</a><br>Get all message sending sessions. > This list contains all of your sessions, including those which were sent but not via API   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_all_message_sessions_with_http_info(async_req=True)
@@ -4724,7 +4724,7 @@ class TextMagicApi(object):
     def get_all_outbound_messages(self, **kwargs):  # noqa: E501
         """Get all messages  # noqa: E501
 
-        Get all user oubound messages.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getAllOutboundMessages\" target=\"_blank\">Try in sandbox</a><br>Get all user oubound messages.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_all_outbound_messages(async_req=True)
@@ -4748,7 +4748,7 @@ class TextMagicApi(object):
     def get_all_outbound_messages_with_http_info(self, **kwargs):  # noqa: E501
         """Get all messages  # noqa: E501
 
-        Get all user oubound messages.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getAllOutboundMessages\" target=\"_blank\">Try in sandbox</a><br>Get all user oubound messages.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_all_outbound_messages_with_http_info(async_req=True)
@@ -4827,7 +4827,7 @@ class TextMagicApi(object):
     def get_all_scheduled_messages(self, **kwargs):  # noqa: E501
         """Get all scheduled messages  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/getAllScheduledMessages\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_all_scheduled_messages(async_req=True)
@@ -4853,7 +4853,7 @@ class TextMagicApi(object):
     def get_all_scheduled_messages_with_http_info(self, **kwargs):  # noqa: E501
         """Get all scheduled messages  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/getAllScheduledMessages\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_all_scheduled_messages_with_http_info(async_req=True)
@@ -4938,7 +4938,7 @@ class TextMagicApi(object):
     def get_all_templates(self, **kwargs):  # noqa: E501
         """Get all templates  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Templates/getAllTemplates\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_all_templates(async_req=True)
@@ -4961,7 +4961,7 @@ class TextMagicApi(object):
     def get_all_templates_with_http_info(self, **kwargs):  # noqa: E501
         """Get all templates  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Templates/getAllTemplates\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_all_templates_with_http_info(async_req=True)
@@ -5037,7 +5037,7 @@ class TextMagicApi(object):
     def get_available_dedicated_numbers(self, country, **kwargs):  # noqa: E501
         """Find dedicated numbers available for purchase  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/getAvailableDedicatedNumbers\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_available_dedicated_numbers(country, async_req=True)
@@ -5061,7 +5061,7 @@ class TextMagicApi(object):
     def get_available_dedicated_numbers_with_http_info(self, country, **kwargs):  # noqa: E501
         """Find dedicated numbers available for purchase  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/getAvailableDedicatedNumbers\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_available_dedicated_numbers_with_http_info(country, async_req=True)
@@ -5144,7 +5144,7 @@ class TextMagicApi(object):
     def get_available_sender_setting_options(self, **kwargs):  # noqa: E501
         """Get available sender settings  # noqa: E501
 
-        Get all available sender setting options which can be used in the \"from\" parameter of the POST messages method.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Overview/getAvailableSenderSettingOptions\" target=\"_blank\">Try in sandbox</a><br>Get all available sender setting options which can be used in the \"from\" parameter of the POST messages method.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_available_sender_setting_options(async_req=True)
@@ -5166,7 +5166,7 @@ class TextMagicApi(object):
     def get_available_sender_setting_options_with_http_info(self, **kwargs):  # noqa: E501
         """Get available sender settings  # noqa: E501
 
-        Get all available sender setting options which can be used in the \"from\" parameter of the POST messages method.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Overview/getAvailableSenderSettingOptions\" target=\"_blank\">Try in sandbox</a><br>Get all available sender setting options which can be used in the \"from\" parameter of the POST messages method.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_available_sender_setting_options_with_http_info(async_req=True)
@@ -5239,7 +5239,7 @@ class TextMagicApi(object):
     def get_balance_notification_options(self, **kwargs):  # noqa: E501
         """Returns the list of available balance options which can be used as a bound to determine when to send email to user with low balance notification. See https://my.textmagic.com/online/account/notifications/balance  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/getBalanceNotificationOptions\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_balance_notification_options(async_req=True)
@@ -5260,7 +5260,7 @@ class TextMagicApi(object):
     def get_balance_notification_options_with_http_info(self, **kwargs):  # noqa: E501
         """Returns the list of available balance options which can be used as a bound to determine when to send email to user with low balance notification. See https://my.textmagic.com/online/account/notifications/balance  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/getBalanceNotificationOptions\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_balance_notification_options_with_http_info(async_req=True)
@@ -5330,7 +5330,7 @@ class TextMagicApi(object):
     def get_balance_notification_settings(self, **kwargs):  # noqa: E501
         """Get balance notification settings  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/getBalanceNotificationSettings\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_balance_notification_settings(async_req=True)
@@ -5351,7 +5351,7 @@ class TextMagicApi(object):
     def get_balance_notification_settings_with_http_info(self, **kwargs):  # noqa: E501
         """Get balance notification settings  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/getBalanceNotificationSettings\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_balance_notification_settings_with_http_info(async_req=True)
@@ -5421,7 +5421,7 @@ class TextMagicApi(object):
     def get_blocked_contacts(self, **kwargs):  # noqa: E501
         """Get blocked contacts  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/getBlockedContacts\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_blocked_contacts(async_req=True)
@@ -5447,7 +5447,7 @@ class TextMagicApi(object):
     def get_blocked_contacts_with_http_info(self, **kwargs):  # noqa: E501
         """Get blocked contacts  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/getBlockedContacts\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_blocked_contacts_with_http_info(async_req=True)
@@ -5532,7 +5532,7 @@ class TextMagicApi(object):
     def get_bulk_session(self, id, **kwargs):  # noqa: E501
         """Get bulk session status  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getBulkSession\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_bulk_session(id, async_req=True)
@@ -5554,7 +5554,7 @@ class TextMagicApi(object):
     def get_bulk_session_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get bulk session status  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getBulkSession\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_bulk_session_with_http_info(id, async_req=True)
@@ -5631,7 +5631,7 @@ class TextMagicApi(object):
     def get_callback_settings(self, **kwargs):  # noqa: E501
         """Fetch callback URL settings  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/getCallbackSettings\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_callback_settings(async_req=True)
@@ -5652,7 +5652,7 @@ class TextMagicApi(object):
     def get_callback_settings_with_http_info(self, **kwargs):  # noqa: E501
         """Fetch callback URL settings  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/getCallbackSettings\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_callback_settings_with_http_info(async_req=True)
@@ -5722,7 +5722,7 @@ class TextMagicApi(object):
     def get_chat(self, id, **kwargs):  # noqa: E501
         """Get a single chat  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/getChat\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_chat(id, async_req=True)
@@ -5744,7 +5744,7 @@ class TextMagicApi(object):
     def get_chat_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get a single chat  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/getChat\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_chat_with_http_info(id, async_req=True)
@@ -5821,7 +5821,7 @@ class TextMagicApi(object):
     def get_chat_by_phone(self, phone, **kwargs):  # noqa: E501
         """Find chats by phone  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/getChatByPhone\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_chat_by_phone(phone, async_req=True)
@@ -5845,7 +5845,7 @@ class TextMagicApi(object):
     def get_chat_by_phone_with_http_info(self, phone, **kwargs):  # noqa: E501
         """Find chats by phone  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/getChatByPhone\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_chat_by_phone_with_http_info(phone, async_req=True)
@@ -5928,7 +5928,7 @@ class TextMagicApi(object):
     def get_chat_messages(self, id, **kwargs):  # noqa: E501
         """Get chat messages  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/getChatMessages\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_chat_messages(id, async_req=True)
@@ -5957,7 +5957,7 @@ class TextMagicApi(object):
     def get_chat_messages_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get chat messages  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/getChatMessages\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_chat_messages_with_http_info(id, async_req=True)
@@ -6055,7 +6055,7 @@ class TextMagicApi(object):
     def get_contact(self, id, **kwargs):  # noqa: E501
         """Get the details of a specific contact  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/getContact\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contact(id, async_req=True)
@@ -6077,7 +6077,7 @@ class TextMagicApi(object):
     def get_contact_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get the details of a specific contact  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/getContact\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contact_with_http_info(id, async_req=True)
@@ -6154,7 +6154,7 @@ class TextMagicApi(object):
     def get_contact_by_phone(self, phone, **kwargs):  # noqa: E501
         """Get the details of a specific contact by phone number  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/getContactByPhone\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contact_by_phone(phone, async_req=True)
@@ -6176,7 +6176,7 @@ class TextMagicApi(object):
     def get_contact_by_phone_with_http_info(self, phone, **kwargs):  # noqa: E501
         """Get the details of a specific contact by phone number  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/getContactByPhone\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contact_by_phone_with_http_info(phone, async_req=True)
@@ -6253,7 +6253,7 @@ class TextMagicApi(object):
     def get_contact_if_blocked(self, phone, **kwargs):  # noqa: E501
         """Check if a phone number is blocked  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/getContactIfBlocked\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contact_if_blocked(phone, async_req=True)
@@ -6275,7 +6275,7 @@ class TextMagicApi(object):
     def get_contact_if_blocked_with_http_info(self, phone, **kwargs):  # noqa: E501
         """Check if a phone number is blocked  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/getContactIfBlocked\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contact_if_blocked_with_http_info(phone, async_req=True)
@@ -6352,7 +6352,7 @@ class TextMagicApi(object):
     def get_contact_import_session_progress(self, id, **kwargs):  # noqa: E501
         """Check import progress  # noqa: E501
 
-        Get contact import session progress.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/getContactImportSessionProgress\" target=\"_blank\">Try in sandbox</a><br>Get contact import session progress.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contact_import_session_progress(id, async_req=True)
@@ -6374,7 +6374,7 @@ class TextMagicApi(object):
     def get_contact_import_session_progress_with_http_info(self, id, **kwargs):  # noqa: E501
         """Check import progress  # noqa: E501
 
-        Get contact import session progress.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/getContactImportSessionProgress\" target=\"_blank\">Try in sandbox</a><br>Get contact import session progress.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contact_import_session_progress_with_http_info(id, async_req=True)
@@ -6451,7 +6451,7 @@ class TextMagicApi(object):
     def get_contact_note(self, id, **kwargs):  # noqa: E501
         """Get a contact note  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contact%20Notes/getContactNote\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contact_note(id, async_req=True)
@@ -6473,7 +6473,7 @@ class TextMagicApi(object):
     def get_contact_note_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get a contact note  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contact%20Notes/getContactNote\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contact_note_with_http_info(id, async_req=True)
@@ -6550,7 +6550,7 @@ class TextMagicApi(object):
     def get_contact_notes(self, id, **kwargs):  # noqa: E501
         """Fetch notes assigned to a given contact  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contact%20Notes/getContactNotes\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contact_notes(id, async_req=True)
@@ -6574,7 +6574,7 @@ class TextMagicApi(object):
     def get_contact_notes_with_http_info(self, id, **kwargs):  # noqa: E501
         """Fetch notes assigned to a given contact  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contact%20Notes/getContactNotes\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contact_notes_with_http_info(id, async_req=True)
@@ -6657,7 +6657,7 @@ class TextMagicApi(object):
     def get_contacts(self, **kwargs):  # noqa: E501
         """Get all contacts  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/getContacts\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contacts(async_req=True)
@@ -6683,7 +6683,7 @@ class TextMagicApi(object):
     def get_contacts_with_http_info(self, **kwargs):  # noqa: E501
         """Get all contacts  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/getContacts\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contacts_with_http_info(async_req=True)
@@ -6768,7 +6768,7 @@ class TextMagicApi(object):
     def get_contacts_autocomplete(self, query, **kwargs):  # noqa: E501
         """Get contacts autocomplete suggestions  # noqa: E501
 
-        Get contacts autocomplete suggestions by given search terms.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/getContactsAutocomplete\" target=\"_blank\">Try in sandbox</a><br>Get contacts autocomplete suggestions by given search terms.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contacts_autocomplete(query, async_req=True)
@@ -6792,7 +6792,7 @@ class TextMagicApi(object):
     def get_contacts_autocomplete_with_http_info(self, query, **kwargs):  # noqa: E501
         """Get contacts autocomplete suggestions  # noqa: E501
 
-        Get contacts autocomplete suggestions by given search terms.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/getContactsAutocomplete\" target=\"_blank\">Try in sandbox</a><br>Get contacts autocomplete suggestions by given search terms.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contacts_autocomplete_with_http_info(query, async_req=True)
@@ -6875,7 +6875,7 @@ class TextMagicApi(object):
     def get_contacts_by_list_id(self, id, **kwargs):  # noqa: E501
         """Get all contacts in a list  # noqa: E501
 
-        A useful synonym for the \"contacts/search\" command with the provided \"listId\" parameter.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/getContactsByListId\" target=\"_blank\">Try in sandbox</a><br>A useful synonym for the \"contacts/search\" command with the provided \"listId\" parameter.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contacts_by_list_id(id, async_req=True)
@@ -6901,7 +6901,7 @@ class TextMagicApi(object):
     def get_contacts_by_list_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get all contacts in a list  # noqa: E501
 
-        A useful synonym for the \"contacts/search\" command with the provided \"listId\" parameter.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/getContactsByListId\" target=\"_blank\">Try in sandbox</a><br>A useful synonym for the \"contacts/search\" command with the provided \"listId\" parameter.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contacts_by_list_id_with_http_info(id, async_req=True)
@@ -6990,7 +6990,7 @@ class TextMagicApi(object):
     def get_countries(self, **kwargs):  # noqa: E501
         """Get countries  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/getCountries\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_countries(async_req=True)
@@ -7011,7 +7011,7 @@ class TextMagicApi(object):
     def get_countries_with_http_info(self, **kwargs):  # noqa: E501
         """Get countries  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/getCountries\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_countries_with_http_info(async_req=True)
@@ -7081,7 +7081,7 @@ class TextMagicApi(object):
     def get_current_user(self, **kwargs):  # noqa: E501
         """Get current account information  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Account/getCurrentUser\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_current_user(async_req=True)
@@ -7102,7 +7102,7 @@ class TextMagicApi(object):
     def get_current_user_with_http_info(self, **kwargs):  # noqa: E501
         """Get current account information  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Account/getCurrentUser\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_current_user_with_http_info(async_req=True)
@@ -7172,7 +7172,7 @@ class TextMagicApi(object):
     def get_custom_field(self, id, **kwargs):  # noqa: E501
         """Get the details of a specific custom field  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Custom%20Fields/getCustomField\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_custom_field(id, async_req=True)
@@ -7194,7 +7194,7 @@ class TextMagicApi(object):
     def get_custom_field_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get the details of a specific custom field  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Custom%20Fields/getCustomField\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_custom_field_with_http_info(id, async_req=True)
@@ -7271,7 +7271,7 @@ class TextMagicApi(object):
     def get_custom_fields(self, **kwargs):  # noqa: E501
         """Get all custom fields  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Custom%20Fields/getCustomFields\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_custom_fields(async_req=True)
@@ -7294,7 +7294,7 @@ class TextMagicApi(object):
     def get_custom_fields_with_http_info(self, **kwargs):  # noqa: E501
         """Get all custom fields  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Custom%20Fields/getCustomFields\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_custom_fields_with_http_info(async_req=True)
@@ -7370,7 +7370,7 @@ class TextMagicApi(object):
     def get_dedicated_number(self, id, **kwargs):  # noqa: E501
         """Get the details of a specific dedicated number  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/getDedicatedNumber\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_dedicated_number(id, async_req=True)
@@ -7392,7 +7392,7 @@ class TextMagicApi(object):
     def get_dedicated_number_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get the details of a specific dedicated number  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/getDedicatedNumber\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_dedicated_number_with_http_info(id, async_req=True)
@@ -7469,7 +7469,7 @@ class TextMagicApi(object):
     def get_favorites(self, **kwargs):  # noqa: E501
         """Get favorite contacts and lists  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/getFavorites\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_favorites(async_req=True)
@@ -7493,7 +7493,7 @@ class TextMagicApi(object):
     def get_favorites_with_http_info(self, **kwargs):  # noqa: E501
         """Get favorite contacts and lists  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/getFavorites\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_favorites_with_http_info(async_req=True)
@@ -7572,7 +7572,7 @@ class TextMagicApi(object):
     def get_inbound_message(self, id, **kwargs):  # noqa: E501
         """Get a single inbound message  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/getInboundMessage\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_inbound_message(id, async_req=True)
@@ -7594,7 +7594,7 @@ class TextMagicApi(object):
     def get_inbound_message_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get a single inbound message  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/getInboundMessage\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_inbound_message_with_http_info(id, async_req=True)
@@ -7671,7 +7671,7 @@ class TextMagicApi(object):
     def get_inbound_messages_notification_settings(self, **kwargs):  # noqa: E501
         """Get inbound messages notification settings  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/getInboundMessagesNotificationSettings\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_inbound_messages_notification_settings(async_req=True)
@@ -7692,7 +7692,7 @@ class TextMagicApi(object):
     def get_inbound_messages_notification_settings_with_http_info(self, **kwargs):  # noqa: E501
         """Get inbound messages notification settings  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/getInboundMessagesNotificationSettings\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_inbound_messages_notification_settings_with_http_info(async_req=True)
@@ -7762,7 +7762,7 @@ class TextMagicApi(object):
     def get_invoices(self, **kwargs):  # noqa: E501
         """Get all invoices  # noqa: E501
 
-        With the TextMagic API, you can check the invoices and transactions for your account.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Invoices/getInvoices\" target=\"_blank\">Try in sandbox</a><br>With the TextMagic API, you can check the invoices and transactions for your account.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_invoices(async_req=True)
@@ -7785,7 +7785,7 @@ class TextMagicApi(object):
     def get_invoices_with_http_info(self, **kwargs):  # noqa: E501
         """Get all invoices  # noqa: E501
 
-        With the TextMagic API, you can check the invoices and transactions for your account.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Invoices/getInvoices\" target=\"_blank\">Try in sandbox</a><br>With the TextMagic API, you can check the invoices and transactions for your account.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_invoices_with_http_info(async_req=True)
@@ -7861,7 +7861,7 @@ class TextMagicApi(object):
     def get_list(self, id, **kwargs):  # noqa: E501
         """Get the details of a specific list  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/getList\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_list(id, async_req=True)
@@ -7883,7 +7883,7 @@ class TextMagicApi(object):
     def get_list_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get the details of a specific list  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/getList\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_list_with_http_info(id, async_req=True)
@@ -7960,7 +7960,7 @@ class TextMagicApi(object):
     def get_list_contacts_ids(self, id, **kwargs):  # noqa: E501
         """Get all contact IDs in a list  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/getListContactsIds\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_list_contacts_ids(id, async_req=True)
@@ -7982,7 +7982,7 @@ class TextMagicApi(object):
     def get_list_contacts_ids_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get all contact IDs in a list  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/getListContactsIds\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_list_contacts_ids_with_http_info(id, async_req=True)
@@ -8059,7 +8059,7 @@ class TextMagicApi(object):
     def get_lists(self, **kwargs):  # noqa: E501
         """Get all lists  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/getLists\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_lists(async_req=True)
@@ -8086,7 +8086,7 @@ class TextMagicApi(object):
     def get_lists_with_http_info(self, **kwargs):  # noqa: E501
         """Get all lists  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/getLists\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_lists_with_http_info(async_req=True)
@@ -8174,7 +8174,7 @@ class TextMagicApi(object):
     def get_lists_of_contact(self, id, **kwargs):  # noqa: E501
         """Get a contact's lists  # noqa: E501
 
-        Get all the lists in which a contact is included.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/getListsOfContact\" target=\"_blank\">Try in sandbox</a><br>Get all the lists in which a contact is included.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_lists_of_contact(id, async_req=True)
@@ -8198,7 +8198,7 @@ class TextMagicApi(object):
     def get_lists_of_contact_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get a contact's lists  # noqa: E501
 
-        Get all the lists in which a contact is included.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/getListsOfContact\" target=\"_blank\">Try in sandbox</a><br>Get all the lists in which a contact is included.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_lists_of_contact_with_http_info(id, async_req=True)
@@ -8281,7 +8281,7 @@ class TextMagicApi(object):
     def get_message_preview(self, **kwargs):  # noqa: E501
         """Preview message  # noqa: E501
 
-        Get a messages preview (with tags merged) of up to 100 messages per session.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getMessagePreview\" target=\"_blank\">Try in sandbox</a><br>Get a messages preview (with tags merged) of up to 100 messages per session.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_message_preview(async_req=True)
@@ -8319,7 +8319,7 @@ class TextMagicApi(object):
     def get_message_preview_with_http_info(self, **kwargs):  # noqa: E501
         """Preview message  # noqa: E501
 
-        Get a messages preview (with tags merged) of up to 100 messages per session.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getMessagePreview\" target=\"_blank\">Try in sandbox</a><br>Get a messages preview (with tags merged) of up to 100 messages per session.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_message_preview_with_http_info(async_req=True)
@@ -8440,7 +8440,7 @@ class TextMagicApi(object):
     def get_message_price(self, **kwargs):  # noqa: E501
         """Check message price  # noqa: E501
 
-        Check pricing for a new outbound message.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getMessagePrice\" target=\"_blank\">Try in sandbox</a><br>Check pricing for a new outbound message.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_message_price(async_req=True)
@@ -8479,7 +8479,7 @@ class TextMagicApi(object):
     def get_message_price_with_http_info(self, **kwargs):  # noqa: E501
         """Check message price  # noqa: E501
 
-        Check pricing for a new outbound message.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getMessagePrice\" target=\"_blank\">Try in sandbox</a><br>Check pricing for a new outbound message.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_message_price_with_http_info(async_req=True)
@@ -8603,7 +8603,7 @@ class TextMagicApi(object):
     def get_message_session(self, id, **kwargs):  # noqa: E501
         """Get a session`s details  # noqa: E501
 
-        Get a specific session’s details.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sessions/getMessageSession\" target=\"_blank\">Try in sandbox</a><br>Get a specific session’s details.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_message_session(id, async_req=True)
@@ -8625,7 +8625,7 @@ class TextMagicApi(object):
     def get_message_session_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get a session`s details  # noqa: E501
 
-        Get a specific session’s details.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sessions/getMessageSession\" target=\"_blank\">Try in sandbox</a><br>Get a specific session’s details.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_message_session_with_http_info(id, async_req=True)
@@ -8702,7 +8702,7 @@ class TextMagicApi(object):
     def get_message_session_stat(self, id, **kwargs):  # noqa: E501
         """Get a session`s statistics  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sessions/getMessageSessionStat\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_message_session_stat(id, async_req=True)
@@ -8725,7 +8725,7 @@ class TextMagicApi(object):
     def get_message_session_stat_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get a session`s statistics  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sessions/getMessageSessionStat\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_message_session_stat_with_http_info(id, async_req=True)
@@ -8805,7 +8805,7 @@ class TextMagicApi(object):
     def get_messages_by_session_id(self, id, **kwargs):  # noqa: E501
         """Get a session`s messages  # noqa: E501
 
-        A useful synonym for the \"messages/search\" command with the provided \"sessionId\" parameter.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sessions/getMessagesBySessionId\" target=\"_blank\">Try in sandbox</a><br>A useful synonym for the \"messages/search\" command with the provided \"sessionId\" parameter.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_messages_by_session_id(id, async_req=True)
@@ -8831,7 +8831,7 @@ class TextMagicApi(object):
     def get_messages_by_session_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get a session`s messages  # noqa: E501
 
-        A useful synonym for the \"messages/search\" command with the provided \"sessionId\" parameter.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sessions/getMessagesBySessionId\" target=\"_blank\">Try in sandbox</a><br>A useful synonym for the \"messages/search\" command with the provided \"sessionId\" parameter.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_messages_by_session_id_with_http_info(id, async_req=True)
@@ -8920,7 +8920,7 @@ class TextMagicApi(object):
     def get_messaging_counters(self, **kwargs):  # noqa: E501
         """Get sent/received messages counters values  # noqa: E501
 
-        Get total contacts, sent messages and received messages counters values.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Statistics/getMessagingCounters\" target=\"_blank\">Try in sandbox</a><br>Get total contacts, sent messages and received messages counters values.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_messaging_counters(async_req=True)
@@ -8941,7 +8941,7 @@ class TextMagicApi(object):
     def get_messaging_counters_with_http_info(self, **kwargs):  # noqa: E501
         """Get sent/received messages counters values  # noqa: E501
 
-        Get total contacts, sent messages and received messages counters values.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Statistics/getMessagingCounters\" target=\"_blank\">Try in sandbox</a><br>Get total contacts, sent messages and received messages counters values.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_messaging_counters_with_http_info(async_req=True)
@@ -9011,7 +9011,7 @@ class TextMagicApi(object):
     def get_messaging_stat(self, **kwargs):  # noqa: E501
         """Get messaging statistics  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Statistics/getMessagingStat\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_messaging_stat(async_req=True)
@@ -9035,7 +9035,7 @@ class TextMagicApi(object):
     def get_messaging_stat_with_http_info(self, **kwargs):  # noqa: E501
         """Get messaging statistics  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Statistics/getMessagingStat\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_messaging_stat_with_http_info(async_req=True)
@@ -9114,7 +9114,7 @@ class TextMagicApi(object):
     def get_outbound_message(self, id, **kwargs):  # noqa: E501
         """Get a single message  # noqa: E501
 
-        Get a single outgoing message.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getOutboundMessage\" target=\"_blank\">Try in sandbox</a><br>Get a single outgoing message.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_outbound_message(id, async_req=True)
@@ -9136,7 +9136,7 @@ class TextMagicApi(object):
     def get_outbound_message_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get a single message  # noqa: E501
 
-        Get a single outgoing message.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getOutboundMessage\" target=\"_blank\">Try in sandbox</a><br>Get a single outgoing message.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_outbound_message_with_http_info(id, async_req=True)
@@ -9213,7 +9213,7 @@ class TextMagicApi(object):
     def get_outbound_messages_history(self, **kwargs):  # noqa: E501
         """Get history  # noqa: E501
 
-        Get the outbound messages history.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getOutboundMessagesHistory\" target=\"_blank\">Try in sandbox</a><br>Get the outbound messages history.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_outbound_messages_history(async_req=True)
@@ -9239,7 +9239,7 @@ class TextMagicApi(object):
     def get_outbound_messages_history_with_http_info(self, **kwargs):  # noqa: E501
         """Get history  # noqa: E501
 
-        Get the outbound messages history.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getOutboundMessagesHistory\" target=\"_blank\">Try in sandbox</a><br>Get the outbound messages history.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_outbound_messages_history_with_http_info(async_req=True)
@@ -9324,7 +9324,7 @@ class TextMagicApi(object):
     def get_scheduled_message(self, id, **kwargs):  # noqa: E501
         """Get a single scheduled message  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/getScheduledMessage\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_scheduled_message(id, async_req=True)
@@ -9346,7 +9346,7 @@ class TextMagicApi(object):
     def get_scheduled_message_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get a single scheduled message  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/getScheduledMessage\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_scheduled_message_with_http_info(id, async_req=True)
@@ -9423,7 +9423,7 @@ class TextMagicApi(object):
     def get_sender_id(self, id, **kwargs):  # noqa: E501
         """Get the details of a specific Sender ID  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sender%20IDs/getSenderId\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_sender_id(id, async_req=True)
@@ -9445,7 +9445,7 @@ class TextMagicApi(object):
     def get_sender_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get the details of a specific Sender ID  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sender%20IDs/getSenderId\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_sender_id_with_http_info(id, async_req=True)
@@ -9522,7 +9522,7 @@ class TextMagicApi(object):
     def get_sender_ids(self, **kwargs):  # noqa: E501
         """Get all your approved Sender IDs  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sender%20IDs/getSenderIds\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_sender_ids(async_req=True)
@@ -9545,7 +9545,7 @@ class TextMagicApi(object):
     def get_sender_ids_with_http_info(self, **kwargs):  # noqa: E501
         """Get all your approved Sender IDs  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sender%20IDs/getSenderIds\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_sender_ids_with_http_info(async_req=True)
@@ -9621,7 +9621,7 @@ class TextMagicApi(object):
     def get_sender_settings(self, **kwargs):  # noqa: E501
         """Get current sender settings  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Overview/getSenderSettings\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_sender_settings(async_req=True)
@@ -9643,7 +9643,7 @@ class TextMagicApi(object):
     def get_sender_settings_with_http_info(self, **kwargs):  # noqa: E501
         """Get current sender settings  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Overview/getSenderSettings\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_sender_settings_with_http_info(async_req=True)
@@ -9716,7 +9716,7 @@ class TextMagicApi(object):
     def get_spending_stat(self, **kwargs):  # noqa: E501
         """Get spending statistics  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Statistics/getSpendingStat\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_spending_stat(async_req=True)
@@ -9741,7 +9741,7 @@ class TextMagicApi(object):
     def get_spending_stat_with_http_info(self, **kwargs):  # noqa: E501
         """Get spending statistics  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Statistics/getSpendingStat\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_spending_stat_with_http_info(async_req=True)
@@ -9823,7 +9823,7 @@ class TextMagicApi(object):
     def get_subaccount(self, id, **kwargs):  # noqa: E501
         """Get sub-account information  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccount\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_subaccount(id, async_req=True)
@@ -9845,7 +9845,7 @@ class TextMagicApi(object):
     def get_subaccount_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get sub-account information  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccount\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_subaccount_with_http_info(id, async_req=True)
@@ -9922,7 +9922,7 @@ class TextMagicApi(object):
     def get_subaccounts(self, **kwargs):  # noqa: E501
         """Get a sub-accounts list  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccounts\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_subaccounts(async_req=True)
@@ -9945,7 +9945,7 @@ class TextMagicApi(object):
     def get_subaccounts_with_http_info(self, **kwargs):  # noqa: E501
         """Get a sub-accounts list  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccounts\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_subaccounts_with_http_info(async_req=True)
@@ -10021,7 +10021,7 @@ class TextMagicApi(object):
     def get_subaccounts_with_tokens(self, get_subaccounts_with_tokens_input_object, **kwargs):  # noqa: E501
         """Get all sub-accounts with their REST API tokens associated with a specified app name  # noqa: E501
 
-        Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccountsWithTokens\" target=\"_blank\">Try in sandbox</a><br>Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_subaccounts_with_tokens(get_subaccounts_with_tokens_input_object, async_req=True)
@@ -10045,7 +10045,7 @@ class TextMagicApi(object):
     def get_subaccounts_with_tokens_with_http_info(self, get_subaccounts_with_tokens_input_object, **kwargs):  # noqa: E501
         """Get all sub-accounts with their REST API tokens associated with a specified app name  # noqa: E501
 
-        Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccountsWithTokens\" target=\"_blank\">Try in sandbox</a><br>Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_subaccounts_with_tokens_with_http_info(get_subaccounts_with_tokens_input_object, async_req=True)
@@ -10128,7 +10128,7 @@ class TextMagicApi(object):
     def get_template(self, id, **kwargs):  # noqa: E501
         """Get a template`s details  # noqa: E501
 
-        Get a single template.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Templates/getTemplate\" target=\"_blank\">Try in sandbox</a><br>Get a single template.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_template(id, async_req=True)
@@ -10150,7 +10150,7 @@ class TextMagicApi(object):
     def get_template_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get a template`s details  # noqa: E501
 
-        Get a single template.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Templates/getTemplate\" target=\"_blank\">Try in sandbox</a><br>Get a single template.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_template_with_http_info(id, async_req=True)
@@ -10227,7 +10227,7 @@ class TextMagicApi(object):
     def get_timezones(self, **kwargs):  # noqa: E501
         """Get timezones  # noqa: E501
 
-        Return all available timezone IDs  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/getTimezones\" target=\"_blank\">Try in sandbox</a><br>Return all available timezone IDs  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_timezones(async_req=True)
@@ -10249,7 +10249,7 @@ class TextMagicApi(object):
     def get_timezones_with_http_info(self, **kwargs):  # noqa: E501
         """Get timezones  # noqa: E501
 
-        Return all available timezone IDs  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/getTimezones\" target=\"_blank\">Try in sandbox</a><br>Return all available timezone IDs  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_timezones_with_http_info(async_req=True)
@@ -10322,7 +10322,7 @@ class TextMagicApi(object):
     def get_unread_messages_total(self, **kwargs):  # noqa: E501
         """Get unread messages number  # noqa: E501
 
-        Get the total amount of unread messages in the current user chats.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/getUnreadMessagesTotal\" target=\"_blank\">Try in sandbox</a><br>Get the total amount of unread messages in the current user chats.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_unread_messages_total(async_req=True)
@@ -10343,7 +10343,7 @@ class TextMagicApi(object):
     def get_unread_messages_total_with_http_info(self, **kwargs):  # noqa: E501
         """Get unread messages number  # noqa: E501
 
-        Get the total amount of unread messages in the current user chats.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/getUnreadMessagesTotal\" target=\"_blank\">Try in sandbox</a><br>Get the total amount of unread messages in the current user chats.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_unread_messages_total_with_http_info(async_req=True)
@@ -10413,7 +10413,7 @@ class TextMagicApi(object):
     def get_unsubscribed_contact(self, id, **kwargs):  # noqa: E501
         """Get the details of a specific unsubscribed contact  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/getUnsubscribedContact\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_unsubscribed_contact(id, async_req=True)
@@ -10435,7 +10435,7 @@ class TextMagicApi(object):
     def get_unsubscribed_contact_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get the details of a specific unsubscribed contact  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/getUnsubscribedContact\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_unsubscribed_contact_with_http_info(id, async_req=True)
@@ -10512,7 +10512,7 @@ class TextMagicApi(object):
     def get_unsubscribers(self, **kwargs):  # noqa: E501
         """Get all unsubscribed contacts  # noqa: E501
 
-        When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use:   # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/getUnsubscribers\" target=\"_blank\">Try in sandbox</a><br>When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use:   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_unsubscribers(async_req=True)
@@ -10535,7 +10535,7 @@ class TextMagicApi(object):
     def get_unsubscribers_with_http_info(self, **kwargs):  # noqa: E501
         """Get all unsubscribed contacts  # noqa: E501
 
-        When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use:   # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/getUnsubscribers\" target=\"_blank\">Try in sandbox</a><br>When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use:   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_unsubscribers_with_http_info(async_req=True)
@@ -10611,7 +10611,7 @@ class TextMagicApi(object):
     def get_user_dedicated_numbers(self, **kwargs):  # noqa: E501
         """Get all your dedicated numbers  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/getUserDedicatedNumbers\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_user_dedicated_numbers(async_req=True)
@@ -10635,7 +10635,7 @@ class TextMagicApi(object):
     def get_user_dedicated_numbers_with_http_info(self, **kwargs):  # noqa: E501
         """Get all your dedicated numbers  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/getUserDedicatedNumbers\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_user_dedicated_numbers_with_http_info(async_req=True)
@@ -10714,7 +10714,7 @@ class TextMagicApi(object):
     def import_contacts(self, file, column, **kwargs):  # noqa: E501
         """Import contacts  # noqa: E501
 
-        Import contacts from the CSV, XLS or XLSX file.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/importContacts\" target=\"_blank\">Try in sandbox</a><br>Import contacts from the CSV, XLS or XLSX file.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.import_contacts(file, column, async_req=True)
@@ -10739,7 +10739,7 @@ class TextMagicApi(object):
     def import_contacts_with_http_info(self, file, column, **kwargs):  # noqa: E501
         """Import contacts  # noqa: E501
 
-        Import contacts from the CSV, XLS or XLSX file.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/importContacts\" target=\"_blank\">Try in sandbox</a><br>Import contacts from the CSV, XLS or XLSX file.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.import_contacts_with_http_info(file, column, async_req=True)
@@ -10829,7 +10829,7 @@ class TextMagicApi(object):
     def invite_subaccount(self, invite_subaccount_input_object, **kwargs):  # noqa: E501
         """Invite a new sub-account  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sub-Accounts/inviteSubaccount\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.invite_subaccount(invite_subaccount_input_object, async_req=True)
@@ -10851,7 +10851,7 @@ class TextMagicApi(object):
     def invite_subaccount_with_http_info(self, invite_subaccount_input_object, **kwargs):  # noqa: E501
         """Invite a new sub-account  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sub-Accounts/inviteSubaccount\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.invite_subaccount_with_http_info(invite_subaccount_input_object, async_req=True)
@@ -10924,7 +10924,7 @@ class TextMagicApi(object):
     def mark_chats_read_bulk(self, mark_chats_read_bulk_input_object, **kwargs):  # noqa: E501
         """Mark chats as read (bulk)  # noqa: E501
 
-        Mark several chats as read by chat IDs or mark all chats as read  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/markChatsReadBulk\" target=\"_blank\">Try in sandbox</a><br>Mark several chats as read by chat IDs or mark all chats as read  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.mark_chats_read_bulk(mark_chats_read_bulk_input_object, async_req=True)
@@ -10946,7 +10946,7 @@ class TextMagicApi(object):
     def mark_chats_read_bulk_with_http_info(self, mark_chats_read_bulk_input_object, **kwargs):  # noqa: E501
         """Mark chats as read (bulk)  # noqa: E501
 
-        Mark several chats as read by chat IDs or mark all chats as read  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/markChatsReadBulk\" target=\"_blank\">Try in sandbox</a><br>Mark several chats as read by chat IDs or mark all chats as read  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.mark_chats_read_bulk_with_http_info(mark_chats_read_bulk_input_object, async_req=True)
@@ -11019,7 +11019,7 @@ class TextMagicApi(object):
     def mark_chats_unread_bulk(self, mark_chats_unread_bulk_input_object, **kwargs):  # noqa: E501
         """Mark chats as unread (bulk)  # noqa: E501
 
-        Mark several chats as UNread by chat IDs or mark all chats as UNread  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/markChatsUnreadBulk\" target=\"_blank\">Try in sandbox</a><br>Mark several chats as UNread by chat IDs or mark all chats as UNread  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.mark_chats_unread_bulk(mark_chats_unread_bulk_input_object, async_req=True)
@@ -11041,7 +11041,7 @@ class TextMagicApi(object):
     def mark_chats_unread_bulk_with_http_info(self, mark_chats_unread_bulk_input_object, **kwargs):  # noqa: E501
         """Mark chats as unread (bulk)  # noqa: E501
 
-        Mark several chats as UNread by chat IDs or mark all chats as UNread  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/markChatsUnreadBulk\" target=\"_blank\">Try in sandbox</a><br>Mark several chats as UNread by chat IDs or mark all chats as UNread  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.mark_chats_unread_bulk_with_http_info(mark_chats_unread_bulk_input_object, async_req=True)
@@ -11114,7 +11114,7 @@ class TextMagicApi(object):
     def mute_chat(self, mute_chat_input_object, **kwargs):  # noqa: E501
         """Mute chat sounds  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/muteChat\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.mute_chat(mute_chat_input_object, async_req=True)
@@ -11136,7 +11136,7 @@ class TextMagicApi(object):
     def mute_chat_with_http_info(self, mute_chat_input_object, **kwargs):  # noqa: E501
         """Mute chat sounds  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/muteChat\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.mute_chat_with_http_info(mute_chat_input_object, async_req=True)
@@ -11213,7 +11213,7 @@ class TextMagicApi(object):
     def mute_chats_bulk(self, mute_chats_bulk_input_object, **kwargs):  # noqa: E501
         """Mute chats (bulk)  # noqa: E501
 
-        Mute several chats by chat ids or mute all chats.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/muteChatsBulk\" target=\"_blank\">Try in sandbox</a><br>Mute several chats by chat ids or mute all chats.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.mute_chats_bulk(mute_chats_bulk_input_object, async_req=True)
@@ -11235,7 +11235,7 @@ class TextMagicApi(object):
     def mute_chats_bulk_with_http_info(self, mute_chats_bulk_input_object, **kwargs):  # noqa: E501
         """Mute chats (bulk)  # noqa: E501
 
-        Mute several chats by chat ids or mute all chats.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/muteChatsBulk\" target=\"_blank\">Try in sandbox</a><br>Mute several chats by chat ids or mute all chats.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.mute_chats_bulk_with_http_info(mute_chats_bulk_input_object, async_req=True)
@@ -11308,7 +11308,7 @@ class TextMagicApi(object):
     def ping(self, **kwargs):  # noqa: E501
         """Ping  # noqa: E501
 
-        Make a simple ping request.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/ping\" target=\"_blank\">Try in sandbox</a><br>Make a simple ping request.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.ping(async_req=True)
@@ -11329,7 +11329,7 @@ class TextMagicApi(object):
     def ping_with_http_info(self, **kwargs):  # noqa: E501
         """Ping  # noqa: E501
 
-        Make a simple ping request.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/ping\" target=\"_blank\">Try in sandbox</a><br>Make a simple ping request.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.ping_with_http_info(async_req=True)
@@ -11399,7 +11399,7 @@ class TextMagicApi(object):
     def reopen_chats_bulk(self, reopen_chats_bulk_input_object, **kwargs):  # noqa: E501
         """Reopen chats (bulk)  # noqa: E501
 
-        Reopen chats by chat IDs or reopen all chats  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/reopenChatsBulk\" target=\"_blank\">Try in sandbox</a><br>Reopen chats by chat IDs or reopen all chats  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.reopen_chats_bulk(reopen_chats_bulk_input_object, async_req=True)
@@ -11421,7 +11421,7 @@ class TextMagicApi(object):
     def reopen_chats_bulk_with_http_info(self, reopen_chats_bulk_input_object, **kwargs):  # noqa: E501
         """Reopen chats (bulk)  # noqa: E501
 
-        Reopen chats by chat IDs or reopen all chats  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/reopenChatsBulk\" target=\"_blank\">Try in sandbox</a><br>Reopen chats by chat IDs or reopen all chats  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.reopen_chats_bulk_with_http_info(reopen_chats_bulk_input_object, async_req=True)
@@ -11494,7 +11494,7 @@ class TextMagicApi(object):
     def request_new_subaccount_token(self, request_new_subaccount_token_input_object, **kwargs):  # noqa: E501
         """Request a new REST API token for sub-account  # noqa: E501
 
-        Returning user object, key and app name.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sub-Accounts/requestNewSubaccountToken\" target=\"_blank\">Try in sandbox</a><br>Returning user object, key and app name.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.request_new_subaccount_token(request_new_subaccount_token_input_object, async_req=True)
@@ -11516,7 +11516,7 @@ class TextMagicApi(object):
     def request_new_subaccount_token_with_http_info(self, request_new_subaccount_token_input_object, **kwargs):  # noqa: E501
         """Request a new REST API token for sub-account  # noqa: E501
 
-        Returning user object, key and app name.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sub-Accounts/requestNewSubaccountToken\" target=\"_blank\">Try in sandbox</a><br>Returning user object, key and app name.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.request_new_subaccount_token_with_http_info(request_new_subaccount_token_input_object, async_req=True)
@@ -11593,7 +11593,7 @@ class TextMagicApi(object):
     def request_sender_id(self, request_sender_id_input_object, **kwargs):  # noqa: E501
         """Apply for a new Sender ID  # noqa: E501
 
-        > Sender IDs are shared among all of your sub-accounts.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sender%20IDs/requestSenderId\" target=\"_blank\">Try in sandbox</a><br>> Sender IDs are shared among all of your sub-accounts.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.request_sender_id(request_sender_id_input_object, async_req=True)
@@ -11615,7 +11615,7 @@ class TextMagicApi(object):
     def request_sender_id_with_http_info(self, request_sender_id_input_object, **kwargs):  # noqa: E501
         """Apply for a new Sender ID  # noqa: E501
 
-        > Sender IDs are shared among all of your sub-accounts.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Sender%20IDs/requestSenderId\" target=\"_blank\">Try in sandbox</a><br>> Sender IDs are shared among all of your sub-accounts.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.request_sender_id_with_http_info(request_sender_id_input_object, async_req=True)
@@ -11692,7 +11692,7 @@ class TextMagicApi(object):
     def search_chats(self, **kwargs):  # noqa: E501
         """Find chats by message text  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/searchChats\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_chats(async_req=True)
@@ -11716,7 +11716,7 @@ class TextMagicApi(object):
     def search_chats_with_http_info(self, **kwargs):  # noqa: E501
         """Find chats by message text  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/searchChats\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_chats_with_http_info(async_req=True)
@@ -11795,7 +11795,7 @@ class TextMagicApi(object):
     def search_chats_by_ids(self, **kwargs):  # noqa: E501
         """Find chats (bulk)  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/searchChatsByIds\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_chats_by_ids(async_req=True)
@@ -11819,7 +11819,7 @@ class TextMagicApi(object):
     def search_chats_by_ids_with_http_info(self, **kwargs):  # noqa: E501
         """Find chats (bulk)  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/searchChatsByIds\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_chats_by_ids_with_http_info(async_req=True)
@@ -11900,7 +11900,7 @@ class TextMagicApi(object):
     def search_chats_by_receipent(self, **kwargs):  # noqa: E501
         """Find chats by recipient  # noqa: E501
 
-        Find chats by recipient (contact, list name or phone number).  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/searchChatsByReceipent\" target=\"_blank\">Try in sandbox</a><br>Find chats by recipient (contact, list name or phone number).  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_chats_by_receipent(async_req=True)
@@ -11925,7 +11925,7 @@ class TextMagicApi(object):
     def search_chats_by_receipent_with_http_info(self, **kwargs):  # noqa: E501
         """Find chats by recipient  # noqa: E501
 
-        Find chats by recipient (contact, list name or phone number).  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/searchChatsByReceipent\" target=\"_blank\">Try in sandbox</a><br>Find chats by recipient (contact, list name or phone number).  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_chats_by_receipent_with_http_info(async_req=True)
@@ -12007,7 +12007,7 @@ class TextMagicApi(object):
     def search_contacts(self, **kwargs):  # noqa: E501
         """Find contacts by given criteria  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/searchContacts\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_contacts(async_req=True)
@@ -12039,7 +12039,7 @@ class TextMagicApi(object):
     def search_contacts_with_http_info(self, **kwargs):  # noqa: E501
         """Find contacts by given criteria  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/searchContacts\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_contacts_with_http_info(async_req=True)
@@ -12144,7 +12144,7 @@ class TextMagicApi(object):
     def search_inbound_messages(self, **kwargs):  # noqa: E501
         """Find inbound messages  # noqa: E501
 
-        Find inbound messages by given parameters.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/searchInboundMessages\" target=\"_blank\">Try in sandbox</a><br>Find inbound messages by given parameters.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_inbound_messages(async_req=True)
@@ -12172,7 +12172,7 @@ class TextMagicApi(object):
     def search_inbound_messages_with_http_info(self, **kwargs):  # noqa: E501
         """Find inbound messages  # noqa: E501
 
-        Find inbound messages by given parameters.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/searchInboundMessages\" target=\"_blank\">Try in sandbox</a><br>Find inbound messages by given parameters.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_inbound_messages_with_http_info(async_req=True)
@@ -12265,7 +12265,7 @@ class TextMagicApi(object):
     def search_lists(self, **kwargs):  # noqa: E501
         """Find lists by given criteria  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/searchLists\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_lists(async_req=True)
@@ -12294,7 +12294,7 @@ class TextMagicApi(object):
     def search_lists_with_http_info(self, **kwargs):  # noqa: E501
         """Find lists by given criteria  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/searchLists\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_lists_with_http_info(async_req=True)
@@ -12388,7 +12388,7 @@ class TextMagicApi(object):
     def search_outbound_messages(self, **kwargs):  # noqa: E501
         """Find messages  # noqa: E501
 
-        Find outbound messages by given parameters.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/searchOutboundMessages\" target=\"_blank\">Try in sandbox</a><br>Find outbound messages by given parameters.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_outbound_messages(async_req=True)
@@ -12417,7 +12417,7 @@ class TextMagicApi(object):
     def search_outbound_messages_with_http_info(self, **kwargs):  # noqa: E501
         """Find messages  # noqa: E501
 
-        Find outbound messages by given parameters.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/searchOutboundMessages\" target=\"_blank\">Try in sandbox</a><br>Find outbound messages by given parameters.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_outbound_messages_with_http_info(async_req=True)
@@ -12513,7 +12513,7 @@ class TextMagicApi(object):
     def search_scheduled_messages(self, **kwargs):  # noqa: E501
         """Find scheduled messages  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/searchScheduledMessages\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_scheduled_messages(async_req=True)
@@ -12541,7 +12541,7 @@ class TextMagicApi(object):
     def search_scheduled_messages_with_http_info(self, **kwargs):  # noqa: E501
         """Find scheduled messages  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/searchScheduledMessages\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_scheduled_messages_with_http_info(async_req=True)
@@ -12634,7 +12634,7 @@ class TextMagicApi(object):
     def search_templates(self, **kwargs):  # noqa: E501
         """Find templates by criteria  # noqa: E501
 
-        Find user templates by given parameters.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Templates/searchTemplates\" target=\"_blank\">Try in sandbox</a><br>Find user templates by given parameters.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_templates(async_req=True)
@@ -12660,7 +12660,7 @@ class TextMagicApi(object):
     def search_templates_with_http_info(self, **kwargs):  # noqa: E501
         """Find templates by criteria  # noqa: E501
 
-        Find user templates by given parameters.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Templates/searchTemplates\" target=\"_blank\">Try in sandbox</a><br>Find user templates by given parameters.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_templates_with_http_info(async_req=True)
@@ -12745,7 +12745,7 @@ class TextMagicApi(object):
     def send_message(self, send_message_input_object, **kwargs):  # noqa: E501
         """Send message  # noqa: E501
 
-        This is the main entrypoint to send messages. See the examples above for the reference.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/sendMessage\" target=\"_blank\">Try in sandbox</a><br>This is the main entrypoint to send messages. See the examples above for the reference.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.send_message(send_message_input_object, async_req=True)
@@ -12767,7 +12767,7 @@ class TextMagicApi(object):
     def send_message_with_http_info(self, send_message_input_object, **kwargs):  # noqa: E501
         """Send message  # noqa: E501
 
-        This is the main entrypoint to send messages. See the examples above for the reference.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/sendMessage\" target=\"_blank\">Try in sandbox</a><br>This is the main entrypoint to send messages. See the examples above for the reference.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.send_message_with_http_info(send_message_input_object, async_req=True)
@@ -12844,7 +12844,7 @@ class TextMagicApi(object):
     def send_phone_verification_code_tfa(self, send_phone_verification_code_input_object, **kwargs):  # noqa: E501
         """Step 1: Send a verification code   # noqa: E501
 
-        Sends a verification code to a specified phone number.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Two-factor%20authentication/sendPhoneVerificationCodeTFA\" target=\"_blank\">Try in sandbox</a><br>Sends a verification code to a specified phone number.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.send_phone_verification_code_tfa(send_phone_verification_code_input_object, async_req=True)
@@ -12866,7 +12866,7 @@ class TextMagicApi(object):
     def send_phone_verification_code_tfa_with_http_info(self, send_phone_verification_code_input_object, **kwargs):  # noqa: E501
         """Step 1: Send a verification code   # noqa: E501
 
-        Sends a verification code to a specified phone number.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Two-factor%20authentication/sendPhoneVerificationCodeTFA\" target=\"_blank\">Try in sandbox</a><br>Sends a verification code to a specified phone number.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.send_phone_verification_code_tfa_with_http_info(send_phone_verification_code_input_object, async_req=True)
@@ -12943,7 +12943,7 @@ class TextMagicApi(object):
     def set_chat_status(self, set_chat_status_input_object, **kwargs):  # noqa: E501
         """Change chat status  # noqa: E501
 
-        Set the status of the chat given by ID.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/setChatStatus\" target=\"_blank\">Try in sandbox</a><br>Set the status of the chat given by ID.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.set_chat_status(set_chat_status_input_object, async_req=True)
@@ -12965,7 +12965,7 @@ class TextMagicApi(object):
     def set_chat_status_with_http_info(self, set_chat_status_input_object, **kwargs):  # noqa: E501
         """Change chat status  # noqa: E501
 
-        Set the status of the chat given by ID.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/setChatStatus\" target=\"_blank\">Try in sandbox</a><br>Set the status of the chat given by ID.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.set_chat_status_with_http_info(set_chat_status_input_object, async_req=True)
@@ -13042,7 +13042,7 @@ class TextMagicApi(object):
     def unblock_contact(self, unblock_contact_input_object, **kwargs):  # noqa: E501
         """Unblock a contact by phone number  # noqa: E501
 
-        Unblock a contact by phone number  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/unblockContact\" target=\"_blank\">Try in sandbox</a><br>Unblock a contact by phone number  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.unblock_contact(unblock_contact_input_object, async_req=True)
@@ -13064,7 +13064,7 @@ class TextMagicApi(object):
     def unblock_contact_with_http_info(self, unblock_contact_input_object, **kwargs):  # noqa: E501
         """Unblock a contact by phone number  # noqa: E501
 
-        Unblock a contact by phone number  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/unblockContact\" target=\"_blank\">Try in sandbox</a><br>Unblock a contact by phone number  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.unblock_contact_with_http_info(unblock_contact_input_object, async_req=True)
@@ -13137,7 +13137,7 @@ class TextMagicApi(object):
     def unblock_contacts_bulk(self, unblock_contacts_bulk_input_object, **kwargs):  # noqa: E501
         """Unblock contacts (bulk)  # noqa: E501
 
-        Unblock several contacts by blocked contact IDs or unblock all contacts.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/unblockContactsBulk\" target=\"_blank\">Try in sandbox</a><br>Unblock several contacts by blocked contact IDs or unblock all contacts.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.unblock_contacts_bulk(unblock_contacts_bulk_input_object, async_req=True)
@@ -13159,7 +13159,7 @@ class TextMagicApi(object):
     def unblock_contacts_bulk_with_http_info(self, unblock_contacts_bulk_input_object, **kwargs):  # noqa: E501
         """Unblock contacts (bulk)  # noqa: E501
 
-        Unblock several contacts by blocked contact IDs or unblock all contacts.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/unblockContactsBulk\" target=\"_blank\">Try in sandbox</a><br>Unblock several contacts by blocked contact IDs or unblock all contacts.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.unblock_contacts_bulk_with_http_info(unblock_contacts_bulk_input_object, async_req=True)
@@ -13232,7 +13232,7 @@ class TextMagicApi(object):
     def unmute_chats_bulk(self, unmute_chats_bulk_input_object, **kwargs):  # noqa: E501
         """Unmute chats (bulk)  # noqa: E501
 
-        Unmute several chats by chat ids or unmute all chats.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/unmuteChatsBulk\" target=\"_blank\">Try in sandbox</a><br>Unmute several chats by chat ids or unmute all chats.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.unmute_chats_bulk(unmute_chats_bulk_input_object, async_req=True)
@@ -13254,7 +13254,7 @@ class TextMagicApi(object):
     def unmute_chats_bulk_with_http_info(self, unmute_chats_bulk_input_object, **kwargs):  # noqa: E501
         """Unmute chats (bulk)  # noqa: E501
 
-        Unmute several chats by chat ids or unmute all chats.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Chats/unmuteChatsBulk\" target=\"_blank\">Try in sandbox</a><br>Unmute several chats by chat ids or unmute all chats.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.unmute_chats_bulk_with_http_info(unmute_chats_bulk_input_object, async_req=True)
@@ -13327,7 +13327,7 @@ class TextMagicApi(object):
     def unsubscribe_contact(self, unsubscribe_contact_input_object, **kwargs):  # noqa: E501
         """Manually unsubscribe a contact  # noqa: E501
 
-        > Please note, if you unsubscribe a contact, this action cannot be reversed.   # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/unsubscribeContact\" target=\"_blank\">Try in sandbox</a><br>> Please note, if you unsubscribe a contact, this action cannot be reversed.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.unsubscribe_contact(unsubscribe_contact_input_object, async_req=True)
@@ -13349,7 +13349,7 @@ class TextMagicApi(object):
     def unsubscribe_contact_with_http_info(self, unsubscribe_contact_input_object, **kwargs):  # noqa: E501
         """Manually unsubscribe a contact  # noqa: E501
 
-        > Please note, if you unsubscribe a contact, this action cannot be reversed.   # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/unsubscribeContact\" target=\"_blank\">Try in sandbox</a><br>> Please note, if you unsubscribe a contact, this action cannot be reversed.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.unsubscribe_contact_with_http_info(unsubscribe_contact_input_object, async_req=True)
@@ -13426,7 +13426,7 @@ class TextMagicApi(object):
     def update_balance_notification_settings(self, update_balance_notification_settings_input_object, **kwargs):  # noqa: E501
         """Update balance notification settings  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/updateBalanceNotificationSettings\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_balance_notification_settings(update_balance_notification_settings_input_object, async_req=True)
@@ -13448,7 +13448,7 @@ class TextMagicApi(object):
     def update_balance_notification_settings_with_http_info(self, update_balance_notification_settings_input_object, **kwargs):  # noqa: E501
         """Update balance notification settings  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/updateBalanceNotificationSettings\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_balance_notification_settings_with_http_info(update_balance_notification_settings_input_object, async_req=True)
@@ -13521,7 +13521,7 @@ class TextMagicApi(object):
     def update_callback_settings(self, update_callback_settings_input_object, **kwargs):  # noqa: E501
         """Update callback URL settings  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/updateCallbackSettings\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_callback_settings(update_callback_settings_input_object, async_req=True)
@@ -13543,7 +13543,7 @@ class TextMagicApi(object):
     def update_callback_settings_with_http_info(self, update_callback_settings_input_object, **kwargs):  # noqa: E501
         """Update callback URL settings  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/updateCallbackSettings\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_callback_settings_with_http_info(update_callback_settings_input_object, async_req=True)
@@ -13620,7 +13620,7 @@ class TextMagicApi(object):
     def update_chat_desktop_notification_settings(self, update_chat_desktop_notification_settings_input_object, **kwargs):  # noqa: E501
         """Update chat desktop notification settings  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/updateChatDesktopNotificationSettings\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_chat_desktop_notification_settings(update_chat_desktop_notification_settings_input_object, async_req=True)
@@ -13642,7 +13642,7 @@ class TextMagicApi(object):
     def update_chat_desktop_notification_settings_with_http_info(self, update_chat_desktop_notification_settings_input_object, **kwargs):  # noqa: E501
         """Update chat desktop notification settings  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/updateChatDesktopNotificationSettings\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_chat_desktop_notification_settings_with_http_info(update_chat_desktop_notification_settings_input_object, async_req=True)
@@ -13719,7 +13719,7 @@ class TextMagicApi(object):
     def update_contact(self, update_contact_input_object, id, **kwargs):  # noqa: E501
         """Edit a contact  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/updateContact\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_contact(update_contact_input_object, id, async_req=True)
@@ -13742,7 +13742,7 @@ class TextMagicApi(object):
     def update_contact_with_http_info(self, update_contact_input_object, id, **kwargs):  # noqa: E501
         """Edit a contact  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/updateContact\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_contact_with_http_info(update_contact_input_object, id, async_req=True)
@@ -13826,7 +13826,7 @@ class TextMagicApi(object):
     def update_contact_note(self, update_contact_note_input_object, id, **kwargs):  # noqa: E501
         """Update a contact note  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contact%20Notes/updateContactNote\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_contact_note(update_contact_note_input_object, id, async_req=True)
@@ -13849,7 +13849,7 @@ class TextMagicApi(object):
     def update_contact_note_with_http_info(self, update_contact_note_input_object, id, **kwargs):  # noqa: E501
         """Update a contact note  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contact%20Notes/updateContactNote\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_contact_note_with_http_info(update_contact_note_input_object, id, async_req=True)
@@ -13933,7 +13933,7 @@ class TextMagicApi(object):
     def update_current_user(self, update_current_user_input_object, **kwargs):  # noqa: E501
         """Edit current account info  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Account/updateCurrentUser\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_current_user(update_current_user_input_object, async_req=True)
@@ -13955,7 +13955,7 @@ class TextMagicApi(object):
     def update_current_user_with_http_info(self, update_current_user_input_object, **kwargs):  # noqa: E501
         """Edit current account info  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Account/updateCurrentUser\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_current_user_with_http_info(update_current_user_input_object, async_req=True)
@@ -14032,7 +14032,7 @@ class TextMagicApi(object):
     def update_custom_field(self, update_custom_field_input_object, id, **kwargs):  # noqa: E501
         """Edit a custom field  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Custom%20Fields/updateCustomField\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_custom_field(update_custom_field_input_object, id, async_req=True)
@@ -14055,7 +14055,7 @@ class TextMagicApi(object):
     def update_custom_field_with_http_info(self, update_custom_field_input_object, id, **kwargs):  # noqa: E501
         """Edit a custom field  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Custom%20Fields/updateCustomField\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_custom_field_with_http_info(update_custom_field_input_object, id, async_req=True)
@@ -14139,7 +14139,7 @@ class TextMagicApi(object):
     def update_custom_field_value(self, update_custom_field_value_input_object, id, **kwargs):  # noqa: E501
         """Edit the custom field value of a specified contact  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Custom%20Fields/updateCustomFieldValue\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_custom_field_value(update_custom_field_value_input_object, id, async_req=True)
@@ -14162,7 +14162,7 @@ class TextMagicApi(object):
     def update_custom_field_value_with_http_info(self, update_custom_field_value_input_object, id, **kwargs):  # noqa: E501
         """Edit the custom field value of a specified contact  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Custom%20Fields/updateCustomFieldValue\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_custom_field_value_with_http_info(update_custom_field_value_input_object, id, async_req=True)
@@ -14246,7 +14246,7 @@ class TextMagicApi(object):
     def update_inbound_messages_notification_settings(self, update_inbound_messages_notification_settings_input_object, **kwargs):  # noqa: E501
         """Update inbound messages notification settings  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/updateInboundMessagesNotificationSettings\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_inbound_messages_notification_settings(update_inbound_messages_notification_settings_input_object, async_req=True)
@@ -14268,7 +14268,7 @@ class TextMagicApi(object):
     def update_inbound_messages_notification_settings_with_http_info(self, update_inbound_messages_notification_settings_input_object, **kwargs):  # noqa: E501
         """Update inbound messages notification settings  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/undefined/updateInboundMessagesNotificationSettings\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_inbound_messages_notification_settings_with_http_info(update_inbound_messages_notification_settings_input_object, async_req=True)
@@ -14341,7 +14341,7 @@ class TextMagicApi(object):
     def update_list(self, id, **kwargs):  # noqa: E501
         """Edit a list  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/updateList\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_list(id, async_req=True)
@@ -14364,7 +14364,7 @@ class TextMagicApi(object):
     def update_list_with_http_info(self, id, **kwargs):  # noqa: E501
         """Edit a list  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/updateList\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_list_with_http_info(id, async_req=True)
@@ -14444,7 +14444,7 @@ class TextMagicApi(object):
     def update_sender_setting(self, update_sender_setting_input_object, **kwargs):  # noqa: E501
         """Change sender settings  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Overview/updateSenderSetting\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_sender_setting(update_sender_setting_input_object, async_req=True)
@@ -14466,7 +14466,7 @@ class TextMagicApi(object):
     def update_sender_setting_with_http_info(self, update_sender_setting_input_object, **kwargs):  # noqa: E501
         """Change sender settings  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Overview/updateSenderSetting\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_sender_setting_with_http_info(update_sender_setting_input_object, async_req=True)
@@ -14539,7 +14539,7 @@ class TextMagicApi(object):
     def update_template(self, update_template_input_object, id, **kwargs):  # noqa: E501
         """Update a template  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Templates/updateTemplate\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_template(update_template_input_object, id, async_req=True)
@@ -14562,7 +14562,7 @@ class TextMagicApi(object):
     def update_template_with_http_info(self, update_template_input_object, id, **kwargs):  # noqa: E501
         """Update a template  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Templates/updateTemplate\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_template_with_http_info(update_template_input_object, id, async_req=True)
@@ -14646,7 +14646,7 @@ class TextMagicApi(object):
     def upload_avatar(self, image, **kwargs):  # noqa: E501
         """Upload an avatar  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Account/uploadAvatar\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.upload_avatar(image, async_req=True)
@@ -14668,7 +14668,7 @@ class TextMagicApi(object):
     def upload_avatar_with_http_info(self, image, **kwargs):  # noqa: E501
         """Upload an avatar  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Account/uploadAvatar\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.upload_avatar_with_http_info(image, async_req=True)
@@ -14745,7 +14745,7 @@ class TextMagicApi(object):
     def upload_contact_avatar(self, image, id, **kwargs):  # noqa: E501
         """Upload an avatar  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/uploadContactAvatar\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.upload_contact_avatar(image, id, async_req=True)
@@ -14768,7 +14768,7 @@ class TextMagicApi(object):
     def upload_contact_avatar_with_http_info(self, image, id, **kwargs):  # noqa: E501
         """Upload an avatar  # noqa: E501
 
-          # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Contacts/uploadContactAvatar\" target=\"_blank\">Try in sandbox</a><br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.upload_contact_avatar_with_http_info(image, id, async_req=True)
@@ -14852,7 +14852,7 @@ class TextMagicApi(object):
     def upload_list_avatar(self, image, id, **kwargs):  # noqa: E501
         """Add an avatar for a list  # noqa: E501
 
-        Add an avatar for a list  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/uploadListAvatar\" target=\"_blank\">Try in sandbox</a><br>Add an avatar for a list  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.upload_list_avatar(image, id, async_req=True)
@@ -14875,7 +14875,7 @@ class TextMagicApi(object):
     def upload_list_avatar_with_http_info(self, image, id, **kwargs):  # noqa: E501
         """Add an avatar for a list  # noqa: E501
 
-        Add an avatar for a list  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Lists/uploadListAvatar\" target=\"_blank\">Try in sandbox</a><br>Add an avatar for a list  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.upload_list_avatar_with_http_info(image, id, async_req=True)
@@ -14959,7 +14959,7 @@ class TextMagicApi(object):
     def upload_message_attachment(self, file, **kwargs):  # noqa: E501
         """Upload message attachment  # noqa: E501
 
-        Upload a new file to insert it as a link.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/uploadMessageAttachment\" target=\"_blank\">Try in sandbox</a><br>Upload a new file to insert it as a link.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.upload_message_attachment(file, async_req=True)
@@ -14981,7 +14981,7 @@ class TextMagicApi(object):
     def upload_message_attachment_with_http_info(self, file, **kwargs):  # noqa: E501
         """Upload message attachment  # noqa: E501
 
-        Upload a new file to insert it as a link.  # noqa: E501
+        <a class=\"try-sandbox-link\" href=\"http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/uploadMessageAttachment\" target=\"_blank\">Try in sandbox</a><br>Upload a new file to insert it as a link.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.upload_message_attachment_with_http_info(file, async_req=True)
