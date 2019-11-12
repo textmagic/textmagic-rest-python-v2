@@ -155,7 +155,7 @@ class List(object):
     def favorited(self):
         """Gets the favorited of this List.  # noqa: E501
 
-        Is the List favorited? See [Favorites list](http://docs.textmagictesting.com/#operation/getFavourites).  # noqa: E501
+        Is the List favorited? See [Favorites list](https://docs.textmagic.com/#operation/getFavourites).  # noqa: E501
 
         :return: The favorited of this List.  # noqa: E501
         :rtype: bool
@@ -166,7 +166,7 @@ class List(object):
     def favorited(self, favorited):
         """Sets the favorited of this List.
 
-        Is the List favorited? See [Favorites list](http://docs.textmagictesting.com/#operation/getFavourites).  # noqa: E501
+        Is the List favorited? See [Favorites list](https://docs.textmagic.com/#operation/getFavourites).  # noqa: E501
 
         :param favorited: The favorited of this List.  # noqa: E501
         :type: bool

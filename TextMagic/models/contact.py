@@ -129,7 +129,7 @@ class Contact(object):
     def favorited(self):
         """Gets the favorited of this Contact.  # noqa: E501
 
-        Is the Contact favorite? [Favorite list](http://docs.textmagictesting.com/#operation/getFavorites).  # noqa: E501
+        Is the Contact favorite? [Favorite list](https://docs.textmagic.com/#operation/getFavorites).  # noqa: E501
 
         :return: The favorited of this Contact.  # noqa: E501
         :rtype: bool
@@ -140,7 +140,7 @@ class Contact(object):
     def favorited(self, favorited):
         """Sets the favorited of this Contact.
 
-        Is the Contact favorite? [Favorite list](http://docs.textmagictesting.com/#operation/getFavorites).  # noqa: E501
+        Is the Contact favorite? [Favorite list](https://docs.textmagic.com/#operation/getFavorites).  # noqa: E501
 
         :param favorited: The favorited of this Contact.  # noqa: E501
         :type: bool
@@ -152,7 +152,7 @@ class Contact(object):
     def blocked(self):
         """Gets the blocked of this Contact.  # noqa: E501
 
-        Is the Contact blocked? [Blocked contacts](http://docs.textmagictesting.com/#operation/getBlockedContacts).  # noqa: E501
+        Is the Contact blocked? [Blocked contacts](https://docs.textmagic.com/#operation/getBlockedContacts).  # noqa: E501
 
         :return: The blocked of this Contact.  # noqa: E501
         :rtype: bool
@@ -163,7 +163,7 @@ class Contact(object):
     def blocked(self, blocked):
         """Sets the blocked of this Contact.
 
-        Is the Contact blocked? [Blocked contacts](http://docs.textmagictesting.com/#operation/getBlockedContacts).  # noqa: E501
+        Is the Contact blocked? [Blocked contacts](https://docs.textmagic.com/#operation/getBlockedContacts).  # noqa: E501
 
         :param blocked: The blocked of this Contact.  # noqa: E501
         :type: bool
@@ -313,7 +313,7 @@ class Contact(object):
     def custom_fields(self):
         """Gets the custom_fields of this Contact.  # noqa: E501
 
-        See the [Custom Fields](http://docs.textmagictesting.com/#tag/Custom-Fields) section.  # noqa: E501
+        See the [Custom Fields](https://docs.textmagic.com/#tag/Custom-Fields) section.  # noqa: E501
 
         :return: The custom_fields of this Contact.  # noqa: E501
         :rtype: list[ContactCustomField]
@@ -324,7 +324,7 @@ class Contact(object):
     def custom_fields(self, custom_fields):
         """Sets the custom_fields of this Contact.
 
-        See the [Custom Fields](http://docs.textmagictesting.com/#tag/Custom-Fields) section.  # noqa: E501
+        See the [Custom Fields](https://docs.textmagic.com/#tag/Custom-Fields) section.  # noqa: E501
 
         :param custom_fields: The custom_fields of this Contact.  # noqa: E501
         :type: list[ContactCustomField]

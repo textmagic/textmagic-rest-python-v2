@@ -159,7 +159,7 @@ class MessagingStatItem(object):
     def costs(self):
         """Gets the costs of this MessagingStatItem.  # noqa: E501
 
-        Cost for sent messages during this period. The costs are in the [Account](http://docs.textmagictesting.com/#tag/User) currency.   # noqa: E501
+        Cost for sent messages during this period. The costs are in the [Account](https://docs.textmagic.com/#tag/User) currency.   # noqa: E501
 
         :return: The costs of this MessagingStatItem.  # noqa: E501
         :rtype: float
@@ -170,7 +170,7 @@ class MessagingStatItem(object):
     def costs(self, costs):
         """Sets the costs of this MessagingStatItem.
 
-        Cost for sent messages during this period. The costs are in the [Account](http://docs.textmagictesting.com/#tag/User) currency.   # noqa: E501
+        Cost for sent messages during this period. The costs are in the [Account](https://docs.textmagic.com/#tag/User) currency.   # noqa: E501
 
         :param costs: The costs of this MessagingStatItem.  # noqa: E501
         :type: float

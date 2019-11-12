@@ -79,7 +79,7 @@ class CreateTemplateInputObject(object):
     def content(self):
         """Gets the content of this CreateTemplateInputObject.  # noqa: E501
 
-        Template text. May contain tags inside braces. See [Get timezones](http://docs.textmagictesting.com/#section/Custom-fields-list-(Merge-tags)).  # noqa: E501
+        Template text. May contain tags inside braces. See [Get timezones](https://docs.textmagic.com/#section/Custom-fields-list-(Merge-tags)).  # noqa: E501
 
         :return: The content of this CreateTemplateInputObject.  # noqa: E501
         :rtype: str
@@ -90,7 +90,7 @@ class CreateTemplateInputObject(object):
     def content(self, content):
         """Sets the content of this CreateTemplateInputObject.
 
-        Template text. May contain tags inside braces. See [Get timezones](http://docs.textmagictesting.com/#section/Custom-fields-list-(Merge-tags)).  # noqa: E501
+        Template text. May contain tags inside braces. See [Get timezones](https://docs.textmagic.com/#section/Custom-fields-list-(Merge-tags)).  # noqa: E501
 
         :param content: The content of this CreateTemplateInputObject.  # noqa: E501
         :type: str

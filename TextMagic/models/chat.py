@@ -194,7 +194,7 @@ class Chat(object):
     def unsubscribed_contact_id(self):
         """Gets the unsubscribed_contact_id of this Chat.  # noqa: E501
 
-        If this field has a value, it means that the chat phone number has been unsubscribed from you and this value is an ID of an Unsubscribed contact entity. See [Get all unsubscribed contacts](http://docs.textmagictesting.com/#operation/getUnsubscribers).  # noqa: E501
+        If this field has a value, it means that the chat phone number has been unsubscribed from you and this value is an ID of an Unsubscribed contact entity. See [Get all unsubscribed contacts](https://docs.textmagic.com/#operation/getUnsubscribers).  # noqa: E501
 
         :return: The unsubscribed_contact_id of this Chat.  # noqa: E501
         :rtype: int
@@ -205,7 +205,7 @@ class Chat(object):
     def unsubscribed_contact_id(self, unsubscribed_contact_id):
         """Sets the unsubscribed_contact_id of this Chat.
 
-        If this field has a value, it means that the chat phone number has been unsubscribed from you and this value is an ID of an Unsubscribed contact entity. See [Get all unsubscribed contacts](http://docs.textmagictesting.com/#operation/getUnsubscribers).  # noqa: E501
+        If this field has a value, it means that the chat phone number has been unsubscribed from you and this value is an ID of an Unsubscribed contact entity. See [Get all unsubscribed contacts](https://docs.textmagic.com/#operation/getUnsubscribers).  # noqa: E501
 
         :param unsubscribed_contact_id: The unsubscribed_contact_id of this Chat.  # noqa: E501
         :type: int

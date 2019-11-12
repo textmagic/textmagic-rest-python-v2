@@ -228,7 +228,7 @@ class Conversation(object):
     def status(self):
         """Gets the status of this Conversation.  # noqa: E501
 
-        Message status (for chats outbound only). See [message delivery statuses](http://docs.textmagictesting.com/#section/Delivery-status-codes) for details.  # noqa: E501
+        Message status (for chats outbound only). See [message delivery statuses](https://docs.textmagic.com/#section/Delivery-status-codes) for details.  # noqa: E501
 
         :return: The status of this Conversation.  # noqa: E501
         :rtype: str
@@ -239,7 +239,7 @@ class Conversation(object):
     def status(self, status):
         """Sets the status of this Conversation.
 
-        Message status (for chats outbound only). See [message delivery statuses](http://docs.textmagictesting.com/#section/Delivery-status-codes) for details.  # noqa: E501
+        Message status (for chats outbound only). See [message delivery statuses](https://docs.textmagic.com/#section/Delivery-status-codes) for details.  # noqa: E501
 
         :param status: The status of this Conversation.  # noqa: E501
         :type: str
@@ -297,7 +297,7 @@ class Conversation(object):
     def session_id(self):
         """Gets the session_id of this Conversation.  # noqa: E501
 
-        Session ID of a message. See [message sessions](http://docs.textmagictesting.com/#tag/Outbound-Message-Sessions) for details.  # noqa: E501
+        Session ID of a message. See [message sessions](https://docs.textmagic.com/#tag/Outbound-Message-Sessions) for details.  # noqa: E501
 
         :return: The session_id of this Conversation.  # noqa: E501
         :rtype: int
@@ -308,7 +308,7 @@ class Conversation(object):
     def session_id(self, session_id):
         """Sets the session_id of this Conversation.
 
-        Session ID of a message. See [message sessions](http://docs.textmagictesting.com/#tag/Outbound-Message-Sessions) for details.  # noqa: E501
+        Session ID of a message. See [message sessions](https://docs.textmagic.com/#tag/Outbound-Message-Sessions) for details.  # noqa: E501
 
         :param session_id: The session_id of this Conversation.  # noqa: E501
         :type: int

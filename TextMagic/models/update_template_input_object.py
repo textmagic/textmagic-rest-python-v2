@@ -79,7 +79,7 @@ class UpdateTemplateInputObject(object):
     def content(self):
         """Gets the content of this UpdateTemplateInputObject.  # noqa: E501
 
-        Template text. May contain tags inside braces. See [Custom fields list](http://docs.textmagictesting.com/#section/Custom-fields-list-(Merge-tags)).  # noqa: E501
+        Template text. May contain tags inside braces. See [Custom fields list](https://docs.textmagic.com/#section/Custom-fields-list-(Merge-tags)).  # noqa: E501
 
         :return: The content of this UpdateTemplateInputObject.  # noqa: E501
         :rtype: str
@@ -90,7 +90,7 @@ class UpdateTemplateInputObject(object):
     def content(self, content):
         """Sets the content of this UpdateTemplateInputObject.
 
-        Template text. May contain tags inside braces. See [Custom fields list](http://docs.textmagictesting.com/#section/Custom-fields-list-(Merge-tags)).  # noqa: E501
+        Template text. May contain tags inside braces. See [Custom fields list](https://docs.textmagic.com/#section/Custom-fields-list-(Merge-tags)).  # noqa: E501
 
         :param content: The content of this UpdateTemplateInputObject.  # noqa: E501
         :type: str

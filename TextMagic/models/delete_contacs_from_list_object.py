@@ -51,7 +51,7 @@ class DeleteContacsFromListObject(object):
     def contacts(self):
         """Gets the contacts of this DeleteContacsFromListObject.  # noqa: E501
 
-        Comma-separated array of [Contacts](http://docs.textmagictesting.com/#tag/Contacts) IDs.   # noqa: E501
+        Comma-separated array of [Contacts](https://docs.textmagic.com/#tag/Contacts) IDs.   # noqa: E501
 
         :return: The contacts of this DeleteContacsFromListObject.  # noqa: E501
         :rtype: str
@@ -62,7 +62,7 @@ class DeleteContacsFromListObject(object):
     def contacts(self, contacts):
         """Sets the contacts of this DeleteContacsFromListObject.
 
-        Comma-separated array of [Contacts](http://docs.textmagictesting.com/#tag/Contacts) IDs.   # noqa: E501
+        Comma-separated array of [Contacts](https://docs.textmagic.com/#tag/Contacts) IDs.   # noqa: E501
 
         :param contacts: The contacts of this DeleteContacsFromListObject.  # noqa: E501
         :type: str

@@ -384,7 +384,7 @@ class SendMessageInputObject(object):
     def _from(self):
         """Gets the _from of this SendMessageInputObject.  # noqa: E501
 
-        One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs).  # noqa: E501
+        One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](https://docs.textmagic.com/#tag/Sender-IDs).  # noqa: E501
 
         :return: The _from of this SendMessageInputObject.  # noqa: E501
         :rtype: str
@@ -395,7 +395,7 @@ class SendMessageInputObject(object):
     def _from(self, _from):
         """Sets the _from of this SendMessageInputObject.
 
-        One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs).  # noqa: E501
+        One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](https://docs.textmagic.com/#tag/Sender-IDs).  # noqa: E501
 
         :param _from: The _from of this SendMessageInputObject.  # noqa: E501
         :type: str

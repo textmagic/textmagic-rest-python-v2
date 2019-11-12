@@ -77,7 +77,7 @@ class GetAvailableDedicatedNumbersResponse(object):
     def price(self):
         """Gets the price of this GetAvailableDedicatedNumbersResponse.  # noqa: E501
 
-        Dedicated number monthly fee for this country. Returned in the current [account](http://docs.textmagictesting.com/#tag/User) currency.  # noqa: E501
+        Dedicated number monthly fee for this country. Returned in the current [account](https://docs.textmagic.com/#tag/User) currency.  # noqa: E501
 
         :return: The price of this GetAvailableDedicatedNumbersResponse.  # noqa: E501
         :rtype: float
@@ -88,7 +88,7 @@ class GetAvailableDedicatedNumbersResponse(object):
     def price(self, price):
         """Sets the price of this GetAvailableDedicatedNumbersResponse.
 
-        Dedicated number monthly fee for this country. Returned in the current [account](http://docs.textmagictesting.com/#tag/User) currency.  # noqa: E501
+        Dedicated number monthly fee for this country. Returned in the current [account](https://docs.textmagic.com/#tag/User) currency.  # noqa: E501
 
         :param price: The price of this GetAvailableDedicatedNumbersResponse.  # noqa: E501
         :type: float

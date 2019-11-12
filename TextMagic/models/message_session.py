@@ -124,7 +124,7 @@ class MessageSession(object):
     def text(self):
         """Gets the text of this MessageSession.  # noqa: E501
 
-        Session text. If a template was used for the session text (see [Messages: Send](http://docs.textmagictesting.com/#tag/Outbound-Messages) for details), it may contain template tags.   # noqa: E501
+        Session text. If a template was used for the session text (see [Messages: Send](https://docs.textmagic.com/#tag/Outbound-Messages) for details), it may contain template tags.   # noqa: E501
 
         :return: The text of this MessageSession.  # noqa: E501
         :rtype: str
@@ -135,7 +135,7 @@ class MessageSession(object):
     def text(self, text):
         """Sets the text of this MessageSession.
 
-        Session text. If a template was used for the session text (see [Messages: Send](http://docs.textmagictesting.com/#tag/Outbound-Messages) for details), it may contain template tags.   # noqa: E501
+        Session text. If a template was used for the session text (see [Messages: Send](https://docs.textmagic.com/#tag/Outbound-Messages) for details), it may contain template tags.   # noqa: E501
 
         :param text: The text of this MessageSession.  # noqa: E501
         :type: str
@@ -147,7 +147,7 @@ class MessageSession(object):
     def source(self):
         """Gets the source of this MessageSession.  # noqa: E501
 
-        *   **O** – for TextMagic Online; *   **A** – for API; *   **M** – for TextMagic Messenger; *   **E** – for [Email to SMS](http://docs.textmagictesting.com/#tag/Send-Email-to-SMS); *   **X** – for [Distribution Lists](http://docs.textmagictesting.com/#tag/Distribution-Lists).   # noqa: E501
+        *   **O** – for TextMagic Online; *   **A** – for API; *   **M** – for TextMagic Messenger; *   **E** – for [Email to SMS](https://docs.textmagic.com/#tag/Send-Email-to-SMS); *   **X** – for [Distribution Lists](https://docs.textmagic.com/#tag/Distribution-Lists).   # noqa: E501
 
         :return: The source of this MessageSession.  # noqa: E501
         :rtype: str
@@ -158,7 +158,7 @@ class MessageSession(object):
     def source(self, source):
         """Sets the source of this MessageSession.
 
-        *   **O** – for TextMagic Online; *   **A** – for API; *   **M** – for TextMagic Messenger; *   **E** – for [Email to SMS](http://docs.textmagictesting.com/#tag/Send-Email-to-SMS); *   **X** – for [Distribution Lists](http://docs.textmagictesting.com/#tag/Distribution-Lists).   # noqa: E501
+        *   **O** – for TextMagic Online; *   **A** – for API; *   **M** – for TextMagic Messenger; *   **E** – for [Email to SMS](https://docs.textmagic.com/#tag/Send-Email-to-SMS); *   **X** – for [Distribution Lists](https://docs.textmagic.com/#tag/Distribution-Lists).   # noqa: E501
 
         :param source: The source of this MessageSession.  # noqa: E501
         :type: str
@@ -170,7 +170,7 @@ class MessageSession(object):
     def reference_id(self):
         """Gets the reference_id of this MessageSession.  # noqa: E501
 
-        Custom reference ID (see [Messages: Send](http://docs.textmagictesting.com/#tag/Send-Email-to-SMS) for details).   # noqa: E501
+        Custom reference ID (see [Messages: Send](https://docs.textmagic.com/#tag/Send-Email-to-SMS) for details).   # noqa: E501
 
         :return: The reference_id of this MessageSession.  # noqa: E501
         :rtype: str
@@ -181,7 +181,7 @@ class MessageSession(object):
     def reference_id(self, reference_id):
         """Sets the reference_id of this MessageSession.
 
-        Custom reference ID (see [Messages: Send](http://docs.textmagictesting.com/#tag/Send-Email-to-SMS) for details).   # noqa: E501
+        Custom reference ID (see [Messages: Send](https://docs.textmagic.com/#tag/Send-Email-to-SMS) for details).   # noqa: E501
 
         :param reference_id: The reference_id of this MessageSession.  # noqa: E501
         :type: str

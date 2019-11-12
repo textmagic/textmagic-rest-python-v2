@@ -221,7 +221,7 @@ class CreateContactInputObject(object):
     def lists(self):
         """Gets the lists of this CreateContactInputObject.  # noqa: E501
 
-        Contact [list](http://docs.textmagictesting.com/#tag/Lists) ID. Each contact must be assigned to at least one list.  # noqa: E501
+        Contact [list](https://docs.textmagic.com/#tag/Lists) ID. Each contact must be assigned to at least one list.  # noqa: E501
 
         :return: The lists of this CreateContactInputObject.  # noqa: E501
         :rtype: str
@@ -232,7 +232,7 @@ class CreateContactInputObject(object):
     def lists(self, lists):
         """Sets the lists of this CreateContactInputObject.
 
-        Contact [list](http://docs.textmagictesting.com/#tag/Lists) ID. Each contact must be assigned to at least one list.  # noqa: E501
+        Contact [list](https://docs.textmagic.com/#tag/Lists) ID. Each contact must be assigned to at least one list.  # noqa: E501
 
         :param lists: The lists of this CreateContactInputObject.  # noqa: E501
         :type: str

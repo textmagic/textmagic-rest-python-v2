@@ -223,7 +223,7 @@ class MessageOut(object):
     def status(self):
         """Gets the status of this MessageOut.  # noqa: E501
 
-        Delivery status of the message. See [message delivery statuses](http://docs.textmagictesting.com/#section/Delivery-status-codes) for details.   # noqa: E501
+        Delivery status of the message. See [message delivery statuses](https://docs.textmagic.com/#section/Delivery-status-codes) for details.   # noqa: E501
 
         :return: The status of this MessageOut.  # noqa: E501
         :rtype: str
@@ -234,7 +234,7 @@ class MessageOut(object):
     def status(self, status):
         """Sets the status of this MessageOut.
 
-        Delivery status of the message. See [message delivery statuses](http://docs.textmagictesting.com/#section/Delivery-status-codes) for details.   # noqa: E501
+        Delivery status of the message. See [message delivery statuses](https://docs.textmagic.com/#section/Delivery-status-codes) for details.   # noqa: E501
 
         :param status: The status of this MessageOut.  # noqa: E501
         :type: str
@@ -411,7 +411,7 @@ class MessageOut(object):
     def first_name(self):
         """Gets the first_name of this MessageOut.  # noqa: E501
 
-        Contact first name. Could be substituted from your [Contacts](http://docs.textmagictesting.com/#tag/Contacts) (even if you submitted the phone number instead of the contact ID).   # noqa: E501
+        Contact first name. Could be substituted from your [Contacts](https://docs.textmagic.com/#tag/Contacts) (even if you submitted the phone number instead of the contact ID).   # noqa: E501
 
         :return: The first_name of this MessageOut.  # noqa: E501
         :rtype: str
@@ -422,7 +422,7 @@ class MessageOut(object):
     def first_name(self, first_name):
         """Sets the first_name of this MessageOut.
 
-        Contact first name. Could be substituted from your [Contacts](http://docs.textmagictesting.com/#tag/Contacts) (even if you submitted the phone number instead of the contact ID).   # noqa: E501
+        Contact first name. Could be substituted from your [Contacts](https://docs.textmagic.com/#tag/Contacts) (even if you submitted the phone number instead of the contact ID).   # noqa: E501
 
         :param first_name: The first_name of this MessageOut.  # noqa: E501
         :type: str

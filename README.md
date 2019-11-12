@@ -13,7 +13,7 @@ Python 2.7 and 3.4+
 ## Installation
 
 ```shell
-pip install git+https://github.com/textmagic/textmagic-rest-python-v2.git@v2.0.929
+pip install git+https://github.com/textmagic/textmagic-rest-python-v2.git@v2.0.951
 ```
 
 ## Usage Example
