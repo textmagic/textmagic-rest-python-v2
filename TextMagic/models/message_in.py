@@ -39,7 +39,8 @@ class MessageIn(object):
         'contact_id': 'int',
         'first_name': 'str',
         'last_name': 'str',
-        'avatar': 'str'
+        'avatar': 'str',
+        'email': 'str'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class MessageIn(object):
         'contact_id': 'contactId',
         'first_name': 'firstName',
         'last_name': 'lastName',
-        'avatar': 'avatar'
+        'avatar': 'avatar',
+        'email': 'email'
     }
 
-    def __init__(self, id=None, sender=None, receiver=None, message_time=None, text=None, contact_id=None, first_name=None, last_name=None, avatar=None):  # noqa: E501
+    def __init__(self, id=None, sender=None, receiver=None, message_time=None, text=None, contact_id=None, first_name=None, last_name=None, avatar=None, email=None):  # noqa: E501
         """MessageIn - a model defined in Swagger"""  # noqa: E501
 
         self._id = None
@@ -66,6 +68,7 @@ class MessageIn(object):
         self._first_name = None
         self._last_name = None
         self._avatar = None
+        self._email = None
         self.discriminator = None
 
         self.id = id
@@ -80,6 +83,8 @@ class MessageIn(object):
         if last_name is not None:
             self.last_name = last_name
         self.avatar = avatar
+        if email is not None:
+            self.email = email
 
     @property
     def id(self):
@@ -285,6 +290,29 @@ class MessageIn(object):
         """
 
         self._avatar = avatar
+
+    @property
+    def email(self):
+        """Gets the email of this MessageIn.  # noqa: E501
+
+        Sender email.  # noqa: E501
+
+        :return: The email of this MessageIn.  # noqa: E501
+        :rtype: str
+        """
+        return self._email
+
+    @email.setter
+    def email(self, email):
+        """Sets the email of this MessageIn.
+
+        Sender email.  # noqa: E501
+
+        :param email: The email of this MessageIn.  # noqa: E501
+        :type: str
+        """
+
+        self._email = email
 
     def to_dict(self):
         """Returns the model properties as a dict"""
