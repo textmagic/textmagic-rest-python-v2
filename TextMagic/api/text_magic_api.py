@@ -437,45 +437,45 @@ class TextMagicApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def check_phone_verification_code_tfa(self, check_phone_verification_code_input_object, **kwargs):  # noqa: E501
+    def check_phone_verification_code_tfa(self, check_phone_verification_code_tfa_input_object, **kwargs):  # noqa: E501
         """Step 2: Check the verification code   # noqa: E501
 
         Check received code from user with the code which was actually sent.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.check_phone_verification_code_tfa(check_phone_verification_code_input_object, async_req=True)
+        >>> thread = api.check_phone_verification_code_tfa(check_phone_verification_code_tfa_input_object, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param CheckPhoneVerificationCodeInputObject check_phone_verification_code_input_object: (required)
+        :param CheckPhoneVerificationCodeTFAInputObject check_phone_verification_code_tfa_input_object: (required)
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.check_phone_verification_code_tfa_with_http_info(check_phone_verification_code_input_object, **kwargs)  # noqa: E501
+            return self.check_phone_verification_code_tfa_with_http_info(check_phone_verification_code_tfa_input_object, **kwargs)  # noqa: E501
         else:
-            (data) = self.check_phone_verification_code_tfa_with_http_info(check_phone_verification_code_input_object, **kwargs)  # noqa: E501
+            (data) = self.check_phone_verification_code_tfa_with_http_info(check_phone_verification_code_tfa_input_object, **kwargs)  # noqa: E501
             return data
 
-    def check_phone_verification_code_tfa_with_http_info(self, check_phone_verification_code_input_object, **kwargs):  # noqa: E501
+    def check_phone_verification_code_tfa_with_http_info(self, check_phone_verification_code_tfa_input_object, **kwargs):  # noqa: E501
         """Step 2: Check the verification code   # noqa: E501
 
         Check received code from user with the code which was actually sent.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.check_phone_verification_code_tfa_with_http_info(check_phone_verification_code_input_object, async_req=True)
+        >>> thread = api.check_phone_verification_code_tfa_with_http_info(check_phone_verification_code_tfa_input_object, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param CheckPhoneVerificationCodeInputObject check_phone_verification_code_input_object: (required)
+        :param CheckPhoneVerificationCodeTFAInputObject check_phone_verification_code_tfa_input_object: (required)
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['check_phone_verification_code_input_object']  # noqa: E501
+        all_params = ['check_phone_verification_code_tfa_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -490,10 +490,10 @@ class TextMagicApi(object):
                 )
             params[key] = val
         del params['kwargs']
-        # verify the required parameter 'check_phone_verification_code_input_object' is set
-        if ('check_phone_verification_code_input_object' not in params or
-                params['check_phone_verification_code_input_object'] is None):
-            raise ValueError("Missing the required parameter `check_phone_verification_code_input_object` when calling `check_phone_verification_code_tfa`")  # noqa: E501
+        # verify the required parameter 'check_phone_verification_code_tfa_input_object' is set
+        if ('check_phone_verification_code_tfa_input_object' not in params or
+                params['check_phone_verification_code_tfa_input_object'] is None):
+            raise ValueError("Missing the required parameter `check_phone_verification_code_tfa_input_object` when calling `check_phone_verification_code_tfa`")  # noqa: E501
 
         collection_formats = {}
 
@@ -507,8 +507,8 @@ class TextMagicApi(object):
         local_var_files = {}
 
         body_params = None
-        if 'check_phone_verification_code_input_object' in params:
-            body_params = params['check_phone_verification_code_input_object']
+        if 'check_phone_verification_code_tfa_input_object' in params:
+            body_params = params['check_phone_verification_code_tfa_input_object']
         # HTTP header `Accept`
         header_params['Accept'] = self.api_client.select_header_accept(
             ['application/json'])  # noqa: E501
@@ -12841,45 +12841,45 @@ class TextMagicApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def send_phone_verification_code_tfa(self, send_phone_verification_code_input_object, **kwargs):  # noqa: E501
+    def send_phone_verification_code_tfa(self, send_phone_verification_code_tfa_input_object, **kwargs):  # noqa: E501
         """Step 1: Send a verification code   # noqa: E501
 
         Sends a verification code to a specified phone number.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.send_phone_verification_code_tfa(send_phone_verification_code_input_object, async_req=True)
+        >>> thread = api.send_phone_verification_code_tfa(send_phone_verification_code_tfa_input_object, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param SendPhoneVerificationCodeInputObject send_phone_verification_code_input_object: (required)
+        :param SendPhoneVerificationCodeTFAInputObject send_phone_verification_code_tfa_input_object: (required)
         :return: SendPhoneVerificationCodeResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.send_phone_verification_code_tfa_with_http_info(send_phone_verification_code_input_object, **kwargs)  # noqa: E501
+            return self.send_phone_verification_code_tfa_with_http_info(send_phone_verification_code_tfa_input_object, **kwargs)  # noqa: E501
         else:
-            (data) = self.send_phone_verification_code_tfa_with_http_info(send_phone_verification_code_input_object, **kwargs)  # noqa: E501
+            (data) = self.send_phone_verification_code_tfa_with_http_info(send_phone_verification_code_tfa_input_object, **kwargs)  # noqa: E501
             return data
 
-    def send_phone_verification_code_tfa_with_http_info(self, send_phone_verification_code_input_object, **kwargs):  # noqa: E501
+    def send_phone_verification_code_tfa_with_http_info(self, send_phone_verification_code_tfa_input_object, **kwargs):  # noqa: E501
         """Step 1: Send a verification code   # noqa: E501
 
         Sends a verification code to a specified phone number.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.send_phone_verification_code_tfa_with_http_info(send_phone_verification_code_input_object, async_req=True)
+        >>> thread = api.send_phone_verification_code_tfa_with_http_info(send_phone_verification_code_tfa_input_object, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param SendPhoneVerificationCodeInputObject send_phone_verification_code_input_object: (required)
+        :param SendPhoneVerificationCodeTFAInputObject send_phone_verification_code_tfa_input_object: (required)
         :return: SendPhoneVerificationCodeResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['send_phone_verification_code_input_object']  # noqa: E501
+        all_params = ['send_phone_verification_code_tfa_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -12894,10 +12894,10 @@ class TextMagicApi(object):
                 )
             params[key] = val
         del params['kwargs']
-        # verify the required parameter 'send_phone_verification_code_input_object' is set
-        if ('send_phone_verification_code_input_object' not in params or
-                params['send_phone_verification_code_input_object'] is None):
-            raise ValueError("Missing the required parameter `send_phone_verification_code_input_object` when calling `send_phone_verification_code_tfa`")  # noqa: E501
+        # verify the required parameter 'send_phone_verification_code_tfa_input_object' is set
+        if ('send_phone_verification_code_tfa_input_object' not in params or
+                params['send_phone_verification_code_tfa_input_object'] is None):
+            raise ValueError("Missing the required parameter `send_phone_verification_code_tfa_input_object` when calling `send_phone_verification_code_tfa`")  # noqa: E501
 
         collection_formats = {}
 
@@ -12911,8 +12911,8 @@ class TextMagicApi(object):
         local_var_files = {}
 
         body_params = None
-        if 'send_phone_verification_code_input_object' in params:
-            body_params = params['send_phone_verification_code_input_object']
+        if 'send_phone_verification_code_tfa_input_object' in params:
+            body_params = params['send_phone_verification_code_tfa_input_object']
         # HTTP header `Accept`
         header_params['Accept'] = self.api_client.select_header_accept(
             ['application/json'])  # noqa: E501

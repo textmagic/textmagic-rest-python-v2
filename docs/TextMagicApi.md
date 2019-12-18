@@ -367,7 +367,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **check_phone_verification_code_tfa**
-> check_phone_verification_code_tfa(check_phone_verification_code_input_object)
+> check_phone_verification_code_tfa(check_phone_verification_code_tfa_input_object)
 
 Step 2: Check the verification code 
 
@@ -388,11 +388,11 @@ configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-check_phone_verification_code_input_object = TextMagic.CheckPhoneVerificationCodeInputObject() # CheckPhoneVerificationCodeInputObject | 
+check_phone_verification_code_tfa_input_object = TextMagic.CheckPhoneVerificationCodeTFAInputObject() # CheckPhoneVerificationCodeTFAInputObject | 
 
 try:
     # Step 2: Check the verification code 
-    api_instance.check_phone_verification_code_tfa(check_phone_verification_code_input_object)
+    api_instance.check_phone_verification_code_tfa(check_phone_verification_code_tfa_input_object)
 except ApiException as e:
     print("Exception when calling TextMagicApi->check_phone_verification_code_tfa: %s\n" % e)
 ```
@@ -401,7 +401,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **check_phone_verification_code_input_object** | [**CheckPhoneVerificationCodeInputObject**](CheckPhoneVerificationCodeInputObject.md)|  | 
+ **check_phone_verification_code_tfa_input_object** | [**CheckPhoneVerificationCodeTFAInputObject**](CheckPhoneVerificationCodeTFAInputObject.md)|  | 
 
 ### Return type
 
@@ -7076,7 +7076,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **send_phone_verification_code_tfa**
-> SendPhoneVerificationCodeResponse send_phone_verification_code_tfa(send_phone_verification_code_input_object)
+> SendPhoneVerificationCodeResponse send_phone_verification_code_tfa(send_phone_verification_code_tfa_input_object)
 
 Step 1: Send a verification code 
 
@@ -7097,11 +7097,11 @@ configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-send_phone_verification_code_input_object = TextMagic.SendPhoneVerificationCodeInputObject() # SendPhoneVerificationCodeInputObject | 
+send_phone_verification_code_tfa_input_object = TextMagic.SendPhoneVerificationCodeTFAInputObject() # SendPhoneVerificationCodeTFAInputObject | 
 
 try:
     # Step 1: Send a verification code 
-    api_response = api_instance.send_phone_verification_code_tfa(send_phone_verification_code_input_object)
+    api_response = api_instance.send_phone_verification_code_tfa(send_phone_verification_code_tfa_input_object)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TextMagicApi->send_phone_verification_code_tfa: %s\n" % e)
@@ -7111,7 +7111,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **send_phone_verification_code_input_object** | [**SendPhoneVerificationCodeInputObject**](SendPhoneVerificationCodeInputObject.md)|  | 
+ **send_phone_verification_code_tfa_input_object** | [**SendPhoneVerificationCodeTFAInputObject**](SendPhoneVerificationCodeTFAInputObject.md)|  | 
 
 ### Return type
 
