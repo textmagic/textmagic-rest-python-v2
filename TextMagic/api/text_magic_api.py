@@ -12022,6 +12022,7 @@ class TextMagicApi(object):
         :param int include_blocked: Should blocked contacts be included?
         :param str query: Find contacts by specified search query.
         :param int local: Treat phone number passed in the \"query\" field as local. Default is 0.
+        :param int exact_match: Return only exactly matching contacts. Default is 0.
         :param str country: The 2-letter ISO country code for local phone numbers, used when \"local\" is set to true. Default is the account country.
         :param str order_by: Order results by some field. Default is id.
         :param str direction: Order direction. Default is desc.
@@ -12054,6 +12055,7 @@ class TextMagicApi(object):
         :param int include_blocked: Should blocked contacts be included?
         :param str query: Find contacts by specified search query.
         :param int local: Treat phone number passed in the \"query\" field as local. Default is 0.
+        :param int exact_match: Return only exactly matching contacts. Default is 0.
         :param str country: The 2-letter ISO country code for local phone numbers, used when \"local\" is set to true. Default is the account country.
         :param str order_by: Order results by some field. Default is id.
         :param str direction: Order direction. Default is desc.
@@ -12062,7 +12064,7 @@ class TextMagicApi(object):
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'shared', 'ids', 'list_id', 'include_blocked', 'query', 'local', 'country', 'order_by', 'direction']  # noqa: E501
+        all_params = ['page', 'limit', 'shared', 'ids', 'list_id', 'include_blocked', 'query', 'local', 'exact_match', 'country', 'order_by', 'direction']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -12101,6 +12103,8 @@ class TextMagicApi(object):
             query_params.append(('query', params['query']))  # noqa: E501
         if 'local' in params:
             query_params.append(('local', params['local']))  # noqa: E501
+        if 'exact_match' in params:
+            query_params.append(('exactMatch', params['exact_match']))  # noqa: E501
         if 'country' in params:
             query_params.append(('country', params['country']))  # noqa: E501
         if 'order_by' in params:

@@ -13,7 +13,7 @@ Python 2.7 and 3.4+
 ## Installation
 
 ```shell
-pip install git+https://github.com/textmagic/textmagic-rest-python-v2.git@v2.0.1067
+pip install git+https://github.com/textmagic/textmagic-rest-python-v2.git@v2.0.1307
 ```
 
 ## Usage Example
@@ -22,10 +22,10 @@ pip install git+https://github.com/textmagic/textmagic-rest-python-v2.git@v2.0.1
 import TextMagic
 from TextMagic.rest import ApiException
 
-# Configure HTTP basic authorization: BasicAuth
+# put your Username and API Key from https://my.textmagic.com/online/api/rest-api/keys page.
 configuration = TextMagic.Configuration()
 configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
+configuration.password = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))

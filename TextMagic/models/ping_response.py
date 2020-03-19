@@ -31,24 +31,51 @@ class PingResponse(object):
                             and the value is json key in definition.
     """
     swagger_types = {
+        'user_id': 'int',
         'ping': 'str',
         'utc_date_time': 'str'
     }
 
     attribute_map = {
+        'user_id': 'userId',
         'ping': 'ping',
         'utc_date_time': 'utcDateTime'
     }
 
-    def __init__(self, ping=None, utc_date_time=None):  # noqa: E501
+    def __init__(self, user_id=None, ping=None, utc_date_time=None):  # noqa: E501
         """PingResponse - a model defined in Swagger"""  # noqa: E501
 
+        self._user_id = None
         self._ping = None
         self._utc_date_time = None
         self.discriminator = None
 
+        self.user_id = user_id
         self.ping = ping
         self.utc_date_time = utc_date_time
+
+    @property
+    def user_id(self):
+        """Gets the user_id of this PingResponse.  # noqa: E501
+
+        Current user Id.  # noqa: E501
+
+        :return: The user_id of this PingResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._user_id
+
+    @user_id.setter
+    def user_id(self, user_id):
+        """Sets the user_id of this PingResponse.
+
+        Current user Id.  # noqa: E501
+
+        :param user_id: The user_id of this PingResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._user_id = user_id
 
     @property
     def ping(self):

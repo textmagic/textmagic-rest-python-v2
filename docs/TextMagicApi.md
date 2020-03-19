@@ -6625,7 +6625,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **search_contacts**
-> SearchContactsPaginatedResponse search_contacts(page=page, limit=limit, shared=shared, ids=ids, list_id=list_id, include_blocked=include_blocked, query=query, local=local, country=country, order_by=order_by, direction=direction)
+> SearchContactsPaginatedResponse search_contacts(page=page, limit=limit, shared=shared, ids=ids, list_id=list_id, include_blocked=include_blocked, query=query, local=local, exact_match=exact_match, country=country, order_by=order_by, direction=direction)
 
 Find contacts by given criteria
 
@@ -6654,13 +6654,14 @@ list_id = 56 # int | Find contacts by List ID. (optional)
 include_blocked = 56 # int | Should blocked contacts be included? (optional)
 query = 'query_example' # str | Find contacts by specified search query. (optional)
 local = 0 # int | Treat phone number passed in the \"query\" field as local. Default is 0. (optional) (default to 0)
+exact_match = 0 # int | Return only exactly matching contacts. Default is 0. (optional) (default to 0)
 country = 'country_example' # str | The 2-letter ISO country code for local phone numbers, used when \"local\" is set to true. Default is the account country. (optional)
 order_by = 'id' # str | Order results by some field. Default is id. (optional) (default to id)
 direction = 'desc' # str | Order direction. Default is desc. (optional) (default to desc)
 
 try:
     # Find contacts by given criteria
-    api_response = api_instance.search_contacts(page=page, limit=limit, shared=shared, ids=ids, list_id=list_id, include_blocked=include_blocked, query=query, local=local, country=country, order_by=order_by, direction=direction)
+    api_response = api_instance.search_contacts(page=page, limit=limit, shared=shared, ids=ids, list_id=list_id, include_blocked=include_blocked, query=query, local=local, exact_match=exact_match, country=country, order_by=order_by, direction=direction)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TextMagicApi->search_contacts: %s\n" % e)
@@ -6678,6 +6679,7 @@ Name | Type | Description  | Notes
  **include_blocked** | **int**| Should blocked contacts be included? | [optional] 
  **query** | **str**| Find contacts by specified search query. | [optional] 
  **local** | **int**| Treat phone number passed in the \&quot;query\&quot; field as local. Default is 0. | [optional] [default to 0]
+ **exact_match** | **int**| Return only exactly matching contacts. Default is 0. | [optional] [default to 0]
  **country** | **str**| The 2-letter ISO country code for local phone numbers, used when \&quot;local\&quot; is set to true. Default is the account country. | [optional] 
  **order_by** | **str**| Order results by some field. Default is id. | [optional] [default to id]
  **direction** | **str**| Order direction. Default is desc. | [optional] [default to desc]

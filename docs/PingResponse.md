@@ -3,6 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**user_id** | **int** | Current user Id. | 
 **ping** | **str** | Pong. | 
 **utc_date_time** | **str** | Current date and time. | 
 
