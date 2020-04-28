@@ -27,6 +27,8 @@ Name | Type | Description | Notes
 **chat_marked_as_read** | **int** |  | 
 **chat_muted** | **int** |  | 
 **chat_unmuted** | **int** |  | 
+**chat_pinned** | **int** |  | 
+**chat_unpinned** | **int** |  | 
 **chat_deleted** | **int** |  | 
 **chat_closed** | **int** |  | 
 **chat_reopened** | **int** |  | 

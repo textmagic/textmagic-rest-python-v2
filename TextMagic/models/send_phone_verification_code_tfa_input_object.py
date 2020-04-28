@@ -32,6 +32,7 @@ class SendPhoneVerificationCodeTFAInputObject(object):
     """
     swagger_types = {
         'phone': 'str',
+        'workflow_id': 'str',
         'brand': 'str',
         'code_length': 'int',
         'language': 'str',
@@ -41,6 +42,7 @@ class SendPhoneVerificationCodeTFAInputObject(object):
 
     attribute_map = {
         'phone': 'phone',
+        'workflow_id': 'workflowId',
         'brand': 'brand',
         'code_length': 'codeLength',
         'language': 'language',
@@ -48,10 +50,11 @@ class SendPhoneVerificationCodeTFAInputObject(object):
         'country': 'country'
     }
 
-    def __init__(self, phone=None, brand=None, code_length=None, language=None, sender_id=None, country=None):  # noqa: E501
+    def __init__(self, phone=None, workflow_id=None, brand=None, code_length=None, language=None, sender_id=None, country=None):  # noqa: E501
         """SendPhoneVerificationCodeTFAInputObject - a model defined in Swagger"""  # noqa: E501
 
         self._phone = None
+        self._workflow_id = None
         self._brand = None
         self._code_length = None
         self._language = None
@@ -61,6 +64,8 @@ class SendPhoneVerificationCodeTFAInputObject(object):
 
         if phone is not None:
             self.phone = phone
+        if workflow_id is not None:
+            self.workflow_id = workflow_id
         if brand is not None:
             self.brand = brand
         if code_length is not None:
@@ -94,6 +99,29 @@ class SendPhoneVerificationCodeTFAInputObject(object):
         """
 
         self._phone = phone
+
+    @property
+    def workflow_id(self):
+        """Gets the workflow_id of this SendPhoneVerificationCodeTFAInputObject.  # noqa: E501
+
+        **Workflows**  The Verify API allows you to select the best workflow for your use case. This might depend on the type of verification taking place, your users' preference, or their geographical location. You can specify which workflow to use for each Verify API request by setting the workflowId field to an integer value 1-7. The details of each of these preset workflows are detailed below.  <br />  **Workflow 1 (Default Workflow): SMS -> TTS -> TTS**  <br />  Send PIN code by text message, follow up with two subsequent voice calls if the request wasn't already verified.  Send SMS to user with PIN code Wait for 60 seconds Call user and give TTS PIN code Wait for 60 seconds Call user and give TTS PIN code  Request expires after 300 seconds  <br />  **Workflow 2: SMS -> SMS -> TTS**  <br />    Send PIN code by text message, follow up with a second text message and finally a voice call if the request has not been verified.  Send SMS to user with PIN code Wait for 60 seconds Send SMS to user with PIN code Wait for 60 seconds Call user and give TTS PIN code  Request expires after 300 seconds  <br />  **Workflow 3: TTS -> TTS**  <br />   Call the user and speak a PIN code, follow up with a second call if the request wasn't already verified.  Call user and give TTS PIN code Wait for 60 seconds Call user and give TTS PIN code  Request expires after 300 seconds  <br />  **Workflow 4: SMS -> SMS**  <br />    Send PIN code by text message, follow up with a second text message if the code hasn't been verified.  Send SMS to user with PIN code Wait for 60 seconds Send SMS to user with PIN code Wait for 60 seconds  Request expires after 300 seconds  <br />  **Workflow 5: SMS -> TTS**  <br />   Send PIN code by text message, follow up with a voice call if the code hasn't been verified.  Send SMS to user with PIN code Wait for 60 seconds Call user and give TTS PIN code Wait for 60 seconds  Request expires after 300 seconds  <br />  **Workflow 6: SMS**  <br />   Send PIN code by text message once only.  Send SMS to user with PIN code Request expires after 300 seconds  <br />  **Workflow 7: TTS**  <br />  Call the user and speak a PIN code once only.  Call user and give TTS PIN code  Request expires after 300 seconds   # noqa: E501
+
+        :return: The workflow_id of this SendPhoneVerificationCodeTFAInputObject.  # noqa: E501
+        :rtype: str
+        """
+        return self._workflow_id
+
+    @workflow_id.setter
+    def workflow_id(self, workflow_id):
+        """Sets the workflow_id of this SendPhoneVerificationCodeTFAInputObject.
+
+        **Workflows**  The Verify API allows you to select the best workflow for your use case. This might depend on the type of verification taking place, your users' preference, or their geographical location. You can specify which workflow to use for each Verify API request by setting the workflowId field to an integer value 1-7. The details of each of these preset workflows are detailed below.  <br />  **Workflow 1 (Default Workflow): SMS -> TTS -> TTS**  <br />  Send PIN code by text message, follow up with two subsequent voice calls if the request wasn't already verified.  Send SMS to user with PIN code Wait for 60 seconds Call user and give TTS PIN code Wait for 60 seconds Call user and give TTS PIN code  Request expires after 300 seconds  <br />  **Workflow 2: SMS -> SMS -> TTS**  <br />    Send PIN code by text message, follow up with a second text message and finally a voice call if the request has not been verified.  Send SMS to user with PIN code Wait for 60 seconds Send SMS to user with PIN code Wait for 60 seconds Call user and give TTS PIN code  Request expires after 300 seconds  <br />  **Workflow 3: TTS -> TTS**  <br />   Call the user and speak a PIN code, follow up with a second call if the request wasn't already verified.  Call user and give TTS PIN code Wait for 60 seconds Call user and give TTS PIN code  Request expires after 300 seconds  <br />  **Workflow 4: SMS -> SMS**  <br />    Send PIN code by text message, follow up with a second text message if the code hasn't been verified.  Send SMS to user with PIN code Wait for 60 seconds Send SMS to user with PIN code Wait for 60 seconds  Request expires after 300 seconds  <br />  **Workflow 5: SMS -> TTS**  <br />   Send PIN code by text message, follow up with a voice call if the code hasn't been verified.  Send SMS to user with PIN code Wait for 60 seconds Call user and give TTS PIN code Wait for 60 seconds  Request expires after 300 seconds  <br />  **Workflow 6: SMS**  <br />   Send PIN code by text message once only.  Send SMS to user with PIN code Request expires after 300 seconds  <br />  **Workflow 7: TTS**  <br />  Call the user and speak a PIN code once only.  Call user and give TTS PIN code  Request expires after 300 seconds   # noqa: E501
+
+        :param workflow_id: The workflow_id of this SendPhoneVerificationCodeTFAInputObject.  # noqa: E501
+        :type: str
+        """
+
+        self._workflow_id = workflow_id
 
     @property
     def brand(self):

@@ -45,7 +45,8 @@ class Chat(object):
         '_from': 'str',
         'muted_until': 'datetime',
         'time_left_mute': 'int',
-        'country': 'Country'
+        'country': 'Country',
+        'pinned': 'bool'
     }
 
     attribute_map = {
@@ -63,10 +64,11 @@ class Chat(object):
         '_from': 'from',
         'muted_until': 'mutedUntil',
         'time_left_mute': 'timeLeftMute',
-        'country': 'country'
+        'country': 'country',
+        'pinned': 'pinned'
     }
 
-    def __init__(self, id=None, original_id=None, phone=None, contact=None, unsubscribed_contact_id=None, unread=None, updated_at=None, status=None, mute=None, last_message=None, direction=None, _from=None, muted_until=None, time_left_mute=None, country=None):  # noqa: E501
+    def __init__(self, id=None, original_id=None, phone=None, contact=None, unsubscribed_contact_id=None, unread=None, updated_at=None, status=None, mute=None, last_message=None, direction=None, _from=None, muted_until=None, time_left_mute=None, country=None, pinned=None):  # noqa: E501
         """Chat - a model defined in Swagger"""  # noqa: E501
 
         self._id = None
@@ -84,6 +86,7 @@ class Chat(object):
         self._muted_until = None
         self._time_left_mute = None
         self._country = None
+        self._pinned = None
         self.discriminator = None
 
         self.id = id
@@ -101,6 +104,7 @@ class Chat(object):
         self.muted_until = muted_until
         self.time_left_mute = time_left_mute
         self.country = country
+        self.pinned = pinned
 
     @property
     def id(self):
@@ -452,6 +456,29 @@ class Chat(object):
         """
 
         self._country = country
+
+    @property
+    def pinned(self):
+        """Gets the pinned of this Chat.  # noqa: E501
+
+        Indicates when the chat is pinned.  # noqa: E501
+
+        :return: The pinned of this Chat.  # noqa: E501
+        :rtype: bool
+        """
+        return self._pinned
+
+    @pinned.setter
+    def pinned(self, pinned):
+        """Sets the pinned of this Chat.
+
+        Indicates when the chat is pinned.  # noqa: E501
+
+        :param pinned: The pinned of this Chat.  # noqa: E501
+        :type: bool
+        """
+
+        self._pinned = pinned
 
     def to_dict(self):
         """Returns the model properties as a dict"""

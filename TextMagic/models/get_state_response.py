@@ -55,6 +55,8 @@ class GetStateResponse(object):
         'chat_marked_as_read': 'int',
         'chat_muted': 'int',
         'chat_unmuted': 'int',
+        'chat_pinned': 'int',
+        'chat_unpinned': 'int',
         'chat_deleted': 'int',
         'chat_closed': 'int',
         'chat_reopened': 'int',
@@ -97,6 +99,8 @@ class GetStateResponse(object):
         'chat_marked_as_read': 'chatMarkedAsRead',
         'chat_muted': 'chatMuted',
         'chat_unmuted': 'chatUnmuted',
+        'chat_pinned': 'chatPinned',
+        'chat_unpinned': 'chatUnpinned',
         'chat_deleted': 'chatDeleted',
         'chat_closed': 'chatClosed',
         'chat_reopened': 'chatReopened',
@@ -114,7 +118,7 @@ class GetStateResponse(object):
         'custom_fields_cache_clear': 'customFieldsCacheClear'
     }
 
-    def __init__(self, system_cache_clear=None, system_exit=None, system_alert=None, system_account_state_changed=None, message_deleted=None, message_incoming=None, message_incoming_deleted=None, message_state_changed=None, message_bulk_end=None, message_wipe_end=None, message_sent=None, message_session_deleted=None, message_cache_clear=None, message_incoming_cache_clear=None, message_schedule_added=None, message_schedule_state_changed=None, message_schedule_deleted=None, message_schedule_cache_clear=None, message_template_cache_clear=None, call_finished=None, chat_created=None, chat_marked_as_read=None, chat_muted=None, chat_unmuted=None, chat_deleted=None, chat_closed=None, chat_reopened=None, chat_cache_clear=None, contact_added=None, contact_deleted=None, contact_state_changed=None, list_added=None, list_deleted=None, list_state_changed=None, contact_wipe_end=None, contact_import_end=None, contact_cache_clear=None, list_cache_clear=None, custom_fields_cache_clear=None):  # noqa: E501
+    def __init__(self, system_cache_clear=None, system_exit=None, system_alert=None, system_account_state_changed=None, message_deleted=None, message_incoming=None, message_incoming_deleted=None, message_state_changed=None, message_bulk_end=None, message_wipe_end=None, message_sent=None, message_session_deleted=None, message_cache_clear=None, message_incoming_cache_clear=None, message_schedule_added=None, message_schedule_state_changed=None, message_schedule_deleted=None, message_schedule_cache_clear=None, message_template_cache_clear=None, call_finished=None, chat_created=None, chat_marked_as_read=None, chat_muted=None, chat_unmuted=None, chat_pinned=None, chat_unpinned=None, chat_deleted=None, chat_closed=None, chat_reopened=None, chat_cache_clear=None, contact_added=None, contact_deleted=None, contact_state_changed=None, list_added=None, list_deleted=None, list_state_changed=None, contact_wipe_end=None, contact_import_end=None, contact_cache_clear=None, list_cache_clear=None, custom_fields_cache_clear=None):  # noqa: E501
         """GetStateResponse - a model defined in Swagger"""  # noqa: E501
 
         self._system_cache_clear = None
@@ -141,6 +145,8 @@ class GetStateResponse(object):
         self._chat_marked_as_read = None
         self._chat_muted = None
         self._chat_unmuted = None
+        self._chat_pinned = None
+        self._chat_unpinned = None
         self._chat_deleted = None
         self._chat_closed = None
         self._chat_reopened = None
@@ -182,6 +188,8 @@ class GetStateResponse(object):
         self.chat_marked_as_read = chat_marked_as_read
         self.chat_muted = chat_muted
         self.chat_unmuted = chat_unmuted
+        self.chat_pinned = chat_pinned
+        self.chat_unpinned = chat_unpinned
         self.chat_deleted = chat_deleted
         self.chat_closed = chat_closed
         self.chat_reopened = chat_reopened
@@ -701,6 +709,48 @@ class GetStateResponse(object):
         """
 
         self._chat_unmuted = chat_unmuted
+
+    @property
+    def chat_pinned(self):
+        """Gets the chat_pinned of this GetStateResponse.  # noqa: E501
+
+
+        :return: The chat_pinned of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._chat_pinned
+
+    @chat_pinned.setter
+    def chat_pinned(self, chat_pinned):
+        """Sets the chat_pinned of this GetStateResponse.
+
+
+        :param chat_pinned: The chat_pinned of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._chat_pinned = chat_pinned
+
+    @property
+    def chat_unpinned(self):
+        """Gets the chat_unpinned of this GetStateResponse.  # noqa: E501
+
+
+        :return: The chat_unpinned of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._chat_unpinned
+
+    @chat_unpinned.setter
+    def chat_unpinned(self, chat_unpinned):
+        """Sets the chat_unpinned of this GetStateResponse.
+
+
+        :param chat_unpinned: The chat_unpinned of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._chat_unpinned = chat_unpinned
 
     @property
     def chat_deleted(self):
