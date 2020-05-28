@@ -47,7 +47,9 @@ class SendMessageInputObject(object):
         'create_chat': 'bool',
         'tts': 'bool',
         'local': 'bool',
-        'local_country': 'str'
+        'local_country': 'str',
+        'destination': 'str',
+        'resources': 'str'
     }
 
     attribute_map = {
@@ -67,10 +69,12 @@ class SendMessageInputObject(object):
         'create_chat': 'createChat',
         'tts': 'tts',
         'local': 'local',
-        'local_country': 'localCountry'
+        'local_country': 'localCountry',
+        'destination': 'destination',
+        'resources': 'resources'
     }
 
-    def __init__(self, text=None, template_id=None, sending_time=None, sending_date_time=None, sending_timezone=None, contacts=None, lists=None, phones=None, cut_extra=False, parts_count=None, reference_id=None, _from=None, rrule=None, create_chat=False, tts=False, local=False, local_country=None):  # noqa: E501
+    def __init__(self, text=None, template_id=None, sending_time=None, sending_date_time=None, sending_timezone=None, contacts=None, lists=None, phones=None, cut_extra=False, parts_count=None, reference_id=None, _from=None, rrule=None, create_chat=False, tts=False, local=False, local_country=None, destination='false', resources=None):  # noqa: E501
         """SendMessageInputObject - a model defined in Swagger"""  # noqa: E501
 
         self._text = None
@@ -90,6 +94,8 @@ class SendMessageInputObject(object):
         self._tts = None
         self._local = None
         self._local_country = None
+        self._destination = None
+        self._resources = None
         self.discriminator = None
 
         if text is not None:
@@ -126,6 +132,10 @@ class SendMessageInputObject(object):
             self.local = local
         if local_country is not None:
             self.local_country = local_country
+        if destination is not None:
+            self.destination = destination
+        if resources is not None:
+            self.resources = resources
 
     @property
     def text(self):
@@ -517,6 +527,52 @@ class SendMessageInputObject(object):
         """
 
         self._local_country = local_country
+
+    @property
+    def destination(self):
+        """Gets the destination of this SendMessageInputObject.  # noqa: E501
+
+        Messsage destination type allowed [mms, tts].  # noqa: E501
+
+        :return: The destination of this SendMessageInputObject.  # noqa: E501
+        :rtype: str
+        """
+        return self._destination
+
+    @destination.setter
+    def destination(self, destination):
+        """Sets the destination of this SendMessageInputObject.
+
+        Messsage destination type allowed [mms, tts].  # noqa: E501
+
+        :param destination: The destination of this SendMessageInputObject.  # noqa: E501
+        :type: str
+        """
+
+        self._destination = destination
+
+    @property
+    def resources(self):
+        """Gets the resources of this SendMessageInputObject.  # noqa: E501
+
+        File name from mms attachment response (named as resource)  # noqa: E501
+
+        :return: The resources of this SendMessageInputObject.  # noqa: E501
+        :rtype: str
+        """
+        return self._resources
+
+    @resources.setter
+    def resources(self, resources):
+        """Sets the resources of this SendMessageInputObject.
+
+        File name from mms attachment response (named as resource)  # noqa: E501
+
+        :param resources: The resources of this SendMessageInputObject.  # noqa: E501
+        :type: str
+        """
+
+        self._resources = resources
 
     def to_dict(self):
         """Returns the model properties as a dict"""

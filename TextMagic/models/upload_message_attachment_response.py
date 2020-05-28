@@ -34,29 +34,33 @@ class UploadMessageAttachmentResponse(object):
         'chars': 'int',
         'href': 'str',
         'name': 'str',
-        'size': 'int'
+        'size': 'int',
+        'resource': 'str'
     }
 
     attribute_map = {
         'chars': 'chars',
         'href': 'href',
         'name': 'name',
-        'size': 'size'
+        'size': 'size',
+        'resource': 'resource'
     }
 
-    def __init__(self, chars=None, href=None, name=None, size=None):  # noqa: E501
+    def __init__(self, chars=None, href=None, name=None, size=None, resource=None):  # noqa: E501
         """UploadMessageAttachmentResponse - a model defined in Swagger"""  # noqa: E501
 
         self._chars = None
         self._href = None
         self._name = None
         self._size = None
+        self._resource = None
         self.discriminator = None
 
         self.chars = chars
         self.href = href
         self.name = name
         self.size = size
+        self.resource = resource
 
     @property
     def chars(self):
@@ -149,6 +153,29 @@ class UploadMessageAttachmentResponse(object):
         """
 
         self._size = size
+
+    @property
+    def resource(self):
+        """Gets the resource of this UploadMessageAttachmentResponse.  # noqa: E501
+
+        Internal file name  # noqa: E501
+
+        :return: The resource of this UploadMessageAttachmentResponse.  # noqa: E501
+        :rtype: str
+        """
+        return self._resource
+
+    @resource.setter
+    def resource(self, resource):
+        """Sets the resource of this UploadMessageAttachmentResponse.
+
+        Internal file name  # noqa: E501
+
+        :param resource: The resource of this UploadMessageAttachmentResponse.  # noqa: E501
+        :type: str
+        """
+
+        self._resource = resource
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -1065,6 +1065,13 @@ class TestTextMagicApi(unittest.TestCase):
         """
         pass
 
+    def test_upload_message_mms_attachment(self):
+        """Test case for upload_message_mms_attachment
+
+        Upload message mms attachment  # noqa: E501
+        """
+        pass
+
 
 if __name__ == '__main__':
     unittest.main()

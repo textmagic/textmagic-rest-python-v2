@@ -152,6 +152,7 @@ Method | HTTP request | Description
 [**upload_contact_avatar**](TextMagicApi.md#upload_contact_avatar) | **POST** /api/v2/contacts/{id}/avatar | Upload an avatar
 [**upload_list_avatar**](TextMagicApi.md#upload_list_avatar) | **POST** /api/v2/lists/{id}/avatar | Add an avatar for a list
 [**upload_message_attachment**](TextMagicApi.md#upload_message_attachment) | **POST** /api/v2/messages/attachment | Upload message attachment
+[**upload_message_mms_attachment**](TextMagicApi.md#upload_message_mms_attachment) | **POST** /api/v2/messages/mms/attachment | Upload message mms attachment
 
 
 # **assign_contacts_to_list**
@@ -8227,6 +8228,59 @@ try:
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TextMagicApi->upload_message_attachment: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **file** | **file**| Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx &amp; .vcf file formats. | 
+
+### Return type
+
+[**UploadMessageAttachmentResponse**](UploadMessageAttachmentResponse.md)
+
+### Authorization
+
+[BasicAuth](../README.md#BasicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: multipart/form-data
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **upload_message_mms_attachment**
+> UploadMessageAttachmentResponse upload_message_mms_attachment(file)
+
+Upload message mms attachment
+
+Upload a new file to mms.
+
+### Example
+```python
+from __future__ import print_function
+import time
+import TextMagic
+from TextMagic.rest import ApiException
+from pprint import pprint
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = TextMagic.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
+# create an instance of the API class
+api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+file = '/path/to/file.txt' # file | Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx & .vcf file formats.
+
+try:
+    # Upload message mms attachment
+    api_response = api_instance.upload_message_mms_attachment(file)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TextMagicApi->upload_message_mms_attachment: %s\n" % e)
 ```
 
 ### Parameters
