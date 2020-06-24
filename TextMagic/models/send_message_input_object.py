@@ -74,7 +74,7 @@ class SendMessageInputObject(object):
         'resources': 'resources'
     }
 
-    def __init__(self, text=None, template_id=None, sending_time=None, sending_date_time=None, sending_timezone=None, contacts=None, lists=None, phones=None, cut_extra=False, parts_count=None, reference_id=None, _from=None, rrule=None, create_chat=False, tts=False, local=False, local_country=None, destination='false', resources=None):  # noqa: E501
+    def __init__(self, text=None, template_id=None, sending_time=None, sending_date_time=None, sending_timezone=None, contacts=None, lists=None, phones=None, cut_extra=False, parts_count=None, reference_id=None, _from=None, rrule=None, create_chat=False, tts=False, local=False, local_country=None, destination=None, resources=None):  # noqa: E501
         """SendMessageInputObject - a model defined in Swagger"""  # noqa: E501
 
         self._text = None
