@@ -5939,8 +5939,8 @@ class TextMagicApi(object):
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
         :param str query: Find messages by specified search query.
-        :param int start: Return messages since specified timestamp only.
-        :param int end: Return messages up to specified timestamp only.
+        :param str start: Return messages since specified timestamp only. Required when `end` parameter specified.
+        :param str end: Return messages up to specified timestamp only. Required when `start` parameter specified.
         :param str direction: Order direction. Default is desc.
         :param int voice: Fetch results with voice calls.
         :return: GetChatMessagesPaginatedResponse
@@ -5968,8 +5968,8 @@ class TextMagicApi(object):
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
         :param str query: Find messages by specified search query.
-        :param int start: Return messages since specified timestamp only.
-        :param int end: Return messages up to specified timestamp only.
+        :param str start: Return messages since specified timestamp only. Required when `end` parameter specified.
+        :param str end: Return messages up to specified timestamp only. Required when `start` parameter specified.
         :param str direction: Order direction. Default is desc.
         :param int voice: Fetch results with voice calls.
         :return: GetChatMessagesPaginatedResponse

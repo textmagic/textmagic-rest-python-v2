@@ -3365,8 +3365,8 @@ id = 1 # int |
 page = 1 # int | Fetch specified results page. (optional) (default to 1)
 limit = 10 # int | The number of results per page. (optional) (default to 10)
 query = 'query_example' # str | Find messages by specified search query. (optional)
-start = 56 # int | Return messages since specified timestamp only. (optional)
-end = 56 # int | Return messages up to specified timestamp only. (optional)
+start = 'start_example' # str | Return messages since specified timestamp only. Required when `end` parameter specified. (optional)
+end = 'end_example' # str | Return messages up to specified timestamp only. Required when `start` parameter specified. (optional)
 direction = 'desc' # str | Order direction. Default is desc. (optional) (default to desc)
 voice = 0 # int | Fetch results with voice calls. (optional) (default to 0)
 
@@ -3386,8 +3386,8 @@ Name | Type | Description  | Notes
  **page** | **int**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int**| The number of results per page. | [optional] [default to 10]
  **query** | **str**| Find messages by specified search query. | [optional] 
- **start** | **int**| Return messages since specified timestamp only. | [optional] 
- **end** | **int**| Return messages up to specified timestamp only. | [optional] 
+ **start** | **str**| Return messages since specified timestamp only. Required when &#x60;end&#x60; parameter specified. | [optional] 
+ **end** | **str**| Return messages up to specified timestamp only. Required when &#x60;start&#x60; parameter specified. | [optional] 
  **direction** | **str**| Order direction. Default is desc. | [optional] [default to desc]
  **voice** | **int**| Fetch results with voice calls. | [optional] [default to 0]
 
