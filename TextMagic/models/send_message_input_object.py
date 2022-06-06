@@ -210,7 +210,7 @@ class SendMessageInputObject(object):
     def sending_date_time(self):
         """Gets the sending_date_time of this SendMessageInputObject.  # noqa: E501
 
-        Sending time in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to **sendingTimezone**.  # noqa: E501
+        Sending time in Y-m-d H:i:s format (e.g. 2022-05-27 13:05:10). This time is relative to **sendingTimezone**. Note: for correct operation, the value of seconds must not be less than 10.  # noqa: E501
 
         :return: The sending_date_time of this SendMessageInputObject.  # noqa: E501
         :rtype: str
@@ -221,7 +221,7 @@ class SendMessageInputObject(object):
     def sending_date_time(self, sending_date_time):
         """Sets the sending_date_time of this SendMessageInputObject.
 
-        Sending time in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to **sendingTimezone**.  # noqa: E501
+        Sending time in Y-m-d H:i:s format (e.g. 2022-05-27 13:05:10). This time is relative to **sendingTimezone**. Note: for correct operation, the value of seconds must not be less than 10.  # noqa: E501
 
         :param sending_date_time: The sending_date_time of this SendMessageInputObject.  # noqa: E501
         :type: str

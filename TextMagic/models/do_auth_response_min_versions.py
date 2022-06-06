@@ -31,9 +31,9 @@ class DoAuthResponseMinVersions(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'ios': 'int',
-        'android': 'int',
-        'desktop': 'int'
+        'ios': 'str',
+        'android': 'str',
+        'desktop': 'str'
     }
 
     attribute_map = {
@@ -60,7 +60,7 @@ class DoAuthResponseMinVersions(object):
 
 
         :return: The ios of this DoAuthResponseMinVersions.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._ios
 
@@ -70,7 +70,7 @@ class DoAuthResponseMinVersions(object):
 
 
         :param ios: The ios of this DoAuthResponseMinVersions.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._ios = ios
@@ -81,7 +81,7 @@ class DoAuthResponseMinVersions(object):
 
 
         :return: The android of this DoAuthResponseMinVersions.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._android
 
@@ -91,7 +91,7 @@ class DoAuthResponseMinVersions(object):
 
 
         :param android: The android of this DoAuthResponseMinVersions.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._android = android
@@ -102,7 +102,7 @@ class DoAuthResponseMinVersions(object):
 
 
         :return: The desktop of this DoAuthResponseMinVersions.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._desktop
 
@@ -112,7 +112,7 @@ class DoAuthResponseMinVersions(object):
 
 
         :param desktop: The desktop of this DoAuthResponseMinVersions.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._desktop = desktop
