@@ -32,7 +32,7 @@ class DeleteContactsByIdsInputObject(object):
     """
     swagger_types = {
         'ids': 'str',
-        'all': 'bool'
+        'all': 'int'
     }
 
     attribute_map = {
@@ -79,10 +79,10 @@ class DeleteContactsByIdsInputObject(object):
     def all(self):
         """Gets the all of this DeleteContactsByIdsInputObject.  # noqa: E501
 
-        Entity ID(s), separated by comma.  # noqa: E501
+        Optional. Default is 0 (false). If set to 1 all the entities will be removed.  # noqa: E501
 
         :return: The all of this DeleteContactsByIdsInputObject.  # noqa: E501
-        :rtype: bool
+        :rtype: int
         """
         return self._all
 
@@ -90,10 +90,10 @@ class DeleteContactsByIdsInputObject(object):
     def all(self, all):
         """Sets the all of this DeleteContactsByIdsInputObject.
 
-        Entity ID(s), separated by comma.  # noqa: E501
+        Optional. Default is 0 (false). If set to 1 all the entities will be removed.  # noqa: E501
 
         :param all: The all of this DeleteContactsByIdsInputObject.  # noqa: E501
-        :type: bool
+        :type: int
         """
 
         self._all = all

@@ -32,7 +32,7 @@ class GetBalanceNotificationSettingsResponse(object):
     """
     swagger_types = {
         'low_balance_notification': 'bool',
-        'alert_balance': 'str',
+        'alert_balance': 'float',
         'alert_phone': 'str',
         'alert_email1': 'str',
         'alert_email2': 'str',
@@ -96,7 +96,7 @@ class GetBalanceNotificationSettingsResponse(object):
         If balance is below this value, user receive low balance notification.  # noqa: E501
 
         :return: The alert_balance of this GetBalanceNotificationSettingsResponse.  # noqa: E501
-        :rtype: str
+        :rtype: float
         """
         return self._alert_balance
 
@@ -107,7 +107,7 @@ class GetBalanceNotificationSettingsResponse(object):
         If balance is below this value, user receive low balance notification.  # noqa: E501
 
         :param alert_balance: The alert_balance of this GetBalanceNotificationSettingsResponse.  # noqa: E501
-        :type: str
+        :type: float
         """
 
         self._alert_balance = alert_balance
