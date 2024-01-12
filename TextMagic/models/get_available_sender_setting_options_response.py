@@ -34,29 +34,37 @@ class GetAvailableSenderSettingOptionsResponse(object):
         'dedicated': 'list[str]',
         'user': 'list[str]',
         'shared': 'list[str]',
-        'sender_ids': 'list[str]'
+        'sender_ids': 'list[str]',
+        'user_carrier_twilio': 'list[str]',
+        'user_carrier_vonage': 'list[str]'
     }
 
     attribute_map = {
         'dedicated': 'dedicated',
         'user': 'user',
         'shared': 'shared',
-        'sender_ids': 'senderIds'
+        'sender_ids': 'senderIds',
+        'user_carrier_twilio': 'userCarrierTwilio',
+        'user_carrier_vonage': 'userCarrierVonage'
     }
 
-    def __init__(self, dedicated=None, user=None, shared=None, sender_ids=None):  # noqa: E501
+    def __init__(self, dedicated=None, user=None, shared=None, sender_ids=None, user_carrier_twilio=None, user_carrier_vonage=None):  # noqa: E501
         """GetAvailableSenderSettingOptionsResponse - a model defined in Swagger"""  # noqa: E501
 
         self._dedicated = None
         self._user = None
         self._shared = None
         self._sender_ids = None
+        self._user_carrier_twilio = None
+        self._user_carrier_vonage = None
         self.discriminator = None
 
         self.dedicated = dedicated
         self.user = user
         self.shared = shared
         self.sender_ids = sender_ids
+        self.user_carrier_twilio = user_carrier_twilio
+        self.user_carrier_vonage = user_carrier_vonage
 
     @property
     def dedicated(self):
@@ -149,6 +157,52 @@ class GetAvailableSenderSettingOptionsResponse(object):
         """
 
         self._sender_ids = sender_ids
+
+    @property
+    def user_carrier_twilio(self):
+        """Gets the user_carrier_twilio of this GetAvailableSenderSettingOptionsResponse.  # noqa: E501
+
+        Array of alphanumeric sender IDs.  # noqa: E501
+
+        :return: The user_carrier_twilio of this GetAvailableSenderSettingOptionsResponse.  # noqa: E501
+        :rtype: list[str]
+        """
+        return self._user_carrier_twilio
+
+    @user_carrier_twilio.setter
+    def user_carrier_twilio(self, user_carrier_twilio):
+        """Sets the user_carrier_twilio of this GetAvailableSenderSettingOptionsResponse.
+
+        Array of alphanumeric sender IDs.  # noqa: E501
+
+        :param user_carrier_twilio: The user_carrier_twilio of this GetAvailableSenderSettingOptionsResponse.  # noqa: E501
+        :type: list[str]
+        """
+
+        self._user_carrier_twilio = user_carrier_twilio
+
+    @property
+    def user_carrier_vonage(self):
+        """Gets the user_carrier_vonage of this GetAvailableSenderSettingOptionsResponse.  # noqa: E501
+
+        Array of alphanumeric sender IDs.  # noqa: E501
+
+        :return: The user_carrier_vonage of this GetAvailableSenderSettingOptionsResponse.  # noqa: E501
+        :rtype: list[str]
+        """
+        return self._user_carrier_vonage
+
+    @user_carrier_vonage.setter
+    def user_carrier_vonage(self, user_carrier_vonage):
+        """Sets the user_carrier_vonage of this GetAvailableSenderSettingOptionsResponse.
+
+        Array of alphanumeric sender IDs.  # noqa: E501
+
+        :param user_carrier_vonage: The user_carrier_vonage of this GetAvailableSenderSettingOptionsResponse.  # noqa: E501
+        :type: list[str]
+        """
+
+        self._user_carrier_vonage = user_carrier_vonage
 
     def to_dict(self):
         """Returns the model properties as a dict"""

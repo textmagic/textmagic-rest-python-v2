@@ -35,6 +35,9 @@ class GetStateResponse(object):
         'system_exit': 'int',
         'system_alert': 'int',
         'system_account_state_changed': 'int',
+        'system_account_additional_fields': 'int',
+        'system_account_permissions_changed': 'int',
+        'user_balance_changed': 'int',
         'message_deleted': 'int',
         'message_incoming': 'int',
         'message_incoming_deleted': 'int',
@@ -48,6 +51,7 @@ class GetStateResponse(object):
         'message_schedule_added': 'int',
         'message_schedule_state_changed': 'int',
         'message_schedule_deleted': 'int',
+        'message_schedule_not_sent_state_changed': 'int',
         'message_schedule_cache_clear': 'int',
         'message_template_cache_clear': 'int',
         'call_finished': 'int',
@@ -61,6 +65,8 @@ class GetStateResponse(object):
         'chat_closed': 'int',
         'chat_reopened': 'int',
         'chat_cache_clear': 'int',
+        'chat_read': 'int',
+        'chat_unread': 'int',
         'contact_added': 'int',
         'contact_deleted': 'int',
         'contact_state_changed': 'int',
@@ -71,7 +77,15 @@ class GetStateResponse(object):
         'contact_import_end': 'int',
         'contact_cache_clear': 'int',
         'list_cache_clear': 'int',
-        'custom_fields_cache_clear': 'int'
+        'custom_fields_cache_clear': 'int',
+        'progress_carrier_bulk_lookup': 'int',
+        'progress_email_bulk_lookup': 'int',
+        'progress_sub_account_bulk_import': 'int',
+        'progress_contact_bulk_import': 'int',
+        'force_refresh_web_app': 'int',
+        'chat_sender_settings_changed': 'int',
+        'country_sender_settings_changed': 'int',
+        'chat_suggested_reply_chunk': 'int'
     }
 
     attribute_map = {
@@ -79,6 +93,9 @@ class GetStateResponse(object):
         'system_exit': 'systemExit',
         'system_alert': 'systemAlert',
         'system_account_state_changed': 'systemAccountStateChanged',
+        'system_account_additional_fields': 'systemAccountAdditionalFields',
+        'system_account_permissions_changed': 'systemAccountPermissionsChanged',
+        'user_balance_changed': 'userBalanceChanged',
         'message_deleted': 'messageDeleted',
         'message_incoming': 'messageIncoming',
         'message_incoming_deleted': 'messageIncomingDeleted',
@@ -92,6 +109,7 @@ class GetStateResponse(object):
         'message_schedule_added': 'messageScheduleAdded',
         'message_schedule_state_changed': 'messageScheduleStateChanged',
         'message_schedule_deleted': 'messageScheduleDeleted',
+        'message_schedule_not_sent_state_changed': 'messageScheduleNotSentStateChanged',
         'message_schedule_cache_clear': 'messageScheduleCacheClear',
         'message_template_cache_clear': 'messageTemplateCacheClear',
         'call_finished': 'callFinished',
@@ -105,6 +123,8 @@ class GetStateResponse(object):
         'chat_closed': 'chatClosed',
         'chat_reopened': 'chatReopened',
         'chat_cache_clear': 'chatCacheClear',
+        'chat_read': 'chatRead',
+        'chat_unread': 'chatUnread',
         'contact_added': 'contactAdded',
         'contact_deleted': 'contactDeleted',
         'contact_state_changed': 'contactStateChanged',
@@ -115,16 +135,27 @@ class GetStateResponse(object):
         'contact_import_end': 'contactImportEnd',
         'contact_cache_clear': 'contactCacheClear',
         'list_cache_clear': 'listCacheClear',
-        'custom_fields_cache_clear': 'customFieldsCacheClear'
+        'custom_fields_cache_clear': 'customFieldsCacheClear',
+        'progress_carrier_bulk_lookup': 'progressCarrierBulkLookup',
+        'progress_email_bulk_lookup': 'progressEmailBulkLookup',
+        'progress_sub_account_bulk_import': 'progressSubAccountBulkImport',
+        'progress_contact_bulk_import': 'progressContactBulkImport',
+        'force_refresh_web_app': 'forceRefreshWebApp',
+        'chat_sender_settings_changed': 'chatSenderSettingsChanged',
+        'country_sender_settings_changed': 'countrySenderSettingsChanged',
+        'chat_suggested_reply_chunk': 'chatSuggestedReplyChunk'
     }
 
-    def __init__(self, system_cache_clear=None, system_exit=None, system_alert=None, system_account_state_changed=None, message_deleted=None, message_incoming=None, message_incoming_deleted=None, message_state_changed=None, message_bulk_end=None, message_wipe_end=None, message_sent=None, message_session_deleted=None, message_cache_clear=None, message_incoming_cache_clear=None, message_schedule_added=None, message_schedule_state_changed=None, message_schedule_deleted=None, message_schedule_cache_clear=None, message_template_cache_clear=None, call_finished=None, chat_created=None, chat_marked_as_read=None, chat_muted=None, chat_unmuted=None, chat_pinned=None, chat_unpinned=None, chat_deleted=None, chat_closed=None, chat_reopened=None, chat_cache_clear=None, contact_added=None, contact_deleted=None, contact_state_changed=None, list_added=None, list_deleted=None, list_state_changed=None, contact_wipe_end=None, contact_import_end=None, contact_cache_clear=None, list_cache_clear=None, custom_fields_cache_clear=None):  # noqa: E501
+    def __init__(self, system_cache_clear=None, system_exit=None, system_alert=None, system_account_state_changed=None, system_account_additional_fields=None, system_account_permissions_changed=None, user_balance_changed=None, message_deleted=None, message_incoming=None, message_incoming_deleted=None, message_state_changed=None, message_bulk_end=None, message_wipe_end=None, message_sent=None, message_session_deleted=None, message_cache_clear=None, message_incoming_cache_clear=None, message_schedule_added=None, message_schedule_state_changed=None, message_schedule_deleted=None, message_schedule_not_sent_state_changed=None, message_schedule_cache_clear=None, message_template_cache_clear=None, call_finished=None, chat_created=None, chat_marked_as_read=None, chat_muted=None, chat_unmuted=None, chat_pinned=None, chat_unpinned=None, chat_deleted=None, chat_closed=None, chat_reopened=None, chat_cache_clear=None, chat_read=None, chat_unread=None, contact_added=None, contact_deleted=None, contact_state_changed=None, list_added=None, list_deleted=None, list_state_changed=None, contact_wipe_end=None, contact_import_end=None, contact_cache_clear=None, list_cache_clear=None, custom_fields_cache_clear=None, progress_carrier_bulk_lookup=None, progress_email_bulk_lookup=None, progress_sub_account_bulk_import=None, progress_contact_bulk_import=None, force_refresh_web_app=None, chat_sender_settings_changed=None, country_sender_settings_changed=None, chat_suggested_reply_chunk=None):  # noqa: E501
         """GetStateResponse - a model defined in Swagger"""  # noqa: E501
 
         self._system_cache_clear = None
         self._system_exit = None
         self._system_alert = None
         self._system_account_state_changed = None
+        self._system_account_additional_fields = None
+        self._system_account_permissions_changed = None
+        self._user_balance_changed = None
         self._message_deleted = None
         self._message_incoming = None
         self._message_incoming_deleted = None
@@ -138,6 +169,7 @@ class GetStateResponse(object):
         self._message_schedule_added = None
         self._message_schedule_state_changed = None
         self._message_schedule_deleted = None
+        self._message_schedule_not_sent_state_changed = None
         self._message_schedule_cache_clear = None
         self._message_template_cache_clear = None
         self._call_finished = None
@@ -151,6 +183,8 @@ class GetStateResponse(object):
         self._chat_closed = None
         self._chat_reopened = None
         self._chat_cache_clear = None
+        self._chat_read = None
+        self._chat_unread = None
         self._contact_added = None
         self._contact_deleted = None
         self._contact_state_changed = None
@@ -162,12 +196,23 @@ class GetStateResponse(object):
         self._contact_cache_clear = None
         self._list_cache_clear = None
         self._custom_fields_cache_clear = None
+        self._progress_carrier_bulk_lookup = None
+        self._progress_email_bulk_lookup = None
+        self._progress_sub_account_bulk_import = None
+        self._progress_contact_bulk_import = None
+        self._force_refresh_web_app = None
+        self._chat_sender_settings_changed = None
+        self._country_sender_settings_changed = None
+        self._chat_suggested_reply_chunk = None
         self.discriminator = None
 
         self.system_cache_clear = system_cache_clear
         self.system_exit = system_exit
         self.system_alert = system_alert
         self.system_account_state_changed = system_account_state_changed
+        self.system_account_additional_fields = system_account_additional_fields
+        self.system_account_permissions_changed = system_account_permissions_changed
+        self.user_balance_changed = user_balance_changed
         self.message_deleted = message_deleted
         self.message_incoming = message_incoming
         self.message_incoming_deleted = message_incoming_deleted
@@ -181,6 +226,7 @@ class GetStateResponse(object):
         self.message_schedule_added = message_schedule_added
         self.message_schedule_state_changed = message_schedule_state_changed
         self.message_schedule_deleted = message_schedule_deleted
+        self.message_schedule_not_sent_state_changed = message_schedule_not_sent_state_changed
         self.message_schedule_cache_clear = message_schedule_cache_clear
         self.message_template_cache_clear = message_template_cache_clear
         self.call_finished = call_finished
@@ -194,6 +240,8 @@ class GetStateResponse(object):
         self.chat_closed = chat_closed
         self.chat_reopened = chat_reopened
         self.chat_cache_clear = chat_cache_clear
+        self.chat_read = chat_read
+        self.chat_unread = chat_unread
         self.contact_added = contact_added
         self.contact_deleted = contact_deleted
         self.contact_state_changed = contact_state_changed
@@ -205,6 +253,14 @@ class GetStateResponse(object):
         self.contact_cache_clear = contact_cache_clear
         self.list_cache_clear = list_cache_clear
         self.custom_fields_cache_clear = custom_fields_cache_clear
+        self.progress_carrier_bulk_lookup = progress_carrier_bulk_lookup
+        self.progress_email_bulk_lookup = progress_email_bulk_lookup
+        self.progress_sub_account_bulk_import = progress_sub_account_bulk_import
+        self.progress_contact_bulk_import = progress_contact_bulk_import
+        self.force_refresh_web_app = force_refresh_web_app
+        self.chat_sender_settings_changed = chat_sender_settings_changed
+        self.country_sender_settings_changed = country_sender_settings_changed
+        self.chat_suggested_reply_chunk = chat_suggested_reply_chunk
 
     @property
     def system_cache_clear(self):
@@ -289,6 +345,69 @@ class GetStateResponse(object):
         """
 
         self._system_account_state_changed = system_account_state_changed
+
+    @property
+    def system_account_additional_fields(self):
+        """Gets the system_account_additional_fields of this GetStateResponse.  # noqa: E501
+
+
+        :return: The system_account_additional_fields of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._system_account_additional_fields
+
+    @system_account_additional_fields.setter
+    def system_account_additional_fields(self, system_account_additional_fields):
+        """Sets the system_account_additional_fields of this GetStateResponse.
+
+
+        :param system_account_additional_fields: The system_account_additional_fields of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._system_account_additional_fields = system_account_additional_fields
+
+    @property
+    def system_account_permissions_changed(self):
+        """Gets the system_account_permissions_changed of this GetStateResponse.  # noqa: E501
+
+
+        :return: The system_account_permissions_changed of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._system_account_permissions_changed
+
+    @system_account_permissions_changed.setter
+    def system_account_permissions_changed(self, system_account_permissions_changed):
+        """Sets the system_account_permissions_changed of this GetStateResponse.
+
+
+        :param system_account_permissions_changed: The system_account_permissions_changed of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._system_account_permissions_changed = system_account_permissions_changed
+
+    @property
+    def user_balance_changed(self):
+        """Gets the user_balance_changed of this GetStateResponse.  # noqa: E501
+
+
+        :return: The user_balance_changed of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._user_balance_changed
+
+    @user_balance_changed.setter
+    def user_balance_changed(self, user_balance_changed):
+        """Sets the user_balance_changed of this GetStateResponse.
+
+
+        :param user_balance_changed: The user_balance_changed of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._user_balance_changed = user_balance_changed
 
     @property
     def message_deleted(self):
@@ -564,6 +683,27 @@ class GetStateResponse(object):
         self._message_schedule_deleted = message_schedule_deleted
 
     @property
+    def message_schedule_not_sent_state_changed(self):
+        """Gets the message_schedule_not_sent_state_changed of this GetStateResponse.  # noqa: E501
+
+
+        :return: The message_schedule_not_sent_state_changed of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._message_schedule_not_sent_state_changed
+
+    @message_schedule_not_sent_state_changed.setter
+    def message_schedule_not_sent_state_changed(self, message_schedule_not_sent_state_changed):
+        """Sets the message_schedule_not_sent_state_changed of this GetStateResponse.
+
+
+        :param message_schedule_not_sent_state_changed: The message_schedule_not_sent_state_changed of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._message_schedule_not_sent_state_changed = message_schedule_not_sent_state_changed
+
+    @property
     def message_schedule_cache_clear(self):
         """Gets the message_schedule_cache_clear of this GetStateResponse.  # noqa: E501
 
@@ -837,6 +977,48 @@ class GetStateResponse(object):
         self._chat_cache_clear = chat_cache_clear
 
     @property
+    def chat_read(self):
+        """Gets the chat_read of this GetStateResponse.  # noqa: E501
+
+
+        :return: The chat_read of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._chat_read
+
+    @chat_read.setter
+    def chat_read(self, chat_read):
+        """Sets the chat_read of this GetStateResponse.
+
+
+        :param chat_read: The chat_read of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._chat_read = chat_read
+
+    @property
+    def chat_unread(self):
+        """Gets the chat_unread of this GetStateResponse.  # noqa: E501
+
+
+        :return: The chat_unread of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._chat_unread
+
+    @chat_unread.setter
+    def chat_unread(self, chat_unread):
+        """Sets the chat_unread of this GetStateResponse.
+
+
+        :param chat_unread: The chat_unread of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._chat_unread = chat_unread
+
+    @property
     def contact_added(self):
         """Gets the contact_added of this GetStateResponse.  # noqa: E501
 
@@ -1066,6 +1248,174 @@ class GetStateResponse(object):
         """
 
         self._custom_fields_cache_clear = custom_fields_cache_clear
+
+    @property
+    def progress_carrier_bulk_lookup(self):
+        """Gets the progress_carrier_bulk_lookup of this GetStateResponse.  # noqa: E501
+
+
+        :return: The progress_carrier_bulk_lookup of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._progress_carrier_bulk_lookup
+
+    @progress_carrier_bulk_lookup.setter
+    def progress_carrier_bulk_lookup(self, progress_carrier_bulk_lookup):
+        """Sets the progress_carrier_bulk_lookup of this GetStateResponse.
+
+
+        :param progress_carrier_bulk_lookup: The progress_carrier_bulk_lookup of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._progress_carrier_bulk_lookup = progress_carrier_bulk_lookup
+
+    @property
+    def progress_email_bulk_lookup(self):
+        """Gets the progress_email_bulk_lookup of this GetStateResponse.  # noqa: E501
+
+
+        :return: The progress_email_bulk_lookup of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._progress_email_bulk_lookup
+
+    @progress_email_bulk_lookup.setter
+    def progress_email_bulk_lookup(self, progress_email_bulk_lookup):
+        """Sets the progress_email_bulk_lookup of this GetStateResponse.
+
+
+        :param progress_email_bulk_lookup: The progress_email_bulk_lookup of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._progress_email_bulk_lookup = progress_email_bulk_lookup
+
+    @property
+    def progress_sub_account_bulk_import(self):
+        """Gets the progress_sub_account_bulk_import of this GetStateResponse.  # noqa: E501
+
+
+        :return: The progress_sub_account_bulk_import of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._progress_sub_account_bulk_import
+
+    @progress_sub_account_bulk_import.setter
+    def progress_sub_account_bulk_import(self, progress_sub_account_bulk_import):
+        """Sets the progress_sub_account_bulk_import of this GetStateResponse.
+
+
+        :param progress_sub_account_bulk_import: The progress_sub_account_bulk_import of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._progress_sub_account_bulk_import = progress_sub_account_bulk_import
+
+    @property
+    def progress_contact_bulk_import(self):
+        """Gets the progress_contact_bulk_import of this GetStateResponse.  # noqa: E501
+
+
+        :return: The progress_contact_bulk_import of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._progress_contact_bulk_import
+
+    @progress_contact_bulk_import.setter
+    def progress_contact_bulk_import(self, progress_contact_bulk_import):
+        """Sets the progress_contact_bulk_import of this GetStateResponse.
+
+
+        :param progress_contact_bulk_import: The progress_contact_bulk_import of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._progress_contact_bulk_import = progress_contact_bulk_import
+
+    @property
+    def force_refresh_web_app(self):
+        """Gets the force_refresh_web_app of this GetStateResponse.  # noqa: E501
+
+
+        :return: The force_refresh_web_app of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._force_refresh_web_app
+
+    @force_refresh_web_app.setter
+    def force_refresh_web_app(self, force_refresh_web_app):
+        """Sets the force_refresh_web_app of this GetStateResponse.
+
+
+        :param force_refresh_web_app: The force_refresh_web_app of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._force_refresh_web_app = force_refresh_web_app
+
+    @property
+    def chat_sender_settings_changed(self):
+        """Gets the chat_sender_settings_changed of this GetStateResponse.  # noqa: E501
+
+
+        :return: The chat_sender_settings_changed of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._chat_sender_settings_changed
+
+    @chat_sender_settings_changed.setter
+    def chat_sender_settings_changed(self, chat_sender_settings_changed):
+        """Sets the chat_sender_settings_changed of this GetStateResponse.
+
+
+        :param chat_sender_settings_changed: The chat_sender_settings_changed of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._chat_sender_settings_changed = chat_sender_settings_changed
+
+    @property
+    def country_sender_settings_changed(self):
+        """Gets the country_sender_settings_changed of this GetStateResponse.  # noqa: E501
+
+
+        :return: The country_sender_settings_changed of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._country_sender_settings_changed
+
+    @country_sender_settings_changed.setter
+    def country_sender_settings_changed(self, country_sender_settings_changed):
+        """Sets the country_sender_settings_changed of this GetStateResponse.
+
+
+        :param country_sender_settings_changed: The country_sender_settings_changed of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._country_sender_settings_changed = country_sender_settings_changed
+
+    @property
+    def chat_suggested_reply_chunk(self):
+        """Gets the chat_suggested_reply_chunk of this GetStateResponse.  # noqa: E501
+
+
+        :return: The chat_suggested_reply_chunk of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._chat_suggested_reply_chunk
+
+    @chat_suggested_reply_chunk.setter
+    def chat_suggested_reply_chunk(self, chat_suggested_reply_chunk):
+        """Sets the chat_suggested_reply_chunk of this GetStateResponse.
+
+
+        :param chat_suggested_reply_chunk: The chat_suggested_reply_chunk of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._chat_suggested_reply_chunk = chat_suggested_reply_chunk
 
     def to_dict(self):
         """Returns the model properties as a dict"""

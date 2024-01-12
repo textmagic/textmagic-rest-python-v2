@@ -14,6 +14,7 @@ Name | Type | Description | Notes
 **mute** | **int** | Indicates when the chat is muted. | 
 **last_message** | **str** | The last message content of a chat. | 
 **direction** | **str** | Last message type: * **ci** - incoming call; * **co** - outgoing call; * **i** - incoming message; * **o** - outgoing message.  | 
+**reply_options_type** | **str** | Used for chats prices. | 
 **_from** | **str** | If filled, the value will be used as a sender number for all outgoing messages of a chat. | 
 **muted_until** | **datetime** | Date and time until the chat will be muted. | 
 **time_left_mute** | **int** | Time left untill the chat will be unmuted (seconds). | 

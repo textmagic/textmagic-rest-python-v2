@@ -42,6 +42,7 @@ class Chat(object):
         'mute': 'int',
         'last_message': 'str',
         'direction': 'str',
+        'reply_options_type': 'str',
         '_from': 'str',
         'muted_until': 'datetime',
         'time_left_mute': 'int',
@@ -61,6 +62,7 @@ class Chat(object):
         'mute': 'mute',
         'last_message': 'lastMessage',
         'direction': 'direction',
+        'reply_options_type': 'replyOptionsType',
         '_from': 'from',
         'muted_until': 'mutedUntil',
         'time_left_mute': 'timeLeftMute',
@@ -68,7 +70,7 @@ class Chat(object):
         'pinned': 'pinned'
     }
 
-    def __init__(self, id=None, original_id=None, phone=None, contact=None, unsubscribed_contact_id=None, unread=None, updated_at=None, status=None, mute=None, last_message=None, direction=None, _from=None, muted_until=None, time_left_mute=None, country=None, pinned=None):  # noqa: E501
+    def __init__(self, id=None, original_id=None, phone=None, contact=None, unsubscribed_contact_id=None, unread=None, updated_at=None, status=None, mute=None, last_message=None, direction=None, reply_options_type=None, _from=None, muted_until=None, time_left_mute=None, country=None, pinned=None):  # noqa: E501
         """Chat - a model defined in Swagger"""  # noqa: E501
 
         self._id = None
@@ -82,6 +84,7 @@ class Chat(object):
         self._mute = None
         self._last_message = None
         self._direction = None
+        self._reply_options_type = None
         self.__from = None
         self._muted_until = None
         self._time_left_mute = None
@@ -100,6 +103,7 @@ class Chat(object):
         self.mute = mute
         self.last_message = last_message
         self.direction = direction
+        self.reply_options_type = reply_options_type
         self._from = _from
         self.muted_until = muted_until
         self.time_left_mute = time_left_mute
@@ -366,6 +370,29 @@ class Chat(object):
             )
 
         self._direction = direction
+
+    @property
+    def reply_options_type(self):
+        """Gets the reply_options_type of this Chat.  # noqa: E501
+
+        Used for chats prices.  # noqa: E501
+
+        :return: The reply_options_type of this Chat.  # noqa: E501
+        :rtype: str
+        """
+        return self._reply_options_type
+
+    @reply_options_type.setter
+    def reply_options_type(self, reply_options_type):
+        """Sets the reply_options_type of this Chat.
+
+        Used for chats prices.  # noqa: E501
+
+        :param reply_options_type: The reply_options_type of this Chat.  # noqa: E501
+        :type: str
+        """
+
+        self._reply_options_type = reply_options_type
 
     @property
     def _from(self):
