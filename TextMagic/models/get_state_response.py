@@ -85,6 +85,8 @@ class GetStateResponse(object):
         'force_refresh_web_app': 'int',
         'chat_sender_settings_changed': 'int',
         'country_sender_settings_changed': 'int',
+        'chat_summary_chunk': 'int',
+        'chat_ways_to_reply_chunk': 'int',
         'chat_suggested_reply_chunk': 'int'
     }
 
@@ -143,10 +145,12 @@ class GetStateResponse(object):
         'force_refresh_web_app': 'forceRefreshWebApp',
         'chat_sender_settings_changed': 'chatSenderSettingsChanged',
         'country_sender_settings_changed': 'countrySenderSettingsChanged',
+        'chat_summary_chunk': 'chatSummaryChunk',
+        'chat_ways_to_reply_chunk': 'chatWaysToReplyChunk',
         'chat_suggested_reply_chunk': 'chatSuggestedReplyChunk'
     }
 
-    def __init__(self, system_cache_clear=None, system_exit=None, system_alert=None, system_account_state_changed=None, system_account_additional_fields=None, system_account_permissions_changed=None, user_balance_changed=None, message_deleted=None, message_incoming=None, message_incoming_deleted=None, message_state_changed=None, message_bulk_end=None, message_wipe_end=None, message_sent=None, message_session_deleted=None, message_cache_clear=None, message_incoming_cache_clear=None, message_schedule_added=None, message_schedule_state_changed=None, message_schedule_deleted=None, message_schedule_not_sent_state_changed=None, message_schedule_cache_clear=None, message_template_cache_clear=None, call_finished=None, chat_created=None, chat_marked_as_read=None, chat_muted=None, chat_unmuted=None, chat_pinned=None, chat_unpinned=None, chat_deleted=None, chat_closed=None, chat_reopened=None, chat_cache_clear=None, chat_read=None, chat_unread=None, contact_added=None, contact_deleted=None, contact_state_changed=None, list_added=None, list_deleted=None, list_state_changed=None, contact_wipe_end=None, contact_import_end=None, contact_cache_clear=None, list_cache_clear=None, custom_fields_cache_clear=None, progress_carrier_bulk_lookup=None, progress_email_bulk_lookup=None, progress_sub_account_bulk_import=None, progress_contact_bulk_import=None, force_refresh_web_app=None, chat_sender_settings_changed=None, country_sender_settings_changed=None, chat_suggested_reply_chunk=None):  # noqa: E501
+    def __init__(self, system_cache_clear=None, system_exit=None, system_alert=None, system_account_state_changed=None, system_account_additional_fields=None, system_account_permissions_changed=None, user_balance_changed=None, message_deleted=None, message_incoming=None, message_incoming_deleted=None, message_state_changed=None, message_bulk_end=None, message_wipe_end=None, message_sent=None, message_session_deleted=None, message_cache_clear=None, message_incoming_cache_clear=None, message_schedule_added=None, message_schedule_state_changed=None, message_schedule_deleted=None, message_schedule_not_sent_state_changed=None, message_schedule_cache_clear=None, message_template_cache_clear=None, call_finished=None, chat_created=None, chat_marked_as_read=None, chat_muted=None, chat_unmuted=None, chat_pinned=None, chat_unpinned=None, chat_deleted=None, chat_closed=None, chat_reopened=None, chat_cache_clear=None, chat_read=None, chat_unread=None, contact_added=None, contact_deleted=None, contact_state_changed=None, list_added=None, list_deleted=None, list_state_changed=None, contact_wipe_end=None, contact_import_end=None, contact_cache_clear=None, list_cache_clear=None, custom_fields_cache_clear=None, progress_carrier_bulk_lookup=None, progress_email_bulk_lookup=None, progress_sub_account_bulk_import=None, progress_contact_bulk_import=None, force_refresh_web_app=None, chat_sender_settings_changed=None, country_sender_settings_changed=None, chat_summary_chunk=None, chat_ways_to_reply_chunk=None, chat_suggested_reply_chunk=None):  # noqa: E501
         """GetStateResponse - a model defined in Swagger"""  # noqa: E501
 
         self._system_cache_clear = None
@@ -203,6 +207,8 @@ class GetStateResponse(object):
         self._force_refresh_web_app = None
         self._chat_sender_settings_changed = None
         self._country_sender_settings_changed = None
+        self._chat_summary_chunk = None
+        self._chat_ways_to_reply_chunk = None
         self._chat_suggested_reply_chunk = None
         self.discriminator = None
 
@@ -260,6 +266,8 @@ class GetStateResponse(object):
         self.force_refresh_web_app = force_refresh_web_app
         self.chat_sender_settings_changed = chat_sender_settings_changed
         self.country_sender_settings_changed = country_sender_settings_changed
+        self.chat_summary_chunk = chat_summary_chunk
+        self.chat_ways_to_reply_chunk = chat_ways_to_reply_chunk
         self.chat_suggested_reply_chunk = chat_suggested_reply_chunk
 
     @property
@@ -1395,6 +1403,48 @@ class GetStateResponse(object):
         """
 
         self._country_sender_settings_changed = country_sender_settings_changed
+
+    @property
+    def chat_summary_chunk(self):
+        """Gets the chat_summary_chunk of this GetStateResponse.  # noqa: E501
+
+
+        :return: The chat_summary_chunk of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._chat_summary_chunk
+
+    @chat_summary_chunk.setter
+    def chat_summary_chunk(self, chat_summary_chunk):
+        """Sets the chat_summary_chunk of this GetStateResponse.
+
+
+        :param chat_summary_chunk: The chat_summary_chunk of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._chat_summary_chunk = chat_summary_chunk
+
+    @property
+    def chat_ways_to_reply_chunk(self):
+        """Gets the chat_ways_to_reply_chunk of this GetStateResponse.  # noqa: E501
+
+
+        :return: The chat_ways_to_reply_chunk of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._chat_ways_to_reply_chunk
+
+    @chat_ways_to_reply_chunk.setter
+    def chat_ways_to_reply_chunk(self, chat_ways_to_reply_chunk):
+        """Sets the chat_ways_to_reply_chunk of this GetStateResponse.
+
+
+        :param chat_ways_to_reply_chunk: The chat_ways_to_reply_chunk of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._chat_ways_to_reply_chunk = chat_ways_to_reply_chunk
 
     @property
     def chat_suggested_reply_chunk(self):
