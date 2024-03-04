@@ -35,6 +35,7 @@ class GetStateResponse(object):
         'system_exit': 'int',
         'system_alert': 'int',
         'system_account_state_changed': 'int',
+        'system_account_closed': 'int',
         'system_account_additional_fields': 'int',
         'system_account_permissions_changed': 'int',
         'user_balance_changed': 'int',
@@ -95,6 +96,7 @@ class GetStateResponse(object):
         'system_exit': 'systemExit',
         'system_alert': 'systemAlert',
         'system_account_state_changed': 'systemAccountStateChanged',
+        'system_account_closed': 'systemAccountClosed',
         'system_account_additional_fields': 'systemAccountAdditionalFields',
         'system_account_permissions_changed': 'systemAccountPermissionsChanged',
         'user_balance_changed': 'userBalanceChanged',
@@ -150,13 +152,14 @@ class GetStateResponse(object):
         'chat_suggested_reply_chunk': 'chatSuggestedReplyChunk'
     }
 
-    def __init__(self, system_cache_clear=None, system_exit=None, system_alert=None, system_account_state_changed=None, system_account_additional_fields=None, system_account_permissions_changed=None, user_balance_changed=None, message_deleted=None, message_incoming=None, message_incoming_deleted=None, message_state_changed=None, message_bulk_end=None, message_wipe_end=None, message_sent=None, message_session_deleted=None, message_cache_clear=None, message_incoming_cache_clear=None, message_schedule_added=None, message_schedule_state_changed=None, message_schedule_deleted=None, message_schedule_not_sent_state_changed=None, message_schedule_cache_clear=None, message_template_cache_clear=None, call_finished=None, chat_created=None, chat_marked_as_read=None, chat_muted=None, chat_unmuted=None, chat_pinned=None, chat_unpinned=None, chat_deleted=None, chat_closed=None, chat_reopened=None, chat_cache_clear=None, chat_read=None, chat_unread=None, contact_added=None, contact_deleted=None, contact_state_changed=None, list_added=None, list_deleted=None, list_state_changed=None, contact_wipe_end=None, contact_import_end=None, contact_cache_clear=None, list_cache_clear=None, custom_fields_cache_clear=None, progress_carrier_bulk_lookup=None, progress_email_bulk_lookup=None, progress_sub_account_bulk_import=None, progress_contact_bulk_import=None, force_refresh_web_app=None, chat_sender_settings_changed=None, country_sender_settings_changed=None, chat_summary_chunk=None, chat_ways_to_reply_chunk=None, chat_suggested_reply_chunk=None):  # noqa: E501
+    def __init__(self, system_cache_clear=None, system_exit=None, system_alert=None, system_account_state_changed=None, system_account_closed=None, system_account_additional_fields=None, system_account_permissions_changed=None, user_balance_changed=None, message_deleted=None, message_incoming=None, message_incoming_deleted=None, message_state_changed=None, message_bulk_end=None, message_wipe_end=None, message_sent=None, message_session_deleted=None, message_cache_clear=None, message_incoming_cache_clear=None, message_schedule_added=None, message_schedule_state_changed=None, message_schedule_deleted=None, message_schedule_not_sent_state_changed=None, message_schedule_cache_clear=None, message_template_cache_clear=None, call_finished=None, chat_created=None, chat_marked_as_read=None, chat_muted=None, chat_unmuted=None, chat_pinned=None, chat_unpinned=None, chat_deleted=None, chat_closed=None, chat_reopened=None, chat_cache_clear=None, chat_read=None, chat_unread=None, contact_added=None, contact_deleted=None, contact_state_changed=None, list_added=None, list_deleted=None, list_state_changed=None, contact_wipe_end=None, contact_import_end=None, contact_cache_clear=None, list_cache_clear=None, custom_fields_cache_clear=None, progress_carrier_bulk_lookup=None, progress_email_bulk_lookup=None, progress_sub_account_bulk_import=None, progress_contact_bulk_import=None, force_refresh_web_app=None, chat_sender_settings_changed=None, country_sender_settings_changed=None, chat_summary_chunk=None, chat_ways_to_reply_chunk=None, chat_suggested_reply_chunk=None):  # noqa: E501
         """GetStateResponse - a model defined in Swagger"""  # noqa: E501
 
         self._system_cache_clear = None
         self._system_exit = None
         self._system_alert = None
         self._system_account_state_changed = None
+        self._system_account_closed = None
         self._system_account_additional_fields = None
         self._system_account_permissions_changed = None
         self._user_balance_changed = None
@@ -216,6 +219,7 @@ class GetStateResponse(object):
         self.system_exit = system_exit
         self.system_alert = system_alert
         self.system_account_state_changed = system_account_state_changed
+        self.system_account_closed = system_account_closed
         self.system_account_additional_fields = system_account_additional_fields
         self.system_account_permissions_changed = system_account_permissions_changed
         self.user_balance_changed = user_balance_changed
@@ -353,6 +357,27 @@ class GetStateResponse(object):
         """
 
         self._system_account_state_changed = system_account_state_changed
+
+    @property
+    def system_account_closed(self):
+        """Gets the system_account_closed of this GetStateResponse.  # noqa: E501
+
+
+        :return: The system_account_closed of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._system_account_closed
+
+    @system_account_closed.setter
+    def system_account_closed(self, system_account_closed):
+        """Sets the system_account_closed of this GetStateResponse.
+
+
+        :param system_account_closed: The system_account_closed of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._system_account_closed = system_account_closed
 
     @property
     def system_account_additional_fields(self):

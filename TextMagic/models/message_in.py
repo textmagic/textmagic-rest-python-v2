@@ -40,7 +40,9 @@ class MessageIn(object):
         'first_name': 'str',
         'last_name': 'str',
         'avatar': 'str',
-        'email': 'str'
+        'email': 'str',
+        'contact_user_id': 'int',
+        'user_id': 'int'
     }
 
     attribute_map = {
@@ -53,10 +55,12 @@ class MessageIn(object):
         'first_name': 'firstName',
         'last_name': 'lastName',
         'avatar': 'avatar',
-        'email': 'email'
+        'email': 'email',
+        'contact_user_id': 'contactUserId',
+        'user_id': 'userId'
     }
 
-    def __init__(self, id=None, sender=None, receiver=None, message_time=None, text=None, contact_id=None, first_name=None, last_name=None, avatar=None, email=None):  # noqa: E501
+    def __init__(self, id=None, sender=None, receiver=None, message_time=None, text=None, contact_id=None, first_name=None, last_name=None, avatar=None, email=None, contact_user_id=None, user_id=None):  # noqa: E501
         """MessageIn - a model defined in Swagger"""  # noqa: E501
 
         self._id = None
@@ -69,6 +73,8 @@ class MessageIn(object):
         self._last_name = None
         self._avatar = None
         self._email = None
+        self._contact_user_id = None
+        self._user_id = None
         self.discriminator = None
 
         self.id = id
@@ -85,6 +91,10 @@ class MessageIn(object):
         self.avatar = avatar
         if email is not None:
             self.email = email
+        if contact_user_id is not None:
+            self.contact_user_id = contact_user_id
+        if user_id is not None:
+            self.user_id = user_id
 
     @property
     def id(self):
@@ -313,6 +323,48 @@ class MessageIn(object):
         """
 
         self._email = email
+
+    @property
+    def contact_user_id(self):
+        """Gets the contact_user_id of this MessageIn.  # noqa: E501
+
+
+        :return: The contact_user_id of this MessageIn.  # noqa: E501
+        :rtype: int
+        """
+        return self._contact_user_id
+
+    @contact_user_id.setter
+    def contact_user_id(self, contact_user_id):
+        """Sets the contact_user_id of this MessageIn.
+
+
+        :param contact_user_id: The contact_user_id of this MessageIn.  # noqa: E501
+        :type: int
+        """
+
+        self._contact_user_id = contact_user_id
+
+    @property
+    def user_id(self):
+        """Gets the user_id of this MessageIn.  # noqa: E501
+
+
+        :return: The user_id of this MessageIn.  # noqa: E501
+        :rtype: int
+        """
+        return self._user_id
+
+    @user_id.setter
+    def user_id(self, user_id):
+        """Sets the user_id of this MessageIn.
+
+
+        :param user_id: The user_id of this MessageIn.  # noqa: E501
+        :type: int
+        """
+
+        self._user_id = user_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
