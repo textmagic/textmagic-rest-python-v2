@@ -30,7 +30,6 @@ from TextMagic.models.bulk_session import BulkSession
 from TextMagic.models.buy_dedicated_number_input_object import BuyDedicatedNumberInputObject
 from TextMagic.models.call_price_response import CallPriceResponse
 from TextMagic.models.chat import Chat
-from TextMagic.models.check_phone_verification_code_tfa_input_object import CheckPhoneVerificationCodeTFAInputObject
 from TextMagic.models.clear_and_assign_contacts_to_list_input_object import ClearAndAssignContactsToListInputObject
 from TextMagic.models.close_chats_bulk_input_object import CloseChatsBulkInputObject
 from TextMagic.models.contact import Contact
@@ -63,6 +62,9 @@ from TextMagic.models.do_auth_response_min_versions import DoAuthResponseMinVers
 from TextMagic.models.do_carrier_lookup_response import DoCarrierLookupResponse
 from TextMagic.models.do_email_lookup_response import DoEmailLookupResponse
 from TextMagic.models.favorite_contact import FavoriteContact
+from TextMagic.models.file import File
+from TextMagic.models.file_metadata import FileMetadata
+from TextMagic.models.file_metadata_preview import FileMetadataPreview
 from TextMagic.models.get_all_bulk_sessions_paginated_response import GetAllBulkSessionsPaginatedResponse
 from TextMagic.models.get_all_chats_paginated_response import GetAllChatsPaginatedResponse
 from TextMagic.models.get_all_inbound_messages_paginated_response import GetAllInboundMessagesPaginatedResponse
@@ -124,6 +126,9 @@ from TextMagic.models.mark_chats_read_bulk_input_object import MarkChatsReadBulk
 from TextMagic.models.mark_chats_unread_bulk_input_object import MarkChatsUnreadBulkInputObject
 from TextMagic.models.message_in import MessageIn
 from TextMagic.models.message_out import MessageOut
+from TextMagic.models.message_out_sender_source import MessageOutSenderSource
+from TextMagic.models.message_out_session import MessageOutSession
+from TextMagic.models.message_payload import MessagePayload
 from TextMagic.models.message_price_item import MessagePriceItem
 from TextMagic.models.message_session import MessageSession
 from TextMagic.models.message_template import MessageTemplate
@@ -153,7 +158,6 @@ from TextMagic.models.search_templates_paginated_response import SearchTemplates
 from TextMagic.models.send_message_input_object import SendMessageInputObject
 from TextMagic.models.send_message_response import SendMessageResponse
 from TextMagic.models.send_phone_verification_code_response import SendPhoneVerificationCodeResponse
-from TextMagic.models.send_phone_verification_code_tfa_input_object import SendPhoneVerificationCodeTFAInputObject
 from TextMagic.models.sender_id import SenderId
 from TextMagic.models.sender_settings_item import SenderSettingsItem
 from TextMagic.models.set_chat_status_input_object import SetChatStatusInputObject
@@ -162,6 +166,7 @@ from TextMagic.models.survey import Survey
 from TextMagic.models.survey_node import SurveyNode
 from TextMagic.models.survey_recipient import SurveyRecipient
 from TextMagic.models.survey_sender_countries import SurveySenderCountries
+from TextMagic.models.tag import Tag
 from TextMagic.models.timezone import Timezone
 from TextMagic.models.unauthorized_response import UnauthorizedResponse
 from TextMagic.models.unblock_contact_input_object import UnblockContactInputObject

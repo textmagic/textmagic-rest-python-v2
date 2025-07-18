@@ -35,11 +35,13 @@ class GetStateResponse(object):
         'system_exit': 'int',
         'system_alert': 'int',
         'system_account_state_changed': 'int',
+        'system_account_accept_terms_update': 'int',
         'system_account_closed': 'int',
         'system_account_additional_fields': 'int',
         'system_account_permissions_changed': 'int',
         'user_profile_changed': 'int',
         'user_balance_changed': 'int',
+        'user_presence_status_changed': 'int',
         'user_impersonation_end': 'int',
         'message_deleted': 'int',
         'message_incoming': 'int',
@@ -48,6 +50,10 @@ class GetStateResponse(object):
         'message_bulk_end': 'int',
         'message_wipe_end': 'int',
         'message_sent': 'int',
+        'message_log': 'int',
+        'message_note': 'int',
+        'message_initial': 'int',
+        'last_message_set': 'int',
         'message_session_deleted': 'int',
         'message_cache_clear': 'int',
         'message_incoming_cache_clear': 'int',
@@ -67,15 +73,31 @@ class GetStateResponse(object):
         'chat_deleted': 'int',
         'chat_closed': 'int',
         'chat_reopened': 'int',
+        'chat_activated': 'int',
         'chat_cache_clear': 'int',
         'chat_read': 'int',
         'chat_unread': 'int',
+        'chat_assignee_changed': 'int',
+        'chat_tags_changed': 'int',
+        'chat_conversation_ended': 'int',
+        'chat_updated': 'int',
+        'live_chat_agent_changed': 'int',
+        'live_chat_rated': 'int',
+        'web_widget_updated': 'int',
+        'web_widget_deleted': 'int',
         'contact_added': 'int',
         'contact_deleted': 'int',
+        'contact_bulk_updated': 'int',
         'contact_state_changed': 'int',
+        'contact_unsubscribed': 'int',
+        'contact_resubscribed': 'int',
+        'contact_note_added': 'int',
+        'contact_note_deleted': 'int',
+        'contact_note_state_changed': 'int',
         'list_added': 'int',
         'list_deleted': 'int',
         'list_state_changed': 'int',
+        'list_count_members_updated': 'int',
         'contact_wipe_end': 'int',
         'contact_import_end': 'int',
         'contact_cache_clear': 'int',
@@ -84,7 +106,7 @@ class GetStateResponse(object):
         'progress_carrier_bulk_lookup': 'int',
         'progress_email_bulk_lookup': 'int',
         'progress_sub_account_bulk_import': 'int',
-        'progress_contact_bulk_import': 'int',
+        'import_progress_state': 'int',
         'force_refresh_web_app': 'int',
         'chat_sender_settings_changed': 'int',
         'country_sender_settings_changed': 'int',
@@ -92,7 +114,109 @@ class GetStateResponse(object):
         'chat_ways_to_reply_chunk': 'int',
         'chat_suggested_reply_chunk': 'int',
         'user_subscription_changed': 'int',
-        'user_subscription_deleted': 'int'
+        'user_subscription_deleted': 'int',
+        'task_created': 'int',
+        'task_updated': 'int',
+        'task_reordered': 'int',
+        'task_deleted': 'int',
+        'task_moved_all': 'int',
+        'task_stage_created': 'int',
+        'task_stage_updated': 'int',
+        'task_stage_deleted': 'int',
+        'task_board_created': 'int',
+        'task_board_updated': 'int',
+        'task_board_reordered': 'int',
+        'task_board_deleted': 'int',
+        'task_board_archived': 'int',
+        'task_checklist_created': 'int',
+        'task_checklist_updated': 'int',
+        'task_checklist_deleted': 'int',
+        'task_checklist_bulk_marked': 'int',
+        'task_checklist_item_created': 'int',
+        'task_checklist_item_updated': 'int',
+        'task_checklist_item_deleted': 'int',
+        'task_comment_created': 'int',
+        'task_comment_deleted': 'int',
+        'pinned_contact_added': 'int',
+        'pinned_contact_removed': 'int',
+        'pinned_contact_reordered': 'int',
+        'pinned_contact_state_changed': 'int',
+        'whatsapp_account_added': 'int',
+        'whatsapp_account_removed': 'int',
+        'whatsapp_account_changed': 'int',
+        'facebook_page_added': 'int',
+        'facebook_page_removed': 'int',
+        'facebook_page_changed': 'int',
+        'instagram_account_added': 'int',
+        'instagram_account_removed': 'int',
+        'instagram_account_changed': 'int',
+        'unread_tickets_count_updated': 'int',
+        'ticket_deleted': 'int',
+        'ticket_updated': 'int',
+        'ticket_created': 'int',
+        'ticket_bulk_updated': 'int',
+        'ticket_bulk_deleted': 'int',
+        'ticket_message_created': 'int',
+        'ticket_message_updated': 'int',
+        'ticket_message_deleted': 'int',
+        'sub_accounts_closed': 'int',
+        'user_invited': 'int',
+        'filtered_view_created': 'int',
+        'filtered_view_count_updated': 'int',
+        'filtered_view_deleted': 'int',
+        'forwarding_inbox_was_verified': 'int',
+        'forwarding_inbox_check_was_failed': 'int',
+        'forwarding_inbox_verification_link_was_parsed': 'int',
+        'tendlc_link_number_status_updated': 'int',
+        'channel_presence': 'int',
+        'deal_created': 'int',
+        'deal_updated': 'int',
+        'deal_deleted': 'int',
+        'deal_moved': 'int',
+        'deal_stage_created': 'int',
+        'deal_stage_updated': 'int',
+        'deal_stage_deleted': 'int',
+        'deal_pipeline_created': 'int',
+        'deal_pipeline_updated': 'int',
+        'deal_pipeline_deleted': 'int',
+        'deal_pipeline_archived': 'int',
+        'deal_pipeline_reordered': 'int',
+        'deal_activity_updated': 'int',
+        'deal_activity_item_created': 'int',
+        'deal_activity_item_updated': 'int',
+        'deal_activity_item_deleted': 'int',
+        'deal_activity_item_bulk_marked': 'int',
+        'deal_timeline_item_deleted': 'int',
+        'deal_timeline_item_created': 'int',
+        'ai_assistant_created': 'int',
+        'ai_assistant_state': 'int',
+        'ai_assistant_deleted': 'int',
+        'ai_assistant_link_deleted': 'int',
+        'ai_assistant_link_state': 'int',
+        'ai_assistant_link_created': 'int',
+        'ai_assistant_sub_link_state': 'int',
+        'ai_assistant_sub_link_created': 'int',
+        'email_campaign_email_sender_created': 'int',
+        'email_campaign_email_sender_updated': 'int',
+        'email_campaign_email_sender_deleted': 'int',
+        'email_campaign_domain_created': 'int',
+        'email_campaign_domain_deleted': 'int',
+        'email_campaign_domain_verified': 'int',
+        'email_campaign_domain_status_changed': 'int',
+        'email_campaign_domain_dkim_verified': 'int',
+        'email_campaign_domain_return_path_verified': 'int',
+        'email_campaign_domain_dmarc_verified': 'int',
+        'email_campaign_domain_entry_verification_changed': 'int',
+        'email_campaign_progress_state': 'int',
+        'email_campaign_updated': 'int',
+        'sms_campaign_invalidated': 'int',
+        'scheduled_email_campaign_created': 'int',
+        'scheduled_email_campaign_updated': 'int',
+        'scheduled_email_campaign_status_updated': 'int',
+        'scheduled_email_campaign_deleted': 'int',
+        'email_campaign_failed_attempt_created': 'int',
+        'email_campaign_failed_attempt_deleted': 'int',
+        'email_campaign_failed_attempt_state_updated': 'int'
     }
 
     attribute_map = {
@@ -100,11 +224,13 @@ class GetStateResponse(object):
         'system_exit': 'systemExit',
         'system_alert': 'systemAlert',
         'system_account_state_changed': 'systemAccountStateChanged',
+        'system_account_accept_terms_update': 'systemAccountAcceptTermsUpdate',
         'system_account_closed': 'systemAccountClosed',
         'system_account_additional_fields': 'systemAccountAdditionalFields',
         'system_account_permissions_changed': 'systemAccountPermissionsChanged',
         'user_profile_changed': 'userProfileChanged',
         'user_balance_changed': 'userBalanceChanged',
+        'user_presence_status_changed': 'userPresenceStatusChanged',
         'user_impersonation_end': 'userImpersonationEnd',
         'message_deleted': 'messageDeleted',
         'message_incoming': 'messageIncoming',
@@ -113,6 +239,10 @@ class GetStateResponse(object):
         'message_bulk_end': 'messageBulkEnd',
         'message_wipe_end': 'messageWipeEnd',
         'message_sent': 'messageSent',
+        'message_log': 'messageLog',
+        'message_note': 'messageNote',
+        'message_initial': 'messageInitial',
+        'last_message_set': 'lastMessageSet',
         'message_session_deleted': 'messageSessionDeleted',
         'message_cache_clear': 'messageCacheClear',
         'message_incoming_cache_clear': 'messageIncomingCacheClear',
@@ -132,15 +262,31 @@ class GetStateResponse(object):
         'chat_deleted': 'chatDeleted',
         'chat_closed': 'chatClosed',
         'chat_reopened': 'chatReopened',
+        'chat_activated': 'chatActivated',
         'chat_cache_clear': 'chatCacheClear',
         'chat_read': 'chatRead',
         'chat_unread': 'chatUnread',
+        'chat_assignee_changed': 'chatAssigneeChanged',
+        'chat_tags_changed': 'chatTagsChanged',
+        'chat_conversation_ended': 'chatConversationEnded',
+        'chat_updated': 'chatUpdated',
+        'live_chat_agent_changed': 'liveChatAgentChanged',
+        'live_chat_rated': 'liveChatRated',
+        'web_widget_updated': 'webWidgetUpdated',
+        'web_widget_deleted': 'webWidgetDeleted',
         'contact_added': 'contactAdded',
         'contact_deleted': 'contactDeleted',
+        'contact_bulk_updated': 'contactBulkUpdated',
         'contact_state_changed': 'contactStateChanged',
+        'contact_unsubscribed': 'contactUnsubscribed',
+        'contact_resubscribed': 'contactResubscribed',
+        'contact_note_added': 'contactNoteAdded',
+        'contact_note_deleted': 'contactNoteDeleted',
+        'contact_note_state_changed': 'contactNoteStateChanged',
         'list_added': 'listAdded',
         'list_deleted': 'listDeleted',
         'list_state_changed': 'listStateChanged',
+        'list_count_members_updated': 'listCountMembersUpdated',
         'contact_wipe_end': 'contactWipeEnd',
         'contact_import_end': 'contactImportEnd',
         'contact_cache_clear': 'contactCacheClear',
@@ -149,7 +295,7 @@ class GetStateResponse(object):
         'progress_carrier_bulk_lookup': 'progressCarrierBulkLookup',
         'progress_email_bulk_lookup': 'progressEmailBulkLookup',
         'progress_sub_account_bulk_import': 'progressSubAccountBulkImport',
-        'progress_contact_bulk_import': 'progressContactBulkImport',
+        'import_progress_state': 'importProgressState',
         'force_refresh_web_app': 'forceRefreshWebApp',
         'chat_sender_settings_changed': 'chatSenderSettingsChanged',
         'country_sender_settings_changed': 'countrySenderSettingsChanged',
@@ -157,21 +303,125 @@ class GetStateResponse(object):
         'chat_ways_to_reply_chunk': 'chatWaysToReplyChunk',
         'chat_suggested_reply_chunk': 'chatSuggestedReplyChunk',
         'user_subscription_changed': 'userSubscriptionChanged',
-        'user_subscription_deleted': 'userSubscriptionDeleted'
+        'user_subscription_deleted': 'userSubscriptionDeleted',
+        'task_created': 'taskCreated',
+        'task_updated': 'taskUpdated',
+        'task_reordered': 'taskReordered',
+        'task_deleted': 'taskDeleted',
+        'task_moved_all': 'taskMovedAll',
+        'task_stage_created': 'taskStageCreated',
+        'task_stage_updated': 'taskStageUpdated',
+        'task_stage_deleted': 'taskStageDeleted',
+        'task_board_created': 'taskBoardCreated',
+        'task_board_updated': 'taskBoardUpdated',
+        'task_board_reordered': 'taskBoardReordered',
+        'task_board_deleted': 'taskBoardDeleted',
+        'task_board_archived': 'taskBoardArchived',
+        'task_checklist_created': 'taskChecklistCreated',
+        'task_checklist_updated': 'taskChecklistUpdated',
+        'task_checklist_deleted': 'taskChecklistDeleted',
+        'task_checklist_bulk_marked': 'taskChecklistBulkMarked',
+        'task_checklist_item_created': 'taskChecklistItemCreated',
+        'task_checklist_item_updated': 'taskChecklistItemUpdated',
+        'task_checklist_item_deleted': 'taskChecklistItemDeleted',
+        'task_comment_created': 'taskCommentCreated',
+        'task_comment_deleted': 'taskCommentDeleted',
+        'pinned_contact_added': 'pinnedContactAdded',
+        'pinned_contact_removed': 'pinnedContactRemoved',
+        'pinned_contact_reordered': 'pinnedContactReordered',
+        'pinned_contact_state_changed': 'pinnedContactStateChanged',
+        'whatsapp_account_added': 'whatsappAccountAdded',
+        'whatsapp_account_removed': 'whatsappAccountRemoved',
+        'whatsapp_account_changed': 'whatsappAccountChanged',
+        'facebook_page_added': 'facebookPageAdded',
+        'facebook_page_removed': 'facebookPageRemoved',
+        'facebook_page_changed': 'facebookPageChanged',
+        'instagram_account_added': 'instagramAccountAdded',
+        'instagram_account_removed': 'instagramAccountRemoved',
+        'instagram_account_changed': 'instagramAccountChanged',
+        'unread_tickets_count_updated': 'unreadTicketsCountUpdated',
+        'ticket_deleted': 'ticketDeleted',
+        'ticket_updated': 'ticketUpdated',
+        'ticket_created': 'ticketCreated',
+        'ticket_bulk_updated': 'ticketBulkUpdated',
+        'ticket_bulk_deleted': 'ticketBulkDeleted',
+        'ticket_message_created': 'ticketMessageCreated',
+        'ticket_message_updated': 'ticketMessageUpdated',
+        'ticket_message_deleted': 'ticketMessageDeleted',
+        'sub_accounts_closed': 'subAccountsClosed',
+        'user_invited': 'userInvited',
+        'filtered_view_created': 'filteredViewCreated',
+        'filtered_view_count_updated': 'filteredViewCountUpdated',
+        'filtered_view_deleted': 'filteredViewDeleted',
+        'forwarding_inbox_was_verified': 'forwardingInboxWasVerified',
+        'forwarding_inbox_check_was_failed': 'forwardingInboxCheckWasFailed',
+        'forwarding_inbox_verification_link_was_parsed': 'forwardingInboxVerificationLinkWasParsed',
+        'tendlc_link_number_status_updated': 'tendlcLinkNumberStatusUpdated',
+        'channel_presence': 'channelPresence',
+        'deal_created': 'dealCreated',
+        'deal_updated': 'dealUpdated',
+        'deal_deleted': 'dealDeleted',
+        'deal_moved': 'dealMoved',
+        'deal_stage_created': 'dealStageCreated',
+        'deal_stage_updated': 'dealStageUpdated',
+        'deal_stage_deleted': 'dealStageDeleted',
+        'deal_pipeline_created': 'dealPipelineCreated',
+        'deal_pipeline_updated': 'dealPipelineUpdated',
+        'deal_pipeline_deleted': 'dealPipelineDeleted',
+        'deal_pipeline_archived': 'dealPipelineArchived',
+        'deal_pipeline_reordered': 'dealPipelineReordered',
+        'deal_activity_updated': 'dealActivityUpdated',
+        'deal_activity_item_created': 'dealActivityItemCreated',
+        'deal_activity_item_updated': 'dealActivityItemUpdated',
+        'deal_activity_item_deleted': 'dealActivityItemDeleted',
+        'deal_activity_item_bulk_marked': 'dealActivityItemBulkMarked',
+        'deal_timeline_item_deleted': 'dealTimelineItemDeleted',
+        'deal_timeline_item_created': 'dealTimelineItemCreated',
+        'ai_assistant_created': 'AIAssistantCreated',
+        'ai_assistant_state': 'AIAssistantState',
+        'ai_assistant_deleted': 'AIAssistantDeleted',
+        'ai_assistant_link_deleted': 'AIAssistantLinkDeleted',
+        'ai_assistant_link_state': 'AIAssistantLinkState',
+        'ai_assistant_link_created': 'AIAssistantLinkCreated',
+        'ai_assistant_sub_link_state': 'AIAssistantSubLinkState',
+        'ai_assistant_sub_link_created': 'AIAssistantSubLinkCreated',
+        'email_campaign_email_sender_created': 'emailCampaignEmailSenderCreated',
+        'email_campaign_email_sender_updated': 'emailCampaignEmailSenderUpdated',
+        'email_campaign_email_sender_deleted': 'emailCampaignEmailSenderDeleted',
+        'email_campaign_domain_created': 'emailCampaignDomainCreated',
+        'email_campaign_domain_deleted': 'emailCampaignDomainDeleted',
+        'email_campaign_domain_verified': 'emailCampaignDomainVerified',
+        'email_campaign_domain_status_changed': 'emailCampaignDomainStatusChanged',
+        'email_campaign_domain_dkim_verified': 'emailCampaignDomainDkimVerified',
+        'email_campaign_domain_return_path_verified': 'emailCampaignDomainReturnPathVerified',
+        'email_campaign_domain_dmarc_verified': 'emailCampaignDomainDmarcVerified',
+        'email_campaign_domain_entry_verification_changed': 'emailCampaignDomainEntryVerificationChanged',
+        'email_campaign_progress_state': 'emailCampaignProgressState',
+        'email_campaign_updated': 'emailCampaignUpdated',
+        'sms_campaign_invalidated': 'smsCampaignInvalidated',
+        'scheduled_email_campaign_created': 'scheduledEmailCampaignCreated',
+        'scheduled_email_campaign_updated': 'scheduledEmailCampaignUpdated',
+        'scheduled_email_campaign_status_updated': 'scheduledEmailCampaignStatusUpdated',
+        'scheduled_email_campaign_deleted': 'scheduledEmailCampaignDeleted',
+        'email_campaign_failed_attempt_created': 'emailCampaignFailedAttemptCreated',
+        'email_campaign_failed_attempt_deleted': 'emailCampaignFailedAttemptDeleted',
+        'email_campaign_failed_attempt_state_updated': 'emailCampaignFailedAttemptStateUpdated'
     }
 
-    def __init__(self, system_cache_clear=None, system_exit=None, system_alert=None, system_account_state_changed=None, system_account_closed=None, system_account_additional_fields=None, system_account_permissions_changed=None, user_profile_changed=None, user_balance_changed=None, user_impersonation_end=None, message_deleted=None, message_incoming=None, message_incoming_deleted=None, message_state_changed=None, message_bulk_end=None, message_wipe_end=None, message_sent=None, message_session_deleted=None, message_cache_clear=None, message_incoming_cache_clear=None, message_schedule_added=None, message_schedule_state_changed=None, message_schedule_deleted=None, message_schedule_not_sent_state_changed=None, message_schedule_cache_clear=None, message_template_cache_clear=None, call_finished=None, chat_created=None, chat_marked_as_read=None, chat_muted=None, chat_unmuted=None, chat_pinned=None, chat_unpinned=None, chat_deleted=None, chat_closed=None, chat_reopened=None, chat_cache_clear=None, chat_read=None, chat_unread=None, contact_added=None, contact_deleted=None, contact_state_changed=None, list_added=None, list_deleted=None, list_state_changed=None, contact_wipe_end=None, contact_import_end=None, contact_cache_clear=None, list_cache_clear=None, custom_fields_cache_clear=None, progress_carrier_bulk_lookup=None, progress_email_bulk_lookup=None, progress_sub_account_bulk_import=None, progress_contact_bulk_import=None, force_refresh_web_app=None, chat_sender_settings_changed=None, country_sender_settings_changed=None, chat_summary_chunk=None, chat_ways_to_reply_chunk=None, chat_suggested_reply_chunk=None, user_subscription_changed=None, user_subscription_deleted=None):  # noqa: E501
+    def __init__(self, system_cache_clear=None, system_exit=None, system_alert=None, system_account_state_changed=None, system_account_accept_terms_update=None, system_account_closed=None, system_account_additional_fields=None, system_account_permissions_changed=None, user_profile_changed=None, user_balance_changed=None, user_presence_status_changed=None, user_impersonation_end=None, message_deleted=None, message_incoming=None, message_incoming_deleted=None, message_state_changed=None, message_bulk_end=None, message_wipe_end=None, message_sent=None, message_log=None, message_note=None, message_initial=None, last_message_set=None, message_session_deleted=None, message_cache_clear=None, message_incoming_cache_clear=None, message_schedule_added=None, message_schedule_state_changed=None, message_schedule_deleted=None, message_schedule_not_sent_state_changed=None, message_schedule_cache_clear=None, message_template_cache_clear=None, call_finished=None, chat_created=None, chat_marked_as_read=None, chat_muted=None, chat_unmuted=None, chat_pinned=None, chat_unpinned=None, chat_deleted=None, chat_closed=None, chat_reopened=None, chat_activated=None, chat_cache_clear=None, chat_read=None, chat_unread=None, chat_assignee_changed=None, chat_tags_changed=None, chat_conversation_ended=None, chat_updated=None, live_chat_agent_changed=None, live_chat_rated=None, web_widget_updated=None, web_widget_deleted=None, contact_added=None, contact_deleted=None, contact_bulk_updated=None, contact_state_changed=None, contact_unsubscribed=None, contact_resubscribed=None, contact_note_added=None, contact_note_deleted=None, contact_note_state_changed=None, list_added=None, list_deleted=None, list_state_changed=None, list_count_members_updated=None, contact_wipe_end=None, contact_import_end=None, contact_cache_clear=None, list_cache_clear=None, custom_fields_cache_clear=None, progress_carrier_bulk_lookup=None, progress_email_bulk_lookup=None, progress_sub_account_bulk_import=None, import_progress_state=None, force_refresh_web_app=None, chat_sender_settings_changed=None, country_sender_settings_changed=None, chat_summary_chunk=None, chat_ways_to_reply_chunk=None, chat_suggested_reply_chunk=None, user_subscription_changed=None, user_subscription_deleted=None, task_created=None, task_updated=None, task_reordered=None, task_deleted=None, task_moved_all=None, task_stage_created=None, task_stage_updated=None, task_stage_deleted=None, task_board_created=None, task_board_updated=None, task_board_reordered=None, task_board_deleted=None, task_board_archived=None, task_checklist_created=None, task_checklist_updated=None, task_checklist_deleted=None, task_checklist_bulk_marked=None, task_checklist_item_created=None, task_checklist_item_updated=None, task_checklist_item_deleted=None, task_comment_created=None, task_comment_deleted=None, pinned_contact_added=None, pinned_contact_removed=None, pinned_contact_reordered=None, pinned_contact_state_changed=None, whatsapp_account_added=None, whatsapp_account_removed=None, whatsapp_account_changed=None, facebook_page_added=None, facebook_page_removed=None, facebook_page_changed=None, instagram_account_added=None, instagram_account_removed=None, instagram_account_changed=None, unread_tickets_count_updated=None, ticket_deleted=None, ticket_updated=None, ticket_created=None, ticket_bulk_updated=None, ticket_bulk_deleted=None, ticket_message_created=None, ticket_message_updated=None, ticket_message_deleted=None, sub_accounts_closed=None, user_invited=None, filtered_view_created=None, filtered_view_count_updated=None, filtered_view_deleted=None, forwarding_inbox_was_verified=None, forwarding_inbox_check_was_failed=None, forwarding_inbox_verification_link_was_parsed=None, tendlc_link_number_status_updated=None, channel_presence=None, deal_created=None, deal_updated=None, deal_deleted=None, deal_moved=None, deal_stage_created=None, deal_stage_updated=None, deal_stage_deleted=None, deal_pipeline_created=None, deal_pipeline_updated=None, deal_pipeline_deleted=None, deal_pipeline_archived=None, deal_pipeline_reordered=None, deal_activity_updated=None, deal_activity_item_created=None, deal_activity_item_updated=None, deal_activity_item_deleted=None, deal_activity_item_bulk_marked=None, deal_timeline_item_deleted=None, deal_timeline_item_created=None, ai_assistant_created=None, ai_assistant_state=None, ai_assistant_deleted=None, ai_assistant_link_deleted=None, ai_assistant_link_state=None, ai_assistant_link_created=None, ai_assistant_sub_link_state=None, ai_assistant_sub_link_created=None, email_campaign_email_sender_created=None, email_campaign_email_sender_updated=None, email_campaign_email_sender_deleted=None, email_campaign_domain_created=None, email_campaign_domain_deleted=None, email_campaign_domain_verified=None, email_campaign_domain_status_changed=None, email_campaign_domain_dkim_verified=None, email_campaign_domain_return_path_verified=None, email_campaign_domain_dmarc_verified=None, email_campaign_domain_entry_verification_changed=None, email_campaign_progress_state=None, email_campaign_updated=None, sms_campaign_invalidated=None, scheduled_email_campaign_created=None, scheduled_email_campaign_updated=None, scheduled_email_campaign_status_updated=None, scheduled_email_campaign_deleted=None, email_campaign_failed_attempt_created=None, email_campaign_failed_attempt_deleted=None, email_campaign_failed_attempt_state_updated=None):  # noqa: E501
         """GetStateResponse - a model defined in Swagger"""  # noqa: E501
 
         self._system_cache_clear = None
         self._system_exit = None
         self._system_alert = None
         self._system_account_state_changed = None
+        self._system_account_accept_terms_update = None
         self._system_account_closed = None
         self._system_account_additional_fields = None
         self._system_account_permissions_changed = None
         self._user_profile_changed = None
         self._user_balance_changed = None
+        self._user_presence_status_changed = None
         self._user_impersonation_end = None
         self._message_deleted = None
         self._message_incoming = None
@@ -180,6 +430,10 @@ class GetStateResponse(object):
         self._message_bulk_end = None
         self._message_wipe_end = None
         self._message_sent = None
+        self._message_log = None
+        self._message_note = None
+        self._message_initial = None
+        self._last_message_set = None
         self._message_session_deleted = None
         self._message_cache_clear = None
         self._message_incoming_cache_clear = None
@@ -199,15 +453,31 @@ class GetStateResponse(object):
         self._chat_deleted = None
         self._chat_closed = None
         self._chat_reopened = None
+        self._chat_activated = None
         self._chat_cache_clear = None
         self._chat_read = None
         self._chat_unread = None
+        self._chat_assignee_changed = None
+        self._chat_tags_changed = None
+        self._chat_conversation_ended = None
+        self._chat_updated = None
+        self._live_chat_agent_changed = None
+        self._live_chat_rated = None
+        self._web_widget_updated = None
+        self._web_widget_deleted = None
         self._contact_added = None
         self._contact_deleted = None
+        self._contact_bulk_updated = None
         self._contact_state_changed = None
+        self._contact_unsubscribed = None
+        self._contact_resubscribed = None
+        self._contact_note_added = None
+        self._contact_note_deleted = None
+        self._contact_note_state_changed = None
         self._list_added = None
         self._list_deleted = None
         self._list_state_changed = None
+        self._list_count_members_updated = None
         self._contact_wipe_end = None
         self._contact_import_end = None
         self._contact_cache_clear = None
@@ -216,7 +486,7 @@ class GetStateResponse(object):
         self._progress_carrier_bulk_lookup = None
         self._progress_email_bulk_lookup = None
         self._progress_sub_account_bulk_import = None
-        self._progress_contact_bulk_import = None
+        self._import_progress_state = None
         self._force_refresh_web_app = None
         self._chat_sender_settings_changed = None
         self._country_sender_settings_changed = None
@@ -225,17 +495,121 @@ class GetStateResponse(object):
         self._chat_suggested_reply_chunk = None
         self._user_subscription_changed = None
         self._user_subscription_deleted = None
+        self._task_created = None
+        self._task_updated = None
+        self._task_reordered = None
+        self._task_deleted = None
+        self._task_moved_all = None
+        self._task_stage_created = None
+        self._task_stage_updated = None
+        self._task_stage_deleted = None
+        self._task_board_created = None
+        self._task_board_updated = None
+        self._task_board_reordered = None
+        self._task_board_deleted = None
+        self._task_board_archived = None
+        self._task_checklist_created = None
+        self._task_checklist_updated = None
+        self._task_checklist_deleted = None
+        self._task_checklist_bulk_marked = None
+        self._task_checklist_item_created = None
+        self._task_checklist_item_updated = None
+        self._task_checklist_item_deleted = None
+        self._task_comment_created = None
+        self._task_comment_deleted = None
+        self._pinned_contact_added = None
+        self._pinned_contact_removed = None
+        self._pinned_contact_reordered = None
+        self._pinned_contact_state_changed = None
+        self._whatsapp_account_added = None
+        self._whatsapp_account_removed = None
+        self._whatsapp_account_changed = None
+        self._facebook_page_added = None
+        self._facebook_page_removed = None
+        self._facebook_page_changed = None
+        self._instagram_account_added = None
+        self._instagram_account_removed = None
+        self._instagram_account_changed = None
+        self._unread_tickets_count_updated = None
+        self._ticket_deleted = None
+        self._ticket_updated = None
+        self._ticket_created = None
+        self._ticket_bulk_updated = None
+        self._ticket_bulk_deleted = None
+        self._ticket_message_created = None
+        self._ticket_message_updated = None
+        self._ticket_message_deleted = None
+        self._sub_accounts_closed = None
+        self._user_invited = None
+        self._filtered_view_created = None
+        self._filtered_view_count_updated = None
+        self._filtered_view_deleted = None
+        self._forwarding_inbox_was_verified = None
+        self._forwarding_inbox_check_was_failed = None
+        self._forwarding_inbox_verification_link_was_parsed = None
+        self._tendlc_link_number_status_updated = None
+        self._channel_presence = None
+        self._deal_created = None
+        self._deal_updated = None
+        self._deal_deleted = None
+        self._deal_moved = None
+        self._deal_stage_created = None
+        self._deal_stage_updated = None
+        self._deal_stage_deleted = None
+        self._deal_pipeline_created = None
+        self._deal_pipeline_updated = None
+        self._deal_pipeline_deleted = None
+        self._deal_pipeline_archived = None
+        self._deal_pipeline_reordered = None
+        self._deal_activity_updated = None
+        self._deal_activity_item_created = None
+        self._deal_activity_item_updated = None
+        self._deal_activity_item_deleted = None
+        self._deal_activity_item_bulk_marked = None
+        self._deal_timeline_item_deleted = None
+        self._deal_timeline_item_created = None
+        self._ai_assistant_created = None
+        self._ai_assistant_state = None
+        self._ai_assistant_deleted = None
+        self._ai_assistant_link_deleted = None
+        self._ai_assistant_link_state = None
+        self._ai_assistant_link_created = None
+        self._ai_assistant_sub_link_state = None
+        self._ai_assistant_sub_link_created = None
+        self._email_campaign_email_sender_created = None
+        self._email_campaign_email_sender_updated = None
+        self._email_campaign_email_sender_deleted = None
+        self._email_campaign_domain_created = None
+        self._email_campaign_domain_deleted = None
+        self._email_campaign_domain_verified = None
+        self._email_campaign_domain_status_changed = None
+        self._email_campaign_domain_dkim_verified = None
+        self._email_campaign_domain_return_path_verified = None
+        self._email_campaign_domain_dmarc_verified = None
+        self._email_campaign_domain_entry_verification_changed = None
+        self._email_campaign_progress_state = None
+        self._email_campaign_updated = None
+        self._sms_campaign_invalidated = None
+        self._scheduled_email_campaign_created = None
+        self._scheduled_email_campaign_updated = None
+        self._scheduled_email_campaign_status_updated = None
+        self._scheduled_email_campaign_deleted = None
+        self._email_campaign_failed_attempt_created = None
+        self._email_campaign_failed_attempt_deleted = None
+        self._email_campaign_failed_attempt_state_updated = None
         self.discriminator = None
 
         self.system_cache_clear = system_cache_clear
         self.system_exit = system_exit
         self.system_alert = system_alert
         self.system_account_state_changed = system_account_state_changed
+        self.system_account_accept_terms_update = system_account_accept_terms_update
         self.system_account_closed = system_account_closed
         self.system_account_additional_fields = system_account_additional_fields
         self.system_account_permissions_changed = system_account_permissions_changed
         self.user_profile_changed = user_profile_changed
         self.user_balance_changed = user_balance_changed
+        self.user_presence_status_changed = user_presence_status_changed
         self.user_impersonation_end = user_impersonation_end
         self.message_deleted = message_deleted
         self.message_incoming = message_incoming
@@ -244,6 +618,10 @@ class GetStateResponse(object):
         self.message_bulk_end = message_bulk_end
         self.message_wipe_end = message_wipe_end
         self.message_sent = message_sent
+        self.message_log = message_log
+        self.message_note = message_note
+        self.message_initial = message_initial
+        self.last_message_set = last_message_set
         self.message_session_deleted = message_session_deleted
         self.message_cache_clear = message_cache_clear
         self.message_incoming_cache_clear = message_incoming_cache_clear
@@ -263,15 +641,31 @@ class GetStateResponse(object):
         self.chat_deleted = chat_deleted
         self.chat_closed = chat_closed
         self.chat_reopened = chat_reopened
+        self.chat_activated = chat_activated
         self.chat_cache_clear = chat_cache_clear
         self.chat_read = chat_read
         self.chat_unread = chat_unread
+        self.chat_assignee_changed = chat_assignee_changed
+        self.chat_tags_changed = chat_tags_changed
+        self.chat_conversation_ended = chat_conversation_ended
+        self.chat_updated = chat_updated
+        self.live_chat_agent_changed = live_chat_agent_changed
+        self.live_chat_rated = live_chat_rated
+        self.web_widget_updated = web_widget_updated
+        self.web_widget_deleted = web_widget_deleted
         self.contact_added = contact_added
         self.contact_deleted = contact_deleted
+        self.contact_bulk_updated = contact_bulk_updated
         self.contact_state_changed = contact_state_changed
+        self.contact_unsubscribed = contact_unsubscribed
+        self.contact_resubscribed = contact_resubscribed
+        self.contact_note_added = contact_note_added
+        self.contact_note_deleted = contact_note_deleted
+        self.contact_note_state_changed = contact_note_state_changed
         self.list_added = list_added
         self.list_deleted = list_deleted
         self.list_state_changed = list_state_changed
+        self.list_count_members_updated = list_count_members_updated
         self.contact_wipe_end = contact_wipe_end
         self.contact_import_end = contact_import_end
         self.contact_cache_clear = contact_cache_clear
@@ -280,7 +674,7 @@ class GetStateResponse(object):
         self.progress_carrier_bulk_lookup = progress_carrier_bulk_lookup
         self.progress_email_bulk_lookup = progress_email_bulk_lookup
         self.progress_sub_account_bulk_import = progress_sub_account_bulk_import
-        self.progress_contact_bulk_import = progress_contact_bulk_import
+        self.import_progress_state = import_progress_state
         self.force_refresh_web_app = force_refresh_web_app
         self.chat_sender_settings_changed = chat_sender_settings_changed
         self.country_sender_settings_changed = country_sender_settings_changed
@@ -289,6 +683,108 @@ class GetStateResponse(object):
         self.chat_suggested_reply_chunk = chat_suggested_reply_chunk
         self.user_subscription_changed = user_subscription_changed
         self.user_subscription_deleted = user_subscription_deleted
+        self.task_created = task_created
+        self.task_updated = task_updated
+        self.task_reordered = task_reordered
+        self.task_deleted = task_deleted
+        self.task_moved_all = task_moved_all
+        self.task_stage_created = task_stage_created
+        self.task_stage_updated = task_stage_updated
+        self.task_stage_deleted = task_stage_deleted
+        self.task_board_created = task_board_created
+        self.task_board_updated = task_board_updated
+        self.task_board_reordered = task_board_reordered
+        self.task_board_deleted = task_board_deleted
+        self.task_board_archived = task_board_archived
+        self.task_checklist_created = task_checklist_created
+        self.task_checklist_updated = task_checklist_updated
+        self.task_checklist_deleted = task_checklist_deleted
+        self.task_checklist_bulk_marked = task_checklist_bulk_marked
+        self.task_checklist_item_created = task_checklist_item_created
+        self.task_checklist_item_updated = task_checklist_item_updated
+        self.task_checklist_item_deleted = task_checklist_item_deleted
+        self.task_comment_created = task_comment_created
+        self.task_comment_deleted = task_comment_deleted
+        self.pinned_contact_added = pinned_contact_added
+        self.pinned_contact_removed = pinned_contact_removed
+        self.pinned_contact_reordered = pinned_contact_reordered
+        self.pinned_contact_state_changed = pinned_contact_state_changed
+        self.whatsapp_account_added = whatsapp_account_added
+        self.whatsapp_account_removed = whatsapp_account_removed
+        self.whatsapp_account_changed = whatsapp_account_changed
+        self.facebook_page_added = facebook_page_added
+        self.facebook_page_removed = facebook_page_removed
+        self.facebook_page_changed = facebook_page_changed
+        self.instagram_account_added = instagram_account_added
+        self.instagram_account_removed = instagram_account_removed
+        self.instagram_account_changed = instagram_account_changed
+        self.unread_tickets_count_updated = unread_tickets_count_updated
+        self.ticket_deleted = ticket_deleted
+        self.ticket_updated = ticket_updated
+        self.ticket_created = ticket_created
+        self.ticket_bulk_updated = ticket_bulk_updated
+        self.ticket_bulk_deleted = ticket_bulk_deleted
+        self.ticket_message_created = ticket_message_created
+        self.ticket_message_updated = ticket_message_updated
+        self.ticket_message_deleted = ticket_message_deleted
+        self.sub_accounts_closed = sub_accounts_closed
+        self.user_invited = user_invited
+        self.filtered_view_created = filtered_view_created
+        self.filtered_view_count_updated = filtered_view_count_updated
+        self.filtered_view_deleted = filtered_view_deleted
+        self.forwarding_inbox_was_verified = forwarding_inbox_was_verified
+        self.forwarding_inbox_check_was_failed = forwarding_inbox_check_was_failed
+        self.forwarding_inbox_verification_link_was_parsed = forwarding_inbox_verification_link_was_parsed
+        self.tendlc_link_number_status_updated = tendlc_link_number_status_updated
+        self.channel_presence = channel_presence
+        self.deal_created = deal_created
+        self.deal_updated = deal_updated
+        self.deal_deleted = deal_deleted
+        self.deal_moved = deal_moved
+        self.deal_stage_created = deal_stage_created
+        self.deal_stage_updated = deal_stage_updated
+        self.deal_stage_deleted = deal_stage_deleted
+        self.deal_pipeline_created = deal_pipeline_created
+        self.deal_pipeline_updated = deal_pipeline_updated
+        self.deal_pipeline_deleted = deal_pipeline_deleted
+        self.deal_pipeline_archived = deal_pipeline_archived
+        self.deal_pipeline_reordered = deal_pipeline_reordered
+        self.deal_activity_updated = deal_activity_updated
+        self.deal_activity_item_created = deal_activity_item_created
+        self.deal_activity_item_updated = deal_activity_item_updated
+        self.deal_activity_item_deleted = deal_activity_item_deleted
+        self.deal_activity_item_bulk_marked = deal_activity_item_bulk_marked
+        self.deal_timeline_item_deleted = deal_timeline_item_deleted
+        self.deal_timeline_item_created = deal_timeline_item_created
+        self.ai_assistant_created = ai_assistant_created
+        self.ai_assistant_state = ai_assistant_state
+        self.ai_assistant_deleted = ai_assistant_deleted
+        self.ai_assistant_link_deleted = ai_assistant_link_deleted
+        self.ai_assistant_link_state = ai_assistant_link_state
+        self.ai_assistant_link_created = ai_assistant_link_created
+        self.ai_assistant_sub_link_state = ai_assistant_sub_link_state
+        self.ai_assistant_sub_link_created = ai_assistant_sub_link_created
+        self.email_campaign_email_sender_created = email_campaign_email_sender_created
+        self.email_campaign_email_sender_updated = email_campaign_email_sender_updated
+        self.email_campaign_email_sender_deleted = email_campaign_email_sender_deleted
+        self.email_campaign_domain_created = email_campaign_domain_created
+        self.email_campaign_domain_deleted = email_campaign_domain_deleted
+        self.email_campaign_domain_verified = email_campaign_domain_verified
+        self.email_campaign_domain_status_changed = email_campaign_domain_status_changed
+        self.email_campaign_domain_dkim_verified = email_campaign_domain_dkim_verified
+        self.email_campaign_domain_return_path_verified = email_campaign_domain_return_path_verified
+        self.email_campaign_domain_dmarc_verified = email_campaign_domain_dmarc_verified
+        self.email_campaign_domain_entry_verification_changed = email_campaign_domain_entry_verification_changed
+        self.email_campaign_progress_state = email_campaign_progress_state
+        self.email_campaign_updated = email_campaign_updated
+        self.sms_campaign_invalidated = sms_campaign_invalidated
+        self.scheduled_email_campaign_created = scheduled_email_campaign_created
+        self.scheduled_email_campaign_updated = scheduled_email_campaign_updated
+        self.scheduled_email_campaign_status_updated = scheduled_email_campaign_status_updated
+        self.scheduled_email_campaign_deleted = scheduled_email_campaign_deleted
+        self.email_campaign_failed_attempt_created = email_campaign_failed_attempt_created
+        self.email_campaign_failed_attempt_deleted = email_campaign_failed_attempt_deleted
+        self.email_campaign_failed_attempt_state_updated = email_campaign_failed_attempt_state_updated
 
     @property
     def system_cache_clear(self):
@@ -373,6 +869,27 @@ class GetStateResponse(object):
         """
 
         self._system_account_state_changed = system_account_state_changed
+
+    @property
+    def system_account_accept_terms_update(self):
+        """Gets the system_account_accept_terms_update of this GetStateResponse.  # noqa: E501
+
+
+        :return: The system_account_accept_terms_update of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._system_account_accept_terms_update
+
+    @system_account_accept_terms_update.setter
+    def system_account_accept_terms_update(self, system_account_accept_terms_update):
+        """Sets the system_account_accept_terms_update of this GetStateResponse.
+
+
+        :param system_account_accept_terms_update: The system_account_accept_terms_update of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._system_account_accept_terms_update = system_account_accept_terms_update
 
     @property
     def system_account_closed(self):
@@ -478,6 +995,27 @@ class GetStateResponse(object):
         """
 
         self._user_balance_changed = user_balance_changed
+
+    @property
+    def user_presence_status_changed(self):
+        """Gets the user_presence_status_changed of this GetStateResponse.  # noqa: E501
+
+
+        :return: The user_presence_status_changed of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._user_presence_status_changed
+
+    @user_presence_status_changed.setter
+    def user_presence_status_changed(self, user_presence_status_changed):
+        """Sets the user_presence_status_changed of this GetStateResponse.
+
+
+        :param user_presence_status_changed: The user_presence_status_changed of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._user_presence_status_changed = user_presence_status_changed
 
     @property
     def user_impersonation_end(self):
@@ -646,6 +1184,90 @@ class GetStateResponse(object):
         """
 
         self._message_sent = message_sent
+
+    @property
+    def message_log(self):
+        """Gets the message_log of this GetStateResponse.  # noqa: E501
+
+
+        :return: The message_log of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._message_log
+
+    @message_log.setter
+    def message_log(self, message_log):
+        """Sets the message_log of this GetStateResponse.
+
+
+        :param message_log: The message_log of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._message_log = message_log
+
+    @property
+    def message_note(self):
+        """Gets the message_note of this GetStateResponse.  # noqa: E501
+
+
+        :return: The message_note of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._message_note
+
+    @message_note.setter
+    def message_note(self, message_note):
+        """Sets the message_note of this GetStateResponse.
+
+
+        :param message_note: The message_note of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._message_note = message_note
+
+    @property
+    def message_initial(self):
+        """Gets the message_initial of this GetStateResponse.  # noqa: E501
+
+
+        :return: The message_initial of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._message_initial
+
+    @message_initial.setter
+    def message_initial(self, message_initial):
+        """Sets the message_initial of this GetStateResponse.
+
+
+        :param message_initial: The message_initial of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._message_initial = message_initial
+
+    @property
+    def last_message_set(self):
+        """Gets the last_message_set of this GetStateResponse.  # noqa: E501
+
+
+        :return: The last_message_set of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._last_message_set
+
+    @last_message_set.setter
+    def last_message_set(self, last_message_set):
+        """Sets the last_message_set of this GetStateResponse.
+
+
+        :param last_message_set: The last_message_set of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._last_message_set = last_message_set
 
     @property
     def message_session_deleted(self):
@@ -1047,6 +1669,27 @@ class GetStateResponse(object):
         self._chat_reopened = chat_reopened
 
     @property
+    def chat_activated(self):
+        """Gets the chat_activated of this GetStateResponse.  # noqa: E501
+
+
+        :return: The chat_activated of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._chat_activated
+
+    @chat_activated.setter
+    def chat_activated(self, chat_activated):
+        """Sets the chat_activated of this GetStateResponse.
+
+
+        :param chat_activated: The chat_activated of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._chat_activated = chat_activated
+
+    @property
     def chat_cache_clear(self):
         """Gets the chat_cache_clear of this GetStateResponse.  # noqa: E501
 
@@ -1110,6 +1753,174 @@ class GetStateResponse(object):
         self._chat_unread = chat_unread
 
     @property
+    def chat_assignee_changed(self):
+        """Gets the chat_assignee_changed of this GetStateResponse.  # noqa: E501
+
+
+        :return: The chat_assignee_changed of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._chat_assignee_changed
+
+    @chat_assignee_changed.setter
+    def chat_assignee_changed(self, chat_assignee_changed):
+        """Sets the chat_assignee_changed of this GetStateResponse.
+
+
+        :param chat_assignee_changed: The chat_assignee_changed of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._chat_assignee_changed = chat_assignee_changed
+
+    @property
+    def chat_tags_changed(self):
+        """Gets the chat_tags_changed of this GetStateResponse.  # noqa: E501
+
+
+        :return: The chat_tags_changed of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._chat_tags_changed
+
+    @chat_tags_changed.setter
+    def chat_tags_changed(self, chat_tags_changed):
+        """Sets the chat_tags_changed of this GetStateResponse.
+
+
+        :param chat_tags_changed: The chat_tags_changed of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._chat_tags_changed = chat_tags_changed
+
+    @property
+    def chat_conversation_ended(self):
+        """Gets the chat_conversation_ended of this GetStateResponse.  # noqa: E501
+
+
+        :return: The chat_conversation_ended of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._chat_conversation_ended
+
+    @chat_conversation_ended.setter
+    def chat_conversation_ended(self, chat_conversation_ended):
+        """Sets the chat_conversation_ended of this GetStateResponse.
+
+
+        :param chat_conversation_ended: The chat_conversation_ended of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._chat_conversation_ended = chat_conversation_ended
+
+    @property
+    def chat_updated(self):
+        """Gets the chat_updated of this GetStateResponse.  # noqa: E501
+
+
+        :return: The chat_updated of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._chat_updated
+
+    @chat_updated.setter
+    def chat_updated(self, chat_updated):
+        """Sets the chat_updated of this GetStateResponse.
+
+
+        :param chat_updated: The chat_updated of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._chat_updated = chat_updated
+
+    @property
+    def live_chat_agent_changed(self):
+        """Gets the live_chat_agent_changed of this GetStateResponse.  # noqa: E501
+
+
+        :return: The live_chat_agent_changed of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._live_chat_agent_changed
+
+    @live_chat_agent_changed.setter
+    def live_chat_agent_changed(self, live_chat_agent_changed):
+        """Sets the live_chat_agent_changed of this GetStateResponse.
+
+
+        :param live_chat_agent_changed: The live_chat_agent_changed of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._live_chat_agent_changed = live_chat_agent_changed
+
+    @property
+    def live_chat_rated(self):
+        """Gets the live_chat_rated of this GetStateResponse.  # noqa: E501
+
+
+        :return: The live_chat_rated of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._live_chat_rated
+
+    @live_chat_rated.setter
+    def live_chat_rated(self, live_chat_rated):
+        """Sets the live_chat_rated of this GetStateResponse.
+
+
+        :param live_chat_rated: The live_chat_rated of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._live_chat_rated = live_chat_rated
+
+    @property
+    def web_widget_updated(self):
+        """Gets the web_widget_updated of this GetStateResponse.  # noqa: E501
+
+
+        :return: The web_widget_updated of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._web_widget_updated
+
+    @web_widget_updated.setter
+    def web_widget_updated(self, web_widget_updated):
+        """Sets the web_widget_updated of this GetStateResponse.
+
+
+        :param web_widget_updated: The web_widget_updated of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._web_widget_updated = web_widget_updated
+
+    @property
+    def web_widget_deleted(self):
+        """Gets the web_widget_deleted of this GetStateResponse.  # noqa: E501
+
+
+        :return: The web_widget_deleted of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._web_widget_deleted
+
+    @web_widget_deleted.setter
+    def web_widget_deleted(self, web_widget_deleted):
+        """Sets the web_widget_deleted of this GetStateResponse.
+
+
+        :param web_widget_deleted: The web_widget_deleted of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._web_widget_deleted = web_widget_deleted
+
+    @property
     def contact_added(self):
         """Gets the contact_added of this GetStateResponse.  # noqa: E501
 
@@ -1152,6 +1963,27 @@ class GetStateResponse(object):
         self._contact_deleted = contact_deleted
 
     @property
+    def contact_bulk_updated(self):
+        """Gets the contact_bulk_updated of this GetStateResponse.  # noqa: E501
+
+
+        :return: The contact_bulk_updated of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._contact_bulk_updated
+
+    @contact_bulk_updated.setter
+    def contact_bulk_updated(self, contact_bulk_updated):
+        """Sets the contact_bulk_updated of this GetStateResponse.
+
+
+        :param contact_bulk_updated: The contact_bulk_updated of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._contact_bulk_updated = contact_bulk_updated
+
+    @property
     def contact_state_changed(self):
         """Gets the contact_state_changed of this GetStateResponse.  # noqa: E501
 
@@ -1171,6 +2003,111 @@ class GetStateResponse(object):
         """
 
         self._contact_state_changed = contact_state_changed
+
+    @property
+    def contact_unsubscribed(self):
+        """Gets the contact_unsubscribed of this GetStateResponse.  # noqa: E501
+
+
+        :return: The contact_unsubscribed of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._contact_unsubscribed
+
+    @contact_unsubscribed.setter
+    def contact_unsubscribed(self, contact_unsubscribed):
+        """Sets the contact_unsubscribed of this GetStateResponse.
+
+
+        :param contact_unsubscribed: The contact_unsubscribed of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._contact_unsubscribed = contact_unsubscribed
+
+    @property
+    def contact_resubscribed(self):
+        """Gets the contact_resubscribed of this GetStateResponse.  # noqa: E501
+
+
+        :return: The contact_resubscribed of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._contact_resubscribed
+
+    @contact_resubscribed.setter
+    def contact_resubscribed(self, contact_resubscribed):
+        """Sets the contact_resubscribed of this GetStateResponse.
+
+
+        :param contact_resubscribed: The contact_resubscribed of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._contact_resubscribed = contact_resubscribed
+
+    @property
+    def contact_note_added(self):
+        """Gets the contact_note_added of this GetStateResponse.  # noqa: E501
+
+
+        :return: The contact_note_added of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._contact_note_added
+
+    @contact_note_added.setter
+    def contact_note_added(self, contact_note_added):
+        """Sets the contact_note_added of this GetStateResponse.
+
+
+        :param contact_note_added: The contact_note_added of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._contact_note_added = contact_note_added
+
+    @property
+    def contact_note_deleted(self):
+        """Gets the contact_note_deleted of this GetStateResponse.  # noqa: E501
+
+
+        :return: The contact_note_deleted of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._contact_note_deleted
+
+    @contact_note_deleted.setter
+    def contact_note_deleted(self, contact_note_deleted):
+        """Sets the contact_note_deleted of this GetStateResponse.
+
+
+        :param contact_note_deleted: The contact_note_deleted of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._contact_note_deleted = contact_note_deleted
+
+    @property
+    def contact_note_state_changed(self):
+        """Gets the contact_note_state_changed of this GetStateResponse.  # noqa: E501
+
+
+        :return: The contact_note_state_changed of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._contact_note_state_changed
+
+    @contact_note_state_changed.setter
+    def contact_note_state_changed(self, contact_note_state_changed):
+        """Sets the contact_note_state_changed of this GetStateResponse.
+
+
+        :param contact_note_state_changed: The contact_note_state_changed of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._contact_note_state_changed = contact_note_state_changed
 
     @property
     def list_added(self):
@@ -1234,6 +2171,27 @@ class GetStateResponse(object):
         """
 
         self._list_state_changed = list_state_changed
+
+    @property
+    def list_count_members_updated(self):
+        """Gets the list_count_members_updated of this GetStateResponse.  # noqa: E501
+
+
+        :return: The list_count_members_updated of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._list_count_members_updated
+
+    @list_count_members_updated.setter
+    def list_count_members_updated(self, list_count_members_updated):
+        """Sets the list_count_members_updated of this GetStateResponse.
+
+
+        :param list_count_members_updated: The list_count_members_updated of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._list_count_members_updated = list_count_members_updated
 
     @property
     def contact_wipe_end(self):
@@ -1404,25 +2362,25 @@ class GetStateResponse(object):
         self._progress_sub_account_bulk_import = progress_sub_account_bulk_import
 
     @property
-    def progress_contact_bulk_import(self):
-        """Gets the progress_contact_bulk_import of this GetStateResponse.  # noqa: E501
+    def import_progress_state(self):
+        """Gets the import_progress_state of this GetStateResponse.  # noqa: E501
 
 
-        :return: The progress_contact_bulk_import of this GetStateResponse.  # noqa: E501
+        :return: The import_progress_state of this GetStateResponse.  # noqa: E501
         :rtype: int
         """
-        return self._progress_contact_bulk_import
+        return self._import_progress_state
 
-    @progress_contact_bulk_import.setter
-    def progress_contact_bulk_import(self, progress_contact_bulk_import):
-        """Sets the progress_contact_bulk_import of this GetStateResponse.
+    @import_progress_state.setter
+    def import_progress_state(self, import_progress_state):
+        """Sets the import_progress_state of this GetStateResponse.
 
 
-        :param progress_contact_bulk_import: The progress_contact_bulk_import of this GetStateResponse.  # noqa: E501
+        :param import_progress_state: The import_progress_state of this GetStateResponse.  # noqa: E501
         :type: int
         """
 
-        self._progress_contact_bulk_import = progress_contact_bulk_import
+        self._import_progress_state = import_progress_state
 
     @property
     def force_refresh_web_app(self):
@@ -1591,6 +2549,2148 @@ class GetStateResponse(object):
         """
 
         self._user_subscription_deleted = user_subscription_deleted
+
+    @property
+    def task_created(self):
+        """Gets the task_created of this GetStateResponse.  # noqa: E501
+
+
+        :return: The task_created of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._task_created
+
+    @task_created.setter
+    def task_created(self, task_created):
+        """Sets the task_created of this GetStateResponse.
+
+
+        :param task_created: The task_created of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._task_created = task_created
+
+    @property
+    def task_updated(self):
+        """Gets the task_updated of this GetStateResponse.  # noqa: E501
+
+
+        :return: The task_updated of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._task_updated
+
+    @task_updated.setter
+    def task_updated(self, task_updated):
+        """Sets the task_updated of this GetStateResponse.
+
+
+        :param task_updated: The task_updated of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._task_updated = task_updated
+
+    @property
+    def task_reordered(self):
+        """Gets the task_reordered of this GetStateResponse.  # noqa: E501
+
+
+        :return: The task_reordered of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._task_reordered
+
+    @task_reordered.setter
+    def task_reordered(self, task_reordered):
+        """Sets the task_reordered of this GetStateResponse.
+
+
+        :param task_reordered: The task_reordered of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._task_reordered = task_reordered
+
+    @property
+    def task_deleted(self):
+        """Gets the task_deleted of this GetStateResponse.  # noqa: E501
+
+
+        :return: The task_deleted of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._task_deleted
+
+    @task_deleted.setter
+    def task_deleted(self, task_deleted):
+        """Sets the task_deleted of this GetStateResponse.
+
+
+        :param task_deleted: The task_deleted of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._task_deleted = task_deleted
+
+    @property
+    def task_moved_all(self):
+        """Gets the task_moved_all of this GetStateResponse.  # noqa: E501
+
+
+        :return: The task_moved_all of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._task_moved_all
+
+    @task_moved_all.setter
+    def task_moved_all(self, task_moved_all):
+        """Sets the task_moved_all of this GetStateResponse.
+
+
+        :param task_moved_all: The task_moved_all of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._task_moved_all = task_moved_all
+
+    @property
+    def task_stage_created(self):
+        """Gets the task_stage_created of this GetStateResponse.  # noqa: E501
+
+
+        :return: The task_stage_created of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._task_stage_created
+
+    @task_stage_created.setter
+    def task_stage_created(self, task_stage_created):
+        """Sets the task_stage_created of this GetStateResponse.
+
+
+        :param task_stage_created: The task_stage_created of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._task_stage_created = task_stage_created
+
+    @property
+    def task_stage_updated(self):
+        """Gets the task_stage_updated of this GetStateResponse.  # noqa: E501
+
+
+        :return: The task_stage_updated of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._task_stage_updated
+
+    @task_stage_updated.setter
+    def task_stage_updated(self, task_stage_updated):
+        """Sets the task_stage_updated of this GetStateResponse.
+
+
+        :param task_stage_updated: The task_stage_updated of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._task_stage_updated = task_stage_updated
+
+    @property
+    def task_stage_deleted(self):
+        """Gets the task_stage_deleted of this GetStateResponse.  # noqa: E501
+
+
+        :return: The task_stage_deleted of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._task_stage_deleted
+
+    @task_stage_deleted.setter
+    def task_stage_deleted(self, task_stage_deleted):
+        """Sets the task_stage_deleted of this GetStateResponse.
+
+
+        :param task_stage_deleted: The task_stage_deleted of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._task_stage_deleted = task_stage_deleted
+
+    @property
+    def task_board_created(self):
+        """Gets the task_board_created of this GetStateResponse.  # noqa: E501
+
+
+        :return: The task_board_created of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._task_board_created
+
+    @task_board_created.setter
+    def task_board_created(self, task_board_created):
+        """Sets the task_board_created of this GetStateResponse.
+
+
+        :param task_board_created: The task_board_created of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._task_board_created = task_board_created
+
+    @property
+    def task_board_updated(self):
+        """Gets the task_board_updated of this GetStateResponse.  # noqa: E501
+
+
+        :return: The task_board_updated of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._task_board_updated
+
+    @task_board_updated.setter
+    def task_board_updated(self, task_board_updated):
+        """Sets the task_board_updated of this GetStateResponse.
+
+
+        :param task_board_updated: The task_board_updated of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._task_board_updated = task_board_updated
+
+    @property
+    def task_board_reordered(self):
+        """Gets the task_board_reordered of this GetStateResponse.  # noqa: E501
+
+
+        :return: The task_board_reordered of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._task_board_reordered
+
+    @task_board_reordered.setter
+    def task_board_reordered(self, task_board_reordered):
+        """Sets the task_board_reordered of this GetStateResponse.
+
+
+        :param task_board_reordered: The task_board_reordered of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._task_board_reordered = task_board_reordered
+
+    @property
+    def task_board_deleted(self):
+        """Gets the task_board_deleted of this GetStateResponse.  # noqa: E501
+
+
+        :return: The task_board_deleted of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._task_board_deleted
+
+    @task_board_deleted.setter
+    def task_board_deleted(self, task_board_deleted):
+        """Sets the task_board_deleted of this GetStateResponse.
+
+
+        :param task_board_deleted: The task_board_deleted of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._task_board_deleted = task_board_deleted
+
+    @property
+    def task_board_archived(self):
+        """Gets the task_board_archived of this GetStateResponse.  # noqa: E501
+
+
+        :return: The task_board_archived of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._task_board_archived
+
+    @task_board_archived.setter
+    def task_board_archived(self, task_board_archived):
+        """Sets the task_board_archived of this GetStateResponse.
+
+
+        :param task_board_archived: The task_board_archived of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._task_board_archived = task_board_archived
+
+    @property
+    def task_checklist_created(self):
+        """Gets the task_checklist_created of this GetStateResponse.  # noqa: E501
+
+
+        :return: The task_checklist_created of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._task_checklist_created
+
+    @task_checklist_created.setter
+    def task_checklist_created(self, task_checklist_created):
+        """Sets the task_checklist_created of this GetStateResponse.
+
+
+        :param task_checklist_created: The task_checklist_created of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._task_checklist_created = task_checklist_created
+
+    @property
+    def task_checklist_updated(self):
+        """Gets the task_checklist_updated of this GetStateResponse.  # noqa: E501
+
+
+        :return: The task_checklist_updated of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._task_checklist_updated
+
+    @task_checklist_updated.setter
+    def task_checklist_updated(self, task_checklist_updated):
+        """Sets the task_checklist_updated of this GetStateResponse.
+
+
+        :param task_checklist_updated: The task_checklist_updated of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._task_checklist_updated = task_checklist_updated
+
+    @property
+    def task_checklist_deleted(self):
+        """Gets the task_checklist_deleted of this GetStateResponse.  # noqa: E501
+
+
+        :return: The task_checklist_deleted of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._task_checklist_deleted
+
+    @task_checklist_deleted.setter
+    def task_checklist_deleted(self, task_checklist_deleted):
+        """Sets the task_checklist_deleted of this GetStateResponse.
+
+
+        :param task_checklist_deleted: The task_checklist_deleted of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._task_checklist_deleted = task_checklist_deleted
+
+    @property
+    def task_checklist_bulk_marked(self):
+        """Gets the task_checklist_bulk_marked of this GetStateResponse.  # noqa: E501
+
+
+        :return: The task_checklist_bulk_marked of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._task_checklist_bulk_marked
+
+    @task_checklist_bulk_marked.setter
+    def task_checklist_bulk_marked(self, task_checklist_bulk_marked):
+        """Sets the task_checklist_bulk_marked of this GetStateResponse.
+
+
+        :param task_checklist_bulk_marked: The task_checklist_bulk_marked of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._task_checklist_bulk_marked = task_checklist_bulk_marked
+
+    @property
+    def task_checklist_item_created(self):
+        """Gets the task_checklist_item_created of this GetStateResponse.  # noqa: E501
+
+
+        :return: The task_checklist_item_created of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._task_checklist_item_created
+
+    @task_checklist_item_created.setter
+    def task_checklist_item_created(self, task_checklist_item_created):
+        """Sets the task_checklist_item_created of this GetStateResponse.
+
+
+        :param task_checklist_item_created: The task_checklist_item_created of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._task_checklist_item_created = task_checklist_item_created
+
+    @property
+    def task_checklist_item_updated(self):
+        """Gets the task_checklist_item_updated of this GetStateResponse.  # noqa: E501
+
+
+        :return: The task_checklist_item_updated of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._task_checklist_item_updated
+
+    @task_checklist_item_updated.setter
+    def task_checklist_item_updated(self, task_checklist_item_updated):
+        """Sets the task_checklist_item_updated of this GetStateResponse.
+
+
+        :param task_checklist_item_updated: The task_checklist_item_updated of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._task_checklist_item_updated = task_checklist_item_updated
+
+    @property
+    def task_checklist_item_deleted(self):
+        """Gets the task_checklist_item_deleted of this GetStateResponse.  # noqa: E501
+
+
+        :return: The task_checklist_item_deleted of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._task_checklist_item_deleted
+
+    @task_checklist_item_deleted.setter
+    def task_checklist_item_deleted(self, task_checklist_item_deleted):
+        """Sets the task_checklist_item_deleted of this GetStateResponse.
+
+
+        :param task_checklist_item_deleted: The task_checklist_item_deleted of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._task_checklist_item_deleted = task_checklist_item_deleted
+
+    @property
+    def task_comment_created(self):
+        """Gets the task_comment_created of this GetStateResponse.  # noqa: E501
+
+
+        :return: The task_comment_created of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._task_comment_created
+
+    @task_comment_created.setter
+    def task_comment_created(self, task_comment_created):
+        """Sets the task_comment_created of this GetStateResponse.
+
+
+        :param task_comment_created: The task_comment_created of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._task_comment_created = task_comment_created
+
+    @property
+    def task_comment_deleted(self):
+        """Gets the task_comment_deleted of this GetStateResponse.  # noqa: E501
+
+
+        :return: The task_comment_deleted of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._task_comment_deleted
+
+    @task_comment_deleted.setter
+    def task_comment_deleted(self, task_comment_deleted):
+        """Sets the task_comment_deleted of this GetStateResponse.
+
+
+        :param task_comment_deleted: The task_comment_deleted of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._task_comment_deleted = task_comment_deleted
+
+    @property
+    def pinned_contact_added(self):
+        """Gets the pinned_contact_added of this GetStateResponse.  # noqa: E501
+
+
+        :return: The pinned_contact_added of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._pinned_contact_added
+
+    @pinned_contact_added.setter
+    def pinned_contact_added(self, pinned_contact_added):
+        """Sets the pinned_contact_added of this GetStateResponse.
+
+
+        :param pinned_contact_added: The pinned_contact_added of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._pinned_contact_added = pinned_contact_added
+
+    @property
+    def pinned_contact_removed(self):
+        """Gets the pinned_contact_removed of this GetStateResponse.  # noqa: E501
+
+
+        :return: The pinned_contact_removed of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._pinned_contact_removed
+
+    @pinned_contact_removed.setter
+    def pinned_contact_removed(self, pinned_contact_removed):
+        """Sets the pinned_contact_removed of this GetStateResponse.
+
+
+        :param pinned_contact_removed: The pinned_contact_removed of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._pinned_contact_removed = pinned_contact_removed
+
+    @property
+    def pinned_contact_reordered(self):
+        """Gets the pinned_contact_reordered of this GetStateResponse.  # noqa: E501
+
+
+        :return: The pinned_contact_reordered of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._pinned_contact_reordered
+
+    @pinned_contact_reordered.setter
+    def pinned_contact_reordered(self, pinned_contact_reordered):
+        """Sets the pinned_contact_reordered of this GetStateResponse.
+
+
+        :param pinned_contact_reordered: The pinned_contact_reordered of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._pinned_contact_reordered = pinned_contact_reordered
+
+    @property
+    def pinned_contact_state_changed(self):
+        """Gets the pinned_contact_state_changed of this GetStateResponse.  # noqa: E501
+
+
+        :return: The pinned_contact_state_changed of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._pinned_contact_state_changed
+
+    @pinned_contact_state_changed.setter
+    def pinned_contact_state_changed(self, pinned_contact_state_changed):
+        """Sets the pinned_contact_state_changed of this GetStateResponse.
+
+
+        :param pinned_contact_state_changed: The pinned_contact_state_changed of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._pinned_contact_state_changed = pinned_contact_state_changed
+
+    @property
+    def whatsapp_account_added(self):
+        """Gets the whatsapp_account_added of this GetStateResponse.  # noqa: E501
+
+
+        :return: The whatsapp_account_added of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._whatsapp_account_added
+
+    @whatsapp_account_added.setter
+    def whatsapp_account_added(self, whatsapp_account_added):
+        """Sets the whatsapp_account_added of this GetStateResponse.
+
+
+        :param whatsapp_account_added: The whatsapp_account_added of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._whatsapp_account_added = whatsapp_account_added
+
+    @property
+    def whatsapp_account_removed(self):
+        """Gets the whatsapp_account_removed of this GetStateResponse.  # noqa: E501
+
+
+        :return: The whatsapp_account_removed of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._whatsapp_account_removed
+
+    @whatsapp_account_removed.setter
+    def whatsapp_account_removed(self, whatsapp_account_removed):
+        """Sets the whatsapp_account_removed of this GetStateResponse.
+
+
+        :param whatsapp_account_removed: The whatsapp_account_removed of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._whatsapp_account_removed = whatsapp_account_removed
+
+    @property
+    def whatsapp_account_changed(self):
+        """Gets the whatsapp_account_changed of this GetStateResponse.  # noqa: E501
+
+
+        :return: The whatsapp_account_changed of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._whatsapp_account_changed
+
+    @whatsapp_account_changed.setter
+    def whatsapp_account_changed(self, whatsapp_account_changed):
+        """Sets the whatsapp_account_changed of this GetStateResponse.
+
+
+        :param whatsapp_account_changed: The whatsapp_account_changed of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._whatsapp_account_changed = whatsapp_account_changed
+
+    @property
+    def facebook_page_added(self):
+        """Gets the facebook_page_added of this GetStateResponse.  # noqa: E501
+
+
+        :return: The facebook_page_added of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._facebook_page_added
+
+    @facebook_page_added.setter
+    def facebook_page_added(self, facebook_page_added):
+        """Sets the facebook_page_added of this GetStateResponse.
+
+
+        :param facebook_page_added: The facebook_page_added of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._facebook_page_added = facebook_page_added
+
+    @property
+    def facebook_page_removed(self):
+        """Gets the facebook_page_removed of this GetStateResponse.  # noqa: E501
+
+
+        :return: The facebook_page_removed of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._facebook_page_removed
+
+    @facebook_page_removed.setter
+    def facebook_page_removed(self, facebook_page_removed):
+        """Sets the facebook_page_removed of this GetStateResponse.
+
+
+        :param facebook_page_removed: The facebook_page_removed of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._facebook_page_removed = facebook_page_removed
+
+    @property
+    def facebook_page_changed(self):
+        """Gets the facebook_page_changed of this GetStateResponse.  # noqa: E501
+
+
+        :return: The facebook_page_changed of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._facebook_page_changed
+
+    @facebook_page_changed.setter
+    def facebook_page_changed(self, facebook_page_changed):
+        """Sets the facebook_page_changed of this GetStateResponse.
+
+
+        :param facebook_page_changed: The facebook_page_changed of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._facebook_page_changed = facebook_page_changed
+
+    @property
+    def instagram_account_added(self):
+        """Gets the instagram_account_added of this GetStateResponse.  # noqa: E501
+
+
+        :return: The instagram_account_added of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._instagram_account_added
+
+    @instagram_account_added.setter
+    def instagram_account_added(self, instagram_account_added):
+        """Sets the instagram_account_added of this GetStateResponse.
+
+
+        :param instagram_account_added: The instagram_account_added of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._instagram_account_added = instagram_account_added
+
+    @property
+    def instagram_account_removed(self):
+        """Gets the instagram_account_removed of this GetStateResponse.  # noqa: E501
+
+
+        :return: The instagram_account_removed of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._instagram_account_removed
+
+    @instagram_account_removed.setter
+    def instagram_account_removed(self, instagram_account_removed):
+        """Sets the instagram_account_removed of this GetStateResponse.
+
+
+        :param instagram_account_removed: The instagram_account_removed of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._instagram_account_removed = instagram_account_removed
+
+    @property
+    def instagram_account_changed(self):
+        """Gets the instagram_account_changed of this GetStateResponse.  # noqa: E501
+
+
+        :return: The instagram_account_changed of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._instagram_account_changed
+
+    @instagram_account_changed.setter
+    def instagram_account_changed(self, instagram_account_changed):
+        """Sets the instagram_account_changed of this GetStateResponse.
+
+
+        :param instagram_account_changed: The instagram_account_changed of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._instagram_account_changed = instagram_account_changed
+
+    @property
+    def unread_tickets_count_updated(self):
+        """Gets the unread_tickets_count_updated of this GetStateResponse.  # noqa: E501
+
+
+        :return: The unread_tickets_count_updated of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._unread_tickets_count_updated
+
+    @unread_tickets_count_updated.setter
+    def unread_tickets_count_updated(self, unread_tickets_count_updated):
+        """Sets the unread_tickets_count_updated of this GetStateResponse.
+
+
+        :param unread_tickets_count_updated: The unread_tickets_count_updated of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._unread_tickets_count_updated = unread_tickets_count_updated
+
+    @property
+    def ticket_deleted(self):
+        """Gets the ticket_deleted of this GetStateResponse.  # noqa: E501
+
+
+        :return: The ticket_deleted of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._ticket_deleted
+
+    @ticket_deleted.setter
+    def ticket_deleted(self, ticket_deleted):
+        """Sets the ticket_deleted of this GetStateResponse.
+
+
+        :param ticket_deleted: The ticket_deleted of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._ticket_deleted = ticket_deleted
+
+    @property
+    def ticket_updated(self):
+        """Gets the ticket_updated of this GetStateResponse.  # noqa: E501
+
+
+        :return: The ticket_updated of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._ticket_updated
+
+    @ticket_updated.setter
+    def ticket_updated(self, ticket_updated):
+        """Sets the ticket_updated of this GetStateResponse.
+
+
+        :param ticket_updated: The ticket_updated of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._ticket_updated = ticket_updated
+
+    @property
+    def ticket_created(self):
+        """Gets the ticket_created of this GetStateResponse.  # noqa: E501
+
+
+        :return: The ticket_created of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._ticket_created
+
+    @ticket_created.setter
+    def ticket_created(self, ticket_created):
+        """Sets the ticket_created of this GetStateResponse.
+
+
+        :param ticket_created: The ticket_created of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._ticket_created = ticket_created
+
+    @property
+    def ticket_bulk_updated(self):
+        """Gets the ticket_bulk_updated of this GetStateResponse.  # noqa: E501
+
+
+        :return: The ticket_bulk_updated of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._ticket_bulk_updated
+
+    @ticket_bulk_updated.setter
+    def ticket_bulk_updated(self, ticket_bulk_updated):
+        """Sets the ticket_bulk_updated of this GetStateResponse.
+
+
+        :param ticket_bulk_updated: The ticket_bulk_updated of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._ticket_bulk_updated = ticket_bulk_updated
+
+    @property
+    def ticket_bulk_deleted(self):
+        """Gets the ticket_bulk_deleted of this GetStateResponse.  # noqa: E501
+
+
+        :return: The ticket_bulk_deleted of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._ticket_bulk_deleted
+
+    @ticket_bulk_deleted.setter
+    def ticket_bulk_deleted(self, ticket_bulk_deleted):
+        """Sets the ticket_bulk_deleted of this GetStateResponse.
+
+
+        :param ticket_bulk_deleted: The ticket_bulk_deleted of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._ticket_bulk_deleted = ticket_bulk_deleted
+
+    @property
+    def ticket_message_created(self):
+        """Gets the ticket_message_created of this GetStateResponse.  # noqa: E501
+
+
+        :return: The ticket_message_created of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._ticket_message_created
+
+    @ticket_message_created.setter
+    def ticket_message_created(self, ticket_message_created):
+        """Sets the ticket_message_created of this GetStateResponse.
+
+
+        :param ticket_message_created: The ticket_message_created of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._ticket_message_created = ticket_message_created
+
+    @property
+    def ticket_message_updated(self):
+        """Gets the ticket_message_updated of this GetStateResponse.  # noqa: E501
+
+
+        :return: The ticket_message_updated of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._ticket_message_updated
+
+    @ticket_message_updated.setter
+    def ticket_message_updated(self, ticket_message_updated):
+        """Sets the ticket_message_updated of this GetStateResponse.
+
+
+        :param ticket_message_updated: The ticket_message_updated of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._ticket_message_updated = ticket_message_updated
+
+    @property
+    def ticket_message_deleted(self):
+        """Gets the ticket_message_deleted of this GetStateResponse.  # noqa: E501
+
+
+        :return: The ticket_message_deleted of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._ticket_message_deleted
+
+    @ticket_message_deleted.setter
+    def ticket_message_deleted(self, ticket_message_deleted):
+        """Sets the ticket_message_deleted of this GetStateResponse.
+
+
+        :param ticket_message_deleted: The ticket_message_deleted of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._ticket_message_deleted = ticket_message_deleted
+
+    @property
+    def sub_accounts_closed(self):
+        """Gets the sub_accounts_closed of this GetStateResponse.  # noqa: E501
+
+
+        :return: The sub_accounts_closed of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._sub_accounts_closed
+
+    @sub_accounts_closed.setter
+    def sub_accounts_closed(self, sub_accounts_closed):
+        """Sets the sub_accounts_closed of this GetStateResponse.
+
+
+        :param sub_accounts_closed: The sub_accounts_closed of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._sub_accounts_closed = sub_accounts_closed
+
+    @property
+    def user_invited(self):
+        """Gets the user_invited of this GetStateResponse.  # noqa: E501
+
+
+        :return: The user_invited of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._user_invited
+
+    @user_invited.setter
+    def user_invited(self, user_invited):
+        """Sets the user_invited of this GetStateResponse.
+
+
+        :param user_invited: The user_invited of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._user_invited = user_invited
+
+    @property
+    def filtered_view_created(self):
+        """Gets the filtered_view_created of this GetStateResponse.  # noqa: E501
+
+
+        :return: The filtered_view_created of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._filtered_view_created
+
+    @filtered_view_created.setter
+    def filtered_view_created(self, filtered_view_created):
+        """Sets the filtered_view_created of this GetStateResponse.
+
+
+        :param filtered_view_created: The filtered_view_created of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._filtered_view_created = filtered_view_created
+
+    @property
+    def filtered_view_count_updated(self):
+        """Gets the filtered_view_count_updated of this GetStateResponse.  # noqa: E501
+
+
+        :return: The filtered_view_count_updated of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._filtered_view_count_updated
+
+    @filtered_view_count_updated.setter
+    def filtered_view_count_updated(self, filtered_view_count_updated):
+        """Sets the filtered_view_count_updated of this GetStateResponse.
+
+
+        :param filtered_view_count_updated: The filtered_view_count_updated of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._filtered_view_count_updated = filtered_view_count_updated
+
+    @property
+    def filtered_view_deleted(self):
+        """Gets the filtered_view_deleted of this GetStateResponse.  # noqa: E501
+
+
+        :return: The filtered_view_deleted of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._filtered_view_deleted
+
+    @filtered_view_deleted.setter
+    def filtered_view_deleted(self, filtered_view_deleted):
+        """Sets the filtered_view_deleted of this GetStateResponse.
+
+
+        :param filtered_view_deleted: The filtered_view_deleted of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._filtered_view_deleted = filtered_view_deleted
+
+    @property
+    def forwarding_inbox_was_verified(self):
+        """Gets the forwarding_inbox_was_verified of this GetStateResponse.  # noqa: E501
+
+
+        :return: The forwarding_inbox_was_verified of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._forwarding_inbox_was_verified
+
+    @forwarding_inbox_was_verified.setter
+    def forwarding_inbox_was_verified(self, forwarding_inbox_was_verified):
+        """Sets the forwarding_inbox_was_verified of this GetStateResponse.
+
+
+        :param forwarding_inbox_was_verified: The forwarding_inbox_was_verified of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._forwarding_inbox_was_verified = forwarding_inbox_was_verified
+
+    @property
+    def forwarding_inbox_check_was_failed(self):
+        """Gets the forwarding_inbox_check_was_failed of this GetStateResponse.  # noqa: E501
+
+
+        :return: The forwarding_inbox_check_was_failed of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._forwarding_inbox_check_was_failed
+
+    @forwarding_inbox_check_was_failed.setter
+    def forwarding_inbox_check_was_failed(self, forwarding_inbox_check_was_failed):
+        """Sets the forwarding_inbox_check_was_failed of this GetStateResponse.
+
+
+        :param forwarding_inbox_check_was_failed: The forwarding_inbox_check_was_failed of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._forwarding_inbox_check_was_failed = forwarding_inbox_check_was_failed
+
+    @property
+    def forwarding_inbox_verification_link_was_parsed(self):
+        """Gets the forwarding_inbox_verification_link_was_parsed of this GetStateResponse.  # noqa: E501
+
+
+        :return: The forwarding_inbox_verification_link_was_parsed of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._forwarding_inbox_verification_link_was_parsed
+
+    @forwarding_inbox_verification_link_was_parsed.setter
+    def forwarding_inbox_verification_link_was_parsed(self, forwarding_inbox_verification_link_was_parsed):
+        """Sets the forwarding_inbox_verification_link_was_parsed of this GetStateResponse.
+
+
+        :param forwarding_inbox_verification_link_was_parsed: The forwarding_inbox_verification_link_was_parsed of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._forwarding_inbox_verification_link_was_parsed = forwarding_inbox_verification_link_was_parsed
+
+    @property
+    def tendlc_link_number_status_updated(self):
+        """Gets the tendlc_link_number_status_updated of this GetStateResponse.  # noqa: E501
+
+
+        :return: The tendlc_link_number_status_updated of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._tendlc_link_number_status_updated
+
+    @tendlc_link_number_status_updated.setter
+    def tendlc_link_number_status_updated(self, tendlc_link_number_status_updated):
+        """Sets the tendlc_link_number_status_updated of this GetStateResponse.
+
+
+        :param tendlc_link_number_status_updated: The tendlc_link_number_status_updated of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._tendlc_link_number_status_updated = tendlc_link_number_status_updated
+
+    @property
+    def channel_presence(self):
+        """Gets the channel_presence of this GetStateResponse.  # noqa: E501
+
+
+        :return: The channel_presence of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._channel_presence
+
+    @channel_presence.setter
+    def channel_presence(self, channel_presence):
+        """Sets the channel_presence of this GetStateResponse.
+
+
+        :param channel_presence: The channel_presence of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._channel_presence = channel_presence
+
+    @property
+    def deal_created(self):
+        """Gets the deal_created of this GetStateResponse.  # noqa: E501
+
+
+        :return: The deal_created of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._deal_created
+
+    @deal_created.setter
+    def deal_created(self, deal_created):
+        """Sets the deal_created of this GetStateResponse.
+
+
+        :param deal_created: The deal_created of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._deal_created = deal_created
+
+    @property
+    def deal_updated(self):
+        """Gets the deal_updated of this GetStateResponse.  # noqa: E501
+
+
+        :return: The deal_updated of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._deal_updated
+
+    @deal_updated.setter
+    def deal_updated(self, deal_updated):
+        """Sets the deal_updated of this GetStateResponse.
+
+
+        :param deal_updated: The deal_updated of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._deal_updated = deal_updated
+
+    @property
+    def deal_deleted(self):
+        """Gets the deal_deleted of this GetStateResponse.  # noqa: E501
+
+
+        :return: The deal_deleted of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._deal_deleted
+
+    @deal_deleted.setter
+    def deal_deleted(self, deal_deleted):
+        """Sets the deal_deleted of this GetStateResponse.
+
+
+        :param deal_deleted: The deal_deleted of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._deal_deleted = deal_deleted
+
+    @property
+    def deal_moved(self):
+        """Gets the deal_moved of this GetStateResponse.  # noqa: E501
+
+
+        :return: The deal_moved of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._deal_moved
+
+    @deal_moved.setter
+    def deal_moved(self, deal_moved):
+        """Sets the deal_moved of this GetStateResponse.
+
+
+        :param deal_moved: The deal_moved of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._deal_moved = deal_moved
+
+    @property
+    def deal_stage_created(self):
+        """Gets the deal_stage_created of this GetStateResponse.  # noqa: E501
+
+
+        :return: The deal_stage_created of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._deal_stage_created
+
+    @deal_stage_created.setter
+    def deal_stage_created(self, deal_stage_created):
+        """Sets the deal_stage_created of this GetStateResponse.
+
+
+        :param deal_stage_created: The deal_stage_created of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._deal_stage_created = deal_stage_created
+
+    @property
+    def deal_stage_updated(self):
+        """Gets the deal_stage_updated of this GetStateResponse.  # noqa: E501
+
+
+        :return: The deal_stage_updated of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._deal_stage_updated
+
+    @deal_stage_updated.setter
+    def deal_stage_updated(self, deal_stage_updated):
+        """Sets the deal_stage_updated of this GetStateResponse.
+
+
+        :param deal_stage_updated: The deal_stage_updated of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._deal_stage_updated = deal_stage_updated
+
+    @property
+    def deal_stage_deleted(self):
+        """Gets the deal_stage_deleted of this GetStateResponse.  # noqa: E501
+
+
+        :return: The deal_stage_deleted of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._deal_stage_deleted
+
+    @deal_stage_deleted.setter
+    def deal_stage_deleted(self, deal_stage_deleted):
+        """Sets the deal_stage_deleted of this GetStateResponse.
+
+
+        :param deal_stage_deleted: The deal_stage_deleted of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._deal_stage_deleted = deal_stage_deleted
+
+    @property
+    def deal_pipeline_created(self):
+        """Gets the deal_pipeline_created of this GetStateResponse.  # noqa: E501
+
+
+        :return: The deal_pipeline_created of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._deal_pipeline_created
+
+    @deal_pipeline_created.setter
+    def deal_pipeline_created(self, deal_pipeline_created):
+        """Sets the deal_pipeline_created of this GetStateResponse.
+
+
+        :param deal_pipeline_created: The deal_pipeline_created of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._deal_pipeline_created = deal_pipeline_created
+
+    @property
+    def deal_pipeline_updated(self):
+        """Gets the deal_pipeline_updated of this GetStateResponse.  # noqa: E501
+
+
+        :return: The deal_pipeline_updated of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._deal_pipeline_updated
+
+    @deal_pipeline_updated.setter
+    def deal_pipeline_updated(self, deal_pipeline_updated):
+        """Sets the deal_pipeline_updated of this GetStateResponse.
+
+
+        :param deal_pipeline_updated: The deal_pipeline_updated of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._deal_pipeline_updated = deal_pipeline_updated
+
+    @property
+    def deal_pipeline_deleted(self):
+        """Gets the deal_pipeline_deleted of this GetStateResponse.  # noqa: E501
+
+
+        :return: The deal_pipeline_deleted of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._deal_pipeline_deleted
+
+    @deal_pipeline_deleted.setter
+    def deal_pipeline_deleted(self, deal_pipeline_deleted):
+        """Sets the deal_pipeline_deleted of this GetStateResponse.
+
+
+        :param deal_pipeline_deleted: The deal_pipeline_deleted of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._deal_pipeline_deleted = deal_pipeline_deleted
+
+    @property
+    def deal_pipeline_archived(self):
+        """Gets the deal_pipeline_archived of this GetStateResponse.  # noqa: E501
+
+
+        :return: The deal_pipeline_archived of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._deal_pipeline_archived
+
+    @deal_pipeline_archived.setter
+    def deal_pipeline_archived(self, deal_pipeline_archived):
+        """Sets the deal_pipeline_archived of this GetStateResponse.
+
+
+        :param deal_pipeline_archived: The deal_pipeline_archived of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._deal_pipeline_archived = deal_pipeline_archived
+
+    @property
+    def deal_pipeline_reordered(self):
+        """Gets the deal_pipeline_reordered of this GetStateResponse.  # noqa: E501
+
+
+        :return: The deal_pipeline_reordered of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._deal_pipeline_reordered
+
+    @deal_pipeline_reordered.setter
+    def deal_pipeline_reordered(self, deal_pipeline_reordered):
+        """Sets the deal_pipeline_reordered of this GetStateResponse.
+
+
+        :param deal_pipeline_reordered: The deal_pipeline_reordered of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._deal_pipeline_reordered = deal_pipeline_reordered
+
+    @property
+    def deal_activity_updated(self):
+        """Gets the deal_activity_updated of this GetStateResponse.  # noqa: E501
+
+
+        :return: The deal_activity_updated of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._deal_activity_updated
+
+    @deal_activity_updated.setter
+    def deal_activity_updated(self, deal_activity_updated):
+        """Sets the deal_activity_updated of this GetStateResponse.
+
+
+        :param deal_activity_updated: The deal_activity_updated of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._deal_activity_updated = deal_activity_updated
+
+    @property
+    def deal_activity_item_created(self):
+        """Gets the deal_activity_item_created of this GetStateResponse.  # noqa: E501
+
+
+        :return: The deal_activity_item_created of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._deal_activity_item_created
+
+    @deal_activity_item_created.setter
+    def deal_activity_item_created(self, deal_activity_item_created):
+        """Sets the deal_activity_item_created of this GetStateResponse.
+
+
+        :param deal_activity_item_created: The deal_activity_item_created of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._deal_activity_item_created = deal_activity_item_created
+
+    @property
+    def deal_activity_item_updated(self):
+        """Gets the deal_activity_item_updated of this GetStateResponse.  # noqa: E501
+
+
+        :return: The deal_activity_item_updated of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._deal_activity_item_updated
+
+    @deal_activity_item_updated.setter
+    def deal_activity_item_updated(self, deal_activity_item_updated):
+        """Sets the deal_activity_item_updated of this GetStateResponse.
+
+
+        :param deal_activity_item_updated: The deal_activity_item_updated of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._deal_activity_item_updated = deal_activity_item_updated
+
+    @property
+    def deal_activity_item_deleted(self):
+        """Gets the deal_activity_item_deleted of this GetStateResponse.  # noqa: E501
+
+
+        :return: The deal_activity_item_deleted of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._deal_activity_item_deleted
+
+    @deal_activity_item_deleted.setter
+    def deal_activity_item_deleted(self, deal_activity_item_deleted):
+        """Sets the deal_activity_item_deleted of this GetStateResponse.
+
+
+        :param deal_activity_item_deleted: The deal_activity_item_deleted of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._deal_activity_item_deleted = deal_activity_item_deleted
+
+    @property
+    def deal_activity_item_bulk_marked(self):
+        """Gets the deal_activity_item_bulk_marked of this GetStateResponse.  # noqa: E501
+
+
+        :return: The deal_activity_item_bulk_marked of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._deal_activity_item_bulk_marked
+
+    @deal_activity_item_bulk_marked.setter
+    def deal_activity_item_bulk_marked(self, deal_activity_item_bulk_marked):
+        """Sets the deal_activity_item_bulk_marked of this GetStateResponse.
+
+
+        :param deal_activity_item_bulk_marked: The deal_activity_item_bulk_marked of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._deal_activity_item_bulk_marked = deal_activity_item_bulk_marked
+
+    @property
+    def deal_timeline_item_deleted(self):
+        """Gets the deal_timeline_item_deleted of this GetStateResponse.  # noqa: E501
+
+
+        :return: The deal_timeline_item_deleted of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._deal_timeline_item_deleted
+
+    @deal_timeline_item_deleted.setter
+    def deal_timeline_item_deleted(self, deal_timeline_item_deleted):
+        """Sets the deal_timeline_item_deleted of this GetStateResponse.
+
+
+        :param deal_timeline_item_deleted: The deal_timeline_item_deleted of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._deal_timeline_item_deleted = deal_timeline_item_deleted
+
+    @property
+    def deal_timeline_item_created(self):
+        """Gets the deal_timeline_item_created of this GetStateResponse.  # noqa: E501
+
+
+        :return: The deal_timeline_item_created of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._deal_timeline_item_created
+
+    @deal_timeline_item_created.setter
+    def deal_timeline_item_created(self, deal_timeline_item_created):
+        """Sets the deal_timeline_item_created of this GetStateResponse.
+
+
+        :param deal_timeline_item_created: The deal_timeline_item_created of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._deal_timeline_item_created = deal_timeline_item_created
+
+    @property
+    def ai_assistant_created(self):
+        """Gets the ai_assistant_created of this GetStateResponse.  # noqa: E501
+
+
+        :return: The ai_assistant_created of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._ai_assistant_created
+
+    @ai_assistant_created.setter
+    def ai_assistant_created(self, ai_assistant_created):
+        """Sets the ai_assistant_created of this GetStateResponse.
+
+
+        :param ai_assistant_created: The ai_assistant_created of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._ai_assistant_created = ai_assistant_created
+
+    @property
+    def ai_assistant_state(self):
+        """Gets the ai_assistant_state of this GetStateResponse.  # noqa: E501
+
+
+        :return: The ai_assistant_state of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._ai_assistant_state
+
+    @ai_assistant_state.setter
+    def ai_assistant_state(self, ai_assistant_state):
+        """Sets the ai_assistant_state of this GetStateResponse.
+
+
+        :param ai_assistant_state: The ai_assistant_state of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._ai_assistant_state = ai_assistant_state
+
+    @property
+    def ai_assistant_deleted(self):
+        """Gets the ai_assistant_deleted of this GetStateResponse.  # noqa: E501
+
+
+        :return: The ai_assistant_deleted of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._ai_assistant_deleted
+
+    @ai_assistant_deleted.setter
+    def ai_assistant_deleted(self, ai_assistant_deleted):
+        """Sets the ai_assistant_deleted of this GetStateResponse.
+
+
+        :param ai_assistant_deleted: The ai_assistant_deleted of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._ai_assistant_deleted = ai_assistant_deleted
+
+    @property
+    def ai_assistant_link_deleted(self):
+        """Gets the ai_assistant_link_deleted of this GetStateResponse.  # noqa: E501
+
+
+        :return: The ai_assistant_link_deleted of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._ai_assistant_link_deleted
+
+    @ai_assistant_link_deleted.setter
+    def ai_assistant_link_deleted(self, ai_assistant_link_deleted):
+        """Sets the ai_assistant_link_deleted of this GetStateResponse.
+
+
+        :param ai_assistant_link_deleted: The ai_assistant_link_deleted of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._ai_assistant_link_deleted = ai_assistant_link_deleted
+
+    @property
+    def ai_assistant_link_state(self):
+        """Gets the ai_assistant_link_state of this GetStateResponse.  # noqa: E501
+
+
+        :return: The ai_assistant_link_state of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._ai_assistant_link_state
+
+    @ai_assistant_link_state.setter
+    def ai_assistant_link_state(self, ai_assistant_link_state):
+        """Sets the ai_assistant_link_state of this GetStateResponse.
+
+
+        :param ai_assistant_link_state: The ai_assistant_link_state of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._ai_assistant_link_state = ai_assistant_link_state
+
+    @property
+    def ai_assistant_link_created(self):
+        """Gets the ai_assistant_link_created of this GetStateResponse.  # noqa: E501
+
+
+        :return: The ai_assistant_link_created of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._ai_assistant_link_created
+
+    @ai_assistant_link_created.setter
+    def ai_assistant_link_created(self, ai_assistant_link_created):
+        """Sets the ai_assistant_link_created of this GetStateResponse.
+
+
+        :param ai_assistant_link_created: The ai_assistant_link_created of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._ai_assistant_link_created = ai_assistant_link_created
+
+    @property
+    def ai_assistant_sub_link_state(self):
+        """Gets the ai_assistant_sub_link_state of this GetStateResponse.  # noqa: E501
+
+
+        :return: The ai_assistant_sub_link_state of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._ai_assistant_sub_link_state
+
+    @ai_assistant_sub_link_state.setter
+    def ai_assistant_sub_link_state(self, ai_assistant_sub_link_state):
+        """Sets the ai_assistant_sub_link_state of this GetStateResponse.
+
+
+        :param ai_assistant_sub_link_state: The ai_assistant_sub_link_state of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._ai_assistant_sub_link_state = ai_assistant_sub_link_state
+
+    @property
+    def ai_assistant_sub_link_created(self):
+        """Gets the ai_assistant_sub_link_created of this GetStateResponse.  # noqa: E501
+
+
+        :return: The ai_assistant_sub_link_created of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._ai_assistant_sub_link_created
+
+    @ai_assistant_sub_link_created.setter
+    def ai_assistant_sub_link_created(self, ai_assistant_sub_link_created):
+        """Sets the ai_assistant_sub_link_created of this GetStateResponse.
+
+
+        :param ai_assistant_sub_link_created: The ai_assistant_sub_link_created of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._ai_assistant_sub_link_created = ai_assistant_sub_link_created
+
+    @property
+    def email_campaign_email_sender_created(self):
+        """Gets the email_campaign_email_sender_created of this GetStateResponse.  # noqa: E501
+
+
+        :return: The email_campaign_email_sender_created of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._email_campaign_email_sender_created
+
+    @email_campaign_email_sender_created.setter
+    def email_campaign_email_sender_created(self, email_campaign_email_sender_created):
+        """Sets the email_campaign_email_sender_created of this GetStateResponse.
+
+
+        :param email_campaign_email_sender_created: The email_campaign_email_sender_created of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._email_campaign_email_sender_created = email_campaign_email_sender_created
+
+    @property
+    def email_campaign_email_sender_updated(self):
+        """Gets the email_campaign_email_sender_updated of this GetStateResponse.  # noqa: E501
+
+
+        :return: The email_campaign_email_sender_updated of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._email_campaign_email_sender_updated
+
+    @email_campaign_email_sender_updated.setter
+    def email_campaign_email_sender_updated(self, email_campaign_email_sender_updated):
+        """Sets the email_campaign_email_sender_updated of this GetStateResponse.
+
+
+        :param email_campaign_email_sender_updated: The email_campaign_email_sender_updated of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._email_campaign_email_sender_updated = email_campaign_email_sender_updated
+
+    @property
+    def email_campaign_email_sender_deleted(self):
+        """Gets the email_campaign_email_sender_deleted of this GetStateResponse.  # noqa: E501
+
+
+        :return: The email_campaign_email_sender_deleted of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._email_campaign_email_sender_deleted
+
+    @email_campaign_email_sender_deleted.setter
+    def email_campaign_email_sender_deleted(self, email_campaign_email_sender_deleted):
+        """Sets the email_campaign_email_sender_deleted of this GetStateResponse.
+
+
+        :param email_campaign_email_sender_deleted: The email_campaign_email_sender_deleted of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._email_campaign_email_sender_deleted = email_campaign_email_sender_deleted
+
+    @property
+    def email_campaign_domain_created(self):
+        """Gets the email_campaign_domain_created of this GetStateResponse.  # noqa: E501
+
+
+        :return: The email_campaign_domain_created of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._email_campaign_domain_created
+
+    @email_campaign_domain_created.setter
+    def email_campaign_domain_created(self, email_campaign_domain_created):
+        """Sets the email_campaign_domain_created of this GetStateResponse.
+
+
+        :param email_campaign_domain_created: The email_campaign_domain_created of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._email_campaign_domain_created = email_campaign_domain_created
+
+    @property
+    def email_campaign_domain_deleted(self):
+        """Gets the email_campaign_domain_deleted of this GetStateResponse.  # noqa: E501
+
+
+        :return: The email_campaign_domain_deleted of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._email_campaign_domain_deleted
+
+    @email_campaign_domain_deleted.setter
+    def email_campaign_domain_deleted(self, email_campaign_domain_deleted):
+        """Sets the email_campaign_domain_deleted of this GetStateResponse.
+
+
+        :param email_campaign_domain_deleted: The email_campaign_domain_deleted of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._email_campaign_domain_deleted = email_campaign_domain_deleted
+
+    @property
+    def email_campaign_domain_verified(self):
+        """Gets the email_campaign_domain_verified of this GetStateResponse.  # noqa: E501
+
+
+        :return: The email_campaign_domain_verified of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._email_campaign_domain_verified
+
+    @email_campaign_domain_verified.setter
+    def email_campaign_domain_verified(self, email_campaign_domain_verified):
+        """Sets the email_campaign_domain_verified of this GetStateResponse.
+
+
+        :param email_campaign_domain_verified: The email_campaign_domain_verified of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._email_campaign_domain_verified = email_campaign_domain_verified
+
+    @property
+    def email_campaign_domain_status_changed(self):
+        """Gets the email_campaign_domain_status_changed of this GetStateResponse.  # noqa: E501
+
+
+        :return: The email_campaign_domain_status_changed of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._email_campaign_domain_status_changed
+
+    @email_campaign_domain_status_changed.setter
+    def email_campaign_domain_status_changed(self, email_campaign_domain_status_changed):
+        """Sets the email_campaign_domain_status_changed of this GetStateResponse.
+
+
+        :param email_campaign_domain_status_changed: The email_campaign_domain_status_changed of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._email_campaign_domain_status_changed = email_campaign_domain_status_changed
+
+    @property
+    def email_campaign_domain_dkim_verified(self):
+        """Gets the email_campaign_domain_dkim_verified of this GetStateResponse.  # noqa: E501
+
+
+        :return: The email_campaign_domain_dkim_verified of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._email_campaign_domain_dkim_verified
+
+    @email_campaign_domain_dkim_verified.setter
+    def email_campaign_domain_dkim_verified(self, email_campaign_domain_dkim_verified):
+        """Sets the email_campaign_domain_dkim_verified of this GetStateResponse.
+
+
+        :param email_campaign_domain_dkim_verified: The email_campaign_domain_dkim_verified of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._email_campaign_domain_dkim_verified = email_campaign_domain_dkim_verified
+
+    @property
+    def email_campaign_domain_return_path_verified(self):
+        """Gets the email_campaign_domain_return_path_verified of this GetStateResponse.  # noqa: E501
+
+
+        :return: The email_campaign_domain_return_path_verified of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._email_campaign_domain_return_path_verified
+
+    @email_campaign_domain_return_path_verified.setter
+    def email_campaign_domain_return_path_verified(self, email_campaign_domain_return_path_verified):
+        """Sets the email_campaign_domain_return_path_verified of this GetStateResponse.
+
+
+        :param email_campaign_domain_return_path_verified: The email_campaign_domain_return_path_verified of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._email_campaign_domain_return_path_verified = email_campaign_domain_return_path_verified
+
+    @property
+    def email_campaign_domain_dmarc_verified(self):
+        """Gets the email_campaign_domain_dmarc_verified of this GetStateResponse.  # noqa: E501
+
+
+        :return: The email_campaign_domain_dmarc_verified of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._email_campaign_domain_dmarc_verified
+
+    @email_campaign_domain_dmarc_verified.setter
+    def email_campaign_domain_dmarc_verified(self, email_campaign_domain_dmarc_verified):
+        """Sets the email_campaign_domain_dmarc_verified of this GetStateResponse.
+
+
+        :param email_campaign_domain_dmarc_verified: The email_campaign_domain_dmarc_verified of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._email_campaign_domain_dmarc_verified = email_campaign_domain_dmarc_verified
+
+    @property
+    def email_campaign_domain_entry_verification_changed(self):
+        """Gets the email_campaign_domain_entry_verification_changed of this GetStateResponse.  # noqa: E501
+
+
+        :return: The email_campaign_domain_entry_verification_changed of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._email_campaign_domain_entry_verification_changed
+
+    @email_campaign_domain_entry_verification_changed.setter
+    def email_campaign_domain_entry_verification_changed(self, email_campaign_domain_entry_verification_changed):
+        """Sets the email_campaign_domain_entry_verification_changed of this GetStateResponse.
+
+
+        :param email_campaign_domain_entry_verification_changed: The email_campaign_domain_entry_verification_changed of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._email_campaign_domain_entry_verification_changed = email_campaign_domain_entry_verification_changed
+
+    @property
+    def email_campaign_progress_state(self):
+        """Gets the email_campaign_progress_state of this GetStateResponse.  # noqa: E501
+
+
+        :return: The email_campaign_progress_state of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._email_campaign_progress_state
+
+    @email_campaign_progress_state.setter
+    def email_campaign_progress_state(self, email_campaign_progress_state):
+        """Sets the email_campaign_progress_state of this GetStateResponse.
+
+
+        :param email_campaign_progress_state: The email_campaign_progress_state of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._email_campaign_progress_state = email_campaign_progress_state
+
+    @property
+    def email_campaign_updated(self):
+        """Gets the email_campaign_updated of this GetStateResponse.  # noqa: E501
+
+
+        :return: The email_campaign_updated of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._email_campaign_updated
+
+    @email_campaign_updated.setter
+    def email_campaign_updated(self, email_campaign_updated):
+        """Sets the email_campaign_updated of this GetStateResponse.
+
+
+        :param email_campaign_updated: The email_campaign_updated of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._email_campaign_updated = email_campaign_updated
+
+    @property
+    def sms_campaign_invalidated(self):
+        """Gets the sms_campaign_invalidated of this GetStateResponse.  # noqa: E501
+
+
+        :return: The sms_campaign_invalidated of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._sms_campaign_invalidated
+
+    @sms_campaign_invalidated.setter
+    def sms_campaign_invalidated(self, sms_campaign_invalidated):
+        """Sets the sms_campaign_invalidated of this GetStateResponse.
+
+
+        :param sms_campaign_invalidated: The sms_campaign_invalidated of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._sms_campaign_invalidated = sms_campaign_invalidated
+
+    @property
+    def scheduled_email_campaign_created(self):
+        """Gets the scheduled_email_campaign_created of this GetStateResponse.  # noqa: E501
+
+
+        :return: The scheduled_email_campaign_created of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._scheduled_email_campaign_created
+
+    @scheduled_email_campaign_created.setter
+    def scheduled_email_campaign_created(self, scheduled_email_campaign_created):
+        """Sets the scheduled_email_campaign_created of this GetStateResponse.
+
+
+        :param scheduled_email_campaign_created: The scheduled_email_campaign_created of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._scheduled_email_campaign_created = scheduled_email_campaign_created
+
+    @property
+    def scheduled_email_campaign_updated(self):
+        """Gets the scheduled_email_campaign_updated of this GetStateResponse.  # noqa: E501
+
+
+        :return: The scheduled_email_campaign_updated of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._scheduled_email_campaign_updated
+
+    @scheduled_email_campaign_updated.setter
+    def scheduled_email_campaign_updated(self, scheduled_email_campaign_updated):
+        """Sets the scheduled_email_campaign_updated of this GetStateResponse.
+
+
+        :param scheduled_email_campaign_updated: The scheduled_email_campaign_updated of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._scheduled_email_campaign_updated = scheduled_email_campaign_updated
+
+    @property
+    def scheduled_email_campaign_status_updated(self):
+        """Gets the scheduled_email_campaign_status_updated of this GetStateResponse.  # noqa: E501
+
+
+        :return: The scheduled_email_campaign_status_updated of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._scheduled_email_campaign_status_updated
+
+    @scheduled_email_campaign_status_updated.setter
+    def scheduled_email_campaign_status_updated(self, scheduled_email_campaign_status_updated):
+        """Sets the scheduled_email_campaign_status_updated of this GetStateResponse.
+
+
+        :param scheduled_email_campaign_status_updated: The scheduled_email_campaign_status_updated of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._scheduled_email_campaign_status_updated = scheduled_email_campaign_status_updated
+
+    @property
+    def scheduled_email_campaign_deleted(self):
+        """Gets the scheduled_email_campaign_deleted of this GetStateResponse.  # noqa: E501
+
+
+        :return: The scheduled_email_campaign_deleted of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._scheduled_email_campaign_deleted
+
+    @scheduled_email_campaign_deleted.setter
+    def scheduled_email_campaign_deleted(self, scheduled_email_campaign_deleted):
+        """Sets the scheduled_email_campaign_deleted of this GetStateResponse.
+
+
+        :param scheduled_email_campaign_deleted: The scheduled_email_campaign_deleted of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._scheduled_email_campaign_deleted = scheduled_email_campaign_deleted
+
+    @property
+    def email_campaign_failed_attempt_created(self):
+        """Gets the email_campaign_failed_attempt_created of this GetStateResponse.  # noqa: E501
+
+
+        :return: The email_campaign_failed_attempt_created of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._email_campaign_failed_attempt_created
+
+    @email_campaign_failed_attempt_created.setter
+    def email_campaign_failed_attempt_created(self, email_campaign_failed_attempt_created):
+        """Sets the email_campaign_failed_attempt_created of this GetStateResponse.
+
+
+        :param email_campaign_failed_attempt_created: The email_campaign_failed_attempt_created of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._email_campaign_failed_attempt_created = email_campaign_failed_attempt_created
+
+    @property
+    def email_campaign_failed_attempt_deleted(self):
+        """Gets the email_campaign_failed_attempt_deleted of this GetStateResponse.  # noqa: E501
+
+
+        :return: The email_campaign_failed_attempt_deleted of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._email_campaign_failed_attempt_deleted
+
+    @email_campaign_failed_attempt_deleted.setter
+    def email_campaign_failed_attempt_deleted(self, email_campaign_failed_attempt_deleted):
+        """Sets the email_campaign_failed_attempt_deleted of this GetStateResponse.
+
+
+        :param email_campaign_failed_attempt_deleted: The email_campaign_failed_attempt_deleted of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._email_campaign_failed_attempt_deleted = email_campaign_failed_attempt_deleted
+
+    @property
+    def email_campaign_failed_attempt_state_updated(self):
+        """Gets the email_campaign_failed_attempt_state_updated of this GetStateResponse.  # noqa: E501
+
+
+        :return: The email_campaign_failed_attempt_state_updated of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._email_campaign_failed_attempt_state_updated
+
+    @email_campaign_failed_attempt_state_updated.setter
+    def email_campaign_failed_attempt_state_updated(self, email_campaign_failed_attempt_state_updated):
+        """Sets the email_campaign_failed_attempt_state_updated of this GetStateResponse.
+
+
+        :param email_campaign_failed_attempt_state_updated: The email_campaign_failed_attempt_state_updated of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._email_campaign_failed_attempt_state_updated = email_campaign_failed_attempt_state_updated
 
     def to_dict(self):
         """Returns the model properties as a dict"""

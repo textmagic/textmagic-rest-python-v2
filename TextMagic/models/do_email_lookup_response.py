@@ -141,7 +141,7 @@ class DoEmailLookupResponse(object):
     def status(self):
         """Gets the status of this DoEmailLookupResponse.  # noqa: E501
 
-        The email is `valid` or `invalid`.  # noqa: E501
+        The email is `valid` or `invalid`.  # noqa: E501
 
         :return: The status of this DoEmailLookupResponse.  # noqa: E501
         :rtype: str
@@ -152,7 +152,7 @@ class DoEmailLookupResponse(object):
     def status(self, status):
         """Sets the status of this DoEmailLookupResponse.
 
-        The email is `valid` or `invalid`.  # noqa: E501
+        The email is `valid` or `invalid`.  # noqa: E501
 
         :param status: The status of this DoEmailLookupResponse.  # noqa: E501
         :type: str
@@ -170,7 +170,7 @@ class DoEmailLookupResponse(object):
     def deliverability(self):
         """Gets the deliverability of this DoEmailLookupResponse.  # noqa: E501
 
-        The delivery status of the email address is`deliverable`, `undeliverable`. or `unknown`.  # noqa: E501
+        The delivery status of the email address is`deliverable`, `undeliverable`. or `unknown`.  # noqa: E501
 
         :return: The deliverability of this DoEmailLookupResponse.  # noqa: E501
         :rtype: str
@@ -181,7 +181,7 @@ class DoEmailLookupResponse(object):
     def deliverability(self, deliverability):
         """Sets the deliverability of this DoEmailLookupResponse.
 
-        The delivery status of the email address is`deliverable`, `undeliverable`. or `unknown`.  # noqa: E501
+        The delivery status of the email address is`deliverable`, `undeliverable`. or `unknown`.  # noqa: E501
 
         :param deliverability: The deliverability of this DoEmailLookupResponse.  # noqa: E501
         :type: str
@@ -216,7 +216,7 @@ class DoEmailLookupResponse(object):
     def risk(self):
         """Gets the risk of this DoEmailLookupResponse.  # noqa: E501
 
-        The risk score of the email is`high`, `medium`, `low` or `null`.  # noqa: E501
+        The risk score of the email is`high`, `medium`, `low` or `null`.  # noqa: E501
 
         :return: The risk of this DoEmailLookupResponse.  # noqa: E501
         :rtype: str
@@ -227,7 +227,7 @@ class DoEmailLookupResponse(object):
     def risk(self, risk):
         """Sets the risk of this DoEmailLookupResponse.
 
-        The risk score of the email is`high`, `medium`, `low` or `null`.  # noqa: E501
+        The risk score of the email is`high`, `medium`, `low` or `null`.  # noqa: E501
 
         :param risk: The risk of this DoEmailLookupResponse.  # noqa: E501
         :type: str
@@ -245,7 +245,7 @@ class DoEmailLookupResponse(object):
     def address_type(self):
         """Gets the address_type of this DoEmailLookupResponse.  # noqa: E501
 
-        The email address type (domain) is `free` or `corporate`.  # noqa: E501
+        The email address type (domain) is `free` or `corporate`.  # noqa: E501
 
         :return: The address_type of this DoEmailLookupResponse.  # noqa: E501
         :rtype: str
@@ -256,7 +256,7 @@ class DoEmailLookupResponse(object):
     def address_type(self, address_type):
         """Sets the address_type of this DoEmailLookupResponse.
 
-        The email address type (domain) is `free` or `corporate`.  # noqa: E501
+        The email address type (domain) is `free` or `corporate`.  # noqa: E501
 
         :param address_type: The address_type of this DoEmailLookupResponse.  # noqa: E501
         :type: str
@@ -274,7 +274,7 @@ class DoEmailLookupResponse(object):
     def is_disposable_address(self):
         """Gets the is_disposable_address of this DoEmailLookupResponse.  # noqa: E501
 
-        This is `true` if the domain is in the list of disposable email addresses; otherwise, it returns as `false`.  # noqa: E501
+        This is `true` if the domain is in the list of disposable email addresses; otherwise, it returns as `false`.  # noqa: E501
 
         :return: The is_disposable_address of this DoEmailLookupResponse.  # noqa: E501
         :rtype: bool
@@ -285,7 +285,7 @@ class DoEmailLookupResponse(object):
     def is_disposable_address(self, is_disposable_address):
         """Sets the is_disposable_address of this DoEmailLookupResponse.
 
-        This is `true` if the domain is in the list of disposable email addresses; otherwise, it returns as `false`.  # noqa: E501
+        This is `true` if the domain is in the list of disposable email addresses; otherwise, it returns as `false`.  # noqa: E501
 
         :param is_disposable_address: The is_disposable_address of this DoEmailLookupResponse.  # noqa: E501
         :type: bool

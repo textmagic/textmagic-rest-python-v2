@@ -50,20 +50,6 @@ class TestTextMagicApi(unittest.TestCase):
         """
         pass
 
-    def test_cancel_verification(self):
-        """Test case for cancel_verification
-
-        Cancel verification process  # noqa: E501
-        """
-        pass
-
-    def test_check_phone_verification_code_tfa(self):
-        """Test case for check_phone_verification_code_tfa
-
-        Step 2: Check the verification code   # noqa: E501
-        """
-        pass
-
     def test_clear_and_assign_contacts_to_list(self):
         """Test case for clear_and_assign_contacts_to_list
 
@@ -908,13 +894,6 @@ class TestTextMagicApi(unittest.TestCase):
         """Test case for send_message
 
         Send message  # noqa: E501
-        """
-        pass
-
-    def test_send_phone_verification_code_tfa(self):
-        """Test case for send_phone_verification_code_tfa
-
-        Step 1: Send a verification code   # noqa: E501
         """
         pass
 

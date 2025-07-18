@@ -338,204 +338,6 @@ class TextMagicApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def cancel_verification(self, verify_id, **kwargs):  # noqa: E501
-        """Cancel verification process  # noqa: E501
-
-        You can cancel the verification not earlier than 30 seconds after the initial request.  # noqa: E501
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.cancel_verification(verify_id, async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :param str verify_id: The verifyId that you received in Step 1. (required)
-        :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-        kwargs['_return_http_data_only'] = True
-        if kwargs.get('async_req'):
-            return self.cancel_verification_with_http_info(verify_id, **kwargs)  # noqa: E501
-        else:
-            (data) = self.cancel_verification_with_http_info(verify_id, **kwargs)  # noqa: E501
-            return data
-
-    def cancel_verification_with_http_info(self, verify_id, **kwargs):  # noqa: E501
-        """Cancel verification process  # noqa: E501
-
-        You can cancel the verification not earlier than 30 seconds after the initial request.  # noqa: E501
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.cancel_verification_with_http_info(verify_id, async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :param str verify_id: The verifyId that you received in Step 1. (required)
-        :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['verify_id']  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
-        params = locals()
-        for key, val in six.iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method cancel_verification" % key
-                )
-            params[key] = val
-        del params['kwargs']
-        # verify the required parameter 'verify_id' is set
-        if ('verify_id' not in params or
-                params['verify_id'] is None):
-            raise ValueError("Missing the required parameter `verify_id` when calling `cancel_verification`")  # noqa: E501
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'verify_id' in params:
-            path_params['verifyId'] = params['verify_id']  # noqa: E501
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(
-            ['application/json'])  # noqa: E501
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
-            ['application/json'])  # noqa: E501
-
-        # Authentication setting
-        auth_settings = ['BasicAuth']  # noqa: E501
-
-        return self.api_client.call_api(
-            '/api/v2/verify/{verifyId}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
-            body=body_params,
-            post_params=form_params,
-            files=local_var_files,
-            response_type=None,  # noqa: E501
-            auth_settings=auth_settings,
-            async_req=params.get('async_req'),
-            _return_http_data_only=params.get('_return_http_data_only'),
-            _preload_content=params.get('_preload_content', True),
-            _request_timeout=params.get('_request_timeout'),
-            collection_formats=collection_formats)
-
-    def check_phone_verification_code_tfa(self, check_phone_verification_code_tfa_input_object, **kwargs):  # noqa: E501
-        """Step 2: Check the verification code   # noqa: E501
-
-        Check received code from user with the code which was actually sent.  # noqa: E501
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.check_phone_verification_code_tfa(check_phone_verification_code_tfa_input_object, async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :param CheckPhoneVerificationCodeTFAInputObject check_phone_verification_code_tfa_input_object: (required)
-        :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-        kwargs['_return_http_data_only'] = True
-        if kwargs.get('async_req'):
-            return self.check_phone_verification_code_tfa_with_http_info(check_phone_verification_code_tfa_input_object, **kwargs)  # noqa: E501
-        else:
-            (data) = self.check_phone_verification_code_tfa_with_http_info(check_phone_verification_code_tfa_input_object, **kwargs)  # noqa: E501
-            return data
-
-    def check_phone_verification_code_tfa_with_http_info(self, check_phone_verification_code_tfa_input_object, **kwargs):  # noqa: E501
-        """Step 2: Check the verification code   # noqa: E501
-
-        Check received code from user with the code which was actually sent.  # noqa: E501
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.check_phone_verification_code_tfa_with_http_info(check_phone_verification_code_tfa_input_object, async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :param CheckPhoneVerificationCodeTFAInputObject check_phone_verification_code_tfa_input_object: (required)
-        :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['check_phone_verification_code_tfa_input_object']  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
-        params = locals()
-        for key, val in six.iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method check_phone_verification_code_tfa" % key
-                )
-            params[key] = val
-        del params['kwargs']
-        # verify the required parameter 'check_phone_verification_code_tfa_input_object' is set
-        if ('check_phone_verification_code_tfa_input_object' not in params or
-                params['check_phone_verification_code_tfa_input_object'] is None):
-            raise ValueError("Missing the required parameter `check_phone_verification_code_tfa_input_object` when calling `check_phone_verification_code_tfa`")  # noqa: E501
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-        if 'check_phone_verification_code_tfa_input_object' in params:
-            body_params = params['check_phone_verification_code_tfa_input_object']
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(
-            ['application/json'])  # noqa: E501
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
-            ['application/json'])  # noqa: E501
-
-        # Authentication setting
-        auth_settings = ['BasicAuth']  # noqa: E501
-
-        return self.api_client.call_api(
-            '/api/v2/verify', 'PUT',
-            path_params,
-            query_params,
-            header_params,
-            body=body_params,
-            post_params=form_params,
-            files=local_var_files,
-            response_type=None,  # noqa: E501
-            auth_settings=auth_settings,
-            async_req=params.get('async_req'),
-            _return_http_data_only=params.get('_return_http_data_only'),
-            _preload_content=params.get('_preload_content', True),
-            _request_timeout=params.get('_request_timeout'),
-            collection_formats=collection_formats)
-
     def clear_and_assign_contacts_to_list(self, clear_and_assign_contacts_to_list_input_object, id, **kwargs):  # noqa: E501
         """Reset list members to the specified contacts  # noqa: E501
 
@@ -5943,6 +5745,7 @@ class TextMagicApi(object):
         :param str end: Return messages up to specified timestamp only. Required when `start` parameter specified.
         :param str direction: Order direction. Default is desc.
         :param int voice: Fetch results with voice calls.
+        :param int include_notes: Fetch results with messenger notes.
         :return: GetChatMessagesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -5972,12 +5775,13 @@ class TextMagicApi(object):
         :param str end: Return messages up to specified timestamp only. Required when `start` parameter specified.
         :param str direction: Order direction. Default is desc.
         :param int voice: Fetch results with voice calls.
+        :param int include_notes: Fetch results with messenger notes.
         :return: GetChatMessagesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'page', 'limit', 'query', 'start', 'end', 'direction', 'voice']  # noqa: E501
+        all_params = ['id', 'page', 'limit', 'query', 'start', 'end', 'direction', 'voice', 'include_notes']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -6018,6 +5822,8 @@ class TextMagicApi(object):
             query_params.append(('direction', params['direction']))  # noqa: E501
         if 'voice' in params:
             query_params.append(('voice', params['voice']))  # noqa: E501
+        if 'include_notes' in params:
+            query_params.append(('includeNotes', params['include_notes']))  # noqa: E501
 
         header_params = {}
 
@@ -8281,7 +8087,7 @@ class TextMagicApi(object):
     def get_message_preview(self, **kwargs):  # noqa: E501
         """Preview message  # noqa: E501
 
-        Get a messages preview (with tags merged) of up to 100 messages per session.  # noqa: E501
+        Get a messages preview (with dynamic fields merged) of up to 100 messages per session.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_message_preview(async_req=True)
@@ -8319,7 +8125,7 @@ class TextMagicApi(object):
     def get_message_preview_with_http_info(self, **kwargs):  # noqa: E501
         """Preview message  # noqa: E501
 
-        Get a messages preview (with tags merged) of up to 100 messages per session.  # noqa: E501
+        Get a messages preview (with dynamic fields merged) of up to 100 messages per session.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_message_preview_with_http_info(async_req=True)
@@ -12838,105 +12644,6 @@ class TextMagicApi(object):
             post_params=form_params,
             files=local_var_files,
             response_type='SendMessageResponse',  # noqa: E501
-            auth_settings=auth_settings,
-            async_req=params.get('async_req'),
-            _return_http_data_only=params.get('_return_http_data_only'),
-            _preload_content=params.get('_preload_content', True),
-            _request_timeout=params.get('_request_timeout'),
-            collection_formats=collection_formats)
-
-    def send_phone_verification_code_tfa(self, send_phone_verification_code_tfa_input_object, **kwargs):  # noqa: E501
-        """Step 1: Send a verification code   # noqa: E501
-
-        Sends a verification code to a specified phone number.  # noqa: E501
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.send_phone_verification_code_tfa(send_phone_verification_code_tfa_input_object, async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :param SendPhoneVerificationCodeTFAInputObject send_phone_verification_code_tfa_input_object: (required)
-        :return: SendPhoneVerificationCodeResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-        kwargs['_return_http_data_only'] = True
-        if kwargs.get('async_req'):
-            return self.send_phone_verification_code_tfa_with_http_info(send_phone_verification_code_tfa_input_object, **kwargs)  # noqa: E501
-        else:
-            (data) = self.send_phone_verification_code_tfa_with_http_info(send_phone_verification_code_tfa_input_object, **kwargs)  # noqa: E501
-            return data
-
-    def send_phone_verification_code_tfa_with_http_info(self, send_phone_verification_code_tfa_input_object, **kwargs):  # noqa: E501
-        """Step 1: Send a verification code   # noqa: E501
-
-        Sends a verification code to a specified phone number.  # noqa: E501
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.send_phone_verification_code_tfa_with_http_info(send_phone_verification_code_tfa_input_object, async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :param SendPhoneVerificationCodeTFAInputObject send_phone_verification_code_tfa_input_object: (required)
-        :return: SendPhoneVerificationCodeResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['send_phone_verification_code_tfa_input_object']  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
-        params = locals()
-        for key, val in six.iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method send_phone_verification_code_tfa" % key
-                )
-            params[key] = val
-        del params['kwargs']
-        # verify the required parameter 'send_phone_verification_code_tfa_input_object' is set
-        if ('send_phone_verification_code_tfa_input_object' not in params or
-                params['send_phone_verification_code_tfa_input_object'] is None):
-            raise ValueError("Missing the required parameter `send_phone_verification_code_tfa_input_object` when calling `send_phone_verification_code_tfa`")  # noqa: E501
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-        if 'send_phone_verification_code_tfa_input_object' in params:
-            body_params = params['send_phone_verification_code_tfa_input_object']
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(
-            ['application/json'])  # noqa: E501
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
-            ['application/json'])  # noqa: E501
-
-        # Authentication setting
-        auth_settings = ['BasicAuth']  # noqa: E501
-
-        return self.api_client.call_api(
-            '/api/v2/verify', 'POST',
-            path_params,
-            query_params,
-            header_params,
-            body=body_params,
-            post_params=form_params,
-            files=local_var_files,
-            response_type='SendPhoneVerificationCodeResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

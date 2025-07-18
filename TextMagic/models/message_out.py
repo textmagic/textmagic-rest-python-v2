@@ -36,6 +36,7 @@ class MessageOut(object):
         'receiver': 'str',
         'text': 'str',
         'status': 'str',
+        'reject_reason': 'str',
         'contact_id': 'int',
         'session_id': 'int',
         'message_time': 'datetime',
@@ -50,7 +51,9 @@ class MessageOut(object):
         'price': 'float',
         'parts_count': 'int',
         'from_email': 'str',
-        'from_number': 'str'
+        'from_number': 'str',
+        'sender_source': 'MessageOutSenderSource',
+        'session': 'MessageOutSession'
     }
 
     attribute_map = {
@@ -59,6 +62,7 @@ class MessageOut(object):
         'receiver': 'receiver',
         'text': 'text',
         'status': 'status',
+        'reject_reason': 'rejectReason',
         'contact_id': 'contactId',
         'session_id': 'sessionId',
         'message_time': 'messageTime',
@@ -73,10 +77,12 @@ class MessageOut(object):
         'price': 'price',
         'parts_count': 'partsCount',
         'from_email': 'fromEmail',
-        'from_number': 'fromNumber'
+        'from_number': 'fromNumber',
+        'sender_source': 'senderSource',
+        'session': 'session'
     }
 
-    def __init__(self, id=None, sender=None, receiver=None, text=None, status=None, contact_id=None, session_id=None, message_time=None, avatar=None, deleted=None, charset=None, charset_label=None, first_name=None, last_name=None, country=None, phone=None, price=None, parts_count=None, from_email=None, from_number=None):  # noqa: E501
+    def __init__(self, id=None, sender=None, receiver=None, text=None, status=None, reject_reason=None, contact_id=None, session_id=None, message_time=None, avatar=None, deleted=None, charset=None, charset_label=None, first_name=None, last_name=None, country=None, phone=None, price=None, parts_count=None, from_email=None, from_number=None, sender_source=None, session=None):  # noqa: E501
         """MessageOut - a model defined in Swagger"""  # noqa: E501
 
         self._id = None
@@ -84,6 +90,7 @@ class MessageOut(object):
         self._receiver = None
         self._text = None
         self._status = None
+        self._reject_reason = None
         self._contact_id = None
         self._session_id = None
         self._message_time = None
@@ -99,6 +106,8 @@ class MessageOut(object):
         self._parts_count = None
         self._from_email = None
         self._from_number = None
+        self._sender_source = None
+        self._session = None
         self.discriminator = None
 
         self.id = id
@@ -108,6 +117,8 @@ class MessageOut(object):
             self.receiver = receiver
         self.text = text
         self.status = status
+        if reject_reason is not None:
+            self.reject_reason = reject_reason
         self.contact_id = contact_id
         self.session_id = session_id
         self.message_time = message_time
@@ -128,6 +139,10 @@ class MessageOut(object):
             self.from_email = from_email
         if from_number is not None:
             self.from_number = from_number
+        if sender_source is not None:
+            self.sender_source = sender_source
+        if session is not None:
+            self.session = session
 
     @property
     def id(self):
@@ -247,6 +262,35 @@ class MessageOut(object):
             )
 
         self._status = status
+
+    @property
+    def reject_reason(self):
+        """Gets the reject_reason of this MessageOut.  # noqa: E501
+
+        Rejection reason.  # noqa: E501
+
+        :return: The reject_reason of this MessageOut.  # noqa: E501
+        :rtype: str
+        """
+        return self._reject_reason
+
+    @reject_reason.setter
+    def reject_reason(self, reject_reason):
+        """Sets the reject_reason of this MessageOut.
+
+        Rejection reason.  # noqa: E501
+
+        :param reject_reason: The reject_reason of this MessageOut.  # noqa: E501
+        :type: str
+        """
+        allowed_values = ["a", "f", "l", "c", "u", "b", "s", "m", "n", "i", "if", "d", "t", "e", "h", "k", "r", "g", "j", "w", "v", "q", "x", "o", "p"]  # noqa: E501
+        if reject_reason not in allowed_values:
+            raise ValueError(
+                "Invalid value for `reject_reason` ({0}), must be one of {1}"  # noqa: E501
+                .format(reject_reason, allowed_values)
+            )
+
+        self._reject_reason = reject_reason
 
     @property
     def contact_id(self):
@@ -590,6 +634,48 @@ class MessageOut(object):
         """
 
         self._from_number = from_number
+
+    @property
+    def sender_source(self):
+        """Gets the sender_source of this MessageOut.  # noqa: E501
+
+
+        :return: The sender_source of this MessageOut.  # noqa: E501
+        :rtype: MessageOutSenderSource
+        """
+        return self._sender_source
+
+    @sender_source.setter
+    def sender_source(self, sender_source):
+        """Sets the sender_source of this MessageOut.
+
+
+        :param sender_source: The sender_source of this MessageOut.  # noqa: E501
+        :type: MessageOutSenderSource
+        """
+
+        self._sender_source = sender_source
+
+    @property
+    def session(self):
+        """Gets the session of this MessageOut.  # noqa: E501
+
+
+        :return: The session of this MessageOut.  # noqa: E501
+        :rtype: MessageOutSession
+        """
+        return self._session
+
+    @session.setter
+    def session(self, session):
+        """Sets the session of this MessageOut.
+
+
+        :param session: The session of this MessageOut.  # noqa: E501
+        :type: MessageOutSession
+        """
+
+        self._session = session
 
     def to_dict(self):
         """Returns the model properties as a dict"""

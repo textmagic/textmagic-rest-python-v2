@@ -32,23 +32,27 @@ class GetAvailableDedicatedNumbersResponse(object):
     """
     swagger_types = {
         'numbers': 'list[str]',
-        'price': 'float'
+        'price': 'float',
+        'gift_type': 'str'
     }
 
     attribute_map = {
         'numbers': 'numbers',
-        'price': 'price'
+        'price': 'price',
+        'gift_type': 'giftType'
     }
 
-    def __init__(self, numbers=None, price=None):  # noqa: E501
+    def __init__(self, numbers=None, price=None, gift_type=None):  # noqa: E501
         """GetAvailableDedicatedNumbersResponse - a model defined in Swagger"""  # noqa: E501
 
         self._numbers = None
         self._price = None
+        self._gift_type = None
         self.discriminator = None
 
         self.numbers = numbers
         self.price = price
+        self.gift_type = gift_type
 
     @property
     def numbers(self):
@@ -95,6 +99,33 @@ class GetAvailableDedicatedNumbersResponse(object):
         """
 
         self._price = price
+
+    @property
+    def gift_type(self):
+        """Gets the gift_type of this GetAvailableDedicatedNumbersResponse.  # noqa: E501
+
+
+        :return: The gift_type of this GetAvailableDedicatedNumbersResponse.  # noqa: E501
+        :rtype: str
+        """
+        return self._gift_type
+
+    @gift_type.setter
+    def gift_type(self, gift_type):
+        """Sets the gift_type of this GetAvailableDedicatedNumbersResponse.
+
+
+        :param gift_type: The gift_type of this GetAvailableDedicatedNumbersResponse.  # noqa: E501
+        :type: str
+        """
+        allowed_values = ["none", "registration", "first_month", "include_in_plan"]  # noqa: E501
+        if gift_type not in allowed_values:
+            raise ValueError(
+                "Invalid value for `gift_type` ({0}), must be one of {1}"  # noqa: E501
+                .format(gift_type, allowed_values)
+            )
+
+        self._gift_type = gift_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -214,7 +214,7 @@ class UserStatement(object):
     def value(self):
         """Gets the value of this UserStatement.  # noqa: E501
 
-        Value differs by **type**: *   for **sms**, it is the sent messages amount; *   for **number**, it is a dedicated phone number; *   for **schedule**, it is a scheduled messages amount; *   for **top-up**, it is an invoice ID.   # noqa: E501
+        Value differs by **type**: *   for **sms**, it is the sent messages amount; *   for **number**, it is a dedicated phone number; *   for **schedule**, it is a scheduled messages amount; *   for **top-up**, it is an invoice ID.   # noqa: E501
 
         :return: The value of this UserStatement.  # noqa: E501
         :rtype: str
@@ -225,7 +225,7 @@ class UserStatement(object):
     def value(self, value):
         """Sets the value of this UserStatement.
 
-        Value differs by **type**: *   for **sms**, it is the sent messages amount; *   for **number**, it is a dedicated phone number; *   for **schedule**, it is a scheduled messages amount; *   for **top-up**, it is an invoice ID.   # noqa: E501
+        Value differs by **type**: *   for **sms**, it is the sent messages amount; *   for **number**, it is a dedicated phone number; *   for **schedule**, it is a scheduled messages amount; *   for **top-up**, it is an invoice ID.   # noqa: E501
 
         :param value: The value of this UserStatement.  # noqa: E501
         :type: str

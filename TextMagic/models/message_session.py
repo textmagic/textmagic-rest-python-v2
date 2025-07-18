@@ -38,7 +38,9 @@ class MessageSession(object):
         'reference_id': 'str',
         'price': 'float',
         'numbers_count': 'int',
-        'destination': 'str'
+        'destination': 'str',
+        'initiator_id': 'int',
+        'title': 'str'
     }
 
     attribute_map = {
@@ -49,10 +51,12 @@ class MessageSession(object):
         'reference_id': 'referenceId',
         'price': 'price',
         'numbers_count': 'numbersCount',
-        'destination': 'destination'
+        'destination': 'destination',
+        'initiator_id': 'initiatorId',
+        'title': 'title'
     }
 
-    def __init__(self, id=None, start_time=None, text=None, source=None, reference_id=None, price=None, numbers_count=None, destination=None):  # noqa: E501
+    def __init__(self, id=None, start_time=None, text=None, source=None, reference_id=None, price=None, numbers_count=None, destination=None, initiator_id=None, title=None):  # noqa: E501
         """MessageSession - a model defined in Swagger"""  # noqa: E501
 
         self._id = None
@@ -63,6 +67,8 @@ class MessageSession(object):
         self._price = None
         self._numbers_count = None
         self._destination = None
+        self._initiator_id = None
+        self._title = None
         self.discriminator = None
 
         self.id = id
@@ -73,6 +79,8 @@ class MessageSession(object):
         self.price = price
         self.numbers_count = numbers_count
         self.destination = destination
+        self.initiator_id = initiator_id
+        self.title = title
 
     @property
     def id(self):
@@ -263,6 +271,50 @@ class MessageSession(object):
             )
 
         self._destination = destination
+
+    @property
+    def initiator_id(self):
+        """Gets the initiator_id of this MessageSession.  # noqa: E501
+
+        Initiator ID.  # noqa: E501
+
+        :return: The initiator_id of this MessageSession.  # noqa: E501
+        :rtype: int
+        """
+        return self._initiator_id
+
+    @initiator_id.setter
+    def initiator_id(self, initiator_id):
+        """Sets the initiator_id of this MessageSession.
+
+        Initiator ID.  # noqa: E501
+
+        :param initiator_id: The initiator_id of this MessageSession.  # noqa: E501
+        :type: int
+        """
+
+        self._initiator_id = initiator_id
+
+    @property
+    def title(self):
+        """Gets the title of this MessageSession.  # noqa: E501
+
+
+        :return: The title of this MessageSession.  # noqa: E501
+        :rtype: str
+        """
+        return self._title
+
+    @title.setter
+    def title(self, title):
+        """Sets the title of this MessageSession.
+
+
+        :param title: The title of this MessageSession.  # noqa: E501
+        :type: str
+        """
+
+        self._title = title
 
     def to_dict(self):
         """Returns the model properties as a dict"""

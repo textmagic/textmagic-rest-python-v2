@@ -33,26 +33,30 @@ class MessagesIcsParametersRecipients(object):
     swagger_types = {
         'contacts': 'list[int]',
         'groups': 'list[int]',
-        'numbers': 'list[str]'
+        'numbers': 'list[str]',
+        'filtered_views': 'list[int]'
     }
 
     attribute_map = {
         'contacts': 'contacts',
         'groups': 'groups',
-        'numbers': 'numbers'
+        'numbers': 'numbers',
+        'filtered_views': 'filteredViews'
     }
 
-    def __init__(self, contacts=None, groups=None, numbers=None):  # noqa: E501
+    def __init__(self, contacts=None, groups=None, numbers=None, filtered_views=None):  # noqa: E501
         """MessagesIcsParametersRecipients - a model defined in Swagger"""  # noqa: E501
 
         self._contacts = None
         self._groups = None
         self._numbers = None
+        self._filtered_views = None
         self.discriminator = None
 
         self.contacts = contacts
         self.groups = groups
         self.numbers = numbers
+        self.filtered_views = filtered_views
 
     @property
     def contacts(self):
@@ -116,6 +120,27 @@ class MessagesIcsParametersRecipients(object):
         """
 
         self._numbers = numbers
+
+    @property
+    def filtered_views(self):
+        """Gets the filtered_views of this MessagesIcsParametersRecipients.  # noqa: E501
+
+
+        :return: The filtered_views of this MessagesIcsParametersRecipients.  # noqa: E501
+        :rtype: list[int]
+        """
+        return self._filtered_views
+
+    @filtered_views.setter
+    def filtered_views(self, filtered_views):
+        """Sets the filtered_views of this MessagesIcsParametersRecipients.
+
+
+        :param filtered_views: The filtered_views of this MessagesIcsParametersRecipients.  # noqa: E501
+        :type: list[int]
+        """
+
+        self._filtered_views = filtered_views
 
     def to_dict(self):
         """Returns the model properties as a dict"""

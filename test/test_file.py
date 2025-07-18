@@ -16,12 +16,12 @@ from __future__ import absolute_import
 import unittest
 
 import TextMagic
-from TextMagic.models.check_phone_verification_code_tfa_input_object import CheckPhoneVerificationCodeTFAInputObject  # noqa: E501
+from TextMagic.models.file import File  # noqa: E501
 from TextMagic.rest import ApiException
 
 
-class TestCheckPhoneVerificationCodeTFAInputObject(unittest.TestCase):
-    """CheckPhoneVerificationCodeTFAInputObject unit test stubs"""
+class TestFile(unittest.TestCase):
+    """File unit test stubs"""
 
     def setUp(self):
         pass
@@ -29,10 +29,10 @@ class TestCheckPhoneVerificationCodeTFAInputObject(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testCheckPhoneVerificationCodeTFAInputObject(self):
-        """Test CheckPhoneVerificationCodeTFAInputObject"""
+    def testFile(self):
+        """Test File"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.check_phone_verification_code_tfa_input_object.CheckPhoneVerificationCodeTFAInputObject()  # noqa: E501
+        # model = TextMagic.models.file.File()  # noqa: E501
         pass
 
 

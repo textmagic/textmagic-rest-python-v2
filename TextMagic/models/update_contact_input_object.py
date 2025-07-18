@@ -42,7 +42,9 @@ class UpdateContactInputObject(object):
         'type': 'int',
         'custom_field_values': 'list[CustomFieldListItem]',
         'local': 'int',
-        'country': 'str'
+        'country': 'str',
+        'tags': 'str',
+        'owner': 'int'
     }
 
     attribute_map = {
@@ -57,10 +59,12 @@ class UpdateContactInputObject(object):
         'type': 'type',
         'custom_field_values': 'customFieldValues',
         'local': 'local',
-        'country': 'country'
+        'country': 'country',
+        'tags': 'tags',
+        'owner': 'owner'
     }
 
-    def __init__(self, first_name=None, last_name=None, phone=None, email=None, company_name=None, lists=None, favorited=None, blocked=None, type=None, custom_field_values=None, local=None, country=None):  # noqa: E501
+    def __init__(self, first_name=None, last_name=None, phone=None, email=None, company_name=None, lists=None, favorited=None, blocked=None, type=None, custom_field_values=None, local=None, country=None, tags=None, owner=None):  # noqa: E501
         """UpdateContactInputObject - a model defined in Swagger"""  # noqa: E501
 
         self._first_name = None
@@ -75,6 +79,8 @@ class UpdateContactInputObject(object):
         self._custom_field_values = None
         self._local = None
         self._country = None
+        self._tags = None
+        self._owner = None
         self.discriminator = None
 
         if first_name is not None:
@@ -101,6 +107,10 @@ class UpdateContactInputObject(object):
             self.local = local
         if country is not None:
             self.country = country
+        if tags is not None:
+            self.tags = tags
+        if owner is not None:
+            self.owner = owner
 
     @property
     def first_name(self):
@@ -375,6 +385,52 @@ class UpdateContactInputObject(object):
         """
 
         self._country = country
+
+    @property
+    def tags(self):
+        """Gets the tags of this UpdateContactInputObject.  # noqa: E501
+
+        Contact [list](https://docs.textmagic.com/#tag/Tag) ID. Each contact must be assigned to at least one list.  # noqa: E501
+
+        :return: The tags of this UpdateContactInputObject.  # noqa: E501
+        :rtype: str
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this UpdateContactInputObject.
+
+        Contact [list](https://docs.textmagic.com/#tag/Tag) ID. Each contact must be assigned to at least one list.  # noqa: E501
+
+        :param tags: The tags of this UpdateContactInputObject.  # noqa: E501
+        :type: str
+        """
+
+        self._tags = tags
+
+    @property
+    def owner(self):
+        """Gets the owner of this UpdateContactInputObject.  # noqa: E501
+
+        Contact Owner ID  # noqa: E501
+
+        :return: The owner of this UpdateContactInputObject.  # noqa: E501
+        :rtype: int
+        """
+        return self._owner
+
+    @owner.setter
+    def owner(self, owner):
+        """Sets the owner of this UpdateContactInputObject.
+
+        Contact Owner ID  # noqa: E501
+
+        :param owner: The owner of this UpdateContactInputObject.  # noqa: E501
+        :type: int
+        """
+
+        self._owner = owner
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -47,7 +47,11 @@ class Chat(object):
         'muted_until': 'datetime',
         'time_left_mute': 'int',
         'country': 'Country',
-        'pinned': 'bool'
+        'pinned': 'bool',
+        'type': 'str',
+        'sms_price': 'float',
+        'mms_price': 'float',
+        'tags': 'list[Tag]'
     }
 
     attribute_map = {
@@ -67,10 +71,14 @@ class Chat(object):
         'muted_until': 'mutedUntil',
         'time_left_mute': 'timeLeftMute',
         'country': 'country',
-        'pinned': 'pinned'
+        'pinned': 'pinned',
+        'type': 'type',
+        'sms_price': 'smsPrice',
+        'mms_price': 'mmsPrice',
+        'tags': 'tags'
     }
 
-    def __init__(self, id=None, original_id=None, phone=None, contact=None, unsubscribed_contact_id=None, unread=None, updated_at=None, status=None, mute=None, last_message=None, direction=None, reply_options_type=None, _from=None, muted_until=None, time_left_mute=None, country=None, pinned=None):  # noqa: E501
+    def __init__(self, id=None, original_id=None, phone=None, contact=None, unsubscribed_contact_id=None, unread=None, updated_at=None, status=None, mute=None, last_message=None, direction=None, reply_options_type=None, _from=None, muted_until=None, time_left_mute=None, country=None, pinned=None, type=None, sms_price=None, mms_price=None, tags=None):  # noqa: E501
         """Chat - a model defined in Swagger"""  # noqa: E501
 
         self._id = None
@@ -90,6 +98,10 @@ class Chat(object):
         self._time_left_mute = None
         self._country = None
         self._pinned = None
+        self._type = None
+        self._sms_price = None
+        self._mms_price = None
+        self._tags = None
         self.discriminator = None
 
         self.id = id
@@ -109,6 +121,11 @@ class Chat(object):
         self.time_left_mute = time_left_mute
         self.country = country
         self.pinned = pinned
+        self.type = type
+        self.sms_price = sms_price
+        self.mms_price = mms_price
+        if tags is not None:
+            self.tags = tags
 
     @property
     def id(self):
@@ -506,6 +523,92 @@ class Chat(object):
         """
 
         self._pinned = pinned
+
+    @property
+    def type(self):
+        """Gets the type of this Chat.  # noqa: E501
+
+        Chat type.  # noqa: E501
+
+        :return: The type of this Chat.  # noqa: E501
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this Chat.
+
+        Chat type.  # noqa: E501
+
+        :param type: The type of this Chat.  # noqa: E501
+        :type: str
+        """
+
+        self._type = type
+
+    @property
+    def sms_price(self):
+        """Gets the sms_price of this Chat.  # noqa: E501
+
+
+        :return: The sms_price of this Chat.  # noqa: E501
+        :rtype: float
+        """
+        return self._sms_price
+
+    @sms_price.setter
+    def sms_price(self, sms_price):
+        """Sets the sms_price of this Chat.
+
+
+        :param sms_price: The sms_price of this Chat.  # noqa: E501
+        :type: float
+        """
+
+        self._sms_price = sms_price
+
+    @property
+    def mms_price(self):
+        """Gets the mms_price of this Chat.  # noqa: E501
+
+
+        :return: The mms_price of this Chat.  # noqa: E501
+        :rtype: float
+        """
+        return self._mms_price
+
+    @mms_price.setter
+    def mms_price(self, mms_price):
+        """Sets the mms_price of this Chat.
+
+
+        :param mms_price: The mms_price of this Chat.  # noqa: E501
+        :type: float
+        """
+
+        self._mms_price = mms_price
+
+    @property
+    def tags(self):
+        """Gets the tags of this Chat.  # noqa: E501
+
+
+        :return: The tags of this Chat.  # noqa: E501
+        :rtype: list[Tag]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this Chat.
+
+
+        :param tags: The tags of this Chat.  # noqa: E501
+        :type: list[Tag]
+        """
+
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -36,7 +36,10 @@ class GetAvailableSenderSettingOptionsResponse(object):
         'shared': 'list[str]',
         'sender_ids': 'list[str]',
         'user_carrier_twilio': 'list[str]',
-        'user_carrier_vonage': 'list[str]'
+        'user_carrier_vonage': 'list[str]',
+        'user_carrier_sinch': 'list[str]',
+        'u_carrier_bandwidth': 'list[str]',
+        'uc_twilio_sender_id': 'list[str]'
     }
 
     attribute_map = {
@@ -45,10 +48,13 @@ class GetAvailableSenderSettingOptionsResponse(object):
         'shared': 'shared',
         'sender_ids': 'senderIds',
         'user_carrier_twilio': 'userCarrierTwilio',
-        'user_carrier_vonage': 'userCarrierVonage'
+        'user_carrier_vonage': 'userCarrierVonage',
+        'user_carrier_sinch': 'userCarrierSinch',
+        'u_carrier_bandwidth': 'uCarrierBandwidth',
+        'uc_twilio_sender_id': 'ucTwilioSenderId'
     }
 
-    def __init__(self, dedicated=None, user=None, shared=None, sender_ids=None, user_carrier_twilio=None, user_carrier_vonage=None):  # noqa: E501
+    def __init__(self, dedicated=None, user=None, shared=None, sender_ids=None, user_carrier_twilio=None, user_carrier_vonage=None, user_carrier_sinch=None, u_carrier_bandwidth=None, uc_twilio_sender_id=None):  # noqa: E501
         """GetAvailableSenderSettingOptionsResponse - a model defined in Swagger"""  # noqa: E501
 
         self._dedicated = None
@@ -57,6 +63,9 @@ class GetAvailableSenderSettingOptionsResponse(object):
         self._sender_ids = None
         self._user_carrier_twilio = None
         self._user_carrier_vonage = None
+        self._user_carrier_sinch = None
+        self._u_carrier_bandwidth = None
+        self._uc_twilio_sender_id = None
         self.discriminator = None
 
         self.dedicated = dedicated
@@ -65,6 +74,11 @@ class GetAvailableSenderSettingOptionsResponse(object):
         self.sender_ids = sender_ids
         self.user_carrier_twilio = user_carrier_twilio
         self.user_carrier_vonage = user_carrier_vonage
+        self.user_carrier_sinch = user_carrier_sinch
+        if u_carrier_bandwidth is not None:
+            self.u_carrier_bandwidth = u_carrier_bandwidth
+        if uc_twilio_sender_id is not None:
+            self.uc_twilio_sender_id = uc_twilio_sender_id
 
     @property
     def dedicated(self):
@@ -203,6 +217,75 @@ class GetAvailableSenderSettingOptionsResponse(object):
         """
 
         self._user_carrier_vonage = user_carrier_vonage
+
+    @property
+    def user_carrier_sinch(self):
+        """Gets the user_carrier_sinch of this GetAvailableSenderSettingOptionsResponse.  # noqa: E501
+
+        Array of alphanumeric sender IDs.  # noqa: E501
+
+        :return: The user_carrier_sinch of this GetAvailableSenderSettingOptionsResponse.  # noqa: E501
+        :rtype: list[str]
+        """
+        return self._user_carrier_sinch
+
+    @user_carrier_sinch.setter
+    def user_carrier_sinch(self, user_carrier_sinch):
+        """Sets the user_carrier_sinch of this GetAvailableSenderSettingOptionsResponse.
+
+        Array of alphanumeric sender IDs.  # noqa: E501
+
+        :param user_carrier_sinch: The user_carrier_sinch of this GetAvailableSenderSettingOptionsResponse.  # noqa: E501
+        :type: list[str]
+        """
+
+        self._user_carrier_sinch = user_carrier_sinch
+
+    @property
+    def u_carrier_bandwidth(self):
+        """Gets the u_carrier_bandwidth of this GetAvailableSenderSettingOptionsResponse.  # noqa: E501
+
+        Array of alphanumeric sender IDs.  # noqa: E501
+
+        :return: The u_carrier_bandwidth of this GetAvailableSenderSettingOptionsResponse.  # noqa: E501
+        :rtype: list[str]
+        """
+        return self._u_carrier_bandwidth
+
+    @u_carrier_bandwidth.setter
+    def u_carrier_bandwidth(self, u_carrier_bandwidth):
+        """Sets the u_carrier_bandwidth of this GetAvailableSenderSettingOptionsResponse.
+
+        Array of alphanumeric sender IDs.  # noqa: E501
+
+        :param u_carrier_bandwidth: The u_carrier_bandwidth of this GetAvailableSenderSettingOptionsResponse.  # noqa: E501
+        :type: list[str]
+        """
+
+        self._u_carrier_bandwidth = u_carrier_bandwidth
+
+    @property
+    def uc_twilio_sender_id(self):
+        """Gets the uc_twilio_sender_id of this GetAvailableSenderSettingOptionsResponse.  # noqa: E501
+
+        Array of alphanumeric sender IDs.  # noqa: E501
+
+        :return: The uc_twilio_sender_id of this GetAvailableSenderSettingOptionsResponse.  # noqa: E501
+        :rtype: list[str]
+        """
+        return self._uc_twilio_sender_id
+
+    @uc_twilio_sender_id.setter
+    def uc_twilio_sender_id(self, uc_twilio_sender_id):
+        """Sets the uc_twilio_sender_id of this GetAvailableSenderSettingOptionsResponse.
+
+        Array of alphanumeric sender IDs.  # noqa: E501
+
+        :param uc_twilio_sender_id: The uc_twilio_sender_id of this GetAvailableSenderSettingOptionsResponse.  # noqa: E501
+        :type: list[str]
+        """
+
+        self._uc_twilio_sender_id = uc_twilio_sender_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

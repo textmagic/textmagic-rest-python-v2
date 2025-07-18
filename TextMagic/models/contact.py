@@ -40,12 +40,15 @@ class Contact(object):
         'phone': 'str',
         'email': 'str',
         'country': 'Country',
-        'custom_fields': 'list[ContactCustomField]',
+        'custom_fields': 'list[CustomFieldListItem]',
         'user': 'User',
         'lists': 'list[List]',
+        'owner': 'User',
+        'tags': 'list[Tag]',
         'phone_type': 'str',
         'avatar': 'ContactImage',
-        'notes': 'list[ContactNote]'
+        'notes': 'list[ContactNote]',
+        'whatsapp_phone': 'str'
     }
 
     attribute_map = {
@@ -61,12 +64,15 @@ class Contact(object):
         'custom_fields': 'customFields',
         'user': 'user',
         'lists': 'lists',
+        'owner': 'owner',
+        'tags': 'tags',
         'phone_type': 'phoneType',
         'avatar': 'avatar',
-        'notes': 'notes'
+        'notes': 'notes',
+        'whatsapp_phone': 'whatsappPhone'
     }
 
-    def __init__(self, id=None, favorited=None, blocked=None, first_name=None, last_name=None, company_name=None, phone=None, email=None, country=None, custom_fields=None, user=None, lists=None, phone_type=None, avatar=None, notes=None):  # noqa: E501
+    def __init__(self, id=None, favorited=None, blocked=None, first_name=None, last_name=None, company_name=None, phone=None, email=None, country=None, custom_fields=None, user=None, lists=None, owner=None, tags=None, phone_type=None, avatar=None, notes=None, whatsapp_phone=None):  # noqa: E501
         """Contact - a model defined in Swagger"""  # noqa: E501
 
         self._id = None
@@ -81,9 +87,12 @@ class Contact(object):
         self._custom_fields = None
         self._user = None
         self._lists = None
+        self._owner = None
+        self._tags = None
         self._phone_type = None
         self._avatar = None
         self._notes = None
+        self._whatsapp_phone = None
         self.discriminator = None
 
         self.id = id
@@ -98,9 +107,15 @@ class Contact(object):
         self.custom_fields = custom_fields
         self.user = user
         self.lists = lists
+        if owner is not None:
+            self.owner = owner
+        if tags is not None:
+            self.tags = tags
         self.phone_type = phone_type
         self.avatar = avatar
         self.notes = notes
+        if whatsapp_phone is not None:
+            self.whatsapp_phone = whatsapp_phone
 
     @property
     def id(self):
@@ -313,10 +328,9 @@ class Contact(object):
     def custom_fields(self):
         """Gets the custom_fields of this Contact.  # noqa: E501
 
-        See the [Custom Fields](https://docs.textmagic.com/#tag/Custom-Fields) section.  # noqa: E501
 
         :return: The custom_fields of this Contact.  # noqa: E501
-        :rtype: list[ContactCustomField]
+        :rtype: list[CustomFieldListItem]
         """
         return self._custom_fields
 
@@ -324,10 +338,9 @@ class Contact(object):
     def custom_fields(self, custom_fields):
         """Sets the custom_fields of this Contact.
 
-        See the [Custom Fields](https://docs.textmagic.com/#tag/Custom-Fields) section.  # noqa: E501
 
         :param custom_fields: The custom_fields of this Contact.  # noqa: E501
-        :type: list[ContactCustomField]
+        :type: list[CustomFieldListItem]
         """
 
         self._custom_fields = custom_fields
@@ -373,6 +386,50 @@ class Contact(object):
         """
 
         self._lists = lists
+
+    @property
+    def owner(self):
+        """Gets the owner of this Contact.  # noqa: E501
+
+        Contact Owner User ID.  # noqa: E501
+
+        :return: The owner of this Contact.  # noqa: E501
+        :rtype: User
+        """
+        return self._owner
+
+    @owner.setter
+    def owner(self, owner):
+        """Sets the owner of this Contact.
+
+        Contact Owner User ID.  # noqa: E501
+
+        :param owner: The owner of this Contact.  # noqa: E501
+        :type: User
+        """
+
+        self._owner = owner
+
+    @property
+    def tags(self):
+        """Gets the tags of this Contact.  # noqa: E501
+
+
+        :return: The tags of this Contact.  # noqa: E501
+        :rtype: list[Tag]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this Contact.
+
+
+        :param tags: The tags of this Contact.  # noqa: E501
+        :type: list[Tag]
+        """
+
+        self._tags = tags
 
     @property
     def phone_type(self):
@@ -438,6 +495,29 @@ class Contact(object):
         """
 
         self._notes = notes
+
+    @property
+    def whatsapp_phone(self):
+        """Gets the whatsapp_phone of this Contact.  # noqa: E501
+
+        Whatsapp phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164).  # noqa: E501
+
+        :return: The whatsapp_phone of this Contact.  # noqa: E501
+        :rtype: str
+        """
+        return self._whatsapp_phone
+
+    @whatsapp_phone.setter
+    def whatsapp_phone(self, whatsapp_phone):
+        """Sets the whatsapp_phone of this Contact.
+
+        Whatsapp phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164).  # noqa: E501
+
+        :param whatsapp_phone: The whatsapp_phone of this Contact.  # noqa: E501
+        :type: str
+        """
+
+        self._whatsapp_phone = whatsapp_phone
 
     def to_dict(self):
         """Returns the model properties as a dict"""

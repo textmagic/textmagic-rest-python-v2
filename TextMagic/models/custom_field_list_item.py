@@ -32,23 +32,35 @@ class CustomFieldListItem(object):
     """
     swagger_types = {
         'id': 'int',
-        'value': 'str'
+        'user_custom_field_id': 'int',
+        'name': 'str',
+        'value': 'str',
+        'created_at': 'datetime'
     }
 
     attribute_map = {
         'id': 'id',
-        'value': 'value'
+        'user_custom_field_id': 'userCustomFieldId',
+        'name': 'name',
+        'value': 'value',
+        'created_at': 'createdAt'
     }
 
-    def __init__(self, id=None, value=None):  # noqa: E501
+    def __init__(self, id=None, user_custom_field_id=None, name=None, value=None, created_at=None):  # noqa: E501
         """CustomFieldListItem - a model defined in Swagger"""  # noqa: E501
 
         self._id = None
+        self._user_custom_field_id = None
+        self._name = None
         self._value = None
+        self._created_at = None
         self.discriminator = None
 
         self.id = id
+        self.user_custom_field_id = user_custom_field_id
+        self.name = name
         self.value = value
+        self.created_at = created_at
 
     @property
     def id(self):
@@ -74,6 +86,52 @@ class CustomFieldListItem(object):
         self._id = id
 
     @property
+    def user_custom_field_id(self):
+        """Gets the user_custom_field_id of this CustomFieldListItem.  # noqa: E501
+
+        Old property custom Field ID.  # noqa: E501
+
+        :return: The user_custom_field_id of this CustomFieldListItem.  # noqa: E501
+        :rtype: int
+        """
+        return self._user_custom_field_id
+
+    @user_custom_field_id.setter
+    def user_custom_field_id(self, user_custom_field_id):
+        """Sets the user_custom_field_id of this CustomFieldListItem.
+
+        Old property custom Field ID.  # noqa: E501
+
+        :param user_custom_field_id: The user_custom_field_id of this CustomFieldListItem.  # noqa: E501
+        :type: int
+        """
+
+        self._user_custom_field_id = user_custom_field_id
+
+    @property
+    def name(self):
+        """Gets the name of this CustomFieldListItem.  # noqa: E501
+
+        Custom Field name.  # noqa: E501
+
+        :return: The name of this CustomFieldListItem.  # noqa: E501
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this CustomFieldListItem.
+
+        Custom Field name.  # noqa: E501
+
+        :param name: The name of this CustomFieldListItem.  # noqa: E501
+        :type: str
+        """
+
+        self._name = name
+
+    @property
     def value(self):
         """Gets the value of this CustomFieldListItem.  # noqa: E501
 
@@ -95,6 +153,29 @@ class CustomFieldListItem(object):
         """
 
         self._value = value
+
+    @property
+    def created_at(self):
+        """Gets the created_at of this CustomFieldListItem.  # noqa: E501
+
+        Custom field creation time.  # noqa: E501
+
+        :return: The created_at of this CustomFieldListItem.  # noqa: E501
+        :rtype: datetime
+        """
+        return self._created_at
+
+    @created_at.setter
+    def created_at(self, created_at):
+        """Sets the created_at of this CustomFieldListItem.
+
+        Custom field creation time.  # noqa: E501
+
+        :param created_at: The created_at of this CustomFieldListItem.  # noqa: E501
+        :type: datetime
+        """
+
+        self._created_at = created_at
 
     def to_dict(self):
         """Returns the model properties as a dict"""

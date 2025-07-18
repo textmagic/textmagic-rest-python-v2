@@ -41,7 +41,16 @@ class Conversation(object):
         'first_name': 'str',
         'last_name': 'str',
         'session_id': 'int',
-        'initiator_id': 'int'
+        'initiator_id': 'int',
+        'message_file_id': 'int',
+        'type': 'str',
+        'chat_type': 'str',
+        'chat_id': 'int',
+        'is_edited': 'bool',
+        'error_code': 'str',
+        'files': 'list[File]',
+        'payload': 'MessagePayload',
+        'avatar': 'str'
     }
 
     attribute_map = {
@@ -55,10 +64,19 @@ class Conversation(object):
         'first_name': 'firstName',
         'last_name': 'lastName',
         'session_id': 'sessionId',
-        'initiator_id': 'initiatorId'
+        'initiator_id': 'initiatorId',
+        'message_file_id': 'messageFileId',
+        'type': 'type',
+        'chat_type': 'chatType',
+        'chat_id': 'chatId',
+        'is_edited': 'isEdited',
+        'error_code': 'errorCode',
+        'files': 'files',
+        'payload': 'payload',
+        'avatar': 'avatar'
     }
 
-    def __init__(self, id=None, direction=None, sender=None, message_time=None, text=None, receiver=None, status=None, first_name=None, last_name=None, session_id=None, initiator_id=None):  # noqa: E501
+    def __init__(self, id=None, direction=None, sender=None, message_time=None, text=None, receiver=None, status=None, first_name=None, last_name=None, session_id=None, initiator_id=None, message_file_id=None, type=None, chat_type=None, chat_id=None, is_edited=None, error_code=None, files=None, payload=None, avatar=None):  # noqa: E501
         """Conversation - a model defined in Swagger"""  # noqa: E501
 
         self._id = None
@@ -72,6 +90,15 @@ class Conversation(object):
         self._last_name = None
         self._session_id = None
         self._initiator_id = None
+        self._message_file_id = None
+        self._type = None
+        self._chat_type = None
+        self._chat_id = None
+        self._is_edited = None
+        self._error_code = None
+        self._files = None
+        self._payload = None
+        self._avatar = None
         self.discriminator = None
 
         self.id = id
@@ -86,6 +113,24 @@ class Conversation(object):
         self.session_id = session_id
         if initiator_id is not None:
             self.initiator_id = initiator_id
+        if message_file_id is not None:
+            self.message_file_id = message_file_id
+        if type is not None:
+            self.type = type
+        if chat_type is not None:
+            self.chat_type = chat_type
+        if chat_id is not None:
+            self.chat_id = chat_id
+        if is_edited is not None:
+            self.is_edited = is_edited
+        if error_code is not None:
+            self.error_code = error_code
+        if files is not None:
+            self.files = files
+        if payload is not None:
+            self.payload = payload
+        if avatar is not None:
+            self.avatar = avatar
 
     @property
     def id(self):
@@ -343,6 +388,217 @@ class Conversation(object):
         """
 
         self._initiator_id = initiator_id
+
+    @property
+    def message_file_id(self):
+        """Gets the message_file_id of this Conversation.  # noqa: E501
+
+        Message file id.  # noqa: E501
+
+        :return: The message_file_id of this Conversation.  # noqa: E501
+        :rtype: int
+        """
+        return self._message_file_id
+
+    @message_file_id.setter
+    def message_file_id(self, message_file_id):
+        """Sets the message_file_id of this Conversation.
+
+        Message file id.  # noqa: E501
+
+        :param message_file_id: The message_file_id of this Conversation.  # noqa: E501
+        :type: int
+        """
+
+        self._message_file_id = message_file_id
+
+    @property
+    def type(self):
+        """Gets the type of this Conversation.  # noqa: E501
+
+        Message type.  # noqa: E501
+
+        :return: The type of this Conversation.  # noqa: E501
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this Conversation.
+
+        Message type.  # noqa: E501
+
+        :param type: The type of this Conversation.  # noqa: E501
+        :type: str
+        """
+        allowed_values = ["text", "image", "audio", "voice", "document", "video", "log", "initial", "note"]  # noqa: E501
+        if type not in allowed_values:
+            raise ValueError(
+                "Invalid value for `type` ({0}), must be one of {1}"  # noqa: E501
+                .format(type, allowed_values)
+            )
+
+        self._type = type
+
+    @property
+    def chat_type(self):
+        """Gets the chat_type of this Conversation.  # noqa: E501
+
+        Chat type.  # noqa: E501
+
+        :return: The chat_type of this Conversation.  # noqa: E501
+        :rtype: str
+        """
+        return self._chat_type
+
+    @chat_type.setter
+    def chat_type(self, chat_type):
+        """Sets the chat_type of this Conversation.
+
+        Chat type.  # noqa: E501
+
+        :param chat_type: The chat_type of this Conversation.  # noqa: E501
+        :type: str
+        """
+        allowed_values = ["sms", "facebook_messenger", "instagram", "whatsapp_business", "live_chat"]  # noqa: E501
+        if chat_type not in allowed_values:
+            raise ValueError(
+                "Invalid value for `chat_type` ({0}), must be one of {1}"  # noqa: E501
+                .format(chat_type, allowed_values)
+            )
+
+        self._chat_type = chat_type
+
+    @property
+    def chat_id(self):
+        """Gets the chat_id of this Conversation.  # noqa: E501
+
+        Chat id.  # noqa: E501
+
+        :return: The chat_id of this Conversation.  # noqa: E501
+        :rtype: int
+        """
+        return self._chat_id
+
+    @chat_id.setter
+    def chat_id(self, chat_id):
+        """Sets the chat_id of this Conversation.
+
+        Chat id.  # noqa: E501
+
+        :param chat_id: The chat_id of this Conversation.  # noqa: E501
+        :type: int
+        """
+
+        self._chat_id = chat_id
+
+    @property
+    def is_edited(self):
+        """Gets the is_edited of this Conversation.  # noqa: E501
+
+
+        :return: The is_edited of this Conversation.  # noqa: E501
+        :rtype: bool
+        """
+        return self._is_edited
+
+    @is_edited.setter
+    def is_edited(self, is_edited):
+        """Sets the is_edited of this Conversation.
+
+
+        :param is_edited: The is_edited of this Conversation.  # noqa: E501
+        :type: bool
+        """
+
+        self._is_edited = is_edited
+
+    @property
+    def error_code(self):
+        """Gets the error_code of this Conversation.  # noqa: E501
+
+        Error code.  # noqa: E501
+
+        :return: The error_code of this Conversation.  # noqa: E501
+        :rtype: str
+        """
+        return self._error_code
+
+    @error_code.setter
+    def error_code(self, error_code):
+        """Sets the error_code of this Conversation.
+
+        Error code.  # noqa: E501
+
+        :param error_code: The error_code of this Conversation.  # noqa: E501
+        :type: str
+        """
+
+        self._error_code = error_code
+
+    @property
+    def files(self):
+        """Gets the files of this Conversation.  # noqa: E501
+
+
+        :return: The files of this Conversation.  # noqa: E501
+        :rtype: list[File]
+        """
+        return self._files
+
+    @files.setter
+    def files(self, files):
+        """Sets the files of this Conversation.
+
+
+        :param files: The files of this Conversation.  # noqa: E501
+        :type: list[File]
+        """
+
+        self._files = files
+
+    @property
+    def payload(self):
+        """Gets the payload of this Conversation.  # noqa: E501
+
+
+        :return: The payload of this Conversation.  # noqa: E501
+        :rtype: MessagePayload
+        """
+        return self._payload
+
+    @payload.setter
+    def payload(self, payload):
+        """Sets the payload of this Conversation.
+
+
+        :param payload: The payload of this Conversation.  # noqa: E501
+        :type: MessagePayload
+        """
+
+        self._payload = payload
+
+    @property
+    def avatar(self):
+        """Gets the avatar of this Conversation.  # noqa: E501
+
+
+        :return: The avatar of this Conversation.  # noqa: E501
+        :rtype: str
+        """
+        return self._avatar
+
+    @avatar.setter
+    def avatar(self, avatar):
+        """Sets the avatar of this Conversation.
+
+
+        :param avatar: The avatar of this Conversation.  # noqa: E501
+        :type: str
+        """
+
+        self._avatar = avatar
 
     def to_dict(self):
         """Returns the model properties as a dict"""

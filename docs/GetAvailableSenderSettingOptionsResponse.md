@@ -9,6 +9,9 @@ Name | Type | Description | Notes
 **sender_ids** | **list[str]** | Array of alphanumeric sender IDs. | 
 **user_carrier_twilio** | **list[str]** | Array of alphanumeric sender IDs. | 
 **user_carrier_vonage** | **list[str]** | Array of alphanumeric sender IDs. | 
+**user_carrier_sinch** | **list[str]** | Array of alphanumeric sender IDs. | 
+**u_carrier_bandwidth** | **list[str]** | Array of alphanumeric sender IDs. | [optional] 
+**uc_twilio_sender_id** | **list[str]** | Array of alphanumeric sender IDs. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
