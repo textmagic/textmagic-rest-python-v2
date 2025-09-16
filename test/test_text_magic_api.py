@@ -99,6 +99,13 @@ class TestTextMagicApi(unittest.TestCase):
         """
         pass
 
+    def test_create_email_campaign(self):
+        """Test case for create_email_campaign
+
+        Create new email campaign  # noqa: E501
+        """
+        pass
+
     def test_create_list(self):
         """Test case for create_list
 
@@ -540,6 +547,13 @@ class TestTextMagicApi(unittest.TestCase):
         """
         pass
 
+    def test_get_email_senders(self):
+        """Test case for get_email_senders
+
+        Get list of email senders  # noqa: E501
+        """
+        pass
+
     def test_get_favorites(self):
         """Test case for get_favorites
 
@@ -824,6 +838,13 @@ class TestTextMagicApi(unittest.TestCase):
         """Test case for request_sender_id
 
         Apply for a new Sender ID  # noqa: E501
+        """
+        pass
+
+    def test_schedule_email_campaign(self):
+        """Test case for schedule_email_campaign
+
+        Schedule new email campaign  # noqa: E501
         """
         pass
 

@@ -1027,6 +1027,105 @@ class TextMagicApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
+    def create_email_campaign(self, create_email_campaign_input_object, **kwargs):  # noqa: E501
+        """Create new email campaign  # noqa: E501
+
+        Creates a new email campaign and sends it to the specified recipients.  This endpoint allows you to create and immediately send an email marketing campaign to your contacts, groups, or direct email addresses. The campaign will be processed asynchronously, and you'll receive a campaign object with tracking information.  ## Request Requirements  - **Email Sender ID**: Must be a valid, configured email sender from your account - **Recipients**: At least one recipient type must be specified (contacts, groups, or emails) - **Content**: Subject and HTML message content are required - **Balance**: Sufficient account balance for the estimated campaign cost  ## Recipient Types  You can target multiple recipient types in a single campaign:  - **Contact IDs**: Send to specific contacts from your contact list - **Group IDs**: Send to all contacts within specified groups   - **Direct Emails**: Send to email addresses not in your contact list  ## Content Guidelines  - **Subject**: Maximum 998 characters, should be engaging and relevant - **Message**: HTML content supported, including images, links, and formatting - **From Name**: Optional custom sender name (max 500 characters) - **Reply-To**: Optional custom reply-to email address  ## Cost and Balance  The API automatically calculates campaign costs based on: - Total number of unique recipients across all specified groups, contacts, and emails - Your account's email pricing tier - Any additional features or premium content  If your account balance is insufficient, the request will be rejected with a low balance error.  ## Response Information  Successful campaigns return: - Campaign ID for tracking and analytics - Current campaign status and progress - Cost breakdown and recipient counts - Sender information and content preview - Statistical totals and engagement metrics  ## Error Scenarios  Common error conditions include: - **Validation Errors**: Invalid email addresses, missing required fields, or content that exceeds limits - **Insufficient Balance**: Account balance too low for campaign cost - **Invalid Recipients**: Non-existent contact/group IDs or invalid email formats - **Sender Configuration**: Invalid or unconfigured email sender ID - **No Recipients**: All recipient arrays are empty or invalid   # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.create_email_campaign(create_email_campaign_input_object, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param CreateEmailCampaignInputObject create_email_campaign_input_object: (required)
+        :return: CreateEmailCampaignResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.create_email_campaign_with_http_info(create_email_campaign_input_object, **kwargs)  # noqa: E501
+        else:
+            (data) = self.create_email_campaign_with_http_info(create_email_campaign_input_object, **kwargs)  # noqa: E501
+            return data
+
+    def create_email_campaign_with_http_info(self, create_email_campaign_input_object, **kwargs):  # noqa: E501
+        """Create new email campaign  # noqa: E501
+
+        Creates a new email campaign and sends it to the specified recipients.  This endpoint allows you to create and immediately send an email marketing campaign to your contacts, groups, or direct email addresses. The campaign will be processed asynchronously, and you'll receive a campaign object with tracking information.  ## Request Requirements  - **Email Sender ID**: Must be a valid, configured email sender from your account - **Recipients**: At least one recipient type must be specified (contacts, groups, or emails) - **Content**: Subject and HTML message content are required - **Balance**: Sufficient account balance for the estimated campaign cost  ## Recipient Types  You can target multiple recipient types in a single campaign:  - **Contact IDs**: Send to specific contacts from your contact list - **Group IDs**: Send to all contacts within specified groups   - **Direct Emails**: Send to email addresses not in your contact list  ## Content Guidelines  - **Subject**: Maximum 998 characters, should be engaging and relevant - **Message**: HTML content supported, including images, links, and formatting - **From Name**: Optional custom sender name (max 500 characters) - **Reply-To**: Optional custom reply-to email address  ## Cost and Balance  The API automatically calculates campaign costs based on: - Total number of unique recipients across all specified groups, contacts, and emails - Your account's email pricing tier - Any additional features or premium content  If your account balance is insufficient, the request will be rejected with a low balance error.  ## Response Information  Successful campaigns return: - Campaign ID for tracking and analytics - Current campaign status and progress - Cost breakdown and recipient counts - Sender information and content preview - Statistical totals and engagement metrics  ## Error Scenarios  Common error conditions include: - **Validation Errors**: Invalid email addresses, missing required fields, or content that exceeds limits - **Insufficient Balance**: Account balance too low for campaign cost - **Invalid Recipients**: Non-existent contact/group IDs or invalid email formats - **Sender Configuration**: Invalid or unconfigured email sender ID - **No Recipients**: All recipient arrays are empty or invalid   # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.create_email_campaign_with_http_info(create_email_campaign_input_object, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param CreateEmailCampaignInputObject create_email_campaign_input_object: (required)
+        :return: CreateEmailCampaignResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['create_email_campaign_input_object']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method create_email_campaign" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'create_email_campaign_input_object' is set
+        if ('create_email_campaign_input_object' not in params or
+                params['create_email_campaign_input_object'] is None):
+            raise ValueError("Missing the required parameter `create_email_campaign_input_object` when calling `create_email_campaign`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'create_email_campaign_input_object' in params:
+            body_params = params['create_email_campaign_input_object']
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['BasicAuth']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/api/v2/email-campaigns', 'POST',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='CreateEmailCampaignResponse',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
     def create_list(self, create_list_input_object, **kwargs):  # noqa: E501
         """Create a new list  # noqa: E501
 
@@ -7272,6 +7371,101 @@ class TextMagicApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
+    def get_email_senders(self, **kwargs):  # noqa: E501
+        """Get list of email senders  # noqa: E501
+
+        Retrieves a list of configured email senders available for creating email campaigns.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_email_senders(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param int domain_id: Filter email senders by specific domain ID.
+        :return: GetEmailSendersResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.get_email_senders_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.get_email_senders_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def get_email_senders_with_http_info(self, **kwargs):  # noqa: E501
+        """Get list of email senders  # noqa: E501
+
+        Retrieves a list of configured email senders available for creating email campaigns.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_email_senders_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param int domain_id: Filter email senders by specific domain ID.
+        :return: GetEmailSendersResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['domain_id']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method get_email_senders" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'domain_id' in params:
+            query_params.append(('domainId', params['domain_id']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['BasicAuth']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/api/v2/email-campaigns/email-senders', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='GetEmailSendersResponse',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
     def get_favorites(self, **kwargs):  # noqa: E501
         """Get favorite contacts and lists  # noqa: E501
 
@@ -11488,6 +11682,105 @@ class TextMagicApi(object):
             post_params=form_params,
             files=local_var_files,
             response_type='ResourceLinkResponse',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def schedule_email_campaign(self, schedule_email_campaign_input_object, **kwargs):  # noqa: E501
+        """Schedule new email campaign  # noqa: E501
+
+        Creates a new scheduled email campaign that will be sent at a specified time or according to a recurring schedule.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.schedule_email_campaign(schedule_email_campaign_input_object, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param ScheduleEmailCampaignInputObject schedule_email_campaign_input_object: (required)
+        :return: ScheduleEmailCampaignResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.schedule_email_campaign_with_http_info(schedule_email_campaign_input_object, **kwargs)  # noqa: E501
+        else:
+            (data) = self.schedule_email_campaign_with_http_info(schedule_email_campaign_input_object, **kwargs)  # noqa: E501
+            return data
+
+    def schedule_email_campaign_with_http_info(self, schedule_email_campaign_input_object, **kwargs):  # noqa: E501
+        """Schedule new email campaign  # noqa: E501
+
+        Creates a new scheduled email campaign that will be sent at a specified time or according to a recurring schedule.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.schedule_email_campaign_with_http_info(schedule_email_campaign_input_object, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param ScheduleEmailCampaignInputObject schedule_email_campaign_input_object: (required)
+        :return: ScheduleEmailCampaignResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['schedule_email_campaign_input_object']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method schedule_email_campaign" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'schedule_email_campaign_input_object' is set
+        if ('schedule_email_campaign_input_object' not in params or
+                params['schedule_email_campaign_input_object'] is None):
+            raise ValueError("Missing the required parameter `schedule_email_campaign_input_object` when calling `schedule_email_campaign`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'schedule_email_campaign_input_object' in params:
+            body_params = params['schedule_email_campaign_input_object']
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['BasicAuth']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/api/v2/email-campaigns/schedule', 'POST',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='ScheduleEmailCampaignResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

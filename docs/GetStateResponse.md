@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **system_account_accept_terms_update** | **int** |  | 
 **system_account_closed** | **int** |  | 
 **system_account_additional_fields** | **int** |  | 
+**system_account_numbers_list_change** | **int** |  | 
 **system_account_permissions_changed** | **int** |  | 
 **user_profile_changed** | **int** |  | 
 **user_balance_changed** | **int** |  | 
@@ -76,8 +77,8 @@ Name | Type | Description | Notes
 **list_cache_clear** | **int** |  | 
 **custom_fields_cache_clear** | **int** |  | 
 **progress_carrier_bulk_lookup** | **int** |  | 
-**progress_email_bulk_lookup** | **int** |  | 
 **progress_sub_account_bulk_import** | **int** |  | 
+**email_lookup_progress_state** | **int** |  | 
 **import_progress_state** | **int** |  | 
 **force_refresh_web_app** | **int** |  | 
 **chat_sender_settings_changed** | **int** |  | 
@@ -181,6 +182,8 @@ Name | Type | Description | Notes
 **email_campaign_domain_entry_verification_changed** | **int** |  | 
 **email_campaign_progress_state** | **int** |  | 
 **email_campaign_updated** | **int** |  | 
+**email_template_improved** | **int** |  | 
+**email_template_improving_failed** | **int** |  | 
 **sms_campaign_invalidated** | **int** |  | 
 **scheduled_email_campaign_created** | **int** |  | 
 **scheduled_email_campaign_updated** | **int** |  | 

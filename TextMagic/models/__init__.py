@@ -15,6 +15,9 @@
 from __future__ import absolute_import
 
 # import models into model package
+from TextMagic.models.apiv2emailcampaigns_recipients import Apiv2emailcampaignsRecipients
+from TextMagic.models.apiv2emailcampaignsschedule_recipients import Apiv2emailcampaignsscheduleRecipients
+from TextMagic.models.apiv2emailcampaignsschedule_schedule_params import Apiv2emailcampaignsscheduleScheduleParams
 from TextMagic.models.assign_contacts_to_list_input_object import AssignContactsToListInputObject
 from TextMagic.models.bad_request_response import BadRequestResponse
 from TextMagic.models.bad_request_response_errors import BadRequestResponseErrors
@@ -34,6 +37,8 @@ from TextMagic.models.country import Country
 from TextMagic.models.create_contact_input_object import CreateContactInputObject
 from TextMagic.models.create_contact_note_input_object import CreateContactNoteInputObject
 from TextMagic.models.create_custom_field_input_object import CreateCustomFieldInputObject
+from TextMagic.models.create_email_campaign_input_object import CreateEmailCampaignInputObject
+from TextMagic.models.create_email_campaign_response import CreateEmailCampaignResponse
 from TextMagic.models.create_list_input_object import CreateListInputObject
 from TextMagic.models.create_template_input_object import CreateTemplateInputObject
 from TextMagic.models.currency import Currency
@@ -54,6 +59,8 @@ from TextMagic.models.do_auth_response import DoAuthResponse
 from TextMagic.models.do_auth_response_min_versions import DoAuthResponseMinVersions
 from TextMagic.models.do_carrier_lookup_response import DoCarrierLookupResponse
 from TextMagic.models.do_email_lookup_response import DoEmailLookupResponse
+from TextMagic.models.email_campaign_statistic_totals import EmailCampaignStatisticTotals
+from TextMagic.models.email_sender_item import EmailSenderItem
 from TextMagic.models.favorite_contact import FavoriteContact
 from TextMagic.models.file import File
 from TextMagic.models.file_metadata import FileMetadata
@@ -82,6 +89,7 @@ from TextMagic.models.get_contacts_paginated_response import GetContactsPaginate
 from TextMagic.models.get_countries_response import GetCountriesResponse
 from TextMagic.models.get_custom_fields_paginated_response import GetCustomFieldsPaginatedResponse
 from TextMagic.models.get_disallowed_rules_response import GetDisallowedRulesResponse
+from TextMagic.models.get_email_senders_response import GetEmailSendersResponse
 from TextMagic.models.get_favorites_paginated_response import GetFavoritesPaginatedResponse
 from TextMagic.models.get_inbound_messages_notification_settings_response import GetInboundMessagesNotificationSettingsResponse
 from TextMagic.models.get_invoices_paginated_response import GetInvoicesPaginatedResponse
@@ -133,12 +141,16 @@ from TextMagic.models.messaging_stat_item import MessagingStatItem
 from TextMagic.models.mute_chat_input_object import MuteChatInputObject
 from TextMagic.models.mute_chats_bulk_input_object import MuteChatsBulkInputObject
 from TextMagic.models.not_found_response import NotFoundResponse
+from TextMagic.models.outbound_email_response import OutboundEmailResponse
 from TextMagic.models.ping_response import PingResponse
 from TextMagic.models.push_token import PushToken
 from TextMagic.models.reopen_chats_bulk_input_object import ReopenChatsBulkInputObject
 from TextMagic.models.request_new_subaccount_token_input_object import RequestNewSubaccountTokenInputObject
 from TextMagic.models.request_sender_id_input_object import RequestSenderIdInputObject
 from TextMagic.models.resource_link_response import ResourceLinkResponse
+from TextMagic.models.schedule_email_campaign_input_object import ScheduleEmailCampaignInputObject
+from TextMagic.models.schedule_email_campaign_response import ScheduleEmailCampaignResponse
+from TextMagic.models.scheduled_email_campaign_details import ScheduledEmailCampaignDetails
 from TextMagic.models.search_chats_by_ids_paginated_response import SearchChatsByIdsPaginatedResponse
 from TextMagic.models.search_chats_by_receipent_paginated_response import SearchChatsByReceipentPaginatedResponse
 from TextMagic.models.search_chats_paginated_response import SearchChatsPaginatedResponse
@@ -185,5 +197,6 @@ from TextMagic.models.upload_message_attachment_response import UploadMessageAtt
 from TextMagic.models.user import User
 from TextMagic.models.user_custom_field import UserCustomField
 from TextMagic.models.user_image import UserImage
+from TextMagic.models.user_personal_info import UserPersonalInfo
 from TextMagic.models.user_statement import UserStatement
 from TextMagic.models.users_inbound import UsersInbound

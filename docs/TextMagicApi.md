@@ -14,6 +14,7 @@ Method | HTTP request | Description
 [**create_contact**](TextMagicApi.md#create_contact) | **POST** /api/v2/contacts/normalized | Add a new contact
 [**create_contact_note**](TextMagicApi.md#create_contact_note) | **POST** /api/v2/contacts/{id}/notes | Create a new contact note
 [**create_custom_field**](TextMagicApi.md#create_custom_field) | **POST** /api/v2/customfields | Add a new custom field
+[**create_email_campaign**](TextMagicApi.md#create_email_campaign) | **POST** /api/v2/email-campaigns | Create new email campaign
 [**create_list**](TextMagicApi.md#create_list) | **POST** /api/v2/lists | Create a new list
 [**create_template**](TextMagicApi.md#create_template) | **POST** /api/v2/templates | Create a template
 [**delete_all_contacts**](TextMagicApi.md#delete_all_contacts) | **DELETE** /api/v2/contact/all | Delete contacts (bulk)
@@ -77,6 +78,7 @@ Method | HTTP request | Description
 [**get_custom_field**](TextMagicApi.md#get_custom_field) | **GET** /api/v2/customfields/{id} | Get the details of a specific custom field
 [**get_custom_fields**](TextMagicApi.md#get_custom_fields) | **GET** /api/v2/customfields | Get all custom fields
 [**get_dedicated_number**](TextMagicApi.md#get_dedicated_number) | **GET** /api/v2/numbers/{id} | Get the details of a specific dedicated number
+[**get_email_senders**](TextMagicApi.md#get_email_senders) | **GET** /api/v2/email-campaigns/email-senders | Get list of email senders
 [**get_favorites**](TextMagicApi.md#get_favorites) | **GET** /api/v2/contacts/favorite | Get favorite contacts and lists
 [**get_inbound_message**](TextMagicApi.md#get_inbound_message) | **GET** /api/v2/replies/{id} | Get a single inbound message
 [**get_inbound_messages_notification_settings**](TextMagicApi.md#get_inbound_messages_notification_settings) | **GET** /api/v2/user/notification/inbound | Get inbound messages notification settings
@@ -118,6 +120,7 @@ Method | HTTP request | Description
 [**reopen_chats_bulk**](TextMagicApi.md#reopen_chats_bulk) | **POST** /api/v2/chats/reopen/bulk | Reopen chats (bulk)
 [**request_new_subaccount_token**](TextMagicApi.md#request_new_subaccount_token) | **POST** /api/v2/subaccounts/tokens | Request a new REST API token for sub-account
 [**request_sender_id**](TextMagicApi.md#request_sender_id) | **POST** /api/v2/senderids | Apply for a new Sender ID
+[**schedule_email_campaign**](TextMagicApi.md#schedule_email_campaign) | **POST** /api/v2/email-campaigns/schedule | Schedule new email campaign
 [**search_chats**](TextMagicApi.md#search_chats) | **GET** /api/v2/chats/search | Find chats by message text
 [**search_chats_by_ids**](TextMagicApi.md#search_chats_by_ids) | **GET** /api/v2/chats/search/ids | Find chats (bulk)
 [**search_chats_by_receipent**](TextMagicApi.md#search_chats_by_receipent) | **GET** /api/v2/chats/search/recipients | Find chats by recipient
@@ -668,6 +671,59 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**ResourceLinkResponse**](ResourceLinkResponse.md)
+
+### Authorization
+
+[BasicAuth](../README.md#BasicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **create_email_campaign**
+> CreateEmailCampaignResponse create_email_campaign(create_email_campaign_input_object)
+
+Create new email campaign
+
+Creates a new email campaign and sends it to the specified recipients.  This endpoint allows you to create and immediately send an email marketing campaign to your contacts, groups, or direct email addresses. The campaign will be processed asynchronously, and you'll receive a campaign object with tracking information.  ## Request Requirements  - **Email Sender ID**: Must be a valid, configured email sender from your account - **Recipients**: At least one recipient type must be specified (contacts, groups, or emails) - **Content**: Subject and HTML message content are required - **Balance**: Sufficient account balance for the estimated campaign cost  ## Recipient Types  You can target multiple recipient types in a single campaign:  - **Contact IDs**: Send to specific contacts from your contact list - **Group IDs**: Send to all contacts within specified groups   - **Direct Emails**: Send to email addresses not in your contact list  ## Content Guidelines  - **Subject**: Maximum 998 characters, should be engaging and relevant - **Message**: HTML content supported, including images, links, and formatting - **From Name**: Optional custom sender name (max 500 characters) - **Reply-To**: Optional custom reply-to email address  ## Cost and Balance  The API automatically calculates campaign costs based on: - Total number of unique recipients across all specified groups, contacts, and emails - Your account's email pricing tier - Any additional features or premium content  If your account balance is insufficient, the request will be rejected with a low balance error.  ## Response Information  Successful campaigns return: - Campaign ID for tracking and analytics - Current campaign status and progress - Cost breakdown and recipient counts - Sender information and content preview - Statistical totals and engagement metrics  ## Error Scenarios  Common error conditions include: - **Validation Errors**: Invalid email addresses, missing required fields, or content that exceeds limits - **Insufficient Balance**: Account balance too low for campaign cost - **Invalid Recipients**: Non-existent contact/group IDs or invalid email formats - **Sender Configuration**: Invalid or unconfigured email sender ID - **No Recipients**: All recipient arrays are empty or invalid 
+
+### Example
+```python
+from __future__ import print_function
+import time
+import TextMagic
+from TextMagic.rest import ApiException
+from pprint import pprint
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = TextMagic.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
+# create an instance of the API class
+api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+create_email_campaign_input_object = TextMagic.CreateEmailCampaignInputObject() # CreateEmailCampaignInputObject | 
+
+try:
+    # Create new email campaign
+    api_response = api_instance.create_email_campaign(create_email_campaign_input_object)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TextMagicApi->create_email_campaign: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **create_email_campaign_input_object** | [**CreateEmailCampaignInputObject**](CreateEmailCampaignInputObject.md)|  | 
+
+### Return type
+
+[**CreateEmailCampaignResponse**](CreateEmailCampaignResponse.md)
 
 ### Authorization
 
@@ -4061,6 +4117,59 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **get_email_senders**
+> GetEmailSendersResponse get_email_senders(domain_id=domain_id)
+
+Get list of email senders
+
+Retrieves a list of configured email senders available for creating email campaigns.
+
+### Example
+```python
+from __future__ import print_function
+import time
+import TextMagic
+from TextMagic.rest import ApiException
+from pprint import pprint
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = TextMagic.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
+# create an instance of the API class
+api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+domain_id = 56 # int | Filter email senders by specific domain ID. (optional)
+
+try:
+    # Get list of email senders
+    api_response = api_instance.get_email_senders(domain_id=domain_id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TextMagicApi->get_email_senders: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **domain_id** | **int**| Filter email senders by specific domain ID. | [optional] 
+
+### Return type
+
+[**GetEmailSendersResponse**](GetEmailSendersResponse.md)
+
+### Authorization
+
+[BasicAuth](../README.md#BasicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **get_favorites**
 > GetFavoritesPaginatedResponse get_favorites(page=page, limit=limit, query=query)
 
@@ -6335,6 +6444,59 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**ResourceLinkResponse**](ResourceLinkResponse.md)
+
+### Authorization
+
+[BasicAuth](../README.md#BasicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **schedule_email_campaign**
+> ScheduleEmailCampaignResponse schedule_email_campaign(schedule_email_campaign_input_object)
+
+Schedule new email campaign
+
+Creates a new scheduled email campaign that will be sent at a specified time or according to a recurring schedule.
+
+### Example
+```python
+from __future__ import print_function
+import time
+import TextMagic
+from TextMagic.rest import ApiException
+from pprint import pprint
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = TextMagic.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
+# create an instance of the API class
+api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+schedule_email_campaign_input_object = TextMagic.ScheduleEmailCampaignInputObject() # ScheduleEmailCampaignInputObject | 
+
+try:
+    # Schedule new email campaign
+    api_response = api_instance.schedule_email_campaign(schedule_email_campaign_input_object)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TextMagicApi->schedule_email_campaign: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **schedule_email_campaign_input_object** | [**ScheduleEmailCampaignInputObject**](ScheduleEmailCampaignInputObject.md)|  | 
+
+### Return type
+
+[**ScheduleEmailCampaignResponse**](ScheduleEmailCampaignResponse.md)
 
 ### Authorization
 
