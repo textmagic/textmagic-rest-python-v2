@@ -14,7 +14,7 @@ Method | HTTP request | Description
 [**create_contact**](TextMagicApi.md#create_contact) | **POST** /api/v2/contacts/normalized | Add a new contact
 [**create_contact_note**](TextMagicApi.md#create_contact_note) | **POST** /api/v2/contacts/{id}/notes | Create a new contact note
 [**create_custom_field**](TextMagicApi.md#create_custom_field) | **POST** /api/v2/customfields | Add a new custom field
-[**create_email_campaign**](TextMagicApi.md#create_email_campaign) | **POST** /api/v2/email-campaigns | Create new email campaign
+[**create_email_campaign**](TextMagicApi.md#create_email_campaign) | **POST** /api/v2/email-campaigns | Send email campaign
 [**create_list**](TextMagicApi.md#create_list) | **POST** /api/v2/lists | Create a new list
 [**create_template**](TextMagicApi.md#create_template) | **POST** /api/v2/templates | Create a template
 [**delete_all_contacts**](TextMagicApi.md#delete_all_contacts) | **DELETE** /api/v2/contact/all | Delete contacts (bulk)
@@ -686,7 +686,7 @@ Name | Type | Description  | Notes
 # **create_email_campaign**
 > CreateEmailCampaignResponse create_email_campaign(create_email_campaign_input_object)
 
-Create new email campaign
+Send email campaign
 
 Creates a new email campaign and sends it to the specified recipients.  This endpoint allows you to create and immediately send an email marketing campaign to your contacts, groups, or direct email addresses. The campaign will be processed asynchronously, and you'll receive a campaign object with tracking information.  ## Request Requirements  - **Email Sender ID**: Must be a valid, configured email sender from your account - **Recipients**: At least one recipient type must be specified (contacts, groups, or emails) - **Content**: Subject and HTML message content are required - **Balance**: Sufficient account balance for the estimated campaign cost  ## Recipient Types  You can target multiple recipient types in a single campaign:  - **Contact IDs**: Send to specific contacts from your contact list - **Group IDs**: Send to all contacts within specified groups   - **Direct Emails**: Send to email addresses not in your contact list  ## Content Guidelines  - **Subject**: Maximum 998 characters, should be engaging and relevant - **Message**: HTML content supported, including images, links, and formatting - **From Name**: Optional custom sender name (max 500 characters) - **Reply-To**: Optional custom reply-to email address  ## Cost and Balance  The API automatically calculates campaign costs based on: - Total number of unique recipients across all specified groups, contacts, and emails - Your account's email pricing tier - Any additional features or premium content  If your account balance is insufficient, the request will be rejected with a low balance error.  ## Response Information  Successful campaigns return: - Campaign ID for tracking and analytics - Current campaign status and progress - Cost breakdown and recipient counts - Sender information and content preview - Statistical totals and engagement metrics  ## Error Scenarios  Common error conditions include: - **Validation Errors**: Invalid email addresses, missing required fields, or content that exceeds limits - **Insufficient Balance**: Account balance too low for campaign cost - **Invalid Recipients**: Non-existent contact/group IDs or invalid email formats - **Sender Configuration**: Invalid or unconfigured email sender ID - **No Recipients**: All recipient arrays are empty or invalid 
 
@@ -708,7 +708,7 @@ api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 create_email_campaign_input_object = TextMagic.CreateEmailCampaignInputObject() # CreateEmailCampaignInputObject | 
 
 try:
-    # Create new email campaign
+    # Send email campaign
     api_response = api_instance.create_email_campaign(create_email_campaign_input_object)
     pprint(api_response)
 except ApiException as e:

@@ -86,8 +86,8 @@ Name | Type | Description | Notes
 **chat_summary_chunk** | **int** |  | 
 **chat_ways_to_reply_chunk** | **int** |  | 
 **chat_suggested_reply_chunk** | **int** |  | 
-**user_subscription_changed** | **int** |  | 
-**user_subscription_deleted** | **int** |  | 
+**user_subscription_changed** | **int** |  | [optional] 
+**user_subscription_deleted** | **int** |  | [optional] 
 **task_created** | **int** |  | 
 **task_updated** | **int** |  | 
 **task_reordered** | **int** |  | 
@@ -184,6 +184,7 @@ Name | Type | Description | Notes
 **email_campaign_updated** | **int** |  | 
 **email_template_improved** | **int** |  | 
 **email_template_improving_failed** | **int** |  | 
+**email_bonus_updated** | **int** |  | 
 **sms_campaign_invalidated** | **int** |  | 
 **scheduled_email_campaign_created** | **int** |  | 
 **scheduled_email_campaign_updated** | **int** |  | 

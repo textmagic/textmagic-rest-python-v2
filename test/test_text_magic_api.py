@@ -102,7 +102,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_create_email_campaign(self):
         """Test case for create_email_campaign
 
-        Create new email campaign  # noqa: E501
+        Send email campaign  # noqa: E501
         """
         pass
 

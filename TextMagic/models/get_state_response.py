@@ -212,6 +212,7 @@ class GetStateResponse(object):
         'email_campaign_updated': 'int',
         'email_template_improved': 'int',
         'email_template_improving_failed': 'int',
+        'email_bonus_updated': 'int',
         'sms_campaign_invalidated': 'int',
         'scheduled_email_campaign_created': 'int',
         'scheduled_email_campaign_updated': 'int',
@@ -404,6 +405,7 @@ class GetStateResponse(object):
         'email_campaign_updated': 'emailCampaignUpdated',
         'email_template_improved': 'emailTemplateImproved',
         'email_template_improving_failed': 'emailTemplateImprovingFailed',
+        'email_bonus_updated': 'emailBonusUpdated',
         'sms_campaign_invalidated': 'smsCampaignInvalidated',
         'scheduled_email_campaign_created': 'scheduledEmailCampaignCreated',
         'scheduled_email_campaign_updated': 'scheduledEmailCampaignUpdated',
@@ -414,7 +416,7 @@ class GetStateResponse(object):
         'email_campaign_failed_attempt_state_updated': 'emailCampaignFailedAttemptStateUpdated'
     }
 
-    def __init__(self, system_cache_clear=None, system_exit=None, system_alert=None, system_account_state_changed=None, system_account_accept_terms_update=None, system_account_closed=None, system_account_additional_fields=None, system_account_numbers_list_change=None, system_account_permissions_changed=None, user_profile_changed=None, user_balance_changed=None, user_presence_status_changed=None, user_impersonation_end=None, message_deleted=None, message_incoming=None, message_incoming_deleted=None, message_state_changed=None, message_bulk_end=None, message_wipe_end=None, message_sent=None, message_log=None, message_note=None, message_initial=None, last_message_set=None, message_session_deleted=None, message_cache_clear=None, message_incoming_cache_clear=None, message_schedule_added=None, message_schedule_state_changed=None, message_schedule_deleted=None, message_schedule_not_sent_state_changed=None, message_schedule_cache_clear=None, message_template_cache_clear=None, call_finished=None, chat_created=None, chat_marked_as_read=None, chat_muted=None, chat_unmuted=None, chat_pinned=None, chat_unpinned=None, chat_deleted=None, chat_closed=None, chat_reopened=None, chat_activated=None, chat_cache_clear=None, chat_read=None, chat_unread=None, chat_assignee_changed=None, chat_tags_changed=None, chat_conversation_ended=None, chat_updated=None, live_chat_agent_changed=None, live_chat_rated=None, web_widget_updated=None, web_widget_deleted=None, contact_added=None, contact_deleted=None, contact_bulk_updated=None, contact_state_changed=None, contact_unsubscribed=None, contact_resubscribed=None, contact_note_added=None, contact_note_deleted=None, contact_note_state_changed=None, list_added=None, list_deleted=None, list_state_changed=None, list_count_members_updated=None, contact_wipe_end=None, contact_import_end=None, contact_cache_clear=None, list_cache_clear=None, custom_fields_cache_clear=None, progress_carrier_bulk_lookup=None, progress_sub_account_bulk_import=None, email_lookup_progress_state=None, import_progress_state=None, force_refresh_web_app=None, chat_sender_settings_changed=None, country_sender_settings_changed=None, chat_summary_chunk=None, chat_ways_to_reply_chunk=None, chat_suggested_reply_chunk=None, user_subscription_changed=None, user_subscription_deleted=None, task_created=None, task_updated=None, task_reordered=None, task_deleted=None, task_moved_all=None, task_stage_created=None, task_stage_updated=None, task_stage_deleted=None, task_board_created=None, task_board_updated=None, task_board_reordered=None, task_board_deleted=None, task_board_archived=None, task_checklist_created=None, task_checklist_updated=None, task_checklist_deleted=None, task_checklist_bulk_marked=None, task_checklist_item_created=None, task_checklist_item_updated=None, task_checklist_item_deleted=None, task_comment_created=None, task_comment_deleted=None, pinned_contact_added=None, pinned_contact_removed=None, pinned_contact_reordered=None, pinned_contact_state_changed=None, whatsapp_account_added=None, whatsapp_account_removed=None, whatsapp_account_changed=None, facebook_page_added=None, facebook_page_removed=None, facebook_page_changed=None, instagram_account_added=None, instagram_account_removed=None, instagram_account_changed=None, unread_tickets_count_updated=None, ticket_deleted=None, ticket_updated=None, ticket_created=None, ticket_bulk_updated=None, ticket_bulk_deleted=None, ticket_message_created=None, ticket_message_updated=None, ticket_message_deleted=None, sub_accounts_closed=None, user_invited=None, filtered_view_created=None, filtered_view_count_updated=None, filtered_view_deleted=None, forwarding_inbox_was_verified=None, forwarding_inbox_check_was_failed=None, forwarding_inbox_verification_link_was_parsed=None, tendlc_link_number_status_updated=None, channel_presence=None, deal_created=None, deal_updated=None, deal_deleted=None, deal_moved=None, deal_stage_created=None, deal_stage_updated=None, deal_stage_deleted=None, deal_pipeline_created=None, deal_pipeline_updated=None, deal_pipeline_deleted=None, deal_pipeline_archived=None, deal_pipeline_reordered=None, deal_activity_updated=None, deal_activity_item_created=None, deal_activity_item_updated=None, deal_activity_item_deleted=None, deal_activity_item_bulk_marked=None, deal_timeline_item_deleted=None, deal_timeline_item_created=None, ai_assistant_created=None, ai_assistant_state=None, ai_assistant_deleted=None, ai_assistant_link_deleted=None, ai_assistant_link_state=None, ai_assistant_link_created=None, ai_assistant_sub_link_state=None, ai_assistant_sub_link_created=None, email_campaign_email_sender_created=None, email_campaign_email_sender_updated=None, email_campaign_email_sender_deleted=None, email_campaign_domain_created=None, email_campaign_domain_deleted=None, email_campaign_domain_verified=None, email_campaign_domain_status_changed=None, email_campaign_domain_dkim_verified=None, email_campaign_domain_return_path_verified=None, email_campaign_domain_dmarc_verified=None, email_campaign_domain_entry_verification_changed=None, email_campaign_progress_state=None, email_campaign_updated=None, email_template_improved=None, email_template_improving_failed=None, sms_campaign_invalidated=None, scheduled_email_campaign_created=None, scheduled_email_campaign_updated=None, scheduled_email_campaign_status_updated=None, scheduled_email_campaign_deleted=None, email_campaign_failed_attempt_created=None, email_campaign_failed_attempt_deleted=None, email_campaign_failed_attempt_state_updated=None):  # noqa: E501
+    def __init__(self, system_cache_clear=None, system_exit=None, system_alert=None, system_account_state_changed=None, system_account_accept_terms_update=None, system_account_closed=None, system_account_additional_fields=None, system_account_numbers_list_change=None, system_account_permissions_changed=None, user_profile_changed=None, user_balance_changed=None, user_presence_status_changed=None, user_impersonation_end=None, message_deleted=None, message_incoming=None, message_incoming_deleted=None, message_state_changed=None, message_bulk_end=None, message_wipe_end=None, message_sent=None, message_log=None, message_note=None, message_initial=None, last_message_set=None, message_session_deleted=None, message_cache_clear=None, message_incoming_cache_clear=None, message_schedule_added=None, message_schedule_state_changed=None, message_schedule_deleted=None, message_schedule_not_sent_state_changed=None, message_schedule_cache_clear=None, message_template_cache_clear=None, call_finished=None, chat_created=None, chat_marked_as_read=None, chat_muted=None, chat_unmuted=None, chat_pinned=None, chat_unpinned=None, chat_deleted=None, chat_closed=None, chat_reopened=None, chat_activated=None, chat_cache_clear=None, chat_read=None, chat_unread=None, chat_assignee_changed=None, chat_tags_changed=None, chat_conversation_ended=None, chat_updated=None, live_chat_agent_changed=None, live_chat_rated=None, web_widget_updated=None, web_widget_deleted=None, contact_added=None, contact_deleted=None, contact_bulk_updated=None, contact_state_changed=None, contact_unsubscribed=None, contact_resubscribed=None, contact_note_added=None, contact_note_deleted=None, contact_note_state_changed=None, list_added=None, list_deleted=None, list_state_changed=None, list_count_members_updated=None, contact_wipe_end=None, contact_import_end=None, contact_cache_clear=None, list_cache_clear=None, custom_fields_cache_clear=None, progress_carrier_bulk_lookup=None, progress_sub_account_bulk_import=None, email_lookup_progress_state=None, import_progress_state=None, force_refresh_web_app=None, chat_sender_settings_changed=None, country_sender_settings_changed=None, chat_summary_chunk=None, chat_ways_to_reply_chunk=None, chat_suggested_reply_chunk=None, user_subscription_changed=None, user_subscription_deleted=None, task_created=None, task_updated=None, task_reordered=None, task_deleted=None, task_moved_all=None, task_stage_created=None, task_stage_updated=None, task_stage_deleted=None, task_board_created=None, task_board_updated=None, task_board_reordered=None, task_board_deleted=None, task_board_archived=None, task_checklist_created=None, task_checklist_updated=None, task_checklist_deleted=None, task_checklist_bulk_marked=None, task_checklist_item_created=None, task_checklist_item_updated=None, task_checklist_item_deleted=None, task_comment_created=None, task_comment_deleted=None, pinned_contact_added=None, pinned_contact_removed=None, pinned_contact_reordered=None, pinned_contact_state_changed=None, whatsapp_account_added=None, whatsapp_account_removed=None, whatsapp_account_changed=None, facebook_page_added=None, facebook_page_removed=None, facebook_page_changed=None, instagram_account_added=None, instagram_account_removed=None, instagram_account_changed=None, unread_tickets_count_updated=None, ticket_deleted=None, ticket_updated=None, ticket_created=None, ticket_bulk_updated=None, ticket_bulk_deleted=None, ticket_message_created=None, ticket_message_updated=None, ticket_message_deleted=None, sub_accounts_closed=None, user_invited=None, filtered_view_created=None, filtered_view_count_updated=None, filtered_view_deleted=None, forwarding_inbox_was_verified=None, forwarding_inbox_check_was_failed=None, forwarding_inbox_verification_link_was_parsed=None, tendlc_link_number_status_updated=None, channel_presence=None, deal_created=None, deal_updated=None, deal_deleted=None, deal_moved=None, deal_stage_created=None, deal_stage_updated=None, deal_stage_deleted=None, deal_pipeline_created=None, deal_pipeline_updated=None, deal_pipeline_deleted=None, deal_pipeline_archived=None, deal_pipeline_reordered=None, deal_activity_updated=None, deal_activity_item_created=None, deal_activity_item_updated=None, deal_activity_item_deleted=None, deal_activity_item_bulk_marked=None, deal_timeline_item_deleted=None, deal_timeline_item_created=None, ai_assistant_created=None, ai_assistant_state=None, ai_assistant_deleted=None, ai_assistant_link_deleted=None, ai_assistant_link_state=None, ai_assistant_link_created=None, ai_assistant_sub_link_state=None, ai_assistant_sub_link_created=None, email_campaign_email_sender_created=None, email_campaign_email_sender_updated=None, email_campaign_email_sender_deleted=None, email_campaign_domain_created=None, email_campaign_domain_deleted=None, email_campaign_domain_verified=None, email_campaign_domain_status_changed=None, email_campaign_domain_dkim_verified=None, email_campaign_domain_return_path_verified=None, email_campaign_domain_dmarc_verified=None, email_campaign_domain_entry_verification_changed=None, email_campaign_progress_state=None, email_campaign_updated=None, email_template_improved=None, email_template_improving_failed=None, email_bonus_updated=None, sms_campaign_invalidated=None, scheduled_email_campaign_created=None, scheduled_email_campaign_updated=None, scheduled_email_campaign_status_updated=None, scheduled_email_campaign_deleted=None, email_campaign_failed_attempt_created=None, email_campaign_failed_attempt_deleted=None, email_campaign_failed_attempt_state_updated=None):  # noqa: E501
         """GetStateResponse - a model defined in Swagger"""  # noqa: E501
 
         self._system_cache_clear = None
@@ -598,6 +600,7 @@ class GetStateResponse(object):
         self._email_campaign_updated = None
         self._email_template_improved = None
         self._email_template_improving_failed = None
+        self._email_bonus_updated = None
         self._sms_campaign_invalidated = None
         self._scheduled_email_campaign_created = None
         self._scheduled_email_campaign_updated = None
@@ -691,8 +694,10 @@ class GetStateResponse(object):
         self.chat_summary_chunk = chat_summary_chunk
         self.chat_ways_to_reply_chunk = chat_ways_to_reply_chunk
         self.chat_suggested_reply_chunk = chat_suggested_reply_chunk
-        self.user_subscription_changed = user_subscription_changed
-        self.user_subscription_deleted = user_subscription_deleted
+        if user_subscription_changed is not None:
+            self.user_subscription_changed = user_subscription_changed
+        if user_subscription_deleted is not None:
+            self.user_subscription_deleted = user_subscription_deleted
         self.task_created = task_created
         self.task_updated = task_updated
         self.task_reordered = task_reordered
@@ -789,6 +794,7 @@ class GetStateResponse(object):
         self.email_campaign_updated = email_campaign_updated
         self.email_template_improved = email_template_improved
         self.email_template_improving_failed = email_template_improving_failed
+        self.email_bonus_updated = email_bonus_updated
         self.sms_campaign_invalidated = sms_campaign_invalidated
         self.scheduled_email_campaign_created = scheduled_email_campaign_created
         self.scheduled_email_campaign_updated = scheduled_email_campaign_updated
@@ -4598,6 +4604,27 @@ class GetStateResponse(object):
         """
 
         self._email_template_improving_failed = email_template_improving_failed
+
+    @property
+    def email_bonus_updated(self):
+        """Gets the email_bonus_updated of this GetStateResponse.  # noqa: E501
+
+
+        :return: The email_bonus_updated of this GetStateResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._email_bonus_updated
+
+    @email_bonus_updated.setter
+    def email_bonus_updated(self, email_bonus_updated):
+        """Sets the email_bonus_updated of this GetStateResponse.
+
+
+        :param email_bonus_updated: The email_bonus_updated of this GetStateResponse.  # noqa: E501
+        :type: int
+        """
+
+        self._email_bonus_updated = email_bonus_updated
 
     @property
     def sms_campaign_invalidated(self):
