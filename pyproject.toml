@@ -1,6 +1,6 @@
 [project]
 name = "TextMagic"
-version = "3.0.43889"
+version = "3.0.43891"
 description = "Textmagic API"
 authors = [
   {name = "OpenAPI Generator Community",email = "team@openapitools.org"},

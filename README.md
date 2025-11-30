@@ -14,8 +14,11 @@ TextMagic’s application programming interface (API) provides the communication
 [comment]: <> (/HEAD)
 ## Requirements
 
-- **Python 3.7+** (Python 2.7 and 3.6 are no longer supported)
-- **urllib3** >= 1.25.3
+- **Python** >= 3.9
+- **urllib3** >= 2.1.0, < 3.0.0,
+- **python-dateutil** >= 2.8.2,
+- **pydantic** >= 2,
+- **typing-extensions** >= 4.7.1,
 
 ## Installation
 
@@ -28,7 +31,7 @@ pip install TextMagic
 ### Install from GitHub
 
 ```bash
-pip install git+https://github.com/textmagic/textmagic-rest-python-v2.git@v3.0.43889
+pip install git+https://github.com/textmagic/textmagic-rest-python-v2.git@v3.0.43891
 ```
 
 ### Install from source
@@ -214,7 +217,7 @@ The SDK provides access to all TextMagic API endpoints, including:
 
 1. **Python Version Requirements:**
    - v2.x: Python 2.7+ and 3.4+
-   - v3.x: Python 3.7+ only
+   - v3.x: Python 3.9+ only
 
 2. **Configuration (More Pythonic):**
    ```python
@@ -280,7 +283,6 @@ python setup.py sdist bdist_wheel
 - **Documentation:** https://docs.textmagic.com/
 - **Support:** https://www.textmagic.com/support/
 - **GitHub Issues:** https://github.com/textmagic/textmagic-rest-python-v2/issues
-- **Email:** [email protected]
 
 [comment]: <> (FOOTER)
 ## License
