@@ -1,6 +1,8 @@
 # MessageOut
 
+
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** | Message ID. | 
@@ -27,6 +29,23 @@ Name | Type | Description | Notes
 **sender_source** | [**MessageOutSenderSource**](MessageOutSenderSource.md) |  | [optional] 
 **session** | [**MessageOutSession**](MessageOutSession.md) |  | [optional] 
 
+## Example
+
+```python
+from TextMagic.models.message_out import MessageOut
+
+# TODO update the JSON string below
+json = "{}"
+# create an instance of MessageOut from a JSON string
+message_out_instance = MessageOut.from_json(json)
+# print the JSON string representation of the object
+print(MessageOut.to_json())
+
+# convert the object into a dict
+message_out_dict = message_out_instance.to_dict()
+# create an instance of MessageOut from a dict
+message_out_from_dict = MessageOut.from_dict(message_out_dict)
+```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
 

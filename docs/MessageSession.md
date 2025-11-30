@@ -1,6 +1,8 @@
 # MessageSession
 
+
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** | Session ID. | 
@@ -14,6 +16,23 @@ Name | Type | Description | Notes
 **initiator_id** | **int** | Initiator ID. | 
 **title** | **str** |  | 
 
+## Example
+
+```python
+from TextMagic.models.message_session import MessageSession
+
+# TODO update the JSON string below
+json = "{}"
+# create an instance of MessageSession from a JSON string
+message_session_instance = MessageSession.from_json(json)
+# print the JSON string representation of the object
+print(MessageSession.to_json())
+
+# convert the object into a dict
+message_session_dict = message_session_instance.to_dict()
+# create an instance of MessageSession from a dict
+message_session_from_dict = MessageSession.from_dict(message_session_dict)
+```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
 

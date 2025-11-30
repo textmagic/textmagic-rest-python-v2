@@ -1,6 +1,8 @@
 # UploadMessageAttachmentResponse
 
+
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **chars** | **int** | &#x60;href&#x60; field characters count.  | 
@@ -9,6 +11,23 @@ Name | Type | Description | Notes
 **size** | **int** | Attachment size in bytes. | 
 **resource** | **str** | Internal file name | 
 
+## Example
+
+```python
+from TextMagic.models.upload_message_attachment_response import UploadMessageAttachmentResponse
+
+# TODO update the JSON string below
+json = "{}"
+# create an instance of UploadMessageAttachmentResponse from a JSON string
+upload_message_attachment_response_instance = UploadMessageAttachmentResponse.from_json(json)
+# print the JSON string representation of the object
+print(UploadMessageAttachmentResponse.to_json())
+
+# convert the object into a dict
+upload_message_attachment_response_dict = upload_message_attachment_response_instance.to_dict()
+# create an instance of UploadMessageAttachmentResponse from a dict
+upload_message_attachment_response_from_dict = UploadMessageAttachmentResponse.from_dict(upload_message_attachment_response_dict)
+```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
 

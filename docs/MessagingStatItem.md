@@ -1,10 +1,12 @@
 # MessagingStatItem
 
+
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **reply_rate** | **float** | The number of incoming messages divided by the number of total messages. | 
-**_date** | **datetime** | Time interval start: empty if the **by** parameter was set to **off**.  | 
+**var_date** | **datetime** | Time interval start: empty if the **by** parameter was set to **off**.  | 
 **delivery_rate** | **float** | Message delivery rate:the number of delivered messages divided by the number of total messages. | 
 **costs** | **float** | Cost for sent messages during this period. The costs are in the [Account](https://docs.textmagic.com/#tag/User) currency.  | 
 **messages_received** | **int** | Total received messages count. | 
@@ -15,6 +17,23 @@ Name | Type | Description | Notes
 **messages_sent_rejected** | **int** | Messages that were rejected: invalid Sender ID used (e.g. you cannot use the Sender ID or your own mobile number when sending to the United States and Canada.)  | 
 **messages_sent_parts** | **int** | Total sent messages **parts** count. Note that this is not equal to the sent messages count, because one message could consist of 1 to 6 parts and users are charged per part, not per message. | 
 
+## Example
+
+```python
+from TextMagic.models.messaging_stat_item import MessagingStatItem
+
+# TODO update the JSON string below
+json = "{}"
+# create an instance of MessagingStatItem from a JSON string
+messaging_stat_item_instance = MessagingStatItem.from_json(json)
+# print the JSON string representation of the object
+print(MessagingStatItem.to_json())
+
+# convert the object into a dict
+messaging_stat_item_dict = messaging_stat_item_instance.to_dict()
+# create an instance of MessagingStatItem from a dict
+messaging_stat_item_from_dict = MessagingStatItem.from_dict(messaging_stat_item_dict)
+```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
 

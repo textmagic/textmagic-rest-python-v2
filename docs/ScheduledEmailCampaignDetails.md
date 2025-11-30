@@ -1,6 +1,8 @@
 # ScheduledEmailCampaignDetails
 
+
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** | Unique scheduled campaign ID. | 
@@ -23,6 +25,23 @@ Name | Type | Description | Notes
 **rrule** | **str** | RFC 5545 recurrence rule for recurring campaigns. | [optional] 
 **occurrence_summary** | **str** | Human-readable schedule description. | [optional] 
 
+## Example
+
+```python
+from TextMagic.models.scheduled_email_campaign_details import ScheduledEmailCampaignDetails
+
+# TODO update the JSON string below
+json = "{}"
+# create an instance of ScheduledEmailCampaignDetails from a JSON string
+scheduled_email_campaign_details_instance = ScheduledEmailCampaignDetails.from_json(json)
+# print the JSON string representation of the object
+print(ScheduledEmailCampaignDetails.to_json())
+
+# convert the object into a dict
+scheduled_email_campaign_details_dict = scheduled_email_campaign_details_instance.to_dict()
+# create an instance of ScheduledEmailCampaignDetails from a dict
+scheduled_email_campaign_details_from_dict = ScheduledEmailCampaignDetails.from_dict(scheduled_email_campaign_details_dict)
+```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
 

@@ -1,6 +1,8 @@
 # GetContactsAutocompleteResponseItem
 
+
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **entity_id** | **int** | Id of entity. 0 if object is a reply. | 
@@ -16,6 +18,23 @@ Name | Type | Description | Notes
 **qposition** | **int** |  | 
 **rposition** | **int** |  | 
 
+## Example
+
+```python
+from TextMagic.models.get_contacts_autocomplete_response_item import GetContactsAutocompleteResponseItem
+
+# TODO update the JSON string below
+json = "{}"
+# create an instance of GetContactsAutocompleteResponseItem from a JSON string
+get_contacts_autocomplete_response_item_instance = GetContactsAutocompleteResponseItem.from_json(json)
+# print the JSON string representation of the object
+print(GetContactsAutocompleteResponseItem.to_json())
+
+# convert the object into a dict
+get_contacts_autocomplete_response_item_dict = get_contacts_autocomplete_response_item_instance.to_dict()
+# create an instance of GetContactsAutocompleteResponseItem from a dict
+get_contacts_autocomplete_response_item_from_dict = GetContactsAutocompleteResponseItem.from_dict(get_contacts_autocomplete_response_item_dict)
+```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
 

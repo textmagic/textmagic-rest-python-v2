@@ -1,6 +1,8 @@
 # MessagesIcs
 
+
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** | Schedule ID. | 
@@ -21,6 +23,23 @@ Name | Type | Description | Notes
 **avatar** | **str** | A relative link to the contact avatar. | 
 **created_at** | **datetime** | Scheduling creation time. | 
 
+## Example
+
+```python
+from TextMagic.models.messages_ics import MessagesIcs
+
+# TODO update the JSON string below
+json = "{}"
+# create an instance of MessagesIcs from a JSON string
+messages_ics_instance = MessagesIcs.from_json(json)
+# print the JSON string representation of the object
+print(MessagesIcs.to_json())
+
+# convert the object into a dict
+messages_ics_dict = messages_ics_instance.to_dict()
+# create an instance of MessagesIcs from a dict
+messages_ics_from_dict = MessagesIcs.from_dict(messages_ics_dict)
+```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
 

@@ -1,6 +1,8 @@
 # GetStateResponse
 
+
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **system_cache_clear** | **int** |  | 
@@ -194,6 +196,23 @@ Name | Type | Description | Notes
 **email_campaign_failed_attempt_deleted** | **int** |  | 
 **email_campaign_failed_attempt_state_updated** | **int** |  | 
 
+## Example
+
+```python
+from TextMagic.models.get_state_response import GetStateResponse
+
+# TODO update the JSON string below
+json = "{}"
+# create an instance of GetStateResponse from a JSON string
+get_state_response_instance = GetStateResponse.from_json(json)
+# print the JSON string representation of the object
+print(GetStateResponse.to_json())
+
+# convert the object into a dict
+get_state_response_dict = get_state_response_instance.to_dict()
+# create an instance of GetStateResponse from a dict
+get_state_response_from_dict = GetStateResponse.from_dict(get_state_response_dict)
+```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
 

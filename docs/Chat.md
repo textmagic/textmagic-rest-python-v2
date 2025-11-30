@@ -1,6 +1,8 @@
 # Chat
 
+
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** | Chat ID. | 
@@ -15,7 +17,7 @@ Name | Type | Description | Notes
 **last_message** | **str** | The last message content of a chat. | 
 **direction** | **str** | Last message type: * **ci** - incoming call; * **co** - outgoing call; * **i** - incoming message; * **o** - outgoing message.  | 
 **reply_options_type** | **str** | Used for chats prices. | 
-**_from** | **str** | If filled, the value will be used as a sender number for all outgoing messages of a chat. | 
+**var_from** | **str** | If filled, the value will be used as a sender number for all outgoing messages of a chat. | 
 **muted_until** | **datetime** | Date and time until the chat will be muted. | 
 **time_left_mute** | **int** | Time left untill the chat will be unmuted (seconds). | 
 **country** | [**Country**](Country.md) |  | 
@@ -23,8 +25,25 @@ Name | Type | Description | Notes
 **type** | **str** | Chat type. | 
 **sms_price** | **float** |  | 
 **mms_price** | **float** |  | 
-**tags** | [**list[Tag]**](Tag.md) |  | [optional] 
+**tags** | [**List[Tag]**](Tag.md) |  | [optional] 
 
+## Example
+
+```python
+from TextMagic.models.chat import Chat
+
+# TODO update the JSON string below
+json = "{}"
+# create an instance of Chat from a JSON string
+chat_instance = Chat.from_json(json)
+# print the JSON string representation of the object
+print(Chat.to_json())
+
+# convert the object into a dict
+chat_dict = chat_instance.to_dict()
+# create an instance of Chat from a dict
+chat_from_dict = Chat.from_dict(chat_dict)
+```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
 

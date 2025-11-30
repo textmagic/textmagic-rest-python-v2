@@ -1,6 +1,8 @@
 # DoEmailLookupResponse
 
+
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **address** | **str** | The email address passed to the call. | 
@@ -22,6 +24,23 @@ Name | Type | Description | Notes
 **has_aa** | **bool** | &#x60;true&#x60; if the email address domain has an A record (IPv4).  | 
 **has_aaaa** | **bool** | &#x60;true&#x60; if the email address domain has an AAAA record (IPv6).  | 
 
+## Example
+
+```python
+from TextMagic.models.do_email_lookup_response import DoEmailLookupResponse
+
+# TODO update the JSON string below
+json = "{}"
+# create an instance of DoEmailLookupResponse from a JSON string
+do_email_lookup_response_instance = DoEmailLookupResponse.from_json(json)
+# print the JSON string representation of the object
+print(DoEmailLookupResponse.to_json())
+
+# convert the object into a dict
+do_email_lookup_response_dict = do_email_lookup_response_instance.to_dict()
+# create an instance of DoEmailLookupResponse from a dict
+do_email_lookup_response_from_dict = DoEmailLookupResponse.from_dict(do_email_lookup_response_dict)
+```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
 

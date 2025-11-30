@@ -1,6 +1,8 @@
 # OutboundEmailResponse
 
+
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** | Outbound email ID. | 
@@ -19,6 +21,23 @@ Name | Type | Description | Notes
 **contact_id** | **int** | Associated contact ID. | [optional] 
 **initiator_id** | **int** | ID of user who initiated the email. | 
 
+## Example
+
+```python
+from TextMagic.models.outbound_email_response import OutboundEmailResponse
+
+# TODO update the JSON string below
+json = "{}"
+# create an instance of OutboundEmailResponse from a JSON string
+outbound_email_response_instance = OutboundEmailResponse.from_json(json)
+# print the JSON string representation of the object
+print(OutboundEmailResponse.to_json())
+
+# convert the object into a dict
+outbound_email_response_dict = outbound_email_response_instance.to_dict()
+# create an instance of OutboundEmailResponse from a dict
+outbound_email_response_from_dict = OutboundEmailResponse.from_dict(outbound_email_response_dict)
+```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
 

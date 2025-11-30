@@ -1,17 +1,36 @@
 # UserStatement
 
+
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** | User statement ID. | 
 **user_id** | **int** | User ID. | 
-**_date** | **datetime** | User statement date. | 
+**var_date** | **datetime** | User statement date. | 
 **balance** | **float** |  | 
 **delta** | **float** | Balance change amount. | 
 **type** | **str** | Type of statement (what you have been charged for): *   **sms** - for sending SMS *   **number** - for renewing a dedicated number; *   **schedule** - for scheduling text messages; *   **topup** - for adding credits to your account.  | 
 **value** | **str** | Value differs by **type**: *   for **sms**, it is the sent messages amount; *   for **number**, it is a dedicated phone number; *   for **schedule**, it is a scheduled messages amount; *   for **top-up**, it is an invoice ID.  | 
 **comment** | **str** | Optional comment. | 
 
+## Example
+
+```python
+from TextMagic.models.user_statement import UserStatement
+
+# TODO update the JSON string below
+json = "{}"
+# create an instance of UserStatement from a JSON string
+user_statement_instance = UserStatement.from_json(json)
+# print the JSON string representation of the object
+print(UserStatement.to_json())
+
+# convert the object into a dict
+user_statement_dict = user_statement_instance.to_dict()
+# create an instance of UserStatement from a dict
+user_statement_from_dict = UserStatement.from_dict(user_statement_dict)
+```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
 
