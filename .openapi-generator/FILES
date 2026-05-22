@@ -38,6 +38,7 @@ TextMagic/models/create_tag_response.py
 TextMagic/models/create_template_request.py
 TextMagic/models/currency.py
 TextMagic/models/custom_field_list_item.py
+TextMagic/models/custom_field_values.py
 TextMagic/models/delete_chat_messages_request.py
 TextMagic/models/delete_chats_bulk_request.py
 TextMagic/models/delete_contact_notes_bulk_request.py
@@ -122,6 +123,7 @@ TextMagic/models/messaging_stat_item.py
 TextMagic/models/mute_chat_request.py
 TextMagic/models/mute_chats_bulk_request.py
 TextMagic/models/not_found_response.py
+TextMagic/models/nullable_user_personal_info.py
 TextMagic/models/outbound_email_response.py
 TextMagic/models/ping_response.py
 TextMagic/models/push_token.py
@@ -207,6 +209,7 @@ docs/CreateTagResponse.md
 docs/CreateTemplateRequest.md
 docs/Currency.md
 docs/CustomFieldListItem.md
+docs/CustomFieldValues.md
 docs/DeleteChatMessagesRequest.md
 docs/DeleteChatsBulkRequest.md
 docs/DeleteContactNotesBulkRequest.md
@@ -291,6 +294,7 @@ docs/MessagingStatItem.md
 docs/MuteChatRequest.md
 docs/MuteChatsBulkRequest.md
 docs/NotFoundResponse.md
+docs/NullableUserPersonalInfo.md
 docs/OutboundEmailResponse.md
 docs/PingResponse.md
 docs/PushToken.md

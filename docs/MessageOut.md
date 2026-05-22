@@ -16,6 +16,7 @@ Name | Type | Description | Notes
 **message_time** | **datetime** | Sending time. | 
 **avatar** | **str** |  | 
 **deleted** | **bool** | Indicates that the message has been deleted. | [optional] 
+**delivered_at** | **datetime** | Time when message was delivered. | [optional] 
 **charset** | **str** | Message charset. Could be: *   **ISO-8859-1** for plaintext SMS; *   **UTF-16BE** for Unicode SMS.  | 
 **charset_label** | **str** | Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS; *   **UTF-16BE** for Unicode SMS; *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages.  | 
 **first_name** | **str** | Contact first name. Could be substituted from your [Contacts](https://docs.textmagic.com/#tag/Contacts) (even if you submitted the phone number instead of the contact ID).  | 

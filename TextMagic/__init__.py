@@ -14,7 +14,7 @@
 """  # noqa: E501
 
 
-__version__ = "3.0.43891"
+__version__ = "3.0.50038"
 
 # Define package exports
 __all__ = [
@@ -55,6 +55,7 @@ __all__ = [
     "CreateTemplateRequest",
     "Currency",
     "CustomFieldListItem",
+    "CustomFieldValues",
     "DeleteChatMessagesRequest",
     "DeleteChatsBulkRequest",
     "DeleteContactNotesBulkRequest",
@@ -139,6 +140,7 @@ __all__ = [
     "MuteChatRequest",
     "MuteChatsBulkRequest",
     "NotFoundResponse",
+    "NullableUserPersonalInfo",
     "OutboundEmailResponse",
     "PingResponse",
     "PushToken",
@@ -239,6 +241,7 @@ from TextMagic.models.create_tag_response import CreateTagResponse as CreateTagR
 from TextMagic.models.create_template_request import CreateTemplateRequest as CreateTemplateRequest
 from TextMagic.models.currency import Currency as Currency
 from TextMagic.models.custom_field_list_item import CustomFieldListItem as CustomFieldListItem
+from TextMagic.models.custom_field_values import CustomFieldValues as CustomFieldValues
 from TextMagic.models.delete_chat_messages_request import DeleteChatMessagesRequest as DeleteChatMessagesRequest
 from TextMagic.models.delete_chats_bulk_request import DeleteChatsBulkRequest as DeleteChatsBulkRequest
 from TextMagic.models.delete_contact_notes_bulk_request import DeleteContactNotesBulkRequest as DeleteContactNotesBulkRequest
@@ -323,6 +326,7 @@ from TextMagic.models.messaging_stat_item import MessagingStatItem as MessagingS
 from TextMagic.models.mute_chat_request import MuteChatRequest as MuteChatRequest
 from TextMagic.models.mute_chats_bulk_request import MuteChatsBulkRequest as MuteChatsBulkRequest
 from TextMagic.models.not_found_response import NotFoundResponse as NotFoundResponse
+from TextMagic.models.nullable_user_personal_info import NullableUserPersonalInfo as NullableUserPersonalInfo
 from TextMagic.models.outbound_email_response import OutboundEmailResponse as OutboundEmailResponse
 from TextMagic.models.ping_response import PingResponse as PingResponse
 from TextMagic.models.push_token import PushToken as PushToken

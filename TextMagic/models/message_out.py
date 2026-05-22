@@ -40,6 +40,7 @@ class MessageOut(BaseModel):
     message_time: datetime = Field(description="Sending time.", alias="messageTime")
     avatar: Optional[StrictStr]
     deleted: Optional[StrictBool] = Field(default=None, description="Indicates that the message has been deleted.")
+    delivered_at: Optional[datetime] = Field(default=None, description="Time when message was delivered.", alias="deliveredAt")
     charset: Optional[StrictStr] = Field(description="Message charset. Could be: *   **ISO-8859-1** for plaintext SMS; *   **UTF-16BE** for Unicode SMS. ")
     charset_label: Optional[StrictStr] = Field(description="Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS; *   **UTF-16BE** for Unicode SMS; *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages. ", alias="charsetLabel")
     first_name: Optional[StrictStr] = Field(description="Contact first name. Could be substituted from your [Contacts](https://docs.textmagic.com/#tag/Contacts) (even if you submitted the phone number instead of the contact ID). ", alias="firstName")
@@ -52,7 +53,7 @@ class MessageOut(BaseModel):
     from_number: Optional[StrictStr] = Field(default=None, description="The Phone number used to send the SMS.", alias="fromNumber")
     sender_source: Optional[MessageOutSenderSource] = Field(default=None, alias="senderSource")
     session: Optional[MessageOutSession] = None
-    __properties: ClassVar[List[str]] = ["id", "sender", "receiver", "text", "status", "rejectReason", "contactId", "sessionId", "messageTime", "avatar", "deleted", "charset", "charsetLabel", "firstName", "lastName", "country", "phone", "price", "partsCount", "fromEmail", "fromNumber", "senderSource", "session"]
+    __properties: ClassVar[List[str]] = ["id", "sender", "receiver", "text", "status", "rejectReason", "contactId", "sessionId", "messageTime", "avatar", "deleted", "deliveredAt", "charset", "charsetLabel", "firstName", "lastName", "country", "phone", "price", "partsCount", "fromEmail", "fromNumber", "senderSource", "session"]
 
     @field_validator('status')
     def status_validate_enum(cls, value):
@@ -136,6 +137,11 @@ class MessageOut(BaseModel):
         if self.avatar is None and "avatar" in self.model_fields_set:
             _dict['avatar'] = None
 
+        # set to None if delivered_at (nullable) is None
+        # and model_fields_set contains the field
+        if self.delivered_at is None and "delivered_at" in self.model_fields_set:
+            _dict['deliveredAt'] = None
+
         # set to None if charset (nullable) is None
         # and model_fields_set contains the field
         if self.charset is None and "charset" in self.model_fields_set:
@@ -209,6 +215,7 @@ class MessageOut(BaseModel):
             "messageTime": obj.get("messageTime"),
             "avatar": obj.get("avatar"),
             "deleted": obj.get("deleted"),
+            "deliveredAt": obj.get("deliveredAt"),
             "charset": obj.get("charset"),
             "charsetLabel": obj.get("charsetLabel"),
             "firstName": obj.get("firstName"),

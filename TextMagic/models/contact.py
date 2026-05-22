@@ -23,6 +23,7 @@ from TextMagic.models.contact_image import ContactImage
 from TextMagic.models.contact_note import ContactNote
 from TextMagic.models.country import Country
 from TextMagic.models.custom_field_list_item import CustomFieldListItem
+from TextMagic.models.custom_field_values import CustomFieldValues
 from TextMagic.models.list import List
 from TextMagic.models.tag import Tag
 from TextMagic.models.user import User
@@ -43,6 +44,7 @@ class Contact(BaseModel):
     email: Optional[StrictStr] = Field(description="Contact email address.")
     country: Optional[Country]
     custom_fields: List[CustomFieldListItem] = Field(alias="customFields")
+    custom_field_values: List[CustomFieldValues] = Field(alias="customFieldValues")
     user: Optional[User]
     lists: List[List]
     owner: Optional[User] = None
@@ -51,7 +53,7 @@ class Contact(BaseModel):
     avatar: Optional[ContactImage]
     notes: List[ContactNote]
     whatsapp_phone: Optional[StrictStr] = Field(default=None, description="Whatsapp phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164).", alias="whatsappPhone")
-    __properties: ClassVar[List[str]] = ["id", "favorited", "blocked", "firstName", "lastName", "companyName", "phone", "email", "country", "customFields", "user", "lists", "owner", "tags", "phoneType", "avatar", "notes", "whatsappPhone"]
+    __properties: ClassVar[List[str]] = ["id", "favorited", "blocked", "firstName", "lastName", "companyName", "phone", "email", "country", "customFields", "customFieldValues", "user", "lists", "owner", "tags", "phoneType", "avatar", "notes", "whatsappPhone"]
 
     model_config = ConfigDict(
         populate_by_name=True,
@@ -102,6 +104,13 @@ class Contact(BaseModel):
                 if _item_custom_fields:
                     _items.append(_item_custom_fields.to_dict())
             _dict['customFields'] = _items
+        # override the default output from pydantic by calling `to_dict()` of each item in custom_field_values (list)
+        _items = []
+        if self.custom_field_values:
+            for _item_custom_field_values in self.custom_field_values:
+                if _item_custom_field_values:
+                    _items.append(_item_custom_field_values.to_dict())
+            _dict['customFieldValues'] = _items
         # override the default output from pydantic by calling `to_dict()` of user
         if self.user:
             _dict['user'] = self.user.to_dict()
@@ -202,6 +211,7 @@ class Contact(BaseModel):
             "email": obj.get("email"),
             "country": Country.from_dict(obj["country"]) if obj.get("country") is not None else None,
             "customFields": [CustomFieldListItem.from_dict(_item) for _item in obj["customFields"]] if obj.get("customFields") is not None else None,
+            "customFieldValues": [CustomFieldValues.from_dict(_item) for _item in obj["customFieldValues"]] if obj.get("customFieldValues") is not None else None,
             "user": User.from_dict(obj["user"]) if obj.get("user") is not None else None,
             "lists": obj.get("lists"),
             "owner": User.from_dict(obj["owner"]) if obj.get("owner") is not None else None,

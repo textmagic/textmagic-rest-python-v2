@@ -22,6 +22,7 @@ from pydantic import BaseModel, ConfigDict, Field, StrictBool, StrictFloat, Stri
 from typing import Any, ClassVar, Dict, List, Optional, Union
 from TextMagic.models.contact import Contact
 from TextMagic.models.country import Country
+from TextMagic.models.nullable_user_personal_info import NullableUserPersonalInfo
 from TextMagic.models.tag import Tag
 from typing import Optional, Set
 from typing_extensions import Self
@@ -51,7 +52,11 @@ class Chat(BaseModel):
     sms_price: Union[StrictFloat, StrictInt] = Field(alias="smsPrice")
     mms_price: Union[StrictFloat, StrictInt] = Field(alias="mmsPrice")
     tags: Optional[List[Tag]] = None
-    __properties: ClassVar[List[str]] = ["id", "originalId", "phone", "contact", "unsubscribedContactId", "unread", "updatedAt", "status", "mute", "lastMessage", "direction", "replyOptionsType", "from", "mutedUntil", "timeLeftMute", "country", "pinned", "type", "smsPrice", "mmsPrice", "tags"]
+    assignee_id: Optional[StrictInt] = Field(alias="assigneeId")
+    updated_by: Optional[NullableUserPersonalInfo] = Field(default=None, alias="updatedBy")
+    created_at: datetime = Field(description="Chat creation date and time.", alias="createdAt")
+    message_time: datetime = Field(description="Chat last message date and time.", alias="messageTime")
+    __properties: ClassVar[List[str]] = ["id", "originalId", "phone", "contact", "unsubscribedContactId", "unread", "updatedAt", "status", "mute", "lastMessage", "direction", "replyOptionsType", "from", "mutedUntil", "timeLeftMute", "country", "pinned", "type", "smsPrice", "mmsPrice", "tags", "assigneeId", "updatedBy", "createdAt", "messageTime"]
 
     @field_validator('status')
     def status_validate_enum(cls, value):
@@ -122,6 +127,9 @@ class Chat(BaseModel):
                 if _item_tags:
                     _items.append(_item_tags.to_dict())
             _dict['tags'] = _items
+        # override the default output from pydantic by calling `to_dict()` of updated_by
+        if self.updated_by:
+            _dict['updatedBy'] = self.updated_by.to_dict()
         # set to None if original_id (nullable) is None
         # and model_fields_set contains the field
         if self.original_id is None and "original_id" in self.model_fields_set:
@@ -172,6 +180,16 @@ class Chat(BaseModel):
         if self.pinned is None and "pinned" in self.model_fields_set:
             _dict['pinned'] = None
 
+        # set to None if assignee_id (nullable) is None
+        # and model_fields_set contains the field
+        if self.assignee_id is None and "assignee_id" in self.model_fields_set:
+            _dict['assigneeId'] = None
+
+        # set to None if updated_by (nullable) is None
+        # and model_fields_set contains the field
+        if self.updated_by is None and "updated_by" in self.model_fields_set:
+            _dict['updatedBy'] = None
+
         return _dict
 
     @classmethod
@@ -204,7 +222,11 @@ class Chat(BaseModel):
             "type": obj.get("type"),
             "smsPrice": obj.get("smsPrice"),
             "mmsPrice": obj.get("mmsPrice"),
-            "tags": [Tag.from_dict(_item) for _item in obj["tags"]] if obj.get("tags") is not None else None
+            "tags": [Tag.from_dict(_item) for _item in obj["tags"]] if obj.get("tags") is not None else None,
+            "assigneeId": obj.get("assigneeId"),
+            "updatedBy": NullableUserPersonalInfo.from_dict(obj["updatedBy"]) if obj.get("updatedBy") is not None else None,
+            "createdAt": obj.get("createdAt"),
+            "messageTime": obj.get("messageTime")
         })
         return _obj
 

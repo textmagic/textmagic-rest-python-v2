@@ -26,6 +26,10 @@ Name | Type | Description | Notes
 **sms_price** | **float** |  | 
 **mms_price** | **float** |  | 
 **tags** | [**List[Tag]**](Tag.md) |  | [optional] 
+**assignee_id** | **int** |  | 
+**updated_by** | [**NullableUserPersonalInfo**](NullableUserPersonalInfo.md) |  | [optional] 
+**created_at** | **datetime** | Chat creation date and time. | 
+**message_time** | **datetime** | Chat last message date and time. | 
 
 ## Example
 

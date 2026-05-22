@@ -40,6 +40,7 @@ from TextMagic.models.create_tag_response import CreateTagResponse
 from TextMagic.models.create_template_request import CreateTemplateRequest
 from TextMagic.models.currency import Currency
 from TextMagic.models.custom_field_list_item import CustomFieldListItem
+from TextMagic.models.custom_field_values import CustomFieldValues
 from TextMagic.models.delete_chat_messages_request import DeleteChatMessagesRequest
 from TextMagic.models.delete_chats_bulk_request import DeleteChatsBulkRequest
 from TextMagic.models.delete_contact_notes_bulk_request import DeleteContactNotesBulkRequest
@@ -124,6 +125,7 @@ from TextMagic.models.messaging_stat_item import MessagingStatItem
 from TextMagic.models.mute_chat_request import MuteChatRequest
 from TextMagic.models.mute_chats_bulk_request import MuteChatsBulkRequest
 from TextMagic.models.not_found_response import NotFoundResponse
+from TextMagic.models.nullable_user_personal_info import NullableUserPersonalInfo
 from TextMagic.models.outbound_email_response import OutboundEmailResponse
 from TextMagic.models.ping_response import PingResponse
 from TextMagic.models.push_token import PushToken
