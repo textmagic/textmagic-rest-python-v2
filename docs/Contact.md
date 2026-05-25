@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 **custom_fields** | [**List[CustomFieldListItem]**](CustomFieldListItem.md) |  | 
 **custom_field_values** | [**List[CustomFieldValues]**](CustomFieldValues.md) |  | 
 **user** | [**User**](User.md) |  | 
-**lists** | **List[List]** |  | 
+**lists** | [**List[TmList]**](TmList.md) |  | 
 **owner** | [**User**](User.md) |  | [optional] 
 **tags** | [**List[Tag]**](Tag.md) |  | [optional] 
 **phone_type** | **str** | Phone number type: * **0** if it is fixed-line; * **1** if it is mobile; * **2** if it is mobile or fixed-line (in case we cannot distingush between fixed-line or mobile); * **3** if it is toll-free; * **4** if it is a premium rate phone; * **5** if it is a shared cost phone; * **6** if it is a VoIP; * **7** if it is a [Personal Number](); * **8** if it is a pager; * **9** if it is a Universal Access Number; * **10** if the phone type is unknown; * **-1** if the phone type is not yet processed or cannot be determined.  | 

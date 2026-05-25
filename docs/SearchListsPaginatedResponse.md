@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **page** | **int** |  | 
 **page_count** | **int** | The total number of pages. | 
 **limit** | **int** | The number of results per page. | 
-**resources** | **List[List]** |  | 
+**resources** | [**List[TmList]**](TmList.md) |  | 
 
 ## Example
 

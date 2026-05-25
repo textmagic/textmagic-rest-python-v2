@@ -85,7 +85,6 @@ from TextMagic.models.get_spending_stat_paginated_response import GetSpendingSta
 from TextMagic.models.get_unread_messages_total_response import GetUnreadMessagesTotalResponse
 from TextMagic.models.get_unsubscribers_paginated_response import GetUnsubscribersPaginatedResponse
 from TextMagic.models.get_user_dedicated_numbers_paginated_response import GetUserDedicatedNumbersPaginatedResponse
-from TextMagic.models.list import List
 from TextMagic.models.mark_chats_unread_bulk_request import MarkChatsUnreadBulkRequest
 from TextMagic.models.message_in import MessageIn
 from TextMagic.models.message_out import MessageOut
@@ -113,6 +112,7 @@ from TextMagic.models.send_message_request import SendMessageRequest
 from TextMagic.models.send_message_response import SendMessageResponse
 from TextMagic.models.sender_id import SenderId
 from TextMagic.models.set_chat_status_request import SetChatStatusRequest
+from TextMagic.models.tm_list import TmList
 from TextMagic.models.unblock_contacts_bulk_request import UnblockContactsBulkRequest
 from TextMagic.models.unmute_chats_bulk_request import UnmuteChatsBulkRequest
 from TextMagic.models.unsubscribe_contact_request import UnsubscribeContactRequest
@@ -22272,7 +22272,7 @@ class TextMagicApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> List:
+    ) -> TmList:
         """Get the details of a specific list
 
 
@@ -22309,7 +22309,7 @@ class TextMagicApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "List",
+            '200': "TmList",
             '401': "UnauthorizedResponse",
             '404': "NotFoundResponse",
         }
@@ -22340,7 +22340,7 @@ class TextMagicApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[List]:
+    ) -> ApiResponse[TmList]:
         """Get the details of a specific list
 
 
@@ -22377,7 +22377,7 @@ class TextMagicApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "List",
+            '200': "TmList",
             '401': "UnauthorizedResponse",
             '404': "NotFoundResponse",
         }
@@ -22445,7 +22445,7 @@ class TextMagicApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "List",
+            '200': "TmList",
             '401': "UnauthorizedResponse",
             '404': "NotFoundResponse",
         }

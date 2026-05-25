@@ -24,8 +24,8 @@ from TextMagic.models.contact_note import ContactNote
 from TextMagic.models.country import Country
 from TextMagic.models.custom_field_list_item import CustomFieldListItem
 from TextMagic.models.custom_field_values import CustomFieldValues
-from TextMagic.models.list import List
 from TextMagic.models.tag import Tag
+from TextMagic.models.tm_list import TmList
 from TextMagic.models.user import User
 from typing import Optional, Set
 from typing_extensions import Self
@@ -46,7 +46,7 @@ class Contact(BaseModel):
     custom_fields: List[CustomFieldListItem] = Field(alias="customFields")
     custom_field_values: List[CustomFieldValues] = Field(alias="customFieldValues")
     user: Optional[User]
-    lists: List[List]
+    lists: List[TmList]
     owner: Optional[User] = None
     tags: Optional[List[Tag]] = None
     phone_type: Optional[StrictStr] = Field(description="Phone number type: * **0** if it is fixed-line; * **1** if it is mobile; * **2** if it is mobile or fixed-line (in case we cannot distingush between fixed-line or mobile); * **3** if it is toll-free; * **4** if it is a premium rate phone; * **5** if it is a shared cost phone; * **6** if it is a VoIP; * **7** if it is a [Personal Number](); * **8** if it is a pager; * **9** if it is a Universal Access Number; * **10** if the phone type is unknown; * **-1** if the phone type is not yet processed or cannot be determined. ", alias="phoneType")
@@ -114,6 +114,13 @@ class Contact(BaseModel):
         # override the default output from pydantic by calling `to_dict()` of user
         if self.user:
             _dict['user'] = self.user.to_dict()
+        # override the default output from pydantic by calling `to_dict()` of each item in lists (list)
+        _items = []
+        if self.lists:
+            for _item_lists in self.lists:
+                if _item_lists:
+                    _items.append(_item_lists.to_dict())
+            _dict['lists'] = _items
         # override the default output from pydantic by calling `to_dict()` of owner
         if self.owner:
             _dict['owner'] = self.owner.to_dict()
@@ -213,7 +220,7 @@ class Contact(BaseModel):
             "customFields": [CustomFieldListItem.from_dict(_item) for _item in obj["customFields"]] if obj.get("customFields") is not None else None,
             "customFieldValues": [CustomFieldValues.from_dict(_item) for _item in obj["customFieldValues"]] if obj.get("customFieldValues") is not None else None,
             "user": User.from_dict(obj["user"]) if obj.get("user") is not None else None,
-            "lists": obj.get("lists"),
+            "lists": [TmList.from_dict(_item) for _item in obj["lists"]] if obj.get("lists") is not None else None,
             "owner": User.from_dict(obj["owner"]) if obj.get("owner") is not None else None,
             "tags": [Tag.from_dict(_item) for _item in obj["tags"]] if obj.get("tags") is not None else None,
             "phoneType": obj.get("phoneType"),

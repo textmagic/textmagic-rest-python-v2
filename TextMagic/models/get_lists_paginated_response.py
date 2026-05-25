@@ -19,7 +19,7 @@ import json
 
 from pydantic import BaseModel, ConfigDict, Field, StrictInt
 from typing import Any, ClassVar, Dict, List
-from TextMagic.models.list import List
+from TextMagic.models.tm_list import TmList
 from typing import Optional, Set
 from typing_extensions import Self
 
@@ -30,7 +30,7 @@ class GetListsPaginatedResponse(BaseModel):
     page: StrictInt
     page_count: StrictInt = Field(description="The total number of pages.", alias="pageCount")
     limit: StrictInt = Field(description="The number of results per page.")
-    resources: List[List]
+    resources: List[TmList]
     __properties: ClassVar[List[str]] = ["page", "pageCount", "limit", "resources"]
 
     model_config = ConfigDict(
@@ -72,6 +72,13 @@ class GetListsPaginatedResponse(BaseModel):
             exclude=excluded_fields,
             exclude_none=True,
         )
+        # override the default output from pydantic by calling `to_dict()` of each item in resources (list)
+        _items = []
+        if self.resources:
+            for _item_resources in self.resources:
+                if _item_resources:
+                    _items.append(_item_resources.to_dict())
+            _dict['resources'] = _items
         return _dict
 
     @classmethod
@@ -87,7 +94,7 @@ class GetListsPaginatedResponse(BaseModel):
             "page": obj.get("page"),
             "pageCount": obj.get("pageCount"),
             "limit": obj.get("limit"),
-            "resources": obj.get("resources")
+            "resources": [TmList.from_dict(_item) for _item in obj["resources"]] if obj.get("resources") is not None else None
         })
         return _obj
 

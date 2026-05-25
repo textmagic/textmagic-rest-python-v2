@@ -14,7 +14,7 @@
 """  # noqa: E501
 
 
-__version__ = "3.0.50038"
+__version__ = "3.0.50053"
 
 # Define package exports
 __all__ = [
@@ -121,7 +121,6 @@ __all__ = [
     "GetVersionsResponse",
     "InviteSubaccountRequest",
     "Invoice",
-    "List",
     "ListImage",
     "MarkChatsUnreadBulkRequest",
     "MessageIn",
@@ -173,6 +172,7 @@ __all__ = [
     "SurveySenderCountries",
     "Tag",
     "Timezone",
+    "TmList",
     "UnauthorizedResponse",
     "UnblockContactsBulkRequest",
     "UnmuteChatsBulkRequest",
@@ -307,7 +307,6 @@ from TextMagic.models.get_user_dedicated_numbers_paginated_response import GetUs
 from TextMagic.models.get_versions_response import GetVersionsResponse as GetVersionsResponse
 from TextMagic.models.invite_subaccount_request import InviteSubaccountRequest as InviteSubaccountRequest
 from TextMagic.models.invoice import Invoice as Invoice
-from TextMagic.models.list import List as List
 from TextMagic.models.list_image import ListImage as ListImage
 from TextMagic.models.mark_chats_unread_bulk_request import MarkChatsUnreadBulkRequest as MarkChatsUnreadBulkRequest
 from TextMagic.models.message_in import MessageIn as MessageIn
@@ -359,6 +358,7 @@ from TextMagic.models.survey_recipient import SurveyRecipient as SurveyRecipient
 from TextMagic.models.survey_sender_countries import SurveySenderCountries as SurveySenderCountries
 from TextMagic.models.tag import Tag as Tag
 from TextMagic.models.timezone import Timezone as Timezone
+from TextMagic.models.tm_list import TmList as TmList
 from TextMagic.models.unauthorized_response import UnauthorizedResponse as UnauthorizedResponse
 from TextMagic.models.unblock_contacts_bulk_request import UnblockContactsBulkRequest as UnblockContactsBulkRequest
 from TextMagic.models.unmute_chats_bulk_request import UnmuteChatsBulkRequest as UnmuteChatsBulkRequest

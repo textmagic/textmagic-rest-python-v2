@@ -31,7 +31,7 @@ pip install TextMagic
 ### Install from GitHub
 
 ```bash
-pip install git+https://github.com/textmagic/textmagic-rest-python-v2.git@v3.0.50038
+pip install git+https://github.com/textmagic/textmagic-rest-python-v2.git@v3.0.50053
 ```
 
 ### Install from source

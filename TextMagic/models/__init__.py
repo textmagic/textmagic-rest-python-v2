@@ -106,7 +106,6 @@ from TextMagic.models.get_user_dedicated_numbers_paginated_response import GetUs
 from TextMagic.models.get_versions_response import GetVersionsResponse
 from TextMagic.models.invite_subaccount_request import InviteSubaccountRequest
 from TextMagic.models.invoice import Invoice
-from TextMagic.models.list import List
 from TextMagic.models.list_image import ListImage
 from TextMagic.models.mark_chats_unread_bulk_request import MarkChatsUnreadBulkRequest
 from TextMagic.models.message_in import MessageIn
@@ -158,6 +157,7 @@ from TextMagic.models.survey_recipient import SurveyRecipient
 from TextMagic.models.survey_sender_countries import SurveySenderCountries
 from TextMagic.models.tag import Tag
 from TextMagic.models.timezone import Timezone
+from TextMagic.models.tm_list import TmList
 from TextMagic.models.unauthorized_response import UnauthorizedResponse
 from TextMagic.models.unblock_contacts_bulk_request import UnblockContactsBulkRequest
 from TextMagic.models.unmute_chats_bulk_request import UnmuteChatsBulkRequest

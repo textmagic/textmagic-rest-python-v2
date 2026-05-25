@@ -1,4 +1,4 @@
-# List
+# TmList
 
 
 ## Properties
@@ -19,19 +19,19 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from TextMagic.models.list import List
+from TextMagic.models.tm_list import TmList
 
 # TODO update the JSON string below
 json = "{}"
-# create an instance of List from a JSON string
-list_instance = List.from_json(json)
+# create an instance of TmList from a JSON string
+tm_list_instance = TmList.from_json(json)
 # print the JSON string representation of the object
-print(List.to_json())
+print(TmList.to_json())
 
 # convert the object into a dict
-list_dict = list_instance.to_dict()
-# create an instance of List from a dict
-list_from_dict = List.from_dict(list_dict)
+tm_list_dict = tm_list_instance.to_dict()
+# create an instance of TmList from a dict
+tm_list_from_dict = TmList.from_dict(tm_list_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -24,9 +24,9 @@ from TextMagic.models.user import User
 from typing import Optional, Set
 from typing_extensions import Self
 
-class List(BaseModel):
+class TmList(BaseModel):
     """
-    List
+    TmList
     """ # noqa: E501
     id: StrictInt = Field(description="List ID.")
     name: StrictStr = Field(description="List name.")
@@ -58,7 +58,7 @@ class List(BaseModel):
 
     @classmethod
     def from_json(cls, json_str: str) -> Optional[Self]:
-        """Create an instance of List from a JSON string"""
+        """Create an instance of TmList from a JSON string"""
         return cls.from_dict(json.loads(json_str))
 
     def to_dict(self) -> Dict[str, Any]:
@@ -114,7 +114,7 @@ class List(BaseModel):
 
     @classmethod
     def from_dict(cls, obj: Optional[Dict[str, Any]]) -> Optional[Self]:
-        """Create an instance of List from a dict"""
+        """Create an instance of TmList from a dict"""
         if obj is None:
             return None
 

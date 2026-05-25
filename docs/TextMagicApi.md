@@ -6581,7 +6581,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_list**
-> List get_list(id)
+> TmList get_list(id)
 
 Get the details of a specific list
 
@@ -6591,7 +6591,7 @@ Get the details of a specific list
 
 ```python
 import TextMagic
-from TextMagic.models.list import List
+from TextMagic.models.tm_list import TmList
 from TextMagic.rest import ApiException
 from pprint import pprint
 
@@ -6638,7 +6638,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**List**
+[**TmList**](TmList.md)
 
 ### Authorization
 
